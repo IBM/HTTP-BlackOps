@@ -1,0 +1,23 @@
+HTTP/1.1 200 OK
+X-Backside-Transport: OK OK
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Pragma: no-cache
+X-Global-Transaction-ID: 2045854737
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Content-Type: text/html
+Date: Wed, 02 Nov 2016 23:47:37 GMT
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Set-Cookie: survey_done=true
+Server: Apache
+
+<form id="survey_form" style="padding:10px;">
+
+			<br><br>
+			Thank you for your feedback. The following information was added to our records
+			<br><br>
+			E-mail address:636137128672264664<img src=x onerror=prompt(_survey_questions_phpemail)><br><br>
+			<br><br>
+			We will contact you soon to let you know if you won.
+			<p align="right"><img src="images/ipod.jpeg"></p>
+</form>

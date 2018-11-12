@@ -1,0 +1,15 @@
+Name: A unique identifier for the test
+Type: The test type
+Mutation: The modification to be applied to the request
+
+Special tags identity dynamically generated values:
+- $original: the original parameter value
+- $entity_id: an unique string that will identify the parameter and request
+
+Example: $original"|echo /tmp/$entity_id|echo "
+
+Validation: Optional regular expression. If matched on the test response the test is considered positive.
+
+Special tags to specify functions to execute on validation
+- $match_file=c:\matches.txt - specifies the location of a file containing matches to run against the current request separated by new line
+- $body=<regex> - specifies that the regular expression should only apply to the body of a request

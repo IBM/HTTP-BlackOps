@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConnectionError" xml:space="preserve">
+    <value>Connection error.</value>
+  </data>
+  <data name="BoxTitle" xml:space="preserve">
+    <value>Traffic Viewer Message</value>
+  </data>
+  <data name="ProxyConsoleStatistics" xml:space="preserve">
+    <value>Requests found: {0} / Requests Missed: {1} / Requests Total: {2}</value>
+  </data>
+  <data name="RequestsLoadedText" xml:space="preserve">
+    <value>Requests loaded: {0}</value>
+  </data>
+  <data name="WaitingForResponse" xml:space="preserve">
+    <value>Waiting for response...</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="untail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\untail.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ErrorNoDom" xml:space="preserve">
+    <value>Selected document has no Dom.</value>
+  </data>
+  <data name="RequestViewSaveChangesMenu" xml:space="preserve">
+    <value>Save Changes</value>
+  </data>
+  <data name="ErrorNoDomId" xml:space="preserve">
+    <value>No Dom Id has been calculated for this document</value>
+  </data>
+  <data name="lupa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lupa.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tail.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InfoNeedsRestart" xml:space="preserve">
+    <value>You may need to restart before the settings can take effect.</value>
+  </data>
+  <data name="pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pause.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogSyncDefaultMessage" xml:space="preserve">
+    <value>Select a log file to syncronize with. Traffic Viewer will automatically align the current request with log events that happened at the same time.</value>
+  </data>
+  <data name="CollapsibleElementsPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\LogSync\CollapsibleElementsPage.htm;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TrafficViewerRequestDescription" xml:space="preserve">
+    <value>Traffic Viewer Request</value>
+  </data>
+  <data name="SimilarityText" xml:space="preserve">
+    <value>Body Similarity: {0}%</value>
+  </data>
+  <data name="SampleHttpResponse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SampleHttpResponse.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SampleRequestHeaders" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\samplerequestheaders.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ExportError" xml:space="preserve">
+    <value>Error exporting traffic: '{0}'.</value>
+  </data>
+  <data name="InvalidEncoding" xml:space="preserve">
+    <value>The string might be incorrectly encoded or not encoded using this method</value>
+  </data>
+  <data name="ErrorHost" xml:space="preserve">
+    <value>Incorrect host</value>
+  </data>
+  <data name="ErrorPort" xml:space="preserve">
+    <value>Incorrect port</value>
+  </data>
+  <data name="CommunicationErrorQuestion" xml:space="preserve">
+    <value>A communication error has occured at request id: {0}. Would you like to continue?</value>
+  </data>
+  <data name="ExceptionHasOccured" xml:space="preserve">
+    <value>An exception has occured. Please check the log for the exception message.</value>
+  </data>
+  <data name="PlaybackLimit" xml:space="preserve">
+    <value>Maximum requests that can be re-sent at a time: {0}</value>
+  </data>
+  <data name="ClearWarning" xml:space="preserve">
+    <value>This will clear both the source and the traffic viewer file. Are you sure?</value>
+  </data>
+  <data name="ErrorOpen" xml:space="preserve">
+    <value>An error has occurred while opening the Traffic Viewer file. Check the log for more information</value>
+  </data>
+  <data name="ErrorUnknown" xml:space="preserve">
+    <value>An error has occurred check the log for more information.</value>
+  </data>
+  <data name="ImportError" xml:space="preserve">
+    <value>Error parsing file {0}. Exception message: {1}</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="InputUrl" xml:space="preserve">
+    <value>Please enter the url</value>
+  </data>
+  <data name="InputUrlInvalid" xml:space="preserve">
+    <value>Url might be invalid</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="InvalidXML" xml:space="preserve">
+    <value>Selected text is not valid xml</value>
+  </data>
+  <data name="Build" xml:space="preserve">
+    <value>Build</value>
+  </data>
+  <data name="Untitled" xml:space="preserve">
+    <value>Untitled</value>
+  </data>
+  <data name="ManualExploreBrowser" xml:space="preserve">
+    <value>Manual Explore Browser</value>
+  </data>
+  <data name="InvalidFilePath" xml:space="preserve">
+    <value>Invalid File Path</value>
+  </data>
+  <data name="WarnForwarding" xml:space="preserve">
+    <value>Enabling Traffic Server Forwarding might cause you to send attacks to public sites. Are you sure you want to do this?</value>
+  </data>
+  <data name="SetHttpClientError" xml:space="preserve">
+    <value>Could not set selected Http Client. Defaulting to the Traffic Viewer one.</value>
+  </data>
+  <data name="ExternalBrowserTextStarted" xml:space="preserve">
+    <value>Listening on host: {0} port: {1}. Please set your browser proxy settings to this address to capture requests.</value>
+  </data>
+  <data name="ExternalBrowserTextStopped" xml:space="preserve">
+    <value>Proxy stopped</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="EnterNewDescription" xml:space="preserve">
+    <value>Please enter the new description:</value>
+  </data>
+  <data name="RequestWasTrapped" xml:space="preserve">
+    <value>A request was trapped. You can now switch to the traffic editor and  edit the request. When you are done editing press F2 to commit your changes and click Release.</value>
+  </data>
+  <data name="ResponseWasTrapped" xml:space="preserve">
+    <value>A response was trapped. You can now switch to the traffic editor and  edit the response. When you are done editing press F2 to commit your changes and click Release.</value>
+  </data>
+  <data name="RequestTrappedTitle" xml:space="preserve">
+    <value>A request was trapped!</value>
+  </data>
+  <data name="ResponseTrappedTitle" xml:space="preserve">
+    <value>A response was trapped!</value>
+  </data>
+  <data name="UntrustedSSL" xml:space="preserve">
+    <value>The connection from the proxy to the site is untrusted. Would you like to continue?</value>
+  </data>
+  <data name="FormRequestString" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormRequestString.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ManInTheMiddle" xml:space="preserve">
+    <value>Man in the Middle</value>
+  </data>
+  <data name="Fuzzer" xml:space="preserve">
+    <value>Fuzzer</value>
+  </data>
+  <data name="SelectOneRequest" xml:space="preserve">
+    <value>Select one request</value>
+  </data>
+  <data name="FormExploiter" xml:space="preserve">
+    <value>XSS/CSRF Test Page</value>
+  </data>
+  <data name="EnterNewScheme" xml:space="preserve">
+    <value>Enter new scheme</value>
+  </data>
+  <data name="FormResponse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\formresponse.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Save_6530" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_6530.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="config" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\config.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pause1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrapRelease" xml:space="preserve">
+    <value>Release ({0})</value>
+  </data>
+  <data name="BinaryReverseProxy" xml:space="preserve">
+    <value>Binary Reverse Proxy</value>
+  </data>
+  <data name="CaptureProxy" xml:space="preserve">
+    <value>Capture Proxy</value>
+  </data>
+  <data name="DriveByAttackProxy" xml:space="preserve">
+    <value>Drive By Attack Proxy</value>
+  </data>
+  <data name="ReverseProxy" xml:space="preserve">
+    <value>Reverse Proxy</value>
+  </data>
+  <data name="SequentialAttackProxy" xml:space="preserve">
+    <value>Sequential Attack Proxy</value>
+  </data>
+  <data name="TrackingProxy" xml:space="preserve">
+    <value>Tracking Proxy</value>
+  </data>
+  <data name="TrafficFileProxy" xml:space="preserve">
+    <value>Traffic File Proxy</value>
+  </data>
+  <data name="clear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShowAllFiles_349" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\showallfiles_349.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScriptCrawlerExploiter" xml:space="preserve">
+    <value>Script Crawler</value>
+  </data>
+  <data name="DirectoryDoesNotExist" xml:space="preserve">
+    <value>Directory does not exist.</value>
+  </data>
+</root>

@@ -1,0 +1,3203 @@
+---- Begin Thread  5128[140c] <Tue, 04 Jan 11, 07:20:47:250> ----
+====> ************************************************
+====> ********  APPSCAN STARTING NEW SESSION  ********
+====> ************************************************
+---- End Thread  5128[140c] ----
+---- Begin Thread  7204[9ac] <Thu, 06 Jan 11, 13:52:42:651> ----
+====> ************************************************
+====> ********  APPSCAN STARTING NEW SESSION  ********
+====> ************************************************
+---- End Thread  7204[9ac] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:47:981> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+GET http://demo.testfire.net/ HTTP/1.1
+Accept: */*
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MS-RTC LM 8)
+Host: demo.testfire.net
+Proxy-Connection: Keep-Alive
+
+
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:47:981> ----
+====> AppScan finished getting the request from the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:47:981> ----
+====> AppScan proxy is working in by-pass mode.
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:059> ----
+====> AppScan connected to host demo.testfire.net:80
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:184> ----
+====> AppScan is sending the following request to the site
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+GET / HTTP/1.1
+Accept: */*
+Accept-Language: en-us
+Host: demo.testfire.net
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)
+
+
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:184> ----
+====> AppScan finished sending the request to the site
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:184> ----
+====> AppScan got the following response from the site
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+HTTP/1.1 200 OK
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Set-Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; path=/; HttpOnly
+Set-Cookie: amSessionId=141345182887; path=/
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/html; charset=utf-8
+Content-Length: 9605
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head id="_ctl0__ctl0_head"><title>
+	Altoro Mutual
+</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><link href="style.css" rel="stylesheet" type="text/css" /><meta name="description" content="Altoro Mutual offers a broad range of , private, retail and mortgage banking services to small and middle-market businesses and individuals."></head>
+<body style="margin-top:5px;">
+
+<div id="header" style="margin-bottom:5px; width: 99%;">
+  <form id="frmSearch" method="get" action="/search.aspx">
+	  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+		  <tr>
+		      <td rowspan="2"><a id="_ctl0__ctl0_HyperLink1" href="default.aspx" style="height:80px;width:183px;"><img src="images/logo.gif" border="0" /></a></td>
+			  <td align="right" valign="top">
+  			  <a id="_ctl0__ctl0_LoginLink" title="It does not appear that you have properly authenticated yourself.  Please click here to sign in." href="bank/login.aspx" style="color:Red;font-weight:bold;">Sign In</a> | <a id="_ctl0__ctl0_HyperLink3" href="default.aspx?content=inside_contact.htm">Contact Us</a> | <a id="_ctl0__ctl0_HyperLink4" href="feedback.aspx">Feedback</a> | <label for="txtSearch">Search</label>
+          <input type="text" name="txtSearch" id="txtSearch" accesskey="S" />
+          <input type="submit" value="Go" />
+			  </td>
+		  </tr>
+		  <tr>
+			  <td align="right" style="background-image:url(/images/gradient.jpg);padding:0px;margin:0px;"><img id="_ctl0__ctl0_Image1" src="images/header_pic.jpg" border="0" style="height:60px;width:354px;" /></td>
+		  </tr>
+	  </table>
+	</form>
+</div>
+
+<div id="wrapper" style="width: 99%;">
+    
+
+<table cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" class="bt br bb"><div id="Header1"><img id="_ctl0__ctl0_Content_Image1" src="images/pf_lock.gif" alt="Secure Login" align="absbottom" border="0" style="height:14px;width:12px;" /> &nbsp; <a id="_ctl0__ctl0_Content_AccountLink" title="You do not appear to have authenticated yourself with the application.  Click here to enter your valid username and password." class="focus" href="bank/login.aspx">ONLINE BANKING LOGIN</a></div></td>
+    <td width="25%" class="cc bt br bb"><div id="Header2"><a id="_ctl0__ctl0_Content_LinkHeader2" class="focus" href="default.aspx?content=personal.htm">PERSONAL</a></div></td>
+    <td width="25%" class="cc bt br bb"><div id="Header3"><a id="_ctl0__ctl0_Content_LinkHeader3" class="focus" href="default.aspx?content=business.htm">SMALL BUSINESS</a></div></td>
+    <td width="25%" class="cc bt bb"><div id="Header4"><a id="_ctl0__ctl0_Content_LinkHeader4" class="focus" href="default.aspx?content=inside.htm">INSIDE ALTORO MUTUAL</a></div></td>
+  </tr>
+  <tr>
+    <td valign="top" class="cc br bb">
+        <br style="line-height: 10px;"/>
+        <a id="_ctl0__ctl0_Content_CatLink1" class="subheader" href="default.aspx?content=personal.htm">PERSONAL</a>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink1" href="default.aspx?content=personal_deposit.htm">Deposit Product</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink2" href="default.aspx?content=personal_checking.htm">Checking</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink3" href="default.aspx?content=personal_loans.htm">Loan Products</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink4" href="default.aspx?content=personal_cards.htm">Cards</a></li>
+            <li><a id="_ctl0__ctl0_Con
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+tent_MenuHyperLink5" href="default.aspx?content=personal_investments.htm">Investments &amp; Insurance</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink6" href="default.aspx?content=personal_other.htm">Other Services</a></li>
+        </ul>
+
+        <a id="_ctl0__ctl0_Content_CatLink2" class="subheader" href="default.aspx?content=business.htm">SMALL BUSINESS</a>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink7" href="default.aspx?content=business_deposit.htm">Deposit Products</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink8" href="default.aspx?content=business_lending.htm">Lending Services</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink9" href="default.aspx?content=business_cards.htm">Cards</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink10" href="default.aspx?content=business_insurance.htm">Insurance</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink11" href="default.aspx?content=business_retirement.htm">Retirement</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink12" href="default.aspx?content=business_other.htm">Other Services</a></li>
+        </ul>
+
+        <a id="_ctl0__ctl0_Content_CatLink3" class="subheader" href="default.aspx?content=inside.htm">INSIDE ALTORO MUTUAL</a>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_Menu
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+HyperLink13" href="default.aspx?content=inside_about.htm">About Us</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink14" href="default.aspx?content=inside_contact.htm">Contact Us</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink15" href="cgi.exe">Locations</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink16" href="default.aspx?content=inside_investor.htm">Investor Relations</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink17" href="default.aspx?content=inside_press.htm">Press Room</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink18" href="default.aspx?content=inside_careers.htm">Careers</a></li>
+        </ul>
+    </td>
+    <td valign="top" colspan="3" class="bb">
+
+    <span id="_ctl0__ctl0_Content_Main_lblContent"><br /><table border=0 cellspacing=0 width="100%">  <tr>    <td width="33%" valign="top">        <b><a href="default.aspx?content=personal_savings.htm">Online Banking with FREE Online Bill Pay </a></b><br />        No stamps, envelopes, or checks to write give you more time to spend on the things you enjoy. <br />        <br />        <center><img src="images/home1.jpg" width="170" height="114" /></center>        <br />        <b><a href="default.aspx?content=personal_loans.htm">Real Estate Financing</a></b><br />        Fast. Simple. Professional. Whether you are preparing to buy, build, purchase land, or construct new space, let Altoro Mutual's premier real estate lenders help with financing. As a regional leader, we know the market, we understand the business, and we have the track record to prove it    </td>    <td width="33%" valign="top">        <center><img src="images/home2.jpg" width="170" height="128" /></center>        <br /><br/>        <b><a href="default.aspx?content=business_cards.htm">Business Credit Cards</a></b><br />        You're always looking for ways to improve your company's bottom line. You want to be informed, improve efficiency and control expenses. Now, you can do it all - with a business credit card account from Altoro Mutual.        <br />        <br />        <b><a href="default.aspx?content=business_retirement.htm">Retirement Solutions</a></b><br />        Retaining good employees is a tough task. See how Altoro Mutual can assist you in accomplishing this feat through effective Retirement Solutions.    </td>    <td width="33%" valign="top">        <b>Privacy and Security </b><br />        The 2000 employees of Altoro Mutual are dedicated to protecting your <a href="default.aspx?content=privacy.htm">privacy</a> and <a href="default.aspx?content=security.htm">security</a>. We pledge to provide you with the information and resources that you need to help secure your information and keep it confidential.  This is our promise.        <br /><br />        <center><img src="images/home3.jpg" width="170" height="113" /></center><br /><br />        <b><a href="survey_questions.aspx">Win an 8GB iPod Nano</a></b>        <br />        Completing this short survey will enter you in a draw for 1 of 50 iPod Nanos.  We look forward to hearing your important feedback.        <br /><br />    </td>  </tr></table></span>
+
+    </td>
+  </tr>
+</table>
+
+
+</div>
+
+<div id="footer" style="width: 99%;">
+    <a id="_ctl0__ctl0_HyperLink5" href="default.aspx?content=privacy.htm">Privacy Policy</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a id="_ctl0__ctl0_HyperLink6" href="default.aspx?content=security.htm">Security Statement</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    &copy; 2011 Altoro Mutual, Inc.
+
+    <div class="disclaimer">
+        The Altoro Mutual website is published by Watchfire, Inc. for the sole purpose of
+        demonstrating the effectiveness of Watchfire products in detecting web application
+        vulnerabilities and website defects. This site is not a real banking site. Similarities,
+        if any, to third party products and/or websites are purely coincidental. This site is
+        provided "as is" without warranty of any kind, either express or implied. Watchfire does
+        not assume any risk in relation to your use of this website. For additional Terms of Use,
+        please go to <a id="_ctl0__ctl0_HyperLink7" href="http://www.watchfire.com/statements/terms.aspx">http://www.watchfire.com/statements/terms.aspx</a>.<br /><br />
+
+        Copyright &copy; 2011, Watchfire Corporation, All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:590> ----
+====> AppScan finished getting the response from the site
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:48:652> ----
+====> Server connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:731> ----
+====> AppScan is sending the following response to the browser
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+HTTP/1.1 200 OK
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/html; charset=utf-8
+Content-Length: 9605
+Set-Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; path=/; HttpOnly
+Set-Cookie: amSessionId=141345182887; path=/
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head id="_ctl0__ctl0_head"><title>
+	Altoro Mutual
+</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><link href="style.css" rel="stylesheet" type="text/css" /><meta name="description" content="Altoro Mutual offers a broad range of , private, retail and mortgage banking services to small and middle-market businesses and individuals."></head>
+<body style="margin-top:5px;">
+
+<div id="header" style="margin-bottom:5px; width: 99%;">
+  <form id="frmSearch" method="get" action="/search.aspx">
+	  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+		  <tr>
+		      <td rowspan="2"><a id="_ctl0__ctl0_HyperLink1" href="default.aspx" style="height:80px;width:183px;"><img src="images/logo.gif" border="0" /></a></td>
+			  <td align="right" valign="top">
+  			  <a id="_ctl0__ctl0_LoginLink" title="It does not appear that you have properly authenticated yourself.  Please click here to sign in." href="bank/login.aspx" style="color:Red;font-weight:bold;">Sign In</a> | <a id="_ctl0__ctl0_HyperLink3" href="default.aspx?content=inside_contact.htm">Contact Us</a> | <a id="_ctl0__ctl0_HyperLink4" href="feedback.aspx">Feedback</a> | <label for="txtSearch">Search</label>
+          <input type="text" name="txtSearch" id="txtSearch" accesskey="S" />
+          <input type="submit" value="Go" />
+			  </td>
+		  </tr>
+		  <tr>
+			  <td align="right" style="background-image:url(/images/gradient.jpg);padding:0px;margin:0px;"><img id="_ctl0__ctl0_Image1" src="images/header_pic.jpg" border="0" style="height:60px;width:354px;" /></td>
+		  </tr>
+	  </table>
+	</form>
+</div>
+
+<div id="wrapper" style="width: 99%;">
+    
+
+<table cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" class="bt br bb"><div id="Header1"><img id="_ctl0__ctl0_Content_Image1" src="images/pf_lock.gif" alt="Secure Login" align="absbottom" border="0" style="height:14px;width:12px;" /> &nbsp; <a id="_ctl0__ctl0_Content_AccountLink" title="You do not appear to have authenticated yourself with the application.  Click here to enter your valid username and password." class="focus" href="bank/login.aspx">ONLINE BANKING LOGIN</a></div></td>
+    <td width="25%" class="cc bt br bb"><div id="Header2"><a id="_ctl0__ctl0_Content_LinkHeader2" class="focus" href="default.aspx?content=personal.htm">PERSONAL</a></div></td>
+    <td width="25%" class="cc bt br bb"><div id="Header3"><a id="_ctl0__ctl0_Content_LinkHeader3" class="focus" href="default.aspx?content=business.htm">SMALL BUSINESS</a></div></td>
+    <td width="25%" class="cc bt bb"><div id="Header4"><a id="_ctl0__ctl0_Content_LinkHeader4" class="focus" href="default.aspx?content=inside.htm">INSIDE ALTORO MUTUAL</a></div></td>
+  </tr>
+  <tr>
+    <td valign="top" class="cc br bb">
+        <br style="line-height: 10px;"/>
+        <a id="_ctl0__ctl0_Content_CatLink1" class="subheader" href="default.aspx?content=personal.htm">PERSONAL</a>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink1" href="default.aspx?content=personal_deposit.htm">Deposit Product</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink2" href="default.aspx?content=personal_checking.htm">Checking</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink3" href="default.aspx?content=personal_loans.htm">Loan Products</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink4" href="default.aspx?content=personal_cards.htm">Cards</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink5" href="default.aspx?content=personal_investments.htm">Investments &amp; Insurance</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink6" href="default.aspx?content=personal_other.htm">Other Services</a></li>
+        </ul>
+
+        <a id="_ctl0__ctl0_Content_CatLink2" class="subheader" href="default.aspx?content=business.htm">SMALL BUSINESS</a>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink7" href="default.aspx?content=business_deposit.htm">Deposit Products</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink8" href="default.aspx?content=business_lending.htm">Lending Services</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink9" href="default.aspx?content=business_cards.htm">Cards</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink10" href="default.aspx?content=business_insurance.htm">Insurance</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink11" href="default.aspx?content=business_retirement.htm">Retirement</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink12" href="default.aspx?content=business_other.htm">Other Services</a></li>
+        </ul>
+
+        <a id="_ctl0__ctl0_Content_CatLink3" class="subheader" href="default.aspx?content=inside.htm">INSIDE ALTORO MUTUAL</a>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink13" href="default.aspx?content=inside_about.htm">About Us</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink14" href="default.aspx?content=inside_contact.htm">Contact Us</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink15" href="cgi.exe">Locations</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink16" href="default.aspx?content=inside_investor.htm">Investor Relations</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink17" href="default.aspx?content=inside_press.htm">Press Room</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink18" href="default.aspx?content=inside_careers.htm">Careers</a></li>
+        </ul>
+    </td>
+    <td valign="top" colspan="3" class="bb">
+
+    <span id="_ctl0__ctl0_Content_Main_lblContent"><br /><table border=0 cellspacing=0 width="100%">  <tr>    <td width="33%" valign="top">        <b><a href="default.aspx?content=personal_savings.htm">Online Banking with FREE Online Bill Pay </a></b><br />        No stamps, envelopes, or checks to write give you more time to spend on the things you enjoy. <br />        <br />        <center><img src="images/home1.jpg" width="170" height="114" /></center>        <br />        <b><a href="default.aspx?content=personal_loans.htm">Real Estate Financing</a></b><br />        Fast. Simple. Professional. Whether you are preparing to buy, build, purchase land, or construct new space, let Altoro Mutual's premier real estate lenders help with financing. As a regional leader, we know the market, we understand the business, and we have the track record to prove it    </td>    <td width="33%" valign="top">        <center><img src="images/home2.jpg" width="170" height="128" /></center>        <br /><br/>        <b><a href="default.aspx?content=business_cards.htm">Business Credit Cards</a></b><br />        You're always looking for ways to improve your company's bottom line. You want to be informed, improve efficiency and control expenses. Now, you can do it all - with a business credit card account from Altoro Mutual.        <br />        <br />        <b><a href="default.aspx?content=business_retirement.htm">Retirement Solutions</a></b><br />        Retaining good employees is a tough task. See how Altoro Mutual can assist you in accomplishing this feat through effective Retirement Solutions.    </td>    <td width="33%" valign="top">        <b>Privacy and Security </b><br />        The 2000 employees of Altoro Mutual are dedicated to protecting your <a href="default.aspx?content=privacy.htm">privacy</a> and <a href="default.aspx?content=security.htm">security</a>. We pledge to provide you with the information and resources that you need to help secure your information and keep it confidential.  This is our promise.        <br /><br />        <center><img src="images/home3.jpg" width="170" height="113" /></center><br /><br />        <b><a href="survey_questions.aspx">Win an 8GB iPod Nano</a></b>        <br />        Completing this short survey will enter you in a draw for 1 of 50 iPod Nanos.  We look forward to hearing your important feedback.        <br /><br />    </td>  </tr></table></span>
+
+    </td>
+  </tr>
+</table>
+
+
+</div>
+
+<div id="footer" style="width: 99%;">
+    <a id="_ctl0__ctl0_HyperLink5" href="default.aspx?content=privacy.htm">Privacy Policy</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a id="_ctl0__ctl0_HyperLink6" href="default.aspx?content=security.htm">Security Statement</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    &copy; 2011 Altoro Mutual, Inc.
+
+    <div class="disclaimer">
+        The Altoro Mutual website is published by Watchfire, Inc. for the sole purpose of
+        demonstrating the effectiveness of Watchfire products in detecting web application
+        vulnerabilities and website defects. This site is not a real banking site. Similarities,
+        if any, to third party products and/or websites are purely coincidental. This site is
+        provided "as is" without warranty of any kind, either express or implied. Watchfire does
+        not assume any risk in relation to your use of this website. For additional Terms of Use,
+        please go to <a id="_ctl0__ctl0_HyperLink7" href="http://www.watchfire.com/statements/terms.aspx">http://www.watchfire.com/statements/terms.aspx</a>.<br /><br />
+
+        Copyright &copy; 2011, Watchfire Corporation, All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:731> ----
+====> AppScan finished sending the response to the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:731> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+GET http://demo.testfire.net/style.css HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Fri, 08 Dec 2006 20:14:56 GMT
+If-None-Match: "0e02c8751bc71:c4b"
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MS-RTC LM 8)
+Host: demo.testfire.net
+Proxy-Connection: Keep-Alive
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+
+
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:824> ----
+====> AppScan finished getting the request from the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:824> ----
+====> AppScan proxy is working in by-pass mode.
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:887> ----
+====> AppScan connected to host demo.testfire.net:80
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:887> ----
+====> AppScan is sending the following request to the site
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+GET /style.css HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Host: demo.testfire.net
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)
+
+
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:887> ----
+====> AppScan finished sending the request to the site
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:887> ----
+====> AppScan got the following response from the site
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:48:902> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+GET http://demo.testfire.net/images/logo.gif HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Fri, 08 Dec 2006 20:35:56 GMT
+If-None-Match: "09e317681bc71:c4b"
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MS-RTC LM 8)
+Host: demo.testfire.net
+Proxy-Connection: Keep-Alive
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+
+
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:48:902> ----
+====> AppScan finished getting the request from the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:48:902> ----
+====> AppScan proxy is working in by-pass mode.
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+HTTP/1.1 200 OK
+Content-Length: 1198
+Content-Type: text/css
+Last-Modified: Fri, 08 Dec 2006 20:14:56 GMT
+Accept-Ranges: bytes
+ETag: "0e02c8751bc71:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+
+body, table, td, p  {
+	color:#000000;
+	font: 10px Verdana, Arial, Sans-Serif;
+	line-height: 1.6;
+}
+form {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+ul, ol {
+	margin-top: 2px;
+	margin-bottom: 8px;
+}
+td, p {
+	margin: 10px;
+	padding: 3px 10px 3px 10px;
+}
+th {
+	text-align: left;
+}
+input {
+	color:#333366;
+	font: 11px Verdana, Arial, Sans-Serif;
+}
+h1 {
+	color:#00796C;
+	font: 22px Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	margin-top: 0px;
+	padding-top: 15px;
+	text-decoration:none;
+}
+h2 {
+	color: #333333;
+	font: 14px Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+}
+a {
+	color: #5811B0;
+}
+a:visited {
+	color:#5811B0;
+}
+a:hover {
+	color:#00796C;
+	text-decoration:none;
+}
+.focus {
+	font-weight: bold;
+}
+.credit {
+	color:#999999;
+	font-style: italic;
+	line-height:1.3;
+}
+.bt {
+	border-top: #5811B0 1px solid;
+}
+.br {
+	border-right: #5811B0 1px solid;
+}
+.bb {
+	border-bottom: #5811B0 1px solid;
+}
+.cc {
+	background-color: #BFD7DA;
+}
+.fl, .flp {
+	float: left;
+}
+.flp {
+	padding-top: 25px;
+}
+.disclaimer {
+	border: dashed 1px red;
+	margin-top: 10px;
+	padding: 10px;
+}
+.err {
+	background-color: #FFD0D0;
+	padding: 10px;
+}
+
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:48:934> ----
+====> AppScan finished getting the response from the site
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:49:481> ----
+====> Server connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:481> ----
+====> AppScan is sending the following response to the browser
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+HTTP/1.1 200 OK
+Content-Length: 1198
+Content-Type: text/css
+Last-Modified: Fri, 08 Dec 2006 20:14:56 GMT
+Accept-Ranges: bytes
+ETag: "0e02c8751bc71:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+
+body, table, td, p  {
+	color:#000000;
+	font: 10px Verdana, Arial, Sans-Serif;
+	line-height: 1.6;
+}
+form {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+ul, ol {
+	margin-top: 2px;
+	margin-bottom: 8px;
+}
+td, p {
+	margin: 10px;
+	padding: 3px 10px 3px 10px;
+}
+th {
+	text-align: left;
+}
+input {
+	color:#333366;
+	font: 11px Verdana, Arial, Sans-Serif;
+}
+h1 {
+	color:#00796C;
+	font: 22px Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	margin-top: 0px;
+	padding-top: 15px;
+	text-decoration:none;
+}
+h2 {
+	color: #333333;
+	font: 14px Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+}
+a {
+	color: #5811B0;
+}
+a:visited {
+	color:#5811B0;
+}
+a:hover {
+	color:#00796C;
+	text-decoration:none;
+}
+.focus {
+	font-weight: bold;
+}
+.credit {
+	color:#999999;
+	font-style: italic;
+	line-height:1.3;
+}
+.bt {
+	border-top: #5811B0 1px solid;
+}
+.br {
+	border-right: #5811B0 1px solid;
+}
+.bb {
+	border-bottom: #5811B0 1px solid;
+}
+.cc {
+	background-color: #BFD7DA;
+}
+.fl, .flp {
+	float: left;
+}
+.flp {
+	padding-top: 25px;
+}
+.disclaimer {
+	border: dashed 1px red;
+	margin-top: 10px;
+	padding: 10px;
+}
+.err {
+	background-color: #FFD0D0;
+	padding: 10px;
+}
+
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:481> ----
+====> AppScan finished sending the response to the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:481> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:481> ----
+====> AppScan connected to host demo.testfire.net:80
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:49:481> ----
+====> Browser connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:481> ----
+====> AppScan is sending the following request to the site
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+GET /images/logo.gif HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Host: demo.testfire.net
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)
+
+
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:481> ----
+====> AppScan finished sending the request to the site
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:481> ----
+====> AppScan got the following response from the site
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:481> ----
+====> Browser closed connection when reading a request
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:481> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+GET http://demo.testfire.net/images/header_pic.jpg HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Fri, 08 Dec 2006 20:12:08 GMT
+If-None-Match: "01ca2351bc71:c4b"
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MS-RTC LM 8)
+Host: demo.testfire.net
+Proxy-Connection: Keep-Alive
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+
+
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:481> ----
+====> AppScan finished getting the request from the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:481> ----
+====> AppScan proxy is working in by-pass mode.
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:543> ----
+====> AppScan connected to host demo.testfire.net:80
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:543> ----
+====> AppScan is sending the following request to the site
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+GET /images/header_pic.jpg HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Host: demo.testfire.net
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)
+
+
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:543> ----
+====> AppScan finished sending the request to the site
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:543> ----
+====> AppScan got the following response from the site
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+HTTP/1.1 200 OK
+Content-Length: 4989
+Content-Type: image/gif
+Last-Modified: Fri, 08 Dec 2006 20:35:56 GMT
+Accept-Ranges: bytes
+ETag: "09e317681bc71:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+
+GIF89aP ÷  2“‰„Ö´}FÂõñúòìùâÕñ3¼‚j+¸zÓ®çòñe®¦
+®iy¹²ÍåâÕñå}qšÊÅdÌ LÃìåö¨âÊøöü­gm²«QÆ•EÂÅáŞ©ÑÍ©„Ö%Œ‡{±n´æÑÙÉííõô­ÔĞ\©¡ñúö¢ÎÉ¬eu:¾®‹Ø÷üúS¥œÑ½é­äÍíùô–Ü¿zmÜíëu•hÍq4¼¡yÒ¼ÜØÓèæuÑ³“Û@ÀŠsµ®ĞæäÙòè8½…^É…QÅÂ¨âZ±„xµÙÕóùøŞôëÁëÙÆíİáõì½¶#·x™İÁ^³ˆ}åÚòÉ²åÔÂë¹èÔ-‘†¶–Ü_«£,¹~d"¶²p”ÆÁµuÂßÜ¿¤àôûø
+€sm0º¼éÖCœ“YÈ™Ê´æ˜lÎ»ŞÁ¦âN¢™ùıû^Ê’Û¼MÄ’¸šŞúøıŞîìqĞ¨Ù¹hÍ£±ÖÒ`ËèŞôæÜóÉîŞöúúÌîàåöïâğîêøótÑª)¹|ˆØ¶=¿ˆ¥áÈa´Ğğâ“fÌ:—mÏ¦@›‘6•‹ÛÍî¶—Ü°åÏéàôŞĞïˆÀºˆVÇŠXÈÇ¯äüúı Š~ºÛ×(ƒF”çİôÌ¶ç°l"‹€IÃ°ÙÄ¾³q›qĞÎºèèóòàïíÚìêÙëéÊãàëôóÒÀê¡àÅŸßÄ•gÍ~Õ°jÎ¤|oaËÃ½ «c²pışş£áÇûıı´tÓñä´sÎïáwÒ¬{núüüìùóKÄ‘y@¿üşıúıü«däñïûşı÷ûúßÑğÖÄë¤}ÓY¨Ÿêáõğ÷ö½¡ß×Æì´•ÛÏïâëãöGÂÍÈùüüÃªã\É›¼Ÿß¤áÇ(¸{§Õ%·zCÁŒ¿êØÄìÛ×òç‹Â¼Ìäâ¼µôùù!¶wŒ\É¬ˆ×Å¿ıüışışÎ¹èoĞ§¥ÕÖêèh'·Üóê‡ÀºİÎïÇâß{º³ïè÷œrĞUÇ—œŞÂ=™àÒğ/»€IŸ–E”x¸±Úº ylX°şşşÿÿÿ,    P  ş ÿ	H° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈ±£Ç CŠI²¤É“(Sª\É²¥Ë—0cÊœI³¦Í›8sêÜÉ³§ÏŸ@ƒ
+J´¨Ñ£H“*]Ê´©Ó§P£JJµªÕ«X³jİÊµ«×¯`ÃŠK–¥¿³eÓš<Ë¶­Û·pã¶M	êÂ1$µ›¥öé¶4bV)lSN®áÃo-Ó0É†c“ÄJ(J¿Ëüñmê@
+)Í6ó,ÅTT¯^-h8`BÄ°áZÜâ%—íÛSJ%Œá3¿0›™F8AÜÚ†.¬?ª¬¯`A,°Ì^áØ°-~óí›ÈîŞ˜ş#,5*8Ğy©SŸbX-ı«5Î¡KøÄ3H°®¨‹wÌ|ç›x¹aÂ Pr‡PÂ<ã¾($zéeğKGÜ€¡KÏEG‘39ˆ3ƒ2Oè—EŞxá˜ B¼
+Ü,Ç8™$Ã¥‚¯`rOtÜ(ÔÃ¯ôÉ+:¨°ÙØ’Á†-u8E–ŒóÅƒp±ˆ‰hQÄ	f¹2fL#x—ø.hò“IAåaÅ+K’
+½ğÊ	…„óŠylAjLÆ¡|“J?ıĞ€Ã%¯aGÑ0g™ ¾Ás¦Œuà[&CåÑG‘ô@§IBhğ¸´ü¨Fÿ«¤vêKRfÔF_0ÚÌÔE£ŒyÙ¥ã[=cx|‰À)6bæÁ;<4pC²İqÃœ´“Á äŞ4`n2AD#œ€r[@ÓH;Ğh€nBtBç-Ø ƒÉ-q$‚©EuQB	JôËÂ%ªÂÂs¤–
+Ä4q	] äÄ¤BÛP È-%$T«FP k?(\ƒb™à!ÿ¸â+¤´lš|m ƒ,bÃĞ2dÒ@AÁpBˆ¹9D‹HË0Â?[ò ?^ğPPtàEÑ0xA‰z $È‘ ±Fjp „Kj/ä¡/&şxK´ĞÂB-hAË=ø©-`Kà´ 0â´¬áÂAµÜ¸"5€°0~&K ÄA+k…/÷s€13ËE‘±˜íğQcÖˆÏmŠgó¾yñA6L<f^(ç@;ø–…Âò#ƒØÍâJôÀS"ÇAvX€ä?j¤¦CÇ%×£±hÑcßÅ’Mji tÊ+À, ˆ@ƒº§ü½‘Ú=Ç1ô
+@äúÒ_z¬š‚¤N#,@Aë5:Äe" „Ñ6ğPÂ7•ˆ†²zÇ—ßl=È°wÂˆp ğ0š>òá›é	$Í;!f´f0¤æÿşp ã,€ƒ€ 5k†
+Ô0ø©iêäSP`s°FjhE,Vc w{…vq¦†Éƒ-0UTƒLã^ñ‡”ä¡Æ% ÈF"#`ÅÜğ(À7C A~ö› =àE»ù xC 7Ğ`ğêaò#‰áer!‰H‚z0%?$Q‰C|
+‘7(È_‘¨à©Á…AÒ@¿ü£ê{…E„H©ŠAGjxa·ÔŒ±Œ	D#AZPÄ‚0Á{¯@…Õü`ıh‚1á–‰\À7g0ÔrwhŒSÁ ÂÚäA“¸ÿ×!}€-Ìb<wœ@Hˆò?•tÂÒ‚¡IÌ( ±ĞÅ<¹S…‚èéRT0şD>$A}¶0‚-}pFbbÔ˜T,HRóC$ŒÏ4ˆ_!M†ÌíÓØ¦‡<Âp2ê!˜KD’)İ
+$ÑºÌ
+ÌóFªéÄLrË`fÃˆ<å›İô?’à„7Ôqƒ"üƒÜ	Ãòş
+Aî0–	ßIÿ!0Õs ôH
+‚†÷½B
+&•¢A©R–º” 0%£L£é‹ÆT xÔÈ|ÊÇb°E"[`çÔAJ]µ G%á@tÁÕË¼© hõÍ1¢´úã«¾qÂ%ş"P0m Ñ(*fÈA¤F0ÿ@I_¡Kø%
+®_Û>(Îu°)%ÈJ_ÑÒƒ$šÉMH¸±0vaåfG"AYF¡ ]‚ÈAùá,@ã½&ğ¬$MP§‡´ŸZë?ªÀwdìä%tóõòãI@iù1w$‡ "ˆÿ^€¨â—â‘°ñªXL#—Eit9éV× ×]lv	bT¤áZ6mÑƒ;Š—#“-o?<‘^‡D£:üÏj)Zà3§È,ğÁ-D¯¼Œàº^Ü– ŞÀ‹’î¬àµ©Ø+ü0[ˆNCj
+şAX½‚ÍÍ-æG\XêŒÎTlAfZS¸ ~R`jhlãv¤§:îÀüoX5ÈR
+Wh9eä'Y Ã¨-fRH`¨èªÔ«ò•²…Gg[ wÒyCçâI *pĞ+$çYà®ø“s«u­SXX &¾³@R¼gÆ$<rf^ møÁ{„Hd1âÍD÷ƒŒvÈ— í›\loÒÌ­¥×ù^ÆQG”WYPQ„mš‚Y²mÌTÌÂğkâ‡ş£úŠA.ü
+M¸4Îl¯ı`[×™.vvU@!-œ¢£ÿ@ã¢^CoDÖ¦A¶2ÿs³BHyÊ)ñéƒhâşS÷‰Nd¦<œÜ],X£0}ƒ`¾jñû.3‘>ÀĞ¯ÂÙ‡¬®	ø!Ñ-±aÂ‡Ô €„±ÿ!ï-€s9ÂÆk,íg$‚Öî‡F¾`ï¢pCöƒPtÃ””x‘@ìó«¶ ªö!FNî( †+õ@Ì
+ƒn0­¡ü`…wÒ…%¼Âhn_²Q+L4p R…B&ÓQÙÇF}]gƒ¤ß¯èÛ¢l´¦]E6Ğ`@‡ãÿ˜vEV÷FÑ]!ĞàN€
+ì•éålÆ 8şñ%mz€BSçbóüALxJ] ş8§o¦p¯°ÃªÙ†Eeå'MŸ €áğAp° RáUGgmÆRA©hW¾•]" ƒ¶{ÉçvÑ2ÍwmÏ'.ç’šv¶3xE&4w¬pù@" [Èó
+70
+œÀBKyFs‚¤[—1& 
+ï  ª4~A¤/À>p{‚7F$€’cQĞÁ€“³QK`Ga˜°QÌÄ{DS‘?÷ †a£ò
+È§|q+¹‚‹özğs‡gÀõ0o„7Ñ< ‘ ‡ğÿ¬àV±W6ÈV†DĞr˜Á
+vÇ0oQWK€€ñ7õ
+Xp:¡©¡{±G‡	ô`(y `Y'N·'df’¸`G] Z ØTS˜P'H€K[ÄrøŠ‚ŒÂc#xr`g _ñŒÈP5MÕ‚ÿ Æóà`ÿpBx<™àd¡¤~a”x<+PŒÓ‰!W8uÚà=°`ği0Gçs‚ş8F€ª¡	i€¡'Úp†÷ Ó` ©ÁÈ…†QÃe¼ ª€G’D‚àÕ'UR‡!x^=¶/ÈÿJDÅú ¢@‰šQ6€yRfˆZ¥ ëÖm+ HÌÃ”“àÇãß ‰ÑE¢gÁ4¨ñ¸°…îô ?ò
+v`/€MéáKq
+D¢?'Àh?¯&·ptú³
+I0'¯à•Ÿ÷!ÌĞÎXY—å
+`Œi•Àá
+É˜;ğZÁ°“¹Lõêp àCàS  R)ï „@	C0@°ºp0™† 69U  ’00•Ğ
+1€Š :€¬÷i€ V9Ü 	:ğÕT- 	Ö€´` |`¿°
+Äy?ÿ¡Ï°°  •Æ8
+÷Ğ	psàDÿ ÄÙgÿ`o
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+` ¶Ğ	V R!¸@œ§GvÙ {E›`˜‡Ù@%T}± (a
+5@NãTNZ¡"a	lğM¡ıĞGd¡ ªñ 
+dà’JtÿĞ!Ú¢±f@Ê¡®;úà¢:jˆ@­p 4Ê(1;\âQ`
+u°£ ZÒP Aj^½Â%oQŸ› 
+O ¤dñM
+¥Œâ(B¥†±\@à	eÀ¥Y1 !P  *¦®“%[b¦±ñÊ0_ğfà §ÿNQî`éà&*¦_0"%Â§T:à¤Œò@Peñ€¨CQP5 Š§PøA©¬zå‰03ÚĞ­À\°Ÿ
+ª5ËÀĞ
+½¦xÚ:40‰×ÑªÌÊ9 «­Ó(ğ8Àc@oÊ«&1 Œ0Ì€€wZ¬Æ:9Ğ¬ì*0§8  ÄÚ:€à	)`QP‡Ê­Qufà(0¯æJ¯€m)íú°ˆç°	3ĞåºGW€@@ÀP‹Ğ¯şú°! lÀd (p	KYMĞÿ3°	Ÿ@N{³TŠ,ò @šh@ À‰ 
+,@Î ²dQÎ@, 
+‰À @û²>u  ‰À6‹³bÛª@°	d ëp˜Mp ( â@5l—Pö°À¢HÑ°öP—l5@â (p «µ‰ÆµdÀë:¶–‹³P —À5 ½à²bÚWğ(  @ ƒ ·×9À\ 
+Pp¦°ˆ`P‹0ñ@ 0 Ğ‘PæÀhş`å	mP½K 8º–P Ä€Ë`
+ç ÒÀl)p
+ÿ‡;â €_pë¸‡y½ğ5ÀçP {¹ğ¿ş0 ğ	eÀ3 4P¾æÛ¿ş«µM@0PŸP •+¿
+¼ÀqA À\°	8ğğüû¿œÁ/Ó_  ?€›À,P ÀÀ&|Â\2 –c@
+†;@Ğµ\Ã!Ø¶½ ƒ0·Ô0!`		ŒÂB<ÄÍZP Q0\À€©ğĞã{Á6L£¢û½ 
+8ÀÌÀcàD\Æf,Äğ·¦0Ò XÊÆ€d0?à@ Ğ(@W²WpĞM i†Ü:†,„¼ğ4€½   ğ©‹ÆÀ›Ê 
+c`
+!P zû¾g|Ê¨œÊª¼Ê¬ÜÊ®üÊ°Ë²<Ë´\Ë¶|Ë¸œËÌ:²¼ÜË¾üËÀÌÂ<ÌÄ\ÌÆ|ÌÈœÌ ;
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:590> ----
+====> AppScan finished getting the response from the site
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:49:590> ----
+====> Server connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:590> ----
+====> AppScan is sending the following response to the browser
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+HTTP/1.1 200 OK
+Content-Length: 4989
+Content-Type: image/gif
+Last-Modified: Fri, 08 Dec 2006 20:35:56 GMT
+Accept-Ranges: bytes
+ETag: "09e317681bc71:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+
+GIF89aP ÷  2“‰„Ö´}FÂõñúòìùâÕñ3¼‚j+¸zÓ®çòñe®¦
+®iy¹²ÍåâÕñå}qšÊÅdÌ LÃìåö¨âÊøöü­gm²«QÆ•EÂÅáŞ©ÑÍ©„Ö%Œ‡{±n´æÑÙÉííõô­ÔĞ\©¡ñúö¢ÎÉ¬eu:¾®‹Ø÷üúS¥œÑ½é­äÍíùô–Ü¿zmÜíëu•hÍq4¼¡yÒ¼ÜØÓèæuÑ³“Û@ÀŠsµ®ĞæäÙòè8½…^É…QÅÂ¨âZ±„xµÙÕóùøŞôëÁëÙÆíİáõì½¶#·x™İÁ^³ˆ}åÚòÉ²åÔÂë¹èÔ-‘†¶–Ü_«£,¹~d"¶²p”ÆÁµuÂßÜ¿¤àôûø
+€sm0º¼éÖCœ“YÈ™Ê´æ˜lÎ»ŞÁ¦âN¢™ùıû^Ê’Û¼MÄ’¸šŞúøıŞîìqĞ¨Ù¹hÍ£±ÖÒ`ËèŞôæÜóÉîŞöúúÌîàåöïâğîêøótÑª)¹|ˆØ¶=¿ˆ¥áÈa´Ğğâ“fÌ:—mÏ¦@›‘6•‹ÛÍî¶—Ü°åÏéàôŞĞïˆÀºˆVÇŠXÈÇ¯äüúı Š~ºÛ×(ƒF”çİôÌ¶ç°l"‹€IÃ°ÙÄ¾³q›qĞÎºèèóòàïíÚìêÙëéÊãàëôóÒÀê¡àÅŸßÄ•gÍ~Õ°jÎ¤|oaËÃ½ «c²pışş£áÇûıı´tÓñä´sÎïáwÒ¬{núüüìùóKÄ‘y@¿üşıúıü«däñïûşı÷ûúßÑğÖÄë¤}ÓY¨Ÿêáõğ÷ö½¡ß×Æì´•ÛÏïâëãöGÂÍÈùüüÃªã\É›¼Ÿß¤áÇ(¸{§Õ%·zCÁŒ¿êØÄìÛ×òç‹Â¼Ìäâ¼µôùù!¶wŒ\É¬ˆ×Å¿ıüışışÎ¹èoĞ§¥ÕÖêèh'·Üóê‡ÀºİÎïÇâß{º³ïè÷œrĞUÇ—œŞÂ=™àÒğ/»€IŸ–E”x¸±Úº ylX°şşşÿÿÿ,    P  ş ÿ	H° Áƒ*\È°¡Ã‡#JœH±¢Å‹3jÜÈ±£Ç CŠI²¤É“(Sª\É²¥Ë—0cÊœI³¦Í›8sêÜÉ³§ÏŸ@ƒ
+J´¨Ñ£H“*]Ê´©Ó§P£JJµªÕ«X³jİÊµ«×¯`ÃŠK–¥¿³eÓš<Ë¶­Û·pã¶M	êÂ1$µ›¥öé¶4bV)lSN®áÃo-Ó0É†c“ÄJ(J¿Ëüñmê@
+)Í6ó,ÅTT¯^-h8`BÄ°áZÜâ%—íÛSJ%Œá3¿0›™F8AÜÚ†.¬?ª¬¯`A,°Ì^áØ°-~óí›ÈîŞ˜ş#,5*8Ğy©SŸbX-ı«5Î¡KøÄ3H°®¨‹wÌ|ç›x¹aÂ Pr‡PÂ<ã¾($zéeğKGÜ€¡KÏEG‘39ˆ3ƒ2Oè—EŞxá˜ B¼
+Ü,Ç8™$Ã¥‚¯`rOtÜ(ÔÃ¯ôÉ+:¨°ÙØ’Á†-u8E–ŒóÅƒp±ˆ‰hQÄ	f¹2fL#x—ø.hò“IAåaÅ+K’
+½ğÊ	…„óŠylAjLÆ¡|“J?ıĞ€Ã%¯aGÑ0g™ ¾Ás¦Œuà[&CåÑG‘ô@§IBhğ¸´ü¨Fÿ«¤vêKRfÔF_0ÚÌÔE£ŒyÙ¥ã[=cx|‰À)6bæÁ;<4pC²İqÃœ´“Á äŞ4`n2AD#œ€r[@ÓH;Ğh€nBtBç-Ø ƒÉ-q$‚©EuQB	JôËÂ%ªÂÂs¤–
+Ä4q	] äÄ¤BÛP È-%$T«FP k?(\ƒb™à!ÿ¸â+¤´lš|m ƒ,bÃĞ2dÒ@AÁpBˆ¹9D‹HË0Â?[ò ?^ğPPtàEÑ0xA‰z $È‘ ±Fjp „Kj/ä¡/&şxK´ĞÂB-hAË=ø©-`Kà´ 0â´¬áÂAµÜ¸"5€°0~&K ÄA+k…/÷s€13ËE‘±˜íğQcÖˆÏmŠgó¾yñA6L<f^(ç@;ø–…Âò#ƒØÍâJôÀS"ÇAvX€ä?j¤¦CÇ%×£±hÑcßÅ’Mji tÊ+À, ˆ@ƒº§ü½‘Ú=Ç1ô
+@äúÒ_z¬š‚¤N#,@Aë5:Äe" „Ñ6ğPÂ7•ˆ†²zÇ—ßl=È°wÂˆp ğ0š>òá›é	$Í;!f´f0¤æÿşp ã,€ƒ€ 5k†
+Ô0ø©iêäSP`s°FjhE,Vc w{…vq¦†Éƒ-0UTƒLã^ñ‡”ä¡Æ% ÈF"#`ÅÜğ(À7C A~ö› =àE»ù xC 7Ğ`ğêaò#‰áer!‰H‚z0%?$Q‰C|
+‘7(È_‘¨à©Á…AÒ@¿ü£ê{…E„H©ŠAGjxa·ÔŒ±Œ	D#AZPÄ‚0Á{¯@…Õü`ıh‚1á–‰\À7g0ÔrwhŒSÁ ÂÚäA“¸ÿ×!}€-Ìb<wœ@Hˆò?•tÂÒ‚¡IÌ( ±ĞÅ<¹S…‚èéRT0şD>$A}¶0‚-}pFbbÔ˜T,HRóC$ŒÏ4ˆ_!M†ÌíÓØ¦‡<Âp2ê!˜KD’)İ
+$ÑºÌ
+ÌóFªéÄLrË`fÃˆ<å›İô?’à„7Ôqƒ"üƒÜ	Ãòş
+Aî0–	ßIÿ!0Õs ôH
+‚†÷½B
+&•¢A©R–º” 0%£L£é‹ÆT xÔÈ|ÊÇb°E"[`çÔAJ]µ G%á@tÁÕË¼© hõÍ1¢´úã«¾qÂ%ş"P0m Ñ(*fÈA¤F0ÿ@I_¡Kø%
+®_Û>(Îu°)%ÈJ_ÑÒƒ$šÉMH¸±0vaåfG"AYF¡ ]‚ÈAùá,@ã½&ğ¬$MP§‡´ŸZë?ªÀwdìä%tóõòãI@iù1w$‡ "ˆÿ^€¨â—â‘°ñªXL#—Eit9éV× ×]lv	bT¤áZ6mÑƒ;Š—#“-o?<‘^‡D£:üÏj)Zà3§È,ğÁ-D¯¼Œàº^Ü– ŞÀ‹’î¬àµ©Ø+ü0[ˆNCj
+şAX½‚ÍÍ-æG\XêŒÎTlAfZS¸ ~R`jhlãv¤§:îÀüoX5ÈR
+Wh9eä'Y Ã¨-fRH`¨èªÔ«ò•²…Gg[ wÒyCçâI *pĞ+$çYà®ø“s«u­SXX &¾³@R¼gÆ$<rf^ møÁ{„Hd1âÍD÷ƒŒvÈ— í›\loÒÌ­¥×ù^ÆQG”WYPQ„mš‚Y²mÌTÌÂğkâ‡ş£úŠA.ü
+M¸4Îl¯ı`[×™.vvU@!-œ¢£ÿ@ã¢^CoDÖ¦A¶2ÿs³BHyÊ)ñéƒhâşS÷‰Nd¦<œÜ],X£0}ƒ`¾jñû.3‘>ÀĞ¯ÂÙ‡¬®	ø!Ñ-±aÂ‡Ô €„±ÿ!ï-€s9ÂÆk,íg$‚Öî‡F¾`ï¢pCöƒPtÃ””x‘@ìó«¶ ªö!FNî( †+õ@Ì
+ƒn0­¡ü`…wÒ…%¼Âhn_²Q+L4p R…B&ÓQÙÇF}]gƒ¤ß¯èÛ¢l´¦]E6Ğ`@‡ãÿ˜vEV÷FÑ]!ĞàN€
+ì•éålÆ 8şñ%mz€BSçbóüALxJ] ş8§o¦p¯°ÃªÙ†Eeå'MŸ €áğAp° RáUGgmÆRA©hW¾•]" ƒ¶{ÉçvÑ2ÍwmÏ'.ç’šv¶3xE&4w¬pù@" [Èó
+70
+œÀBKyFs‚¤[—1& 
+ï  ª4~A¤/À>p{‚7F$€’cQĞÁ€“³QK`Ga˜°QÌÄ{DS‘?÷ †a£ò
+È§|q+¹‚‹özğs‡gÀõ0o„7Ñ< ‘ ‡ğÿ¬àV±W6ÈV†DĞr˜Á
+vÇ0oQWK€€ñ7õ
+Xp:¡©¡{±G‡	ô`(y `Y'N·'df’¸`G] Z ØTS˜P'H€K[ÄrøŠ‚ŒÂc#xr`g _ñŒÈP5MÕ‚ÿ Æóà`ÿpBx<™àd¡¤~a”x<+PŒÓ‰!W8uÚà=°`ği0Gçs‚ş8F€ª¡	i€¡'Úp†÷ Ó` ©ÁÈ…†QÃe¼ ª€G’D‚àÕ'UR‡!x^=¶/ÈÿJDÅú ¢@‰šQ6€yRfˆZ¥ ëÖm+ HÌÃ”“àÇãß ‰ÑE¢gÁ4¨ñ¸°…îô ?ò
+v`/€MéáKq
+D¢?'Àh?¯&·ptú³
+I0'¯à•Ÿ÷!ÌĞÎXY—å
+`Œi•Àá
+É˜;ğZÁ°“¹Lõêp àCàS  R)ï „@	C0@°ºp0™† 69U  ’00•Ğ
+1€Š :€¬÷i€ V9Ü 	:ğÕT- 	Ö€´` |`¿°
+Äy?ÿ¡Ï°°  •Æ8
+÷Ğ	psàDÿ ÄÙgÿ`o` ¶Ğ	V R!¸@œ§GvÙ {E›`˜‡Ù@%T}± (a
+5@NãTNZ¡"a	lğM¡ıĞGd¡ ªñ 
+dà’JtÿĞ!Ú¢±f@Ê¡®;úà¢:jˆ@­p 4Ê(1;\âQ`
+u°£ ZÒP Aj^½Â%oQŸ› 
+O ¤dñM
+¥Œâ(B¥†±\@à	eÀ¥Y1 !P  *¦®“%[b¦±ñÊ0_ğfà §ÿNQî`éà&*¦_0"%Â§T:à¤Œò@Peñ€¨CQP5 Š§PøA©¬zå‰03ÚĞ­À\°Ÿ
+ª5ËÀĞ
+½¦xÚ:40‰×ÑªÌÊ9 «­Ó(ğ8Àc@oÊ«&1 Œ0Ì€€wZ¬Æ:9Ğ¬ì*0§8  ÄÚ:€à	)`QP‡Ê­Qufà(0¯æJ¯€m)íú°ˆç°	3ĞåºGW€@@ÀP‹Ğ¯şú°! lÀd (p	KYMĞÿ3°	Ÿ@N{³TŠ,ò @šh@ À‰ 
+,@Î ²dQÎ@, 
+‰À @û²>u  ‰À6‹³bÛª@°	d ëp˜Mp ( â@5l—Pö°À¢HÑ°öP—l5@â (p «µ‰ÆµdÀë:¶–‹³P —À5 ½à²bÚWğ(  @ ƒ ·×9À\ 
+Pp¦°ˆ`P‹0ñ@ 0 Ğ‘PæÀhş`å	mP½K 8º–P Ä€Ë`
+ç ÒÀl)p
+ÿ‡;â €_pë¸‡y½ğ5ÀçP {¹ğ¿ş0 ğ	eÀ3 4P¾æÛ¿ş«µM@0PŸP •+¿
+¼ÀqA À\°	8ğğüû¿œÁ/Ó_  ?€›À,P ÀÀ&|Â\2 –c@
+†;@Ğµ\Ã!Ø¶½ ƒ0·Ô0!`		ŒÂB<ÄÍZP Q0\À€©ğĞã{Á6L£¢û½ 
+8ÀÌÀcàD\Æf,Äğ·¦0Ò XÊÆ€d0?à@ Ğ(@W²WpĞM i†Ü:†,„¼ğ4€½   ğ©‹ÆÀ›Ê 
+c`
+!P zû¾g|Ê¨œÊª¼Ê¬ÜÊ®üÊ°Ë²<Ë´\Ë¶|Ë¸œËÌ:²¼ÜË¾üËÀÌÂ<ÌÄ\ÌÆ|ÌÈœÌ ;
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:590> ----
+====> AppScan finished sending the response to the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:590> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:49:606> ----
+====> Browser connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:606> ----
+====> Browser closed connection when reading a request
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:606> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[1ac8] ----
+
+---- Begin Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+GET http://demo.testfire.net/images/pf_lock.gif HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Tue, 24 Jan 2006 21:45:54 GMT
+If-None-Match: "01598d2f21c61:c4b"
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MS-RTC LM 8)
+Host: demo.testfire.net
+Proxy-Connection: Keep-Alive
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+
+
+---- End Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:606> ----
+====> AppScan finished getting the request from the browser
+---- End Thread  7204[1ac8] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:606> ----
+====> AppScan proxy is working in by-pass mode.
+---- End Thread  7204[1ac8] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+HTTP/1.1 200 OK
+Content-Length: 16209
+Content-Type: image/jpeg
+Last-Modified: Fri, 08 Dec 2006 20:12:08 GMT
+Accept-Ranges: bytes
+ETag: "01ca2351bc71:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+
+ÿØÿà JFIF  H H  ÿÛ C 			
+
+
+
+
+
+	
+
+
+ÿÛ C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ÿÂ  <b ÿÄ             	ÿÄ             ÿÚ    ¾ÊRŞUYbbSUÄš²ğeà9£Bb•”·< E’40¹Úİ$ı€š‹~¶¯äi¨D¤`J³jIĞ]ğŸê\­)Ù‡dc
+ŠúÈçl.g3¸VŸ©öO0]6ç§ºTú'Ÿ¹é—^òLK´/©şnh`XY­ BVõO]KÏÓ‘a0Ç\ŠgŸ™½©F48S¹,ém’GQÆ°šëc…‹Åkòôô4$Ç>u…b¡êëSpÜÚíd®b8]©¥mH(ÆesW7–­İÖô*İ×§Ô¢Ö•İò¯Xÿ OÀq,IóÔzoæí¬—İŠœ# 3&.­¹ÜŞÍ¶!ß¤ãÃ®J[QÊ.ËšÑŠ®cûGeQ¡I]Ğ\½Œ½È÷†«ÅMºÜ;8îã6]‡˜)mrrWxãó–/›ÓcÕ}LÜ¼8;.Éãëcl7Ê„ÉøüK°=G¦şcXÏ¸…©1.%[‰Şj‡”ë3p¶Dà=©B¹´¬˜àÃjv:î#¾‡"•N¹Œ§­¢zQ8+]=×tëÓ€_ú¤ß³œ££ŸqdasCIQõkOç‘j~¥=gƒ¡ìûÖx#­
+Ä±+%Óúç9éØƒĞ÷1.f•k©Şb†Öhiˆ¤Àµ}^
+`ì¤æÑ£GsÎÈëo¯43µ&;ê·w¦ÙıKuÉk9ãSñ]¯·õ"rV(%Ry«†ÖÇÄB'KÖ'lpÃµ}Â÷VôXjlzÇ:>‰bV¨ôÚ~ZªÉÎX¦¼%Pœ¾’gš†sy“½ÈsbÛY×¤ĞyuÉÌb3w#¿Co¾Ó®ÏŸ×¨Ö²ëe-áaY³û€Eç^Em®|Åø¯4Ë™×&iãa6qñ8¸%G×4FæéUöá&·æp»ï‰Í/øÆ%‰xë½FJÜ$’a
+˜!sz6&D‹é¢:ÓO
+8—#KRaç“"SjëêÓûH¨µ,„
+ZI¾Ğo&ƒwuŸ47&H›Ñ*êi¹r9ç&FÅ?NÖÖ ó}Ûâr‹cÑ*¥Oªye<¿Ä©'Yè–FÖ?©ÄÙÒöBœ¡·!Îäu&æ”£ ùLn-Ê*R‘$Eâ®ıÛÔüë5ÃƒÒ».4âÂp ëÚ]JŸt¦*ıç¢b9×Øš"%µ™|Ó;#IÑ<ÿ Š^º#¦Y~=SËÄ±/ÿÄ '          !"$ÿÚ  †=4¿.sä°Ñ¼±aÍŒÆê±a[ÏûÏ›—ºXäÖ=åÛA'äeÛªß<'õ”ãÉéù–í_…½ˆw5øƒ«õÎlû×úôm¶6|ãH»
+ÈÇ7`ÏÑ Ÿß}RîÃ-¯]$Å®~×	xtùEa¤ì3®÷¤ÏC´Ñ–xô£AW›~ sa64f»· 3[[í¢UC§%œ±Ó(Ùy’D`.û3Úm°D©;hØqá‡¨Õ'ÖÍ4^î*“pPõ“Q—kÁ–ãÒ?ƒ}ìë¡ö™Z˜u’éq‘çDz¬õö=”+9ZÄ¿¯¾?ŠÌ^B»­˜ÙŠoLÅHåæŒ')‘`&©HTªôæºh(ôæ#æ¡×ë+Y[©¸$‡ßÃÄyÓÊÍ,P¡]fJ
+pÍ?×à’©Í‰Xİñ«ò¤5,Jêbáhó½OœQ«rÏµ±’»LƒÄîÔ–\±±Üô¨ÎàiñzçLl!(¤ÖhÄ‹á&zD·3lCÚëã€¨/5,	TJ,ÒÃT ×H˜ ¸MW¶¶&y)? ‘^ôE_u0ŞœLØÃûì”ÒR‰ç.
+°GîÏ6+}3Õöéõ“¹˜JWX„tºsYv/<‚ÉÇ€˜õ–!F~±šFÙ/Z¸“ÌeLùM2³¾”‹ø9óºy†+¿€aaÂ¯§”èd
+¯\*ÜG:éş˜‰ëTïLâ\àsYzñ±auòfRAGpSU[á¦íw³id™yPË
+u]0}b]6°±™+#*•Œ¥Ğ>$Æ–…U«½–­b¾ösş™ëº=4½}¥&ãooÔJrAZŠº|oÔë¾†xdRÎ&‘¯\±`+fF…:¹^]ƒä5ØÚ×ì‚
+ª°°iöó
+L|Ş’zOc¯m­7†q–y]ĞÊWyÓÆºÍ¤9Ùs-}$%ÓÜ,=²¸jÇÚÈ ­W,êuğ˜ƒa•êFVÓ"Á4Í,²£§Hx36hÒ`ŸzölNİ­µ…ëj¢¶æ´x‰UØ}ĞşÖß}>RuVv€ØcÛdôÈ>º
+cõçYkíÏ1Ëp¾ë ,5R0S[Â9¦­v®¡ò]LKhİâôõqçúüş)š;‘`pnfØY¡t\BÃáõ©Î;SìÁ®KÁ›‘¸1%iºi—XÚ-"•ãÙ‚ö]èåçQ¨öŸE5	—B¸„UJÓá¥¾²FF¸sµ÷¨w${‡Xí2û¶Ç‡[êô_çªx€í¾µ¢Nºm	5ó†˜è’=Úi¨‘æ_Nu|ÿ &L VºÌ;Kaú¨efa”›Ù–,Q»Y™Óìk]9d÷Í/vU
+Ïb¸¡ÕÛWÜm¬RDâ=s‡äæ¬ìé7 š¦4ö(Óı†›|I¤?‘
+>Ö"æG,ó½Ä{OdÎòL×IUJŞu}]7ˆ«è…ÑûQí½‘Rgu.*Ó8µã¥ì]„}ÏÃíÊ—¯iSŞ×’áÍÕÃÛÚ
+$+ëæqf\q½krHÓìúÉ)¸Îz‹É. Îz®²¸rVÍ§Ğ‚ähšVÙÛÁ
+mÖE¹OQİgá¼ì;{ŸÕ ‹ô ÜŒÇ¶u«!Û¥M®8a™xÒl9ÇüºI¶u(™b†#‰Ÿ›•.¼ÁSM´æ‘<±¯]ô´zÅÒg;mÔ›gWçsÙªznØ7æ©!î±v
+~µ×Šê
+ö®­&ûr¯Š¶‡áø½‘ŒÄOe53ô‰¦ßMw*^uH1	ZòÙ:È$Æ@açX¸¼ş	'	 x0!ü?ÿÄ ;      !1"A2Qa#3Rq B‘Á%4±Òğ5Cbr“ÿÚ ?HÒ'İ+]©íÔ5´74¤+Xnm¥À:EÛÁT_È¹QjâÛ`BZµ‚Da!ÿ —zzë
+ğ˜a¤©±M°]ÕPÙK(¤{ª¾¨÷UıP%Â|Fb´µT"³»%M)yŒÆ‚…7­wşŞÌ‹…`¸æh—ÃñB°Û¦ß‡JÜ­â®•ßBbw&ğXó˜S“Ì…–Â–¦ïÛ²A¥}S÷Œ›ÃÌg;ÌeŒÂ]Kéğrí	4D¨¨BšPwÖ0L“Â<{nIƒ:b–”­VÊ
+”.²• Ûí[…9{7ä‰©ù÷¶”â %6)IêHT… ¤V£ª½£…ü*Ãs^5Šã
+q
+#DX@&ÑU¤´Ö¾Q‡d¬›„`iÇ³#Î†_R½İ”[ÍZAñ+°ÓÊƒn­@ŒÍ’òÜÎZ9“+<µË¡A.¶å9“±Ópj<÷ÜëOmmlÁ©hª OxZDZBª"A×Tå…ˆ@&Üà&Ñ
+ÃCJCÌU0¦–Šéå*¢"CÃX˜U¬(Á›å´¬&cœ(aaÅ„J¡K‰[õ¦4Šˆ3SAãnĞoqË‰„8@Ö9‚šFg5[Ÿíìáœ¤Ôæ|Ãƒ*µÔ(Ó²R I>‚3ó®9ÄY§X•RZ[ê<Ã¢BnñWí®šÆøÌ|sÃ“Ìa‘jœ¦¼’öÕ@çM#Ã3^’”Àæp³&ÁRœCth"„V—Vã]vyÆSÃ³6OÈs
+’en8Äù"‰?´¡d¥TPŒ0#6ã]Cn]ñ[JR©‡TGßıÇµ#6eÜ[:d¬.g
+h¸ä’=İæGÌB‘AàßZj7ÛÖ’XDæ@á~&qËz~Ä4ÑñtUÛÄwòPı¨ò4…‹e`ja±ç	¥uÄš›S†Ï(¢ŞH+İğã.¸4†R*“¼2ÔL/”*L{Ï7¤Â@b[H›yJ4‰¡Äë‡”@´=Šj`/àÃJq©1'×U˜4¬÷‰Ö-<Áˆ.¾a6Z„•ÿ ?ÛÙ#ˆOá“bMÕ6±ü¢“ıF°ä§ñl+œç¾:Â‡rêjê?Œç?\_n`è¤7zWÓØ¥4:zíOšARŒı«ñ„;ÅZEg\ÛŒÔ…X§Jn:ª´4©­Ojw‰,‹ª“(Ìã
+øÔ'ÔšPmŞ0\‰¬/õ,-‰ \Öô%Î°u­Gˆû×xÌ¸^{?âó/ù^è_àU_éû¹BÒ+ºm
+Uãª0óÖª}&+¤%ZÁ++DéWš&d£Zo
+ø
+UG¨ÃE_1{Ã/j³´M?ï
+ô„.°…s%A10zâU@¦±9RŞ§	UOhlTˆTºšè>PĞ¸Û)—d8³	ÕÂ€- ‰H™x²næ=åÅ
+Dck+åéçı½˜4Ô¬–//12‹ÛBÒ¥'êHP$~F‘11˜sfÎVÇê*’%V²ŞšU½|ÊAõ¨¬f|w2Iç™¼AAR³Wš„«Tö¥ÃqNû+}£>çÓ+‘p™œq+}·y„(‚ºR§òcâ$Æ_ÈN`Ò
+[s*™zM– 
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:652> ----
+====> AppScan connected to host demo.testfire.net:80
+---- End Thread  7204[1ac8] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:652> ----
+====> AppScan is sending the following request to the site
+---- End Thread  7204[1ac8] ----
+
+---- Begin Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+GET /images/pf_lock.gif HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Host: demo.testfire.net
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)
+
+
+---- End Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:652> ----
+====> AppScan finished sending the request to the site
+---- End Thread  7204[1ac8] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:652> ----
+====> AppScan got the following response from the site
+---- End Thread  7204[1ac8] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+EkZÕ>T§xÏœD˜Êœ@–šR×.¹kRØ=!Å¤QT$0Núìc 9ãœ,CHÄıÙI™-d|0„ü4ŸÏJv&ælJA¹Ì ú×0–ßJÃÎ*«·–:”ÜÖºwéıˆ0”ÙÚJ»F…:ª(ÚS¼aÈ7)^Í ›Ó	q[D»(o¨ÃÎs\©Š\w²uj` w{Àğ“MÒI7(½ÓÊ)é0âªÑŠ|C
+%!”Ò
+qÚ˜éCö˜ÜŠÇ.š˜‚´^Q
+hñLM«ãPv‹Œc5èüû2¦+'æIYù¦ïm¥…é¨}+å
+Ì<{ıgİfPí×ò’QeÕ¯ÕP+äE;
+DşgÁ3VywÇšXaÃªZ"àBP*ª Ú¾‘ç>cx®ä¼İ²©Poå77Ÿ!Ú2»™Q¬D«0!Õ3MVİv”­ÔÒ•ï½#‰ù¿!çG! Óé›6Š®À‹G R¤`ùÓ…ìd†°æ&Xue<¿›m
+¦ğmò¬fíÊ¸^ÜÉzaHY[ö+T¨n«Ê¶¯c¿ìAåW3ÓŠ²Úw…XD¥FØ—l"ZƒÊ-U"¨¥"æí†–Ïqu& 	M*!+¶9Õ;GIí ,RØC[Ä¦’©…˜ ´/åBnB•Š«5­aÆĞUu ±F®ò†]æ&+vĞòWïPÒE¥FÖI€#İŸfZËóÙ§g”ñ¸i®ÀnIô¦€pVKıù·ËÀÚ_ò‚öÛ{kèGştÖ2¿	ğæé¬¹¸ï9öÔİ¡
+oê7ë¶ÃQXËœ2ËÉÎÏeŒ}OëVTİ¡
+@IUÄ£¨´ ë3(ğÏ3fW°u.fûÕÊù`X”×¨ĞõT+µ)ozÆng*Ëâ¼¼ºZ‡›mn©­-ş4¦úÖ±%’òv3Ã‰Œ_
+[Ë—	æ#¢€éU[Jòéu
+ÕÓQ¡ŒÉ’òfZÈÒ““+}8„Â’Ù²ƒÌ¨R¡OUŞš(k+Z…¾Y­7‰‡yÈIƒB˜ND»Ám< ;M!+dî!ĞÕ4´¥ †Ïoeb®v‹VEL-Ê¢‘Í(Ã’±	C–j¨}.2 I¬A„)!1+0”·m!/€±JúÃÎ†…H‡Cm'ÈÄ¹JH èL)îZiHLÃkŞ©,wŠi1h´¿³ƒøäŸ%ŸœU­ªä\Â€ÿ Z{X›àözFb8{rÊRJ´wşÙOÔU°ÓZx»R±†<œcŠ®¦B®·)'îêplW©ßÌê>é>QÃ7ÿ _Ÿ–cAkÃ.BŠ[+AH¯ş·
+~Çù˜àæ‹=ÄÔÊŒºòTºt‚R­+ç¨ş¢2×qÌc28Ş1,ë2ôpßJküw¯xà¤¶dNpjfA¥*^¶<iTZ®Êíäc‹Œfcœ¦f±VÔ”)kKDŠ$¶ƒDÛÛj÷¯ØbgWŒ8„‚ xa Ä£i@U<¡^ V@öZ"˜QÒE/ş”˜H¹1ˆ"ÑÊ†×D(RKZ¦6íÉ¥"aEràŸùÿ )>àBDKõ¼…8™@$úÿ ¡†Û i
+ÕMëÚ»x|ÔûZÎ9±Œ?Ü[t3J[ÌU)å¾Ş›FãX*”¬>eÆJ·±jE~ö‘XF=7ˆœANÎî^«ü¼U»m7‰Ë˜ğ¤©2S´jlqi©ó4"§ÖzÎÄPâsıœÿ ta¸ş;‚…>iÆnŞÅ©ûÚEcÆñ¬h¤â.=n×­K¥|®&Ÿ³ÿÄ 1        !1"2A BQa#3‘R%b¡±ÑÿÚ ?P3KA®%[V¢zuå7ÆÕ®µ\:(çj.Pö&÷,B§?,ˆÈ³F§šŠÎ³¬ÖšG¹Ìÿ Íiğ½HŞO‡É%Ìğ›>;—ÌÊSâ¤q4[)1èÙ˜åSc%ƒê¥ŒÆ:º~"wÉËˆj7>SÊ%åL5ñìn®@×
+–ë\¾Û€jƒöQZ`Ñ=¶£!aÿ Œ&
+T¶™ÜŒ<ÃerÃP*BêT›KPh`+¹e+Ôeá‹!¸g_ÙE‹ÃÇ… i<r½3+·?ú£|8góh¦tSâFc»T‘rcıÃÕcúPÊÌ>!áÿ V §=¸œc2lß>Æ¤Şî4ö¬N~WRµ¸Mİ]I¤¹9² Q‚[¢”†5sCÂˆt…B“UrÑ>•u§6ˆ+¥–h©  êCUê_GÏ5¯à¯Ç×Mü)9fgÕ/ôÿ öÿ ÂxÁ±İu	ÏÁHu-?Ò‘øCĞòOÃvÆGÇ°hådŸUv«ì±wÊE7u²Ø,ÁÛ'T
+ü§t6Ó–S%?
+Wó
+ğ°ç &l£ Fš'w,Öë	ô¹ú¬¤Sh9<‚ÕİÕ[Y>x<0€€Š(¹sG_•q;¸Xh!8‰nÔ¤Â‰q9İµ,6M†iÚÄòãÆ^KÑa"c²Î4ÓoiğSH+Êê½3±ĞÑx²³æÑGCm9Ä›CSh’PpdyPÒ°ÿ ÆR'€Pİ‰9õMqh¥EÍAf(î¨îeŠ.Ş­ô|ğ™’"Ğ¹^ Ë±I°É23¯åG:9¬j¦çeıª¿ÊÂA‰ƒ¥ÄR|Ãˆæ4²‹‰çµïªoeh™Ú¡yVCTÄm8Q@"áJ2ÚÙfHh¥hIÍ¦(?Œ ÒjÔº¿€{ª“^A¤æ×öÒqğ†š+^­ô|ğ–FÃy\ÏPsy€
+ûyScdä	cªRâåı8š:¯*yñqD¢„ÌYû•„éçf(1Õ”¨§\Ah¬£ÙB–Bá¢krµbCIV³5;"Õj­_¢UNE,#Cš°xLÊá¢èØOa&ÑelSE ÛzvÈ72,-Ts"BÌ½WèùáÒaˆjn;ÊÍ	ã&fòëX±Êi1ö?şÖ:F&[×E6:6EĞA+Ô\‚uğ°F.@ùö )1Ä˜Ú»*è,Q¸ÊtöíğGTí–`•Tï	À;tXÖì£İ0~áNÙ5YGtxz§ÑóÇ‘	vl¢ÓãNák—\µ¢tQ?¹ ¯Óáÿ ÀIñÇ'p´Èã´W³ÿÄ H 	
+    !1"2AQ#aq B‘$3CR’¡±²4cr‚ƒÁÂÑáğ&5Sbd”¢ÃÿÚ  ?ZOE4ù°±÷?[ÀQÖ&1q9Ë´^'K·¦yQ’x&ÛúKZºË#7ü;qŞ>ô¯Ê¾t$zy×S\ÉûëÇï®y¢¥ñËÎ¸Ğ^³}´Æê2çÌÓN›‚ø(®4,HøÖ˜§Á[øÚ¤øT“53¿@	­FX¥İíeL2ÚÖ•o;Øœà
+{ëEæ™G=ª£ßNÚÊpÊG1_ÈöVš”DñÄóc5,wÚ­æ+Å‹}ÕèNš?ªk?ƒ6?«Z©[`ÛÀüëßù%¼°—w{^˜¥ÕÂÖX
+o+!¶ÔZîŒ!1Êqs‘áMs(ÓÎÅÈ™,÷f¡´»ŠW‘‰ î ò?¶¡ÓôÕ‰¤q—âC=(é$™aQë3ÉŠ|…|É¯À‹3.a–.ìŸBKé³%Î}Â¸R¾ç¼—|›Ÿ:K(ŒqmŞ•èE3]:(ñŞkSÔ´ı›‰:³GıZÊÖÃ@â»µ’(ÄHÊqØ49ç±(øÓ”œ)ÇMÜYW‘…Xx7ñµ8-áR°ó«»İØ®½%ÔoÍ½›ÊİÈ¸Œ~Êxc¹2$–ªÃrã­Ak¼B»š¸šeîÇı)ê¶ôš;h`¿šël¼%ÛÆxóù9Œü*×NÕÜDÒŒÃ2ÊC?»Ê¯äÒ­GâvÇ’MÙfòËu(³'–¶Í)V¯Ÿæ?ı>K£,s(ÉêqPÇ-â´‰nˆs9ÇJ[+ÆÙ,§rFİ{ù©õhu¥ºÍ¨U‰åí–¨…ÕÂF“i˜;›¸Ç˜şêS«İ!¼{¨û;òDJ1W_Ì¨—rq­ç=×ßVcMmñÙni¦^œü>†¦G/ÄØgì –£s¨&.}1ãOêZâ1å³Š€oåš]0iéy#Z´®›öÀ¯ô„¶·cdËœV©ó»Û“óLß‘LyQøĞ>¡Y4V
+á½ÉÎ¸V¶¹b;»†i´íUs·4‹xÎ+;c+Ò¸÷ïˆœv|É¥Ğ¥¶<'8†_PZ§æÿ Ì×ª­GZ™$‚ªYtˆ½›>ÉG‚z×fÅ·³I#úüémú|zTÛê0pŞp›XöØXÅiÚV¡<L#¶âddšÅ_µ‰,"F†N$jÃ¼*ÿ Yºö1K"C)ïHyãî«»»Ó%“²{Å¼+Xµ•pÈaÿ ¿“ƒs
+H§ªºäW
+=B9Tø*‚
+­@[<#šÉ6
+şÚÚ£LçîJú;äÚ6ñAÇ…q=„ÏÑw•c^¥sfD|¸r2öÊ½OIÛÏ‡îúúOŒö‹ñÅY(UÜn¸R†•i¨ÜEÛåœşúšeRÒ8I]»DUÕ¼SÍ7v S5©Ü=ô’š¦[ éXÅoZá“Ò·*Ö|ä‘°óH©=ìŠ8²Ÿ¯^ººß{p¹vÄô¯½"Ô$WÙ8`²óİWËµç‚¾Q'€÷RMh(NùÔwdv5mvÿ [üÍ+úÔ¤”$eÚEá¢¯‹PŠÙÜNÛàZ™&p¡djûÒİ‰#YN±ÛÕ6öÏî«IàG2 D‚AÙs×p÷ÕÎ•se+Ì—Æ;¸ãéõİ~æò{¥v¼İ,„vF<bŠ±ûj9b×U>o¢g+Ş(#ó‡Ã¶¦mA †‡¯
+&
+Bâ"z	8¨~7ÛøXd\­×ä–$ÚïŞGtÍÑ™#lo=ÜüóPY‚·0pÆ¯zµ8¤Óâe†Dá)NïZMJí#’¶ÙÃqõ³VóÛ¤k2İîiXs*J26ë
+Ö{š4=¬Ñ¨=#Š8à/lQ ‰03»¯ĞÅFÂ= Ê'‡ßš·ôƒFœ)™3ÏÇñí¯ÆïÌ~{|9û±Iia>ëQü¢R›V¯lV~Ói2!<Èrm¶¹ô&½U†îÏe…&½«Îg»H¸ÊŸRôûibÔ¿“ÇÉT77'ıkÔ¯nú¾Bğ¥Òly3>û‡ó©b|ß]Ü1•1öÙDV!=¦ß
+2Ëgd­Ï“WÊ\09¥¶¼ïyÕÜ°c‰-"gÏm$Ş”sçW	©ÈK	HlÔñiºq¸Õ'½â ö) çúY¯ÂßB&Š;Û•ˆXÚ‘‘eÚö¿F~úy
+Çíşno\‹c«UÕ¦ƒ¨µ¾–‡Æ€—¦âzóıÕ <ùâ—UáoÆ)¼x¶uü×"+Œİë™r¢>Kßìÿ ÅòMio.Ç‘0­_6zå›G³oİŠM7Iš>,c“Ì9uÉ©¯VêÇ7,½ï²±£É
+Ë»™Ÿ8ÇÙ^§w=³[ŒœGÙ§Õín,»œ4»¹ŸUo¨ËiÃB[äuXúTÕ¦ŸF• İÙ«»d˜ú³F‘Ëw˜¬™ÀÓËo+ÑVµËÍA³!Ğ®?ª7'!DHøçĞŠ6¾ïrÒ½Ì~>4°êš\ƒ·%:Ô°XÜEn% 37LQ¶[+¢ï¿'Qğ¯Yùí7)Ãpí›-L¶7rËƒËØ`ØÏo–é)£¼ÕƒoïğÅ*¤Û¹Ušûñ ¥vbÇj¯¶¦­tèØ;Iò;À“½ñ¥€uú§İ_‚^’F†ÓP8.ç¿T|J¸P¿‚òÛ+±9§ı3ïó¥ô«ÑË½úf§pÂ(˜`Æyw:to:¸¶•2J7,ò&­ì`=ôÁy5šQD…^ÿ gş/’KûìcÃÆ¾t†ÆØEËls¼­C­iQCÂc¶T—%•¼ª=wHXXöë.w+g¨õ%Ïoq»İâ|?eoÕÄ"B{<ãmE§^Çn¶Ó“Â“O»ãSÛA¹³‚M­(Î~ÏĞšßÒ[¹
+ÂNêQqêjëÒû«›¯SŞVŞÓ£H}şB¯æÌòR+g—ÈÑ*Ö­}4;Dš$åY(‹»%óìĞ–]7„Íâqm$çá@™¶
+áÉ!qåYÓõwãOè­4!¦}¿X¶b ƒÌµµ¦$çÎnú•k©Z¶OÅªHøº;jE¾œ ;S•oÊE·4Án 
+9æçÄ}]MowmiÂ¸Ù¬ıMé§c%¼/Á“µÎ¤²P6©onÓµÆÌã>Í\p½a®-»{ö·g­Go¬Ç4I¥Û™wFvÛš6·úÙ±XáÜÎ©¼·¸QÑ´XP·•ÿ ¸ˆw¾#Â­õI=ŞÒƒ+Îÿ *.zø×*¿ºú…ã@}àşÿ ’X­—s®hñÅÇ»U;yÃõ³åŠCwˆŞæÿ Œ±»jit·Y,5dòIÏûÿ Jõ¸^3¤ecÏ22)M»†Yr£f|<iá»™¸ß Ï<ûª+}>T,±©œ)æõÏĞ½_ü©?ˆÕ„¨»[‚9­4FL€<ETÆ<}Õª	vá49È÷­E©¬B9x„{>†‡54>4µØÀååGˆôH¢Œü‡€­…öûhËuÁfåŠ‡aÿ yjlùÔØı
+á¼¬½©QÜwPSV%Qãı™mÖ3ÃRë_2zAàHÜBJ’E]Í êw±+Z$&Edqú'+Òµ{@­\Ún“„Øçš¸h.'$Ç^ÒLöAÍMos–Oš.3ãŠT‚Y#o©!+GÒxËÚJÙ$—lõ5ËäY£f&ãÚ>O1Ëîù}iôØ™ÎşÍyi»zqW©µœF!Ò.Û÷P7VÉ´`oˆ
+ÿ “Úÿ ë­ye¸éÄŒQv‘E¼4?CÿÄ &       !1AQaq‘ ¡±ÑÁğñÿÚ  ?!%#¶8»–SĞ‰&ä!÷ÊøáãâEs­MMÈJ÷·\Îµ”>¿l ÁX†æ(ıHµJj˜Õ96bÊ¦à‘ğ&İ‰}fÙ¦“x‰]^gùh ~M…0»dX(è<¤¦˜qË#Á• „é*_âº_¥¥:ù']I¡¶ãJsë¸Â…ñì¡±Q~E3
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+$[]s
+vy5rõë
+Ù*ä 
+a±‡ık4 ôf†õ¤ÑAãPU¡QC	çñ/R³=GşÄ>ĞlÏ;şwõÌ~UÅŸäyçüáas
+€Â¨sFs£A	rÖ`¤UÇ¤çËûˆl‚@ˆ±”jv¼ƒ˜kWs:whìK¨¸ó†^”©S1íÒ-)€¯ˆ³Î¡¯|`(‡·ò&§jq‹ÿ cä0àÔCT®°f¬y0Ã	êÁ¢£yL€£pÕ©O´µÚ¿4jÅ¼%Ç­j¯eç¹cô‹¬@zÌò"·¡¬Ô©”ÓÒ—Ö?&Ã¬
+]kÁ‡=5ìµA¸éü%¦;§ÃŸÜ­6åPPy×åëì^öã¤àÓ .OBa[ò@aóJüÑsn3x9–4©­®í]Ì5£bit¼‚1
+YLŸ½AMa9˜GïåQŸ,AO%ÂsªvÃ‘Øs©Å9aõ=–h¸|ÚJ¬‚¼)Ä¼ğ«²İ°Ç2ÏgÑä›”ç÷N+Úræ_ÆµŸiåoæ+ÃS
+j¥höTÈQ$Iº[ö‚¬z²ß/NŒ™{
+{ŒV€íŞ~”ú$ÉìÏênP¬0—Èá˜]5PLô§F)y¬Qé1
+éBåG*˜ª`½;ù
+}™îaÔ­ÛîÙØ`XI=2¨–7@Ñæ^Ùs„Âî(¥@8¤±ReıÌ
+¢)gírßaµÔÌrÂ¿r2Ûö!z·å@Ì?´)gœ>'y—†¼?mJqÃŒ¿ÙAñÄ´şÃşJQ`aÖâ	pV¦
+ıÆD€Ø»oñö"·Ô§ î‰hñœµ×cKµ[ÏQ]‚»J–¨Òî‘ÌÇÆyy¼ñ`…Â¡Á ğs Öµ¡å’3Ê”Êh\Àğ>)Šê]{ßO1IÙ*£ø¿³y.aåN³ñ*µ%‹Ñí,k]Ç*5ª¦nãôìØ-öXl²Éf³¿F¿?`,y…Øu£ü•&9ZŞ*ÆJ/ÉiŒmµ˜y‹¢Õ=ë0m}cİîlAªÄCàø…Ÿ0™lë^âj0_—Ü^ï/e±xné¿†„ÂğMF`ş%ï[d¸…ø…(Ë%QEœÇªİ}¹¿–!^ÍõÔ\Ğs1%@qŠ®,TÛPA‡r®¤J›}”´ó¨Y§| X—!¼_^²ì=È Vg°~Ù†%ËOLF"Å¡ö”ÃZUZê–¼G¦¨ÕÖÅÛS>½·6ÑNØ^„Pò}Z‚iQfß(b6~T¶}àAã¾T¯°Ttó,~]…Ë¥Š€âÏ¹ˆæ…ĞÊQõÅ¶ UÁR]MUÒæKSQo’1«”a}4"ÃoK
+Ta€×•»ƒ7Ÿl	ËGÄWV‡oŞ71¬ªøYRhŞ¥ÍcåLŠAı–|b8íŒßğf—EVÎ×Ü‘'j)K£®‡püÜ
+âöwñ©dczòw(\SppÏ
+y¸k©Hó·óV|O¦È¹©²Ğ¬4Ía^³ºÿ Î"ÊÓ@¬~ Ç€°@¢“– QQIÀÂÌSùL„Àp%_mÊu8µÖuŠæ$M	wBº{b¿fêŒ*—*i!|¾vğæAqğÌgœâ6ewPí™zÕÒËmHC°Ì8Ö;äy‡h£Ó²¨ÒsUAÈ<;’ GlßĞ–dçcå %bg "ÎFÓşˆú5*¼N)nióÈMÊ{N@ôKÂ¢%°¼WcØŞTQ:ãÌ'd3ÂÂÙ|Ç¼îyóá1×ÁàÌ£’C*¸ìJ[cöWî[}7iPK?0Q/éú#„Â­>!§»øÓNYçQÏ±ı
+5ÖŸrêâj½iŠC¡{Â½Ÿ‰’{|‡»º×ÏéiB¡_É>Å¥¡×
+ÊÂô«Ï¬›ŒÎfÂøñÂ­[6j b¼…$-;%‹´˜+Ò¨v×ˆæCj¥Ä>#H
+ôÜçÀÀ¨½ùfUÏHíó¦ +_Ô·ú1!K©…	ôïëuaá"×õªS7+¬MUmŞ7 lu¹Ô·ª\Ó[·~“r›üQÇ¬
+aÑ¾c™–.]ƒ[W:—
+çù7_™Fƒ×Âà£õçPŒÎõ¿0€º}µd+³ExTi½¯‹5lÿ £Äy´¬„ë÷ÕgÿÚ       ‡€ç©W%èÉœ”A[Œ H’én¿	~ß;ì6dF*‡rÓél¬‹¦!şˆ-†¸^P ŒLqâB»¢Æéã6î Î‚ç-t¥r~z÷°!YA€£1P‚9ÚeƒVÌSÀ" 1z
+X¦şØ†;ö†kú‘ )catÂµ–û8= p ÿÄ '        !1AQaq± ‘¡ÁÑáñğÿÚ ?Â€5`Ê&Q5‡Õæ"Ş)›{å\ÇZ'–bÔl¿dEƒÑ1^fK)K÷Ê·tÅÃÌ·5‚¨!ÇÇ´®8£"d÷×?òjÀ¾–ş€3r£x± ¸¸D¤‡‚&ƒd¨
+ÈØäÁ
+¿ï"Å¢. cĞ·6)ŠFAÀjª[Z›Ù”RÔÁX#„õEhWN€dpPt¢T~ßãùÇ*æZí`™¥¡Q„¾oæ:YnÂëÓduX	¤%yŒZ2Şá«6Ea×ô™`Ú&…šÀBÌ¥iÌh²MÂ@v¿äBI\[_ˆcX«iCÒR,¸h2®lÖå³%† +@±*m jtC¼mc0ÊËÊ,s,7Qä
+YååÓ`©1Àå€ñÂ@ÓH+$Êˆí—jšRº¼¬•Fô‚`"Meõb¾ÈcPˆ¾%…¬D·trTÊÊ¶â½±.)l&¢ép8‚ö†Ì6¹(¨»×´3H,¸¨ªe4ÿ ÉJì•9&ÕÊÉV›xö™ĞİñÎ£ob[)eÔr£›×¥c> ÃN0Ó˜“%²ß›«ÎlŒİFä‹-l¶®êKY‡
+¸ÀÛ¾"åW—Ã^[¾v™9Á,Àepnˆ«ÙÈY®J-¶ç6©‹hĞCt}7Ù¸p˜Ş!Ôµ¥% Ÿ¶pÈ j&ÈZÅ†ùş¢3€³=çZ‚Ï„¬K1ì
+¦£ Ê¥¶x„Và|Û†.í÷‰\ğBfê[J!@„WàÊ)ilËB.Ú”z½8#pĞåŒæ)ı‚4³G*V¸‘£øT±Bêa¦DBø¯ADŠ€
+ÙmBS²bKFPc"º%/^¤• X&…ëºJ 9rıš€	]13$8 (Ók=X³¹ÎQNå;Û˜•@÷3şÓ©®~äRèÔo'P©7 ñ0º¾5:BU>ñkèEDŞŞ=¡CÂZ‚?º|Æ…òKÔ³ÕGè¨¯$®¥ŠM¼q-AÏê*1‰sÄÌ¢!0+âÕÄ›¼¸Š!° ¡i¹x‹ˆ* p’KÚ› À-÷Zp‚7CÜfn¿57¢ğËÈ=‘’Ë¹AÉ’Æó<`½Uª•T‹Êñ*©pˆÅb
+µrÜätToT™ ¯ÑbÆT9†åÀ)ÚdÜ@b/ífG,2Q$•ªë”*¦]>òî®Êx™ eª]ËCPq
+“suj4s©py"âè‚$fË“¸b]wßJSr¯êdÇâ%œf¥°×³üz ¦9Ñ
+6i¥e
+B8¥Î&mÊŒV‘oô.Õ|È#ABÁ’\iA`6j0 U0GìÕ¢ñ'ê‚Ğ*!¾gV@èPğ*&É¶iÅ‚³¸Ç†„Ø¥.’Pmô42€²oÚnMŸ@[=)RÇsü“˜Ké»Ñ·Zš•.c(A¯Äy ×î.”óş¢£¥vF~Û€EŸx/¶CñXıó_˜¤¥ú—ÿ @xË°
+åğ/òU®‘|İKÃ–Ô½,°ø“øô
+D¡:—˜ „ĞÅ>Â¼‡ô•…Ahée@M–"]´lLré¥©óil»b•º8EUc×¡³&Èò•Â(°)B•A.Æ™)]©ÈAäAªQbó94Àêeo.ï­Úƒ3¶méôEDä¡q€i’½/€
+ª‹ JŸ¸|ÂËÑ¡2ˆYÔï(êCØ›ù¿÷ò& ò 2­`üBs7Ò¯æ!.ì×ßşGÄıwùëÀ"t©¥pŠ\’° 6	t,µwVÖå¼(vZÍ–´+QÛÀÁ|$dÕ¸ÜLÌEj$äiĞ8»¨¥‹
+ƒKB‹ªº/_GÿÄ &        !1AQ aqÁğ‘¡±ÑáÿÚ ?5o˜uÌn^Ë˜º‹¬K›ô²b
+pdŠf;TĞ‚ÄÅùJ}›$Ï¢ĞlÕYOéÇJ†±y½×0EÒİ5ùÿ a +wwºÅyİÄV(-ihÅÁĞy°póÃ~Ğu»óÖ’'5—G±÷ÚWà‹FŸûö»õ ğ"+ˆ7¨4Ì!Qö¡ËÒ«‰-: Âw·˜jÅ+$‰pÖch#Í†î†¶³S<À–D¢v¹Ì¡ïøélªÑî\ ÍÖ¥CÖ@wËù˜Z´æñå¨pNô¶å‘Š«à»@'ßB4T.ÁïŞ
+gbğÏ¯µà
+Ì‘ë( +¨KLB*YeS%	ÌàM!1â#Nù†–å†ó
+€jFZR«l…¹%Ê3@@TB°„©d@`O§n”Ğ’ÈT(<…{Êk“>n3´H•e«úAk.ÌCÂ˜öâ~¦SãÀ©©F“0â–"Œ¦ÌN.Ô\ó€šÈe§/œen–´ÔÕ¹ˆ£
+ÁFú@ Â±<d@¸]Âd²™E¤üçÃ£ßJ öj)JÎ%ûßı‚z¬Ù¿oµÂ*c[€M)ïkó°7^huU-è9·/Ë ”PÅŞşş|x¬xäkXšJ•%F*È—…	unTy‰µ.óJ
+£BhJÌ	ÄF	y´,Ø,Gˆ†„[	Q0ŠÜ4ú~úR†J¶î¿S7n¿PG{|vÄ0·uW´&ã=]ßà54»Õó‡0(ÕJ±³µQaÜA ±p‘eDT™­…FæÒ©„ç}TÍ¶dÄ;/p@Và2¸‘­ÒÌÍÂ`€±ØË£rŠ3íôü:k‡y&Ø¿j[0ØöÅEØ7caX¨M+EïkÇ–¿ráù{ó±m9ö/¾¸æ©ésúy{â¿^Æed2â9&À"²V HA‰¶W™nÌ\
+Á	^e‡²<%@!­Bƒ-f¡r#ºŒùÓ2´|Æ¡Tf‰µP!¨¯Ûğè
+ZS]ê.Ò5ê¾ÕôˆÌ
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+‡—ßì¹—F´ÿ tı%Ò, çdãbBwYÚ]á@{­3~ş
+H#fZÖ
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+
+---- Begin Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+HTTP/1.1 200 OK
+Content-Length: 76
+Content-Type: image/gif
+Last-Modified: Tue, 24 Jan 2006 21:45:54 GMT
+Accept-Ranges: bytes
+ETag: "01598d2f21c61:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+
+GIF89a  ‘ ™²{•° 3fÊÜë!ù   ,       œ)»9Bhˆ>‘â‘®Z!ø¢‰hz™Şû ;
+---- End Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:715> ----
+====> AppScan finished getting the response from the site
+---- End Thread  7204[1ac8] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:49:715> ----
+====> Server connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:715> ----
+====> AppScan is sending the following response to the browser
+---- End Thread  7204[1ac8] ----
+
+---- Begin Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+HTTP/1.1 200 OK
+Content-Length: 76
+Content-Type: image/gif
+Last-Modified: Tue, 24 Jan 2006 21:45:54 GMT
+Accept-Ranges: bytes
+ETag: "01598d2f21c61:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+
+GIF89a  ‘ ™²{•° 3fÊÜë!ù   ,       œ)»9Bhˆ>‘â‘®Z!ø¢‰hz™Şû ;
+---- End Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:715> ----
+====> AppScan finished sending the response to the browser
+---- End Thread  7204[1ac8] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:715> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[1ac8] ----
+
+---- Begin Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+GET http://demo.testfire.net/images/home1.jpg HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Fri, 10 Feb 2006 19:54:06 GMT
+If-None-Match: "043c7bf7b2ec61:c4b"
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MS-RTC LM 8)
+Host: demo.testfire.net
+Proxy-Connection: Keep-Alive
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+
+
+---- End Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:715> ----
+====> AppScan finished getting the request from the browser
+---- End Thread  7204[1ac8] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:715> ----
+====> AppScan proxy is working in by-pass mode.
+---- End Thread  7204[1ac8] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
++k^sGÖ €	
+ø „ÑoOõæş®´h/>Š2	”vhÄˆ®ÓHêkéøuo^b‰A];ƒı‹^|”WãQÁ î«üä¦®ÁşË
+íØçƒÿÄ '        !1AQaq‘¡ ±ÁğÑáñÿÚ  ?B]S	§kTğ0¿.K]BiôgŒn…¶|åÙB#3xBb_[“b):ÅÇä¹ˆö²³XÌ÷ÈF~ŒmòÓŞ:ğBĞaã<ëW”¯³
+î!*1'D+8z'Øæİó‚Ñ[yÿ Xqçb‡«qÑğ_gÆRÌ‘Q²k¾ğq³úÁÛ1W°X¢„z8³J/#É+´ÉËâ±;£ À}´k¡´õ—gu] 1~A\Ìüã`6>Çk×ù?À;š#
+/rµäã•)L‹Ğá‡êp1ª[_»Ä=œ£¼‘=:Óë6ì§A¡-
+Õ…EA`²ìü|±¹ÆúÑ#ÉAEÒp¹;AJÀã›ş‡ "!Üf»KÖêé€ø&oŸŸœİFgº\ŞcO³ã<„¾æbÿ \½Š’ENø¹Å àkG¬8dê0»jb®½G³%¸¢Ó0ÄcÏ¾	ôÍ“yº£ÅôıcM4Šßï	s¾Ì~fŠ÷¼\Á—÷a§î‡*>ò3¾»v4ixiƒI§§Y£Ná¦“®!w“(ú¯œ¡´A+}dÃ
+a¶>áç‹6Îæ56¸vs¿,5 S~3nFŠõ·f’+“]×şÿ Â‚c½Nƒ(5WUåË‹¹¢{£ã²±3Ö(]kmŠV$ƒHÏñåsM…§¾<Ãƒù'Mr ‚³[r—p N*§štZşŠõ¯;M¿‡õ„Dì°¡§o@ÀôLö‚Ûf ®åóˆ¡’J”>Ë±óÊA+„¸8?[GŒıd°w¿LUœ¬,İ>5Š´Ó &·†Zp¶{_3êæüJ.P.ÌÑ3Ó×ybfÜDgÂ'ùÁiªÿ a€2 A3ûp˜ïK­³-L–vå,&“MGë´j" —DÍh’¥bG)Ã%!¬kÇóNÅª@B)ta8Ÿd”I¬Ù;‹e5¯ŒSL²ÙÙ­Ÿ\ğš½dñãaïµØ#)î	VA İÿ î" ZºO8‚Œ²
+ºÒ7ÍøşY
+(l Ôx‘Å‡}€zB·ƒc½aÈ ®¯gqbdT`rhĞæ.¦Ajé­ëÃË‹÷ÓĞ`Ô"s
++&„•ñWú	`t…¿ÌÂ­QV«¦oÂ/šĞ
+}°R;ôytË2_'%U»XĞƒÆÛûpôÂIÜr¢J˜s„t`è0PeõR ŞáKQtö"Ö±[+ Ù=oüìš¨C³ »@Å`P}óƒ·ãÖFœoã'^9_Î»‰2F×}ÏÓ&6¸"›?Ş9e`7·Î³9}úà8¹c‚•‚Æ¦ªÊ¼)ú1¶dWÏÔ&À8Ú€\¹¨ÀïX¾Ì½øPè¯;cÆÊ:1J“BôÖ|TÜ=fôX$Z²1ûJÀö¸®ÊÅ5å&@Õ~Øšz¦¶t{¸§é%êº«æf'÷¥¶f©cbJ0äfBŒmö®¢tÀ„X~€ÄøÅ­f.+GGvÓ›¸#tä0 UØƒª6wJ&9õ;È6Ê	Tì
+Ğrú¿ñôÏ½„œ·zMæ‚/ƒé)Dq-”:XÏcÎ*sßŞ&H«Ü™»ìjù6'µë œ>–\&\ó…°ò‰#w‡Ab=×C^pñî£b!<àä¡á@ õü
+úÌ¹x5~1Y%A=|`c@ĞWÉ”ùq‘Y°SöcA ’éñ›™#_ıæÈœòb‡1šRnò¯P¸58bf*v UŞ½DuTU8Àÿ ®VĞM‰“Ø¹´W™u:ËOIBõÖ -ß7¼bi.13¦€2ªŠÕXg~|wû¥#¶¼e Ãæ‡LõD·4ºÔò1}×ğ`H½>rÆlÕo¿ø˜£Ë°<SqÎòòˆˆU/V·7éúUZ`ÜĞŞãæ‡•h9ZÕ~æm8©j`…+ÈIpdÃKÛÇÚûÿ yEö ƒ¾ÒX[Ùa	Ø]9ñı(ü¹’AÊ€
+	êâèXº¶v`Í…I¼*€ğ¾õ‚iD°Îå€–œíå0Ú:¶œiñÍÑQ2tsqÄ° ^C¦‘ïe[$Şæo­Z¡4-Äæè#}ªSx5Ç†å4rå!wÊ“= šç€œë_Şk”°é3mO¯ŒÜëÕƒcçNzkìDE=xğÒĞğûï z€…ı˜¬¤ºx}LoVieöVÃ&‡:K·%¯ó—¢4Ö&
+G§Şß¶DĞÔM£¼câ¢@¯¾·Æ± rJ|Ó†ïOYv—îÿ `  •¼ \­	ÖE<Ø(ıxİ;« À­õª•Ÿ2A!±Zˆšr'GO’¾’‰´q²›
+_ƒ$ópÛÎ*c±ÂÜÙCº°“ĞŒvŸçE6× ‡Æl£Ì½››3¸GùF‹—|
+¯0”ºí¶8XÅ=`ûìÜŠÓ› š³¾SÉ¶çLÜÈ×¼¸)WÍò% Ÿ¨zÅbˆƒ¯‡Ã‡Òn~4‰-ûï÷ƒOEÉÍññˆØšôct‚*ßİìZ‡Ó&#2—Üs$>O›ÔP0kûRA¸€ò¦Yë!@¹íºøÂ:sm¯S3Ö{Æšû÷q‹Và|‹H‰şës“ •P¤+ØA_®uÌ:·/r¼’Ã6Lh³ğmOÙøÉò:'¿
+"hÁù‚›P <»!åÎ	­§Û³À•ßiı0H·O»‘h…PDÑ§5äğÄâÉ2zO—¬-‰”‚ˆh	İ-ß2uºğùWÕó†gj èÀ/‰?¡ +G^[ñ%Ø ªş¬óœEŠ¸ ÛgïëüQ]ã}`Êº1®L…
+:Ã$úƒtO[Öx4S:Œ~dÇ$ÇAõœÊ
+3Ù#^şqe é£ÜÛ‚nRÔAM­^{Äì6ß¿®qÁ×¼-le*\ÑíŠZõ2D/“%(ºQŞ	‡³55´×¼YÑ®uüácÔ‘-Ê¬æ	Û5ÓÄ…  â¥…Eˆ‰~1íe‚.‹gH~î ¤ó‘á¨…HñûaØ$å
+À‰¼#ÀÕ»[oîc»uø~øàf¢ •ö;ş{‡×võòoy)*eCKzÇrB†"†ÛÎáW£ğ8Í>°Q¨Ñ*9bŒáéTûb-EŒVW¾ÿ §ÿÙ
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> AppScan finished getting the response from the site
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> Server connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> AppScan is sending the following response to the browser
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+HTTP/1.1 200 OK
+Content-Length: 16209
+Content-Type: image/jpeg
+Last-Modified: Fri, 08 Dec 2006 20:12:08 GMT
+Accept-Ranges: bytes
+ETag: "01ca2351bc71:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+
+ÿØÿà JFIF  H H  ÿÛ C 			
+
+
+
+
+
+	
+
+
+ÿÛ C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ÿÂ  <b ÿÄ             	ÿÄ             ÿÚ    ¾ÊRŞUYbbSUÄš²ğeà9£Bb•”·< E’40¹Úİ$ı€š‹~¶¯äi¨D¤`J³jIĞ]ğŸê\­)Ù‡dc
+ŠúÈçl.g3¸VŸ©öO0]6ç§ºTú'Ÿ¹é—^òLK´/©şnh`XY­ BVõO]KÏÓ‘a0Ç\ŠgŸ™½©F48S¹,ém’GQÆ°šëc…‹Åkòôô4$Ç>u…b¡êëSpÜÚíd®b8]©¥mH(ÆesW7–­İÖô*İ×§Ô¢Ö•İò¯Xÿ OÀq,IóÔzoæí¬—İŠœ# 3&.­¹ÜŞÍ¶!ß¤ãÃ®J[QÊ.ËšÑŠ®cûGeQ¡I]Ğ\½Œ½È÷†«ÅMºÜ;8îã6]‡˜)mrrWxãó–/›ÓcÕ}LÜ¼8;.Éãëcl7Ê„ÉøüK°=G¦şcXÏ¸…©1.%[‰Şj‡”ë3p¶Dà=©B¹´¬˜àÃjv:î#¾‡"•N¹Œ§­¢zQ8+]=×tëÓ€_ú¤ß³œ££ŸqdasCIQõkOç‘j~¥=gƒ¡ìûÖx#­
+Ä±+%Óúç9éØƒĞ÷1.f•k©Şb†Öhiˆ¤Àµ}^
+`ì¤æÑ£GsÎÈëo¯43µ&;ê·w¦ÙıKuÉk9ãSñ]¯·õ"rV(%Ry«†ÖÇÄB'KÖ'lpÃµ}Â÷VôXjlzÇ:>‰bV¨ôÚ~ZªÉÎX¦¼%Pœ¾’gš†sy“½ÈsbÛY×¤ĞyuÉÌb3w#¿Co¾Ó®ÏŸ×¨Ö²ëe-áaY³û€Eç^Em®|Åø¯4Ë™×&iãa6qñ8¸%G×4FæéUöá&·æp»ï‰Í/øÆ%‰xë½FJÜ$’a
+˜!sz6&D‹é¢:ÓO
+8—#KRaç“"SjëêÓûH¨µ,„
+ZI¾Ğo&ƒwuŸ47&H›Ñ*êi¹r9ç&FÅ?NÖÖ ó}Ûâr‹cÑ*¥Oªye<¿Ä©'Yè–FÖ?©ÄÙÒöBœ¡·!Îäu&æ”£ ùLn-Ê*R‘$Eâ®ıÛÔüë5ÃƒÒ».4âÂp ëÚ]JŸt¦*ıç¢b9×Øš"%µ™|Ó;#IÑ<ÿ Š^º#¦Y~=SËÄ±/ÿÄ '          !"$ÿÚ  †=4¿.sä°Ñ¼±aÍŒÆê±a[ÏûÏ›—ºXäÖ=åÛA'äeÛªß<'õ”ãÉéù–í_…½ˆw5øƒ«õÎlû×úôm¶6|ãH»
+ÈÇ7`ÏÑ Ÿß}RîÃ-¯]$Å®~×	xtùEa¤ì3®÷¤ÏC´Ñ–xô£AW›~ sa64f»· 3[[í¢UC§%œ±Ó(Ùy’D`.û3Úm°D©;hØqá‡¨Õ'ÖÍ4^î*“pPõ“Q—kÁ–ãÒ?ƒ}ìë¡ö™Z˜u’éq‘çDz¬õö=”+9ZÄ¿¯¾?ŠÌ^B»­˜ÙŠoLÅHåæŒ')‘`&©HTªôæºh(ôæ#æ¡×ë+Y[©¸$‡ßÃÄyÓÊÍ,P¡]fJ
+pÍ?×à’©Í‰Xİñ«ò¤5,Jêbáhó½OœQ«rÏµ±’»LƒÄîÔ–\±±Üô¨ÎàiñzçLl!(¤ÖhÄ‹á&zD·3lCÚëã€¨/5,	TJ,ÒÃT ×H˜ ¸MW¶¶&y)? ‘^ôE_u0ŞœLØÃûì”ÒR‰ç.
+°GîÏ6+}3Õöéõ“¹˜JWX„tºsYv/<‚ÉÇ€˜õ–!F~±šFÙ/Z¸“ÌeLùM2³¾”‹ø9óºy†+¿€aaÂ¯§”èd
+¯\*ÜG:éş˜‰ëTïLâ\àsYzñ±auòfRAGpSU[á¦íw³id™yPË
+u]0}b]6°±™+#*•Œ¥Ğ>$Æ–…U«½–­b¾ösş™ëº=4½}¥&ãooÔJrAZŠº|oÔë¾†xdRÎ&‘¯\±`+fF…:¹^]ƒä5ØÚ×ì‚
+ª°°iöó
+L|Ş’zOc¯m­7†q–y]ĞÊWyÓÆºÍ¤9Ùs-}$%ÓÜ,=²¸jÇÚÈ ­W,êuğ˜ƒa•êFVÓ"Á4Í,²£§Hx36hÒ`ŸzölNİ­µ…ëj¢¶æ´x‰UØ}ĞşÖß}>RuVv€ØcÛdôÈ>º
+cõçYkíÏ1Ëp¾ë ,5R0S[Â9¦­v®¡ò]LKhİâôõqçúüş)š;‘`pnfØY¡t\BÃáõ©Î;SìÁ®KÁ›‘¸1%iºi—XÚ-"•ãÙ‚ö]èåçQ¨öŸE5	—B¸„UJÓá¥¾²FF¸sµ÷¨w${‡Xí2û¶Ç‡[êô_çªx€í¾µ¢Nºm	5ó†˜è’=Úi¨‘æ_Nu|ÿ &L VºÌ;Kaú¨efa”›Ù–,Q»Y™Óìk]9d÷Í/vU
+Ïb¸¡ÕÛWÜm¬RDâ=s‡äæ¬ìé7 š¦4ö(Óı†›|I¤?‘
+>Ö"æG,ó½Ä{OdÎòL×IUJŞu}]7ˆ«è…ÑûQí½‘Rgu.*Ó8µã¥ì]„}ÏÃíÊ—¯iSŞ×’áÍÕÃÛÚ
+$+ëæqf\q½krHÓìúÉ)¸Îz‹É. Îz®²¸rVÍ§Ğ‚ähšVÙÛÁ
+mÖE¹OQİgá¼ì;{ŸÕ ‹ô ÜŒÇ¶u«!Û¥M®8a™xÒl9ÇüºI¶u(™b†#‰Ÿ›•.¼ÁSM´æ‘<±¯]ô´zÅÒg;mÔ›gWçsÙªznØ7æ©!î±v
+~µ×Šê
+ö®­&ûr¯Š¶‡áø½‘ŒÄOe53ô‰¦ßMw*^uH1	ZòÙ:È$Æ@açX¸¼ş	'	 x0!ü?ÿÄ ;      !1"A2Qa#3Rq B‘Á%4±Òğ5Cbr“ÿÚ ?HÒ'İ+]©íÔ5´74¤+Xnm¥À:EÛÁT_È¹QjâÛ`BZµ‚Da!ÿ —zzë
+ğ˜a¤©±M°]ÕPÙK(¤{ª¾¨÷UıP%Â|Fb´µT"³»%M)yŒÆ‚…7­wşŞÌ‹…`¸æh—ÃñB°Û¦ß‡JÜ­â®•ßBbw&ğXó˜S“Ì…–Â–¦ïÛ²A¥}S÷Œ›ÃÌg;ÌeŒÂ]Kéğrí	4D¨¨BšPwÖ0L“Â<{nIƒ:b–”­VÊ
+”.²• Ûí[…9{7ä‰©ù÷¶”â %6)IêHT… ¤V£ª½£…ü*Ãs^5Šã
+q
+#DX@&ÑU¤´Ö¾Q‡d¬›„`iÇ³#Î†_R½İ”[ÍZAñ+°ÓÊƒn­@ŒÍ’òÜÎZ9“+<µË¡A.¶å9“±Ópj<÷ÜëOmmlÁ©hª OxZDZBª"A×Tå…ˆ@&Üà&Ñ
+ÃCJCÌU0¦–Šéå*¢"CÃX˜U¬(Á›å´¬&cœ(aaÅ„J¡K‰[õ¦4Šˆ3SAãnĞoqË‰„8@Ö9‚šFg5[Ÿíìáœ¤Ôæ|Ãƒ*µÔ(Ó²R I>‚3ó®9ÄY§X•RZ[ê<Ã¢BnñWí®šÆøÌ|sÃ“Ìa‘jœ¦¼’öÕ@çM#Ã3^’”Àæp³&ÁRœCth"„V—Vã]vyÆSÃ³6OÈs
+’en8Äù"‰?´¡d¥TPŒ0#6ã]Cn]ñ[JR©‡TGßıÇµ#6eÜ[:d¬.g
+h¸ä’=İæGÌB‘AàßZj7ÛÖ’XDæ@á~&qËz~Ä4ÑñtUÛÄwòPı¨ò4…‹e`ja±ç	¥uÄš›S†Ï(¢ŞH+İğã.¸4†R*“¼2ÔL/”*L{Ï7¤Â@b[H›yJ4‰¡Äë‡”@´=Šj`/àÃJq©1'×U˜4¬÷‰Ö-<Áˆ.¾a6Z„•ÿ ?ÛÙ#ˆOá“bMÕ6±ü¢“ıF°ä§ñl+œç¾:Â‡rêjê?Œç?\_n`è¤7zWÓØ¥4:zíOšARŒı«ñ„;ÅZEg\ÛŒÔ…X§Jn:ª´4©­Ojw‰,‹ª“(Ìã
+øÔ'ÔšPmŞ0\‰¬/õ,-‰ \Öô%Î°u­Gˆû×xÌ¸^{?âó/ù^è_àU_éû¹BÒ+ºm
+Uãª0óÖª}&+¤%ZÁ++DéWš&d£Zo
+ø
+UG¨ÃE_1{Ã/j³´M?ï
+ô„.°…s%A10zâU@¦±9RŞ§	UOhlTˆTºšè>PĞ¸Û)—d8³	ÕÂ€- ‰H™x²næ=åÅ
+Dck+åéçı½˜4Ô¬–//12‹ÛBÒ¥'êHP$~F‘11˜sfÎVÇê*’%V²ŞšU½|ÊAõ¨¬f|w2Iç™¼AAR³Wš„«Tö¥ÃqNû+}£>çÓ+‘p™œq+}·y„(‚ºR§òcâ$Æ_ÈN`Ò
+[s*™zM– EkZÕ>T§xÏœD˜Êœ@–šR×.¹kRØ=!Å¤QT$0Núìc 9ãœ,CHÄıÙI™-d|0„ü4ŸÏJv&ælJA¹Ì ú×0–ßJÃÎ*«·–:”ÜÖºwéıˆ0”ÙÚJ»F…:ª(ÚS¼aÈ7)^Í ›Ó	q[D»(o¨ÃÎs\©Š\w²uj` w{Àğ“MÒI7(½ÓÊ)é0âªÑŠ|C
+%!”Ò
+qÚ˜éCö˜ÜŠÇ.š˜‚´^Q
+hñLM«ãPv‹Œc5èüû2¦+'æIYù¦ïm¥…é¨}+å
+Ì<{ıgİfPí×ò’QeÕ¯ÕP+äE;
+DşgÁ3VywÇšXaÃªZ"àBP*ª Ú¾‘ç>cx®ä¼İ²©Poå77Ÿ!Ú2»™Q¬D«0!Õ3MVİv”­ÔÒ•ï½#‰ù¿!çG! Óé›6Š®À‹G R¤`ùÓ…ìd†°æ&Xue<¿›m
+¦ğmò¬fíÊ¸^ÜÉzaHY[ö+T¨n«Ê¶¯c¿ìAåW3ÓŠ²Úw…XD¥FØ—l"ZƒÊ-U"¨¥"æí†–Ïqu& 	M*!+¶9Õ;GIí ,RØC[Ä¦’©…˜ ´/åBnB•Š«5­aÆĞUu ±F®ò†]æ&+vĞòWïPÒE¥FÖI€#İŸfZËóÙ§g”ñ¸i®ÀnIô¦€pVKıù·ËÀÚ_ò‚öÛ{kèGştÖ2¿	ğæé¬¹¸ï9öÔİ¡
+oê7ë¶ÃQXËœ2ËÉÎÏeŒ}OëVTİ¡
+@IUÄ£¨´ ë3(ğÏ3fW°u.fûÕÊù`X”×¨ĞõT+µ)ozÆng*Ëâ¼¼ºZ‡›mn©­-ş4¦úÖ±%’òv3Ã‰Œ_
+[Ë—	æ#¢€éU[Jòéu
+ÕÓQ¡ŒÉ’òfZÈÒ““+}8„Â’Ù²ƒÌ¨R¡OUŞš(k+Z…¾Y­7‰‡yÈIƒB˜ND»Ám< ;M!+dî!ĞÕ4´¥ †Ïoeb®v‹VEL-Ê¢‘Í(Ã’±	C–j¨}.2 I¬A„)!1+0”·m!/€±JúÃÎ†…H‡Cm'ÈÄ¹JH èL)îZiHLÃkŞ©,wŠi1h´¿³ƒøäŸ%ŸœU­ªä\Â€ÿ Z{X›àözFb8{rÊRJ´wşÙOÔU°ÓZx»R±†<œcŠ®¦B®·)'îêplW©ßÌê>é>QÃ7ÿ _Ÿ–cAkÃ.BŠ[+AH¯ş·
+~Çù˜àæ‹=ÄÔÊŒºòTºt‚R­+ç¨ş¢2×qÌc28Ş1,ë2ôpßJküw¯xà¤¶dNpjfA¥*^¶<iTZ®Êíäc‹Œfcœ¦f±VÔ”)kKDŠ$¶ƒDÛÛj÷¯ØbgWŒ8„‚ xa Ä£i@U<¡^ V@öZ"˜QÒE/ş”˜H¹1ˆ"ÑÊ†×D(RKZ¦6íÉ¥"aEràŸùÿ )>àBDKõ¼…8™@$úÿ ¡†Û i
+ÕMëÚ»x|ÔûZÎ9±Œ?Ü[t3J[ÌU)å¾Ş›FãX*”¬>eÆJ·±jE~ö‘XF=7ˆœANÎî^«ü¼U»m7‰Ë˜ğ¤©2S´jlqi©ó4"§ÖzÎÄPâsıœÿ ta¸ş;‚…>iÆnŞÅ©ûÚEcÆñ¬h¤â.=n×­K¥|®&Ÿ³ÿÄ 1        !1"2A BQa#3‘R%b¡±ÑÿÚ ?P3KA®%[V¢zuå7ÆÕ®µ\:(çj.Pö&÷,B§?,ˆÈ³F§šŠÎ³¬ÖšG¹Ìÿ Íiğ½HŞO‡É%Ìğ›>;—ÌÊSâ¤q4[)1èÙ˜åSc%ƒê¥ŒÆ:º~"wÉËˆj7>SÊ%åL5ñìn®@×
+–ë\¾Û€jƒöQZ`Ñ=¶£!aÿ Œ&
+T¶™ÜŒ<ÃerÃP*BêT›KPh`+¹e+Ôeá‹!¸g_ÙE‹ÃÇ… i<r½3+·?ú£|8góh¦tSâFc»T‘rcıÃÕcúPÊÌ>!áÿ V §=¸œc2lß>Æ¤Şî4ö¬N~WRµ¸Mİ]I¤¹9² Q‚[¢”†5sCÂˆt…B“UrÑ>•u§6ˆ+¥–h©  êCUê_GÏ5¯à¯Ç×Mü)9fgÕ/ôÿ öÿ ÂxÁ±İu	ÏÁHu-?Ò‘øCĞòOÃvÆGÇ°hådŸUv«ì±wÊE7u²Ø,ÁÛ'T
+ü§t6Ó–S%?
+Wó
+ğ°ç &l£ Fš'w,Öë	ô¹ú¬¤Sh9<‚ÕİÕ[Y>x<0€€Š(¹sG_•q;¸Xh!8‰nÔ¤Â‰q9İµ,6M†iÚÄòãÆ^KÑa"c²Î4ÓoiğSH+Êê½3±ĞÑx²³æÑGCm9Ä›CSh’PpdyPÒ°ÿ ÆR'€Pİ‰9õMqh¥EÍAf(î¨îeŠ.Ş­ô|ğ™’"Ğ¹^ Ë±I°É23¯åG:9¬j¦çeıª¿ÊÂA‰ƒ¥ÄR|Ãˆæ4²‹‰çµïªoeh™Ú¡yVCTÄm8Q@"áJ2ÚÙfHh¥hIÍ¦(?Œ ÒjÔº¿€{ª“^A¤æ×öÒqğ†š+^­ô|ğ–FÃy\ÏPsy€
+ûyScdä	cªRâåı8š:¯*yñqD¢„ÌYû•„éçf(1Õ”¨§\Ah¬£ÙB–Bá¢krµbCIV³5;"Õj­_¢UNE,#Cš°xLÊá¢èØOa&ÑelSE ÛzvÈ72,-Ts"BÌ½WèùáÒaˆjn;ÊÍ	ã&fòëX±Êi1ö?şÖ:F&[×E6:6EĞA+Ô\‚uğ°F.@ùö )1Ä˜Ú»*è,Q¸ÊtöíğGTí–`•Tï	À;tXÖì£İ0~áNÙ5YGtxz§ÑóÇ‘	vl¢ÓãNák—\µ¢tQ?¹ ¯Óáÿ ÀIñÇ'p´Èã´W³ÿÄ H 	
+    !1"2AQ#aq B‘$3CR’¡±²4cr‚ƒÁÂÑáğ&5Sbd”¢ÃÿÚ  ?ZOE4ù°±÷?[ÀQÖ&1q9Ë´^'K·¦yQ’x&ÛúKZºË#7ü;qŞ>ô¯Ê¾t$zy×S\ÉûëÇï®y¢¥ñËÎ¸Ğ^³}´Æê2çÌÓN›‚ø(®4,HøÖ˜§Á[øÚ¤øT“53¿@	­FX¥İíeL2ÚÖ•o;Øœà
+{ëEæ™G=ª£ßNÚÊpÊG1_ÈöVš”DñÄóc5,wÚ­æ+Å‹}ÕèNš?ªk?ƒ6?«Z©[`ÛÀüëßù%¼°—w{^˜¥ÕÂÖX
+o+!¶ÔZîŒ!1Êqs‘áMs(ÓÎÅÈ™,÷f¡´»ŠW‘‰ î ò?¶¡ÓôÕ‰¤q—âC=(é$™aQë3ÉŠ|…|É¯À‹3.a–.ìŸBKé³%Î}Â¸R¾ç¼—|›Ÿ:K(ŒqmŞ•èE3]:(ñŞkSÔ´ı›‰:³GıZÊÖÃ@â»µ’(ÄHÊqØ49ç±(øÓ”œ)ÇMÜYW‘…Xx7ñµ8-áR°ó«»İØ®½%ÔoÍ½›ÊİÈ¸Œ~Êxc¹2$–ªÃrã­Ak¼B»š¸šeîÇı)ê¶ôš;h`¿šël¼%ÛÆxóù9Œü*×NÕÜDÒŒÃ2ÊC?»Ê¯äÒ­GâvÇ’MÙfòËu(³'–¶Í)V¯Ÿæ?ı>K£,s(ÉêqPÇ-â´‰nˆs9ÇJ[+ÆÙ,§rFİ{ù©õhu¥ºÍ¨U‰åí–¨…ÕÂF“i˜;›¸Ç˜şêS«İ!¼{¨û;òDJ1W_Ì¨—rq­ç=×ßVcMmñÙni¦^œü>†¦G/ÄØgì –£s¨&.}1ãOêZâ1å³Š€oåš]0iéy#Z´®›öÀ¯ô„¶·cdËœV©ó»Û“óLß‘LyQøĞ>¡Y4V
+á½ÉÎ¸V¶¹b;»†i´íUs·4‹xÎ+;c+Ò¸÷ïˆœv|É¥Ğ¥¶<'8†_PZ§æÿ Ì×ª­GZ™$‚ªYtˆ½›>ÉG‚z×fÅ·³I#úüémú|zTÛê0pŞp›XöØXÅiÚV¡<L#¶âddšÅ_µ‰,"F†N$jÃ¼*ÿ Yºö1K"C)ïHyãî«»»Ó%“²{Å¼+Xµ•pÈaÿ ¿“ƒs
+H§ªºäW
+=B9Tø*‚
+­@[<#šÉ6
+şÚÚ£LçîJú;äÚ6ñAÇ…q=„ÏÑw•c^¥sfD|¸r2öÊ½OIÛÏ‡îúúOŒö‹ñÅY(UÜn¸R†•i¨ÜEÛåœşúšeRÒ8I]»DUÕ¼SÍ7v S5©Ü=ô’š¦[ éXÅoZá“Ò·*Ö|ä‘°óH©=ìŠ8²Ÿ¯^ººß{p¹vÄô¯½"Ô$WÙ8`²óİWËµç‚¾Q'€÷RMh(NùÔwdv5mvÿ [üÍ+úÔ¤”$eÚEá¢¯‹PŠÙÜNÛàZ™&p¡djûÒİ‰#YN±ÛÕ6öÏî«IàG2 D‚AÙs×p÷ÕÎ•se+Ì—Æ;¸ãéõİ~æò{¥v¼İ,„vF<bŠ±ûj9b×U>o¢g+Ş(#ó‡Ã¶¦mA †‡¯
+&
+Bâ"z	8¨~7ÛøXd\­×ä–$ÚïŞGtÍÑ™#lo=ÜüóPY‚·0pÆ¯zµ8¤Óâe†Dá)NïZMJí#’¶ÙÃqõ³VóÛ¤k2İîiXs*J26ë
+Ö{š4=¬Ñ¨=#Š8à/lQ ‰03»¯ĞÅFÂ= Ê'‡ßš·ôƒFœ)™3ÏÇñí¯ÆïÌ~{|9û±Iia>ëQü¢R›V¯lV~Ói2!<Èrm¶¹ô&½U†îÏe…&½«Îg»H¸ÊŸRôûibÔ¿“ÇÉT77'ıkÔ¯nú¾Bğ¥Òly3>û‡ó©b|ß]Ü1•1öÙDV!=¦ß
+2Ëgd­Ï“WÊ\09¥¶¼ïyÕÜ°c‰-"gÏm$Ş”sçW	©ÈK	HlÔñiºq¸Õ'½â ö) çúY¯ÂßB&Š;Û•ˆXÚ‘‘eÚö¿F~úy
+Çíşno\‹c«UÕ¦ƒ¨µ¾–‡Æ€—¦âzóıÕ <ùâ—UáoÆ)¼x¶uü×"+Œİë™r¢>Kßìÿ ÅòMio.Ç‘0­_6zå›G³oİŠM7Iš>,c“Ì9uÉ©¯VêÇ7,½ï²±£É
+Ë»™Ÿ8ÇÙ^§w=³[ŒœGÙ§Õín,»œ4»¹ŸUo¨ËiÃB[äuXúTÕ¦ŸF• İÙ«»d˜ú³F‘Ëw˜¬™ÀÓËo+ÑVµËÍA³!Ğ®?ª7'!DHøçĞŠ6¾ïrÒ½Ì~>4°êš\ƒ·%:Ô°XÜEn% 37LQ¶[+¢ï¿'Qğ¯Yùí7)Ãpí›-L¶7rËƒËØ`ØÏo–é)£¼ÕƒoïğÅ*¤Û¹Ušûñ ¥vbÇj¯¶¦­tèØ;Iò;À“½ñ¥€uú§İ_‚^’F†ÓP8.ç¿T|J¸P¿‚òÛ+±9§ı3ïó¥ô«ÑË½úf§pÂ(˜`Æyw:to:¸¶•2J7,ò&­ì`=ôÁy5šQD…^ÿ gş/’KûìcÃÆ¾t†ÆØEËls¼­C­iQCÂc¶T—%•¼ª=wHXXöë.w+g¨õ%Ïoq»İâ|?eoÕÄ"B{<ãmE§^Çn¶Ó“Â“O»ãSÛA¹³‚M­(Î~ÏĞšßÒ[¹
+ÂNêQqêjëÒû«›¯SŞVŞÓ£H}şB¯æÌòR+g—ÈÑ*Ö­}4;Dš$åY(‹»%óìĞ–]7„Íâqm$çá@™¶
+áÉ!qåYÓõwãOè­4!¦}¿X¶b ƒÌµµ¦$çÎnú•k©Z¶OÅªHøº;jE¾œ ;S•oÊE·4Án 
+9æçÄ}]MowmiÂ¸Ù¬ıMé§c%¼/Á“µÎ¤²P6©onÓµÆÌã>Í\p½a®-»{ö·g­Go¬Ç4I¥Û™wFvÛš6·úÙ±XáÜÎ©¼·¸QÑ´XP·•ÿ ¸ˆw¾#Â­õI=ŞÒƒ+Îÿ *.zø×*¿ºú…ã@}àşÿ ’X­—s®hñÅÇ»U;yÃõ³åŠCwˆŞæÿ Œ±»jit·Y,5dòIÏûÿ Jõ¸^3¤ecÏ22)M»†Yr£f|<iá»™¸ß Ï<ûª+}>T,±©œ)æõÏĞ½_ü©?ˆÕ„¨»[‚9­4FL€<ETÆ<}Õª	vá49È÷­E©¬B9x„{>†‡54>4µØÀååGˆôH¢Œü‡€­…öûhËuÁfåŠ‡aÿ yjlùÔØı
+á¼¬½©QÜwPSV%Qãı™mÖ3ÃRë_2zAàHÜBJ’E]Í êw±+Z$&Edqú'+Òµ{@­\Ún“„Øçš¸h.'$Ç^ÒLöAÍMos–Oš.3ãŠT‚Y#o©!+GÒxËÚJÙ$—lõ5ËäY£f&ãÚ>O1Ëîù}iôØ™ÎşÍyi»zqW©µœF!Ò.Û÷P7VÉ´`oˆ
+ÿ “Úÿ ë­ye¸éÄŒQv‘E¼4?CÿÄ &       !1AQaq‘ ¡±ÑÁğñÿÚ  ?!%#¶8»–SĞ‰&ä!÷ÊøáãâEs­MMÈJ÷·\Îµ”>¿l ÁX†æ(ıHµJj˜Õ96bÊ¦à‘ğ&İ‰}fÙ¦“x‰]^gùh ~M…0»dX(è<¤¦˜qË#Á• „é*_âº_¥¥:ù']I¡¶ãJsë¸Â…ñì¡±Q~E3$[]s
+vy5rõë
+Ù*ä 
+a±‡ık4 ôf†õ¤ÑAãPU¡QC	çñ/R³=GşÄ>ĞlÏ;şwõÌ~UÅŸäyçüáas
+€Â¨sFs£A	rÖ`¤UÇ¤çËûˆl‚@ˆ±”jv¼ƒ˜kWs:whìK¨¸ó†^”©S1íÒ-)€¯ˆ³Î¡¯|`(‡·ò&§jq‹ÿ cä0àÔCT®°f¬y0Ã	êÁ¢£yL€£pÕ©O´µÚ¿4jÅ¼%Ç­j¯eç¹cô‹¬@zÌò"·¡¬Ô©”ÓÒ—Ö?&Ã¬
+]kÁ‡=5ìµA¸éü%¦;§ÃŸÜ­6åPPy×åëì^öã¤àÓ .OBa[ò@aóJüÑsn3x9–4©­®í]Ì5£bit¼‚1
+YLŸ½AMa9˜GïåQŸ,AO%ÂsªvÃ‘Øs©Å9aõ=–h¸|ÚJ¬‚¼)Ä¼ğ«²İ°Ç2ÏgÑä›”ç÷N+Úræ_ÆµŸiåoæ+ÃS
+j¥höTÈQ$Iº[ö‚¬z²ß/NŒ™{
+{ŒV€íŞ~”ú$ÉìÏênP¬0—Èá˜]5PLô§F)y¬Qé1
+éBåG*˜ª`½;ù
+}™îaÔ­ÛîÙØ`XI=2¨–7@Ñæ^Ùs„Âî(¥@8¤±ReıÌ
+¢)gírßaµÔÌrÂ¿r2Ûö!z·å@Ì?´)gœ>'y—†¼?mJqÃŒ¿ÙAñÄ´şÃşJQ`aÖâ	pV¦
+ıÆD€Ø»oñö"·Ô§ î‰hñœµ×cKµ[ÏQ]‚»J–¨Òî‘ÌÇÆyy¼ñ`…Â¡Á ğs Öµ¡å’3Ê”Êh\Àğ>)Šê]{ßO1IÙ*£ø¿³y.aåN³ñ*µ%‹Ñí,k]Ç*5ª¦nãôìØ-öXl²Éf³¿F¿?`,y…Øu£ü•&9ZŞ*ÆJ/ÉiŒmµ˜y‹¢Õ=ë0m}cİîlAªÄCàø…Ÿ0™lë^âj0_—Ü^ï/e±xné¿†„ÂğMF`ş%ï[d¸…ø…(Ë%QEœÇªİ}¹¿–!^ÍõÔ\Ğs1%@qŠ®,TÛPA‡r®¤J›}”´ó¨Y§| X—!¼_^²ì=È Vg°~Ù†%ËOLF"Å¡ö”ÃZUZê–¼G¦¨ÕÖÅÛS>½·6ÑNØ^„Pò}Z‚iQfß(b6~T¶}àAã¾T¯°Ttó,~]…Ë¥Š€âÏ¹ˆæ…ĞÊQõÅ¶ UÁR]MUÒæKSQo’1«”a}4"ÃoK
+Ta€×•»ƒ7Ÿl	ËGÄWV‡oŞ71¬ªøYRhŞ¥ÍcåLŠAı–|b8íŒßğf—EVÎ×Ü‘'j)K£®‡püÜ
+âöwñ©dczòw(\SppÏ
+y¸k©Hó·óV|O¦È¹©²Ğ¬4Ía^³ºÿ Î"ÊÓ@¬~ Ç€°@¢“– QQIÀÂÌSùL„Àp%_mÊu8µÖuŠæ$M	wBº{b¿fêŒ*—*i!|¾vğæAqğÌgœâ6ewPí™zÕÒËmHC°Ì8Ö;äy‡h£Ó²¨ÒsUAÈ<;’ GlßĞ–dçcå %bg "ÎFÓşˆú5*¼N)nióÈMÊ{N@ôKÂ¢%°¼WcØŞTQ:ãÌ'd3ÂÂÙ|Ç¼îyóá1×ÁàÌ£’C*¸ìJ[cöWî[}7iPK?0Q/éú#„Â­>!§»øÓNYçQÏ±ı
+5ÖŸrêâj½iŠC¡{Â½Ÿ‰’{|‡»º×ÏéiB¡_É>Å¥¡×
+ÊÂô«Ï¬›ŒÎfÂøñÂ­[6j b¼…$-;%‹´˜+Ò¨v×ˆæCj¥Ä>#H
+ôÜçÀÀ¨½ùfUÏHíó¦ +_Ô·ú1!K©…	ôïëuaá"×õªS7+¬MUmŞ7 lu¹Ô·ª\Ó[·~“r›üQÇ¬
+aÑ¾c™–.]ƒ[W:—
+çù7_™Fƒ×Âà£õçPŒÎõ¿0€º}µd+³ExTi½¯‹5lÿ £Äy´¬„ë÷ÕgÿÚ       ‡€ç©W%èÉœ”A[Œ H’én¿	~ß;ì6dF*‡rÓél¬‹¦!şˆ-†¸^P ŒLqâB»¢Æéã6î Î‚ç-t¥r~z÷°!YA€£1P‚9ÚeƒVÌSÀ" 1z
+X¦şØ†;ö†kú‘ )catÂµ–û8= p ÿÄ '        !1AQaq± ‘¡ÁÑáñğÿÚ ?Â€5`Ê&Q5‡Õæ"Ş)›{å\ÇZ'–bÔl¿dEƒÑ1^fK)K÷Ê·tÅÃÌ·5‚¨!ÇÇ´®8£"d÷×?òjÀ¾–ş€3r£x± ¸¸D¤‡‚&ƒd¨
+ÈØäÁ
+¿ï"Å¢. cĞ·6)ŠFAÀjª[Z›Ù”RÔÁX#„õEhWN€dpPt¢T~ßãùÇ*æZí`™¥¡Q„¾oæ:YnÂëÓduX	¤%yŒZ2Şá«6Ea×ô™`Ú&…šÀBÌ¥iÌh²MÂ@v¿äBI\[_ˆcX«iCÒR,¸h2®lÖå³%† +@±*m jtC¼mc0ÊËÊ,s,7Qä
+YååÓ`©1Àå€ñÂ@ÓH+$Êˆí—jšRº¼¬•Fô‚`"Meõb¾ÈcPˆ¾%…¬D·trTÊÊ¶â½±.)l&¢ép8‚ö†Ì6¹(¨»×´3H,¸¨ªe4ÿ ÉJì•9&ÕÊÉV›xö™ĞİñÎ£ob[)eÔr£›×¥c> ÃN0Ó˜“%²ß›«ÎlŒİFä‹-l¶®êKY‡
+¸ÀÛ¾"åW—Ã^[¾v™9Á,Àepnˆ«ÙÈY®J-¶ç6©‹hĞCt}7Ù¸p˜Ş!Ôµ¥% Ÿ¶pÈ j&ÈZÅ†ùş¢3€³=çZ‚Ï„¬K1ì
+¦£ Ê¥¶x„Và|Û†.í÷‰\ğBfê[J!@„WàÊ)ilËB.Ú”z½8#pĞåŒæ)ı‚4³G*V¸‘£øT±Bêa¦DBø¯ADŠ€
+ÙmBS²bKFPc"º%/^¤• X&…ëºJ 9rıš€	]13$8 (Ók=X³¹ÎQNå;Û˜•@÷3şÓ©®~äRèÔo'P©7 ñ0º¾5:BU>ñkèEDŞŞ=¡CÂZ‚?º|Æ…òKÔ³ÕGè¨¯$®¥ŠM¼q-AÏê*1‰sÄÌ¢!0+âÕÄ›¼¸Š!° ¡i¹x‹ˆ* p’KÚ› À-÷Zp‚7CÜfn¿57¢ğËÈ=‘’Ë¹AÉ’Æó<`½Uª•T‹Êñ*©pˆÅb
+µrÜätToT™ ¯ÑbÆT9†åÀ)ÚdÜ@b/ífG,2Q$•ªë”*¦]>òî®Êx™ eª]ËCPq
+“suj4s©py"âè‚$fË“¸b]wßJSr¯êdÇâ%œf¥°×³üz ¦9Ñ
+6i¥e
+B8¥Î&mÊŒV‘oô.Õ|È#ABÁ’\iA`6j0 U0GìÕ¢ñ'ê‚Ğ*!¾gV@èPğ*&É¶iÅ‚³¸Ç†„Ø¥.’Pmô42€²oÚnMŸ@[=)RÇsü“˜Ké»Ñ·Zš•.c(A¯Äy ×î.”óş¢£¥vF~Û€EŸx/¶CñXıó_˜¤¥ú—ÿ @xË°
+åğ/òU®‘|İKÃ–Ô½,°ø“øô
+D¡:—˜ „ĞÅ>Â¼‡ô•…Ahée@M–"]´lLré¥©óil»b•º8EUc×¡³&Èò•Â(°)B•A.Æ™)]©ÈAäAªQbó94Àêeo.ï­Úƒ3¶méôEDä¡q€i’½/€
+ª‹ JŸ¸|ÂËÑ¡2ˆYÔï(êCØ›ù¿÷ò& ò 2­`üBs7Ò¯æ!.ì×ßşGÄıwùëÀ"t©¥pŠ\’° 6	t,µwVÖå¼(vZÍ–´+QÛÀÁ|$dÕ¸ÜLÌEj$äiĞ8»¨¥‹
+ƒKB‹ªº/_GÿÄ &        !1AQ aqÁğ‘¡±ÑáÿÚ ?5o˜uÌn^Ë˜º‹¬K›ô²b
+pdŠf;TĞ‚ÄÅùJ}›$Ï¢ĞlÕYOéÇJ†±y½×0EÒİ5ùÿ a +wwºÅyİÄV(-ihÅÁĞy°póÃ~Ğu»óÖ’'5—G±÷ÚWà‹FŸûö»õ ğ"+ˆ7¨4Ì!Qö¡ËÒ«‰-: Âw·˜jÅ+$‰pÖch#Í†î†¶³S<À–D¢v¹Ì¡ïøélªÑî\ ÍÖ¥CÖ@wËù˜Z´æñå¨pNô¶å‘Š«à»@'ßB4T.ÁïŞ
+gbğÏ¯µà
+Ì‘ë( +¨KLB*YeS%	ÌàM!1â#Nù†–å†ó
+€jFZR«l…¹%Ê3@@TB°„©d@`O§n”Ğ’ÈT(<…{Êk“>n3´H•e«úAk.ÌCÂ˜öâ~¦SãÀ©©F“0â–"Œ¦ÌN.Ô\ó€šÈe§/œen–´ÔÕ¹ˆ£
+ÁFú@ Â±<d@¸]Âd²™E¤üçÃ£ßJ öj)JÎ%ûßı‚z¬Ù¿oµÂ*c[€M)ïkó°7^huU-è9·/Ë ”PÅŞşş|x¬xäkXšJ•%F*È—…	unTy‰µ.óJ
+£BhJÌ	ÄF	y´,Ø,Gˆ†„[	Q0ŠÜ4ú~úR†J¶î¿S7n¿PG{|vÄ0·uW´&ã=]ßà54»Õó‡0(ÕJ±³µQaÜA ±p‘eDT™­…FæÒ©„ç}TÍ¶dÄ;/p@Và2¸‘­ÒÌÍÂ`€±ØË£rŠ3íôü:k‡y&Ø¿j[0ØöÅEØ7caX¨M+EïkÇ–¿ráù{ó±m9ö/¾¸æ©ésúy{â¿^Æed2â9&À"²V HA‰¶W™nÌ\
+Á	^e‡²<%@!­Bƒ-f¡r#ºŒùÓ2´|Æ¡Tf‰µP!¨¯Ûğè
+ZS]ê.Ò5ê¾ÕôˆÌ‡—ßì¹—F´ÿ tı%Ò, çdãbBwYÚ]á@{­3~ş
+H#fZÖ+k^sGÖ €	
+ø „ÑoOõæş®´h/>Š2	”vhÄˆ®ÓHêkéøuo^b‰A];ƒı‹^|”WãQÁ î«üä¦®ÁşË
+íØçƒÿÄ '        !1AQaq‘¡ ±ÁğÑáñÿÚ  ?B]S	§kTğ0¿.K]BiôgŒn…¶|åÙB#3xBb_[“b):ÅÇä¹ˆö²³XÌ÷ÈF~ŒmòÓŞ:ğBĞaã<ëW”¯³
+î!*1'D+8z'Øæİó‚Ñ[yÿ Xqçb‡«qÑğ_gÆRÌ‘Q²k¾ğq³úÁÛ1W°X¢„z8³J/#É+´ÉËâ±;£ À}´k¡´õ—gu] 1~A\Ìüã`6>Çk×ù?À;š#
+/rµäã•)L‹Ğá‡êp1ª[_»Ä=œ£¼‘=:Óë6ì§A¡-
+Õ…EA`²ìü|±¹ÆúÑ#ÉAEÒp¹;AJÀã›ş‡ "!Üf»KÖêé€ø&oŸŸœİFgº\ŞcO³ã<„¾æbÿ \½Š’ENø¹Å àkG¬8dê0»jb®½G³%¸¢Ó0ÄcÏ¾	ôÍ“yº£ÅôıcM4Šßï	s¾Ì~fŠ÷¼\Á—÷a§î‡*>ò3¾»v4ixiƒI§§Y£Ná¦“®!w“(ú¯œ¡´A+}dÃ
+a¶>áç‹6Îæ56¸vs¿,5 S~3nFŠõ·f’+“]×şÿ Â‚c½Nƒ(5WUåË‹¹¢{£ã²±3Ö(]kmŠV$ƒHÏñåsM…§¾<Ãƒù'Mr ‚³[r—p N*§štZşŠõ¯;M¿‡õ„Dì°¡§o@ÀôLö‚Ûf ®åóˆ¡’J”>Ë±óÊA+„¸8?[GŒıd°w¿LUœ¬,İ>5Š´Ó &·†Zp¶{_3êæüJ.P.ÌÑ3Ó×ybfÜDgÂ'ùÁiªÿ a€2 A3ûp˜ïK­³-L–vå,&“MGë´j" —DÍh’¥bG)Ã%!¬kÇóNÅª@B)ta8Ÿd”I¬Ù;‹e5¯ŒSL²ÙÙ­Ÿ\ğš½dñãaïµØ#)î	VA İÿ î" ZºO8‚Œ²
+ºÒ7ÍøşY
+(l Ôx‘Å‡}€zB·ƒc½aÈ ®¯gqbdT`rhĞæ.¦Ajé­ëÃË‹÷ÓĞ`Ô"s
++&„•ñWú	`t…¿ÌÂ­QV«¦oÂ/šĞ
+}°R;ôytË2_'%U»XĞƒÆÛûpôÂIÜr¢J˜s„t`è0PeõR ŞáKQtö"Ö±[+ Ù=oüìš¨C³ »@Å`P}óƒ·ãÖFœoã'^9_Î»‰2F×}ÏÓ&6¸"›?Ş9e`7·Î³9}úà8¹c‚•‚Æ¦ªÊ¼)ú1¶dWÏÔ&À8Ú€\¹¨ÀïX¾Ì½øPè¯;cÆÊ:1J“BôÖ|TÜ=fôX$Z²1ûJÀö¸®ÊÅ5å&@Õ~Øšz¦¶t{¸§é%êº«æf'÷¥¶f©cbJ0äfBŒmö®¢tÀ„X~€ÄøÅ­f.+GGvÓ›¸#tä0 UØƒª6wJ&9õ;È6Ê	Tì
+Ğrú¿ñôÏ½„œ·zMæ‚/ƒé)Dq-”:XÏcÎ*sßŞ&H«Ü™»ìjù6'µë œ>–\&\ó…°ò‰#w‡Ab=×C^pñî£b!<àä¡á@ õü
+úÌ¹x5~1Y%A=|`c@ĞWÉ”ùq‘Y°SöcA ’éñ›™#_ıæÈœòb‡1šRnò¯P¸58bf*v UŞ½DuTU8Àÿ ®VĞM‰“Ø¹´W™u:ËOIBõÖ -ß7¼bi.13¦€2ªŠÕXg~|wû¥#¶¼e Ãæ‡LõD·4ºÔò1}×ğ`H½>rÆlÕo¿ø˜£Ë°<SqÎòòˆˆU/V·7éúUZ`ÜĞŞãæ‡•h9ZÕ~æm8©j`…+ÈIpdÃKÛÇÚûÿ yEö ƒ¾ÒX[Ùa	Ø]9ñı(ü¹’AÊ€
+	êâèXº¶v`Í…I¼*€ğ¾õ‚iD°Îå€–œíå0Ú:¶œiñÍÑQ2tsqÄ° ^C¦‘ïe[$Şæo­Z¡4-Äæè#}ªSx5Ç†å4rå!wÊ“= šç€œë_Şk”°é3mO¯ŒÜëÕƒcçNzkìDE=xğÒĞğûï z€…ı˜¬¤ºx}LoVieöVÃ&‡:K·%¯ó—¢4Ö&
+G§Şß¶DĞÔM£¼câ¢@¯¾·Æ± rJ|Ó†ïOYv—îÿ `  •¼ \­	ÖE<Ø(ıxİ;« À­õª•Ÿ2A!±Zˆšr'GO’¾’‰´q²›
+_ƒ$ópÛÎ*c±ÂÜÙCº°“ĞŒvŸçE6× ‡Æl£Ì½››3¸GùF‹—|
+¯0”ºí¶8XÅ=`ûìÜŠÓ› š³¾SÉ¶çLÜÈ×¼¸)WÍò% Ÿ¨zÅbˆƒ¯‡Ã‡Òn~4‰-ûï÷ƒOEÉÍññˆØšôct‚*ßİìZ‡Ó&#2—Üs$>O›ÔP0kûRA¸€ò¦Yë!@¹íºøÂ:sm¯S3Ö{Æšû÷q‹Và|‹H‰şës“ •P¤+ØA_®uÌ:·/r¼’Ã6Lh³ğmOÙøÉò:'¿
+"hÁù‚›P <»!åÎ	­§Û³À•ßiı0H·O»‘h…PDÑ§5äğÄâÉ2zO—¬-‰”‚ˆh	İ-ß2uºğùWÕó†gj èÀ/‰?¡ +G^[ñ%Ø ªş¬óœEŠ¸ ÛgïëüQ]ã}`Êº1®L…
+:Ã$úƒtO[Öx4S:Œ~dÇ$ÇAõœÊ
+3Ù#^şqe é£ÜÛ‚nRÔAM­^{Äì6ß¿®qÁ×¼-le*\ÑíŠZõ2D/“%(ºQŞ	‡³55´×¼YÑ®uüácÔ‘-Ê¬æ	Û5ÓÄ…  â¥…Eˆ‰~1íe‚.‹gH~î ¤ó‘á¨…HñûaØ$å
+À‰¼#ÀÕ»[oîc»uø~øàf¢ •ö;ş{‡×võòoy)*eCKzÇrB†"†ÛÎáW£ğ8Í>°Q¨Ñ*9bŒáéTûb-EŒVW¾ÿ §ÿÙ
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> AppScan finished sending the response to the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> Browser connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> Browser closed connection when reading a request
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+GET http://demo.testfire.net/images/home2.jpg HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Fri, 10 Feb 2006 19:49:10 GMT
+If-None-Match: "03f59f7b2ec61:c4b"
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MS-RTC LM 8)
+Host: demo.testfire.net
+Proxy-Connection: Keep-Alive
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+
+
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> AppScan finished getting the request from the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> AppScan proxy is working in by-pass mode.
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> AppScan connected to host demo.testfire.net:80
+---- End Thread  7204[1ac8] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> AppScan is sending the following request to the site
+---- End Thread  7204[1ac8] ----
+
+---- Begin Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+GET /images/home1.jpg HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Host: demo.testfire.net
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)
+
+
+---- End Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> AppScan finished sending the request to the site
+---- End Thread  7204[1ac8] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:762> ----
+====> AppScan got the following response from the site
+---- End Thread  7204[1ac8] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:809> ----
+====> AppScan connected to host demo.testfire.net:80
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:824> ----
+====> AppScan is sending the following request to the site
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+GET /images/home2.jpg HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Host: demo.testfire.net
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)
+
+
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:824> ----
+====> AppScan finished sending the request to the site
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:824> ----
+====> AppScan got the following response from the site
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+HTTP/1.1 200 OK
+Content-Length: 7900
+Content-Type: image/jpeg
+Last-Modified: Fri, 10 Feb 2006 19:54:06 GMT
+Accept-Ranges: bytes
+ETag: "043c7bf7b2ec61:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+
+ÿØÿà JFIF  H H  ÿí ìPhotoshop 3.0 8BIM     ›    56346271( MRP 28423.000000n Getty Images/Rubberballs 
+Rubberballx ?Portrait of a couple hugging in front of house with 'Sold' sign 8BIM
+       8BIM     http://www.gettyimages.comÿÛ C 	!"$"$ÿÛ CÿÀ  r ª" ÿÄ              ÿÄ G     !1A"Qa2Bq‘¡±#R3’ÁÑáSbrs‚4Cc¢ğ$6tƒ”ÂÒÿÄ              ÿÄ 2        1!A2Qaq"3¡±ÁÑ4B‘’²áÿÚ   ? ¨e9P'¼ÜŠtºt»êmÇB‘}ú\ĞóŞ|ËÌ¶˜µ“UŒJ›˜ß‡å©D(|ğök1G	á>™1Òy¥iÔŸ—/¦!?EÉ•U-K¦RÔãƒ¼¶“ÁZ½útßâ1niê´òæZí’“)EŒÉM›Ly6Öãkã3c×»¸†5
+³A¬Æ2hõS±i`”ûÇ1ñÀ
+G²ªíÚú„"=T¬¥Ô.IU¾'Õ.Çë1f76‰>ŞoÔt:¶]Oïmÿ V§>CítV¯ğ‚~ØôYõXYóQ	XuîÖ²˜CU[õØş/3¬ıæÉ;à“Û&\qÄÆ¬Ä›G—}+BÓÅmÍiä=àb÷xª¤Ô¥KêÖ€$â®¬·QP]™Ö›Jß—Äœ¯S‰Uÿ ÄÀ•S
+I²Øx9öÄZ³ªéh¸ %
+¨¶¨âK\—©£ıôÛëË¸,¸5¤$ŸÌƒüF>	,rZ‹gÁi#úc=…hHó Ûê1V‰g
+Ôú</ıqšİ»:¼ĞÆpŞO¨ù>Nÿ \|â>Ÿ]€¿6Õü)EåjŒçqÀ‘~‹M¾øÒ)Í6­qz"¹İ‡
+Ë‘ùcz¤0{®‹ôq6ş˜ÀËDjhéómVË*/)~°È(T†f´¡eÛÒ»y)61ˆ‘aÓ¢>ãíÀn3®€Xhw‡™šRú}W¡à±üF>qVŸÚ0¡æ“¨<E¦B,Õ2Q¼er;`!ìÍEŠòcË¯ÓÙxòoŠ¯‘$à¾XbM*ªÒ-©Ê{é;Xîƒ2 Ò¢4ADvÂ—Ìè¸ØbjÂé‘òœy--uÆ\(p¥JU¬| Ä¼ÇÚ¾PRTW'ÌRo»L)Ul ¡@H¤¸•l;º€¸ù1>+-©
+*B®v½ü¼şXƒ«Wy†¸š®h•Yi‰D–d!zIçn§V>Å¬Ë¨í–´4€„Üï`,:â,Xï8¦ĞËi[î«JI	q]6µ°{²úÛŒ6âßÒ”¥ ¸¢RHäMñjÒ¶Ú.t‚UUP=‰GÏcõÅô>ÕÔ«&¯–"=â¸®–ÏÈÜ`5È
+Î4*ğ8çï)ôj“ÚNQpéÕj:ÏG+@ø¢ÿ lRsC3,i™–‘P¿$-À…Ÿ±Ç9.ğÆ…Ã¹İLX’ì]^ŠÄöl¹·?Ìawÿ ¿>H©Ğj&Õ8í8¢,}2(Y·…È?|rı6¯^¥(mj£e¹
+	ù^Ø%Ú†pdÊrI¤¨ÃQÿ RlpÁ)BXœªÈÙ*c©‘Oitù)V¤?Lœ¶\IòÜÛå‚j\9PCTŞœ”ßñ&§•¿Uƒ¿îá3Eí&Aô3PÊ…·mÄ‰'ÿ ª‡ñÃ.ß¤¹¥>8P¸Cà>§Ù/KQrP;«mWéªß{cKÛJ®Z-¨õOtı1P—+1Û$;M¹'A?+`ˆ¨~’$Ê@D9¶H·–ä5JmÔú¨ù,jş¸ÍO§Öi+óJ­ô8ØZá ­RÈÙW{Ùš‡$p¦Ö«
+¶Û¸Ñ—V‹cªé{Sí€xMºÓ·Ï– H¨PYt¡ê¥9‡v$zR­ş7Ç.vŸóÏh9Âu;(ÀŸ2ƒE¤GpÓ¶6Rİ#eA°'•¬9àR-´_Hêø ·b•v÷Úø‘É
+Û Û-…)qå‡Pw°~#ä„úì%~hU¾‡ùã”h}¥f®ÏíN|7ÂZ®Zt©` wğaá–»Q¥UòK™Œ–Ê˜<7â¡D9®×#{ƒ¾şGÃ×,*s4¤ÖhÔô¯õÔö©ÌºÒÛ* ‹‚,m~g~˜æ™ØÉò Så.u=§”ÛYÄƒ`«ƒ½ıØ™šêÕÓYLÚˆHkşdİ,§À.<üqá(e¶5)ÂP6¶ä}n1vª©y,- •©²è'nğ
+ß‰qÂÃ‰ÒVëKîé±%'Á"ß[ãät6¨Ä¸;oouß,7{4É‘©0Îd¯ğÙ
+£ŒÚ %„ÚúÕıï·¿)t³$eúvJË²s^iyÒÃeŞøı‚-ÊÛİg•‡¸`y½6úñ£Ò›eÁ­´=5!Ä¤î‡E[Ÿ»\Író´ÿ FdHDŒ³ÀkMÃÇûE×Àt£–bI·ÿ —…:^V|”Ìz†"OÂØ³¦å:$Ê{’‰ÉZÔ…-—EõmÜ#À£ËŠ«L_ü*ïlW*KígÊİ¶T¦#T4°–‘rÒxëH6ß}GsÌƒ¾1j‰ÃÅv½z‰œÉŠ'ì£U»#r!lî¶]_
+Èš®¿ËvÔ«+b–£Ù]j+Ü.,"²58¥4¢<l´Œ<$ÈˆËñ'ÊÚİjc'RTR^E¬Tã\’¤Üï× 7Á“OeçPâÕ>JY!À¢¦–ƒ¸±äM°Áš¢nâŞ‡0	âïËûôª\ß'³¼ÈÙÒı#ÿ Nóo}£ŠyùR± kHŸµ=hOÌ‹c§(1$Ä¥"4ˆWë&ÒëoG¹SKM1p6æ0/˜!“±MK„¶.”n;®¤¶ ‚ ±•nÑFwìwwŸTÊÔ•¦Z“cÈí‡C4¸î 4¬
+ÒéO0àPeµ{‰(†¥6 \wSæ¯¶4F)r\m]Æ›cCª	òq$}ñEs¸¤:Šlwy¬okò{bŞ4†
+’•8Iµ”-÷À*5É²s-U·åÓ˜[«LxéZ–êøÎ'I²ta{û®0l’la¢~Á;IK‹Ñ\»Z~},&>¥QugbË%À<nIJî*¸ğÀvq{2Ğ²Na›)¿D}Ø¥‘¬¤’	±øœe¼ıJK“Á¦Ë¦1hu…4€m{))#â0ó~ZÎ°åPé•!én´”,¤_R‚omZºøch`Ü
+•Ñk7pB#ì‡’iÔÈÓ©æaŠÜ‰M6úàqiJ]ï{óÁeF£N• Å‹T€·Ç6}!ÿ v÷ú`N”rÄ\ÆºÌJì©J†Ó¢;ó–¦JHÓ¥J)Ø¨l °Å,Ì`9%2ÛÌOG_ºâIJŠ‰;•$‚NXaq"«>jmå'ÿ Hî$œÛ&PTÛ‘Â7(#QX$å°HırXÍy†|ÒdA yn%#uq*åq¨ßÈáÅÚ&NU“]^Ó¢Òé’W!iL‡Óz¯²‰Õ·¿Ó*4ü…4¨blÔĞ„…­
+NÓhéO¬u©Ãro{ãd3†ÇKğ—n’Ñ›œä8ZD¹ÊRz*Xÿ J 8·ƒIÉ°­èq·ÔGÑçÕÌ.©¤;R˜Ä(SaFyõ†Ğ†b$“ojçrşdu…¹"µ1jNú¥	?Û„—€±m¬¢!•é•¤,Á&8iM4BcÒ” ƒ²•ndaÚõR»Z”iQ`IbŠÊ»Ê[*´¥h‘ìƒã‚X9’ ĞF_vúÌfõ¸¶ÔV	¸ço¾,!fÊL?!q\IÒ¤>Ù>¦¸8UÒ 6‘Ì@-pGùN_èq»€´‘ÿ Çş˜%¬»WNÉ¦Ë¿å)'é¾5œ—‰¿êÔïàµ<WcàQvƒªå
+öJG¹wûàNƒE¥Ş3K’`ÇyÉtŠ{Ú@Uô%Mß†ªfdnÚÂà%µ?'- $/‘Ñ/½Ôo¦ø	ˆhºµ#'š=Qiäw#”ÜR>ÄcJòõ1Ât¡Ï¾oŞ]NB£º`‡¸iUÚ
+	D+Ö7#{bµª]N(š.¶ğ !Z¯áq±ÆwêZ(öf½ü&±òIõ_+Í¹Kt3N”ç¤’”ĞY7Äjõ4ì©.¤‚Û·e%Iï§×)î£ËUş›¹Rf¼üô«ñ-­KN’.›Ü¬1#6T)òò¥NÓÄ½èn¤ ‹”'W»ÙÂâ{ç@ŸüLÍ¦ƒœ¡FØyµ¶{ôUÔb[JÚ™ud\}0Ì„â%Áaå%*â4…î/Ì…–r}LT¤Ca%?Œ²«'`vøc¤Y´Zç—©
+’Ë-)Ò’ [_éÌàr“™ãĞ(2––dÆmÅ)#GpµS£õjçs¾ø‰>¥–JdJq‡OªXqwÿ P	 |p6§-@LLô8An¶êCjq7 ‘nâú~ c4ì.÷›M¨Øê~
+afÅFƒ”Üj®Ê)oÔ
+m’Ê”E)&
+---- End Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+
+---- Begin Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+ÜÀ½°Ÿ*™2™”ÕPfmTÚ[k(Xº’º|­s|^W2×¦RıDÀnÇ¢ÌÕ!-_~ê¶Æû\ºaÚ.c£Ó*”ü®ÒÕ=M¼5×].¬Ü÷Š”yí°HØ|±Ï-sÍUşË¸^ØÛºÓ‚¹GV¤4¹3Xrœìt9*« “u¦Ô;§»±ïÏ¤¬NËì·!éQŒÂÒ!Çeµ£¯¬²µ :b«<ç<Í–¥¶İ¶¦¸.¤ÃQVöt©'çˆ4'³yhÔ%ÁDzT4©éU@µ”$]J$î«x$ƒ®Èİ+ÅN™­ïpœ×=›ñZ•ÒÛ[
+%ù‹m×àÓ¨›sÛ–şãïlôæçÓ¨iÇQ:E…Î’M½øæÌÑ›å×§Ç‡	×›¢Áw[=ÕÈXÛŠ±Èû îos†õ<œÏ—)´ÚÛ(2œ‚Ø—õ!Ô{7;  ‹c­‘Ó³K—4¡ï÷p‚`Rß¦æêsÍzÍIJĞJob7é|ƒ2¥™{8¤Ö§ÎR&NŒw‚ÚR€­D¶Â¡ªSoV`ºÚŠÑÅI+P?6;FË)ÿ bk÷_p
+¢BD‡…AO]Y·k‚#ºüF+IHp7¨·.\ñÎèí¯˜*ë)¦Gm].¥„¨'–®¾ûc¬ˆ“¬Ø´CÉ?¬qFIc]Svİ(û/(¦¢a²˜´ìÅ5ÂÔ™
+Ì•¦ß[bõ5ùšE¤KÜ¸¼¾¸\Ç FqÄ)À‚l•‘Ó"NœäF\PV¥!*=Ş¤a-]¯€Lè‚{WËˆH%shÓã k©?ˆø;ÀhÄ±ÚfsìfTc+ıq…¾¸|âÛ^Ÿt08‡Xóû"XMMŠñPLÒ”–Ãvq$hJ­eúÚR/nw8!m÷ÜKk
+y±u•]’o¿w§†(ª-LQ{‚Ó‹ZÛHeav
+‘Ì(jÇn\ü¬1:‘"aŠ˜î‰
+¾Ù	Ö®úT€›·3÷Â™î¼§¼n5óæ¬Q.HŠ’İ‘qtò€¦4T‹³)’ØqİQAî›ß‡Ğß®¬nKóu¦ÈVö¸ÒvÛ–àxsóé‰ÜT„ğİ¸R“Ş6Ó{‹aãŞâÒœ6‹ ¢åÉ­µ’`T\7CtöÜW?–µYïÌ¨;(IÑ-j.ù¼E°_"¨İ7±H:§.¤&0
+´§¢—ÉJwQ²yaUY«U‰éŠËâœÒ¤»6chsÈ”#PI=W[[M´z,²Šyhƒ‹*KJQÛ}õ¿<æ¤æau\iñ@OªSŸ1pF/h53:;r$E^ÜV–
+Ù÷ËÀò8#a.( ©÷åW ÛÂã9KÂçÒhù—-BD¨õiÅµİ™qyZ¤ ¨(…iIY©>CØ
+[•ö×!WSÊGÂøí¼ÕH‰.*3,ÌuM¼òÁkR¬'ócŸ, +Ùg&Á¤ÊªÖ ª$Èî„-œ(¹¿ª7 +e@ ñ”æ<šğ‹yªúa3X§Ê«ÆT–ø%Å”¥(BÛAc¤•[}ZmƒÒã6!Ùìş“%-Bˆ„½TKvÔ,ZhÛ¢@Ô@Ø]>Rv?-™”ŒË)–Tš3ÎMZŸYV­!J
+¤~u-HIW!©<ºÏ…ÙöyÏ•g*ÕR)´éÎ*LÉÒˆâIRÔTB¾­&üÍ†E§nš&°f¹G$ÆG—!*g
+´¦D‚«: i#r=”€7*<öñ¶:!vP«ÒDÜéPCmÄƒŸm‡Ğ?3ÊZ”’=„‹¤d¹c*döx´è—XQ(v|÷ˆşÍ<¶OÄ›`åuâ_SE=ñÍ!bÿ ,f~¥—VµGˆñK7hÌövàAÈ¹¦¾\u´zcòÒû-¤ó€$ì ?¸7øcvT’Œ”Ğ´h4­%* Ép‹ƒËb1"SîJŒ¶ÛrKJRz8aşYP)¿‘Ÿ•×!T¥¦UAsİCŠIuÖ8.{–ŠV÷báx.¤:ˆé»—˜M‚¹ˆüÊPùã‹{<€¥·U`ƒÜ/'äæ;b´ÉÅxå~Î©ÉœÆÊ“²%ÌAÛÁÃ‹œX	ä­©ËLG Qİb/ÓÑÒRÃi.¤=_,2#ÁY!
+ ‘ìªØ\½-º´9t¨[5vı¾Í‡J“+u‹áf&ı!Ğ’¢†–ÒÂÍ€$ì€á|ç\³4Cn-KS¬6­a•YM•r
+)7‹í}Î5–”¸ˆk)oEÍ}–Å—aö£1`$¤7,¼¿['|]´¹nL±"›ÚìHÚ@ü?Ivëe¯dv3•\å
+2=Ñ›aˆOö%—´©M²’ 
+’”.c‘¤
+vá>N?ºÓº3ıGè›Êô¼@ªfr£ºâTËr[X÷[Q¶."»4¶*Ğ_p{IZlwğ¶¨]‘dŠDr˜·#©Ô¤ºD…D}âmğÄ·;2Ë*äÔ”'?¦:-Ó<
+çüå ˜_ T5tjÊ°cwÕèõY„$ì³kÛÇ”òİL—!-JlşÓ~;æóøb÷´
+,ZZƒJ§¿Rm¹»¼{)Ò¢”ˆ²‘º-üqK•éğ¡)JŒ$k;¯‰Svi¿S¤¨¤{ğ2Lcxe'G¤lÀÈIP¦I¬JØ“!¶£j›QiÆ‰Ô¦\°°ß—¾ã¨5Pª†<ÓK
+K‰QmCW¨Gßß†I˜ÓmT ü~XÍyAuMY‚
+B$EGR¥(¡´$«QP½¬;røb1ä»İW¨ÓÎÎGÕ/—š"Bâ½=Öå­Õ8òì•–ZBG´µhY	÷+3we5LÆ$´gÂı*<‚¥ ¡zĞ<¯Ôs°8ın˜‡¡º†ÄS¥JÜk.¨6 ’6Ò‡UüHØ_W»IâÃa1µq¥€\$÷HİW=vÖ	—D+Ì½“r®T§E§Çe5JŠ›F¹–wÔ”ZÉºPænyàÊÒTJ[^¦ĞÔMÁõ‰ùãŸéı¤kâT$ëuR¢Õ¥(O@
+‰6X²{8¡¶Œš›%GuºlR•º±{§ˆ« Ù·Uoàïˆâ÷›*QG¦fŒÁ—éòİË¡#]}×ÜP€ s%E`1Ïl&2ßi¹ş„ëÈ©E˜·¢&"çá¤ƒo31ç<Ç]ôˆÁƒL¦<+Kk*vÚ’«ëØ• \ßp¡@S„6Öµs+7$üNºhÍ—7’µ²i@ğy'¶
+½_T,×O¦¸GâÒåºÛì¨…§ÆÛò'm´m…ìš²jh©F\øÕUÅáR`zR:JÑÉ.²­¶ßÇ´Òˆ1x‚ÉQ6HêN_¢%eÉuªôE\´ôd¾ÑòB’®«âÙëjl’¹Ì¢Ÿq6šÿ ¿ÿ ‘âó¶jgIÚ§4[Ş¥tMwşúa1–Ùáö›šÒêoç¨(à¤HgUµ
+6Qe´¾]Q|-ª#	ò“³ªö|Î‰C ´¹_Óób1òc¯wáã„šª´ã­Ó$)‡Û=Õ'˜Ây9·1 ë‰gŞ»áÅR ¼Ÿÿ  :¤XÙ$!ú–ibÔ7cˆĞŸ™ ¼£ZUC7T ¦\z´…¤©Ä²
+P¤„
+­¶­N¸–*yœ©nSëíÍm°{şŠ‘ß
+---- End Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+HTTP/1.1 200 OK
+Content-Length: 5904
+Content-Type: image/jpeg
+Last-Modified: Fri, 10 Feb 2006 19:49:10 GMT
+Accept-Ranges: bytes
+ETag: "03f59f7b2ec61:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+
+ÿØÿà JFIF  H H  ÿí ÌPhotoshop 3.0 8BIM     |    55735083( NRP 
+100263.000000n Getty Images/Imagemores 	Imagemorex !Credit Card with Shopping Receipt8BIM
+       8BIM     http://www.gettyimages.comÿÛ C 	!"$"$ÿÛ CÿÀ  € ª" ÿÄ               ÿÄ @     !1A"Qaq2B‘±#ÁÑ5CRr‚’¡¢3DSáğbdÂÿÄ               ÿÄ , 
+       !1"2AQa‘±ğBqÑ¡ÁÿÚ   ? ì°A
+z’ŠÙi„¡G$RµQwY!êñ¯RkV*7bQ±¨zÖ‡ÍZœ¤RZa¤…A¼PéHùNiÊEH¯IXÓ”“YKdµ±ZÁPÍ%.\x­)Ç\ $gsGËx´Å€Åg4Òİpfs\ÆÂ“ìªwF¶Ág«UœÖØ¬ŠŒƒEºæv”­}IÚ•{JSš)õà„ŒüVZ“Ò6Ô=r[hš.æ0Bi‹œÕŸ6E&¦p75›Tç°í0â2nVJ©›ÓĞ½³ZOoÍŒPåÇ9ÎsKq•òk„`ÕÂ|†•ç|P´"–æTĞ‘f×«NgµdW_R8Æw¬([
+öÕ7 ‹¨:N(-ØL
+Q9£æ“u!C ¥Íó‚1	ùí§Î‚M?‘uúHƒ^î«¶iKÔØÖØ¥k	.«d'¹¨cÓÒôìÅ‚r¬zzU'a-4írKh¹º·¤¨¥ dÓæ‚qî4Éi+HûÉòª&ä‹ÛK‰i
+µ¤ánº É¨‹Ñ¥Ã¹šq¾¥I¡”›Ø$¬IlWqYV3Ó=*Nç[#B;#' ïéPè6à¨.ÜÜx2ÛgWŞ5çx†Ô"¢˜(S¥;)#øïW­¤D³tKUÅó-…¥Õ`RğïH‘÷tÕl’È 40	íGmò>´¡Ã×¡¢ŒÛÜ©6MU)‡²“Ò´Ã$y7ù B@B3šÔİPÖ5+éDì÷9^ÀÉR>)¾XXò¨gÒš¦òŒ”’+I²á}:¤”©V¡µŒ{‹×$m.:T71ØªjccâV.‹s½a*)w¢Sç1 ¸±“éYÜ/”lw&3q•c¤y+ô¢nVí¿aNÄGì«ò¥YUäLGJöišf';Ó†ßmCí
+Ó\ÆÑ±Qì+dçÖSƒÒ€ñWØøsKSdó%¯f¢²5º³Ø ?61ï¸-¤9"†İnQíÑûë„õQô¨¬!¹ÉioÏ·FHÉeµêXô
+WMGĞTNëvv|jÂÚ|­ ²?Tš@koaõÊé"t¥>ò²IéÙ#Òš¥Ä’5çNw#®=©š^NàäÖ”Î…)¶Ê].ö÷¸èòP€… £äŸZFÚËjq
+(¸ˆé#šâRTRæš: @ûÇ¶ÔVÏÅÖ{-[‡šx¨sÃĞÊ‚ÜV :òNääçô1Z÷l-Õ­îÖ­Æº#ÆÂÛD” zÒ£™vá%R¥)@òá# VfÏ•>ìã²nˆ¹FiÃÊu
+”%`l‚OÇZx¦Y‘‡†SèGzšud¶íÅ¥m áà‡­uÔ”jîÔÆ\RR¢½Ó¾q¸ñ©Rÿ ñD°ÈEÙ¤6ôŞ†*o=Õ:OîÑ°4ŞáÏSA¸êÊ”pO ­¹+LpÚ‘¤o‘ÔĞ¶ØØ(Å]ŠÅRä¾4[õ¥+Ä²B™Mª8+uÁæÇošM‡¶AvkúB€û½Ïj	â[wZ•:à°åÚXËLƒ’‘Û>•NÊ9v.RÕ.ª¸¾«wZğ‘ªSŸerI¡qr-©v]íæÔ·‘®éöùª¾Oº\Vã	T©®÷[ö¢ÖS²:ôú¤H')o9Ç¶+^=EõM0àœ—X¹¼/âh\]eM¶ê†•¶õn¥L”‚
+pFERü3a™+@é›o
+	|Tñ»‰m´¶Pé) gâ™Ãñ&œ¤«FÂdRšm¥:¸ªV: 74Á«Œeœ&Àõ#OJwY)Ãá@üæ³%q²–ßZsÜu­)¦fw"ş!¿Är8pµÂ(q2”¿ŞáA+åàçI;g¥T<s³ÛîÒa^¶8‰ÇU‡%…© d„’6;}{TçÇ(oxUıÛãù„%©
+•ıQVrÈ	ßQëØßjä.5ñ&ïÅ—·®™Kˆu6ÀPJ“í…c#æ›&¢²íñîbæö:~ñtTçËgCHİ)'ıÇßô¦!Â2RN‘Ğú×:[?ât'~—ŠxUÆûîFp ş
+¬oşj±¸[Å¾¾%)tKuäIO-cóØşÒ%&³!œ§², úÇRiT¾¡÷O¨ –ë¤I)èÒØ’	êÛCó³®¬ïÜ÷¨¥| \Zvd–ø1#:ó·UF}i-¡ØÃ˜äTŸ´µa²Rp•(æ‰Ü!³Ršğiú‡YXw”Ñ••Nm•¨ŒT
+4)Ò]l&ã
+Å6²¤‡­í—·Òu'N¤ƒ¾’>İjW%–¿pœù‰ ²IQüÉ$ú“îh©·9Yà’J*æcÚ}şLU–ˆœ‡µ"øz#æ+ÃJÛØÓùÑ´¼›e™2^sC‹ÊÉ=öØã¿°ïš‰.æ¹W!kó,ì:”Ù¥d»ÈVCêå‚~ÖJÁš4á@¤ãîĞÏ¬o)9 ƒ”‹Ò9 )Œıÿ Q@Ù,jBË˜ûCıiÛ.)jåŸÇ4!§ÀÂŠ°Bv$S>$¾9h³?&;K‘)~Hí¥9*YèRNÛPJJ)É„¢äô OˆüuÓ4Gl¥÷"ı–¶ï¿°ıjœ*UâS÷»ìğÛdåÇœ8 z&„ñ
+Úªâ±+Uòû!E_HÂµ £İjî?!ZY<>ão‘cŞ¤òêÀD6†e=ÉøÊ”çYŞNÑÿ _ézt¡EurÉ†\¸âö«?ÛÊ`°q.èêp‘ìŸS]]Á[l‘ÙrbÌ™X[‡rk_ø6ËÀ<3ËfŒ–[e8[€ §İD÷ÍŸ"CóT‚Cy	Ğ½şkD(SNö:ÓxL3ôQšW1
+€qŠH„dşä~U•wu
+´µ¸üd•`¥C$ÑÔI%	8^ã½?P#{„Ô[íÏÏpÄvËz$UwâfÜËnÖÀ·6øÔ2wR4çÑ?Iì÷7oŸUj¹D`4¦¥6àR\I!$c9Oñª«Ä¯	•
+¤ËáínfDeù’œs‚r:cÊGQEÜ¯Ç×ÃĞ_+˜÷ôñõ Ş?H›táç-W¸q–‚G!kRŠPöN’…ã¹Øïšå«½Š]¬}@Œÿ ÓçË)¼8È9ØHü3‘WMş7‰\=2Bä"KÑ”ë„ÄŞ´“¤jHôÔ øª¾åpg”íÎ<~"‰u‘Ÿ+’€hzâwp{cp¯*˜½şıñÉ5µ‚ïö™ĞCS%6 Ì[ƒ\ÔçÕãœPk…³…¥>â‹kçpo9Ÿ€¬ä|“øVÏÈša™WŞfdeéxÎ?¾Ğ-ıô(ÓÛ¸~ãı{Lgõ&ù'á.#RÊ‚)térİÔ½×ßØú•¹ªÒŠ¿·ß@‹hâË™A.M‘‘"3«ÔêA$zgËìjMÃ¾-ñ,U¤Eâgÿ VğÚV“ğú 9şğÜÔbÚ‹÷	§ëSZ„â²‡ÙZVÁW¨>vWúûŠZåu°]«…¥kZ¿ê¢¶[pU'R>åJöH¢v“»WóB´´­ò\v£¶[o‰¬rmÊ^4HiÎk+Çt,~YõbY|Háëƒ(u›÷)³¶]PÓñ¬œgñÍr”K<´«…ïmÊB†W
+àÊ4¨{¨
+j%&ß,„¶9Gúø™_¾‚zu@{UiƒôûŸ’´Aö•¾ûºn_^”IúµK
+N®f°>7ÅeÅ
+´§y»×#X®·†QÏ¶Mn`NåØ)‡@õRS÷%U3°ø§Äqô°íÕ© œrnQ‚sìh~¨ ç5Ú@¾ı–_Ï–•¶”¤÷8ÿ ßÒµ ¬àm„…A`x„TœÁ
+vÏøp¡ñ¦¥–¾#²ORPKÅ\—òÒô)P­kÓ—x¹R«à²Û^[Ë„ê9%iØUÅÊâ..’¸g—mµ·–œ¹:œ)ÁÃ(ïŸí½3S;Üö¢G
+sœØƒÔ'¿ò è”ua³”­ôü½ı«ŸÇñyP§“oÃáÎxğ§Ù¸y“ßnú¹²ò²·QõQÜš½ü:á¨¼3n.=Ëväşï-8!²°¡\/Á’P–îKhóÈÊâHR3ß¡¢·™Ç‡-ë›smÔ4‚ 	NKŠ')É¤QŒâõM6Øê“SZbğ¾ŞÌq3¬‰ZBRöÀî	q“Û¯SC
+Òà˜ËyØªŒ¤‘¨(•
+DçmğJFÇrv¨tg§Kµã_ZZ^qYHF¥j(YJA!INRÚFG˜““•îó¥½6Ø…4¥¸ìbA*İ³Œ '}Êò7ÅnSó3ºdêÓ=Ùì¾¤%
+1Ï/_İS£ec9Ù'Ó½=7)À‘ô²?È“ÿ ê«È\dZh¶ÓªmH%:&R
+ŠÂ–‘Ÿ(VÛ\G¡HJ‚¡`Œï,$şE9­Éƒ “ğT{
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+zL‚—…©	'BÔAV:ú|*'zc‡İúvgÎB
+–y`»§R¨mÖ˜¥J[ø+ê0	ïéòhìtÃd¥A ©=F1ONıÆW‚²ânZ˜}èvî_Õ)×5)Â¥€r…|œã¦øªâïá•æÄ„Ï‚Ëjud•7“¨c ìOÈ5Ñ×™˜ê}Ô­m£®š„_eÇ
+­i¼Îq€1Ö²q4nïhV¶Ê¼OàBí®™ü#y•
+Zz¨§òß#óü*°â+_ÙÜR8«†ã\›OY(gJşJ‘¥güG×÷YOJibŞQõ
+JANB“ìh^bİbãQ-µŒé5™q•ivúß>æ®T'¶>7ı£i·¶¹vÚÛ)c¤/ZUì¯³şzgûq‰*ÍÖÓBW£§wı¾Cø¤×KqŸ…'yC’¢©u½¿?_Ç5Mq„¨¸m¦{i€è¬|ô5Ğ¡Çpõ{X~Ó=JaÙÛËøD™bÏ!ä.Ğ°  C3’P‘øšN½_¡Bm­ÂtyÖöm_ãNF}ÏåQ9VÄW”Ìˆ6âN)¬Àfù
+JU Keå#’NT}6ë[%J3Íî%U’ÃAÈ§…®N‡zE‚`Ü)+*lcÔ¥NaÚø¹6ÏªwÄ[,{xNò	A{N;:‰ÿ /Áş_¯–õÎâ«l$ §-Œrä¬ö%HØ~ š'ÂKLW[Z¬÷IVJ^˜J~t¤(Æ¹•¸ªWÓ«o$ı›6S£-íÿ  /	ùEÖx9SaÂuE3/¯“õ2Õİ,§8=»zÌbğÄXÉ@u§RV%Ç”¥©`cR×œ­_;À
+•4bZ­‰Ë	ç6%¶ˆ!	 ÆÁ4œ	‘®`¢.Kù	-}ì€z×>§:¨Â1Y#p§Üà\Û{
+°·l·µ¸·¢pv’FÀœ×TxKáËvXìŞoéC·UM²¬Eôù_¿nŞ´ËÂ.bÂÚ/·0—n'-$Œ†ô÷÷«UÁ¸ºKÅX=0+u
+	uä²a¯]Ë«‚²b+`¨¶J!_xúz-Ä¼µÜy
+ëÔ	r3ßmÅG¤]ÜqÔ©,óÕ”è8PÛß­*e™/°e*Xò¨i?Èû
+İ¨ÉaÓ\1jvÔûqâ±O¤²”%I ’•%;`äŒ³xso²ªD‹sªÖòR„)CV–Óœ
+Y'r¬œ`¾;“¶û”bJæ8C½Ø€ ÷ıw¢ÍJGõ.¥YNÃb=½êœiËtœã³ w®ÖäØ1å'`•© í¨(õÆ ;â££„- `ÇšHêL÷÷ÿ u\-È*@L¦Ú8êAÈÏ°4š‘ ¨’ĞÉ?Ú4·Ã¥Ù†*íîÌèODştá)kOçH%`Ÿ*Ml^XÛ SŒ‚¯y›(!8=v¨uêÎ‘ ¸Ş·‰ÂØâ¤²q
+¤j>”Œe¢Bs„…wĞÉ\(»Èü5!.ÊC‰; zPëÇ
++ŸûB!¶‘°X«l‚z×’Êzc?5TÜz¬Ñ]Æáøó˜?ºNz-P‹×Ü#<Ù€„"9>|'tÕ—6ÚãO}T@‡ÚHèkISôFÕôÚÔF“Ú—ÑaàH—‰Y³^ˆD¸¬}PûÉHŞ´{Ã8Öé(\fã„¹å
+U%Ú–$ÁW-Ä«%)ı(“T‚]q§±Øô©Ñ£kÒ%{‘¦x}.
+Ó×je²ı%8çy‘Õd·o*8-²†\ïµŸÃ!2K²ß^q¸ÎÔ®…ÜJ—‰KJá×\¹P˜SHÇØ	É5-ğ›€™‹3öåÅ„‡rËd}Ÿzœ¶Å½?»¥E4é–Ñ°¨İ8Rı’5'Spâ$ãcL®Ñİ¥MÉSE= é@§»9KÖÃ˜ÀéL…òé
+T†
+Àô¢UŠt‚.Ã¹ÇV¢Ò^5'cEa³"LT-ä$i>T*‡Y¸ÖA*-¯¡
+Ú‹³9¥€°¯LSÀpœÌvÂRpvÓÔKEˆ…DF™+¤c˜"QìkdÈ(ØQ)ƒ¤vËR“„¹$¸1Œ‘½d¥ _ßæƒ^®Æ+hXwI ¶5n]FNıE^¤D™5³Op†‡šXÜn)âƒ5Y²©7wÈQ1WOJ°­²Y—/4 AP©«q3²¶)$ãZ"ßÈêZ·ê(Š”z
+òAPÁéL5¥müÕ’‚:Wƒ%µå9Ç¥;CjXØoRÄ¸ÉnrÓ½
+›¼¢ë;â‹¿Ò¿8:kVb¸Û™JIMM$¸ÂÑn†IZ[ÃÔQvã!u)¯}ÂƒŒ¤¤´ºc<|Î,]êô’ãg¤?ä§'â‡]œ2#’S…xÂJy9ï½G/·«xËl¸3Ó­.u#viÊNÈ
+ÜfØRŠ	;Óió„\jjp—ƒ§)P4Âğ´%8q ±\ÉOVN„c§ñî,¾œ¡_Ô¸uá@Ôuç¢¶Ş–…Ÿ^ÔÚ=ÌC.,œôÁÍ-1EÁˆ²Hl$ûS˜
+·ÀBÿ Ö…Â˜—ÚÖ…f¶yk_Ù]jX’–æ°­Ôö¡Ò£1d­”ù²iÜkªVàA4øÕ¸—NÁ	l·!8u zgûÿ 
+^àÓ²bi½*# Ğql¸r;ÑÚå\ÿÙ
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan finished getting the response from the site
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan is sending the following response to the browser
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+HTTP/1.1 200 OK
+Content-Length: 5904
+Content-Type: image/jpeg
+Last-Modified: Fri, 10 Feb 2006 19:49:10 GMT
+Accept-Ranges: bytes
+ETag: "03f59f7b2ec61:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+
+ÿØÿà JFIF  H H  ÿí ÌPhotoshop 3.0 8BIM     |    55735083( NRP 
+100263.000000n Getty Images/Imagemores 	Imagemorex !Credit Card with Shopping Receipt8BIM
+       8BIM     http://www.gettyimages.comÿÛ C 	!"$"$ÿÛ CÿÀ  € ª" ÿÄ               ÿÄ @     !1A"Qaq2B‘±#ÁÑ5CRr‚’¡¢3DSáğbdÂÿÄ               ÿÄ , 
+       !1"2AQa‘±ğBqÑ¡ÁÿÚ   ? ì°A
+z’ŠÙi„¡G$RµQwY!êñ¯RkV*7bQ±¨zÖ‡ÍZœ¤RZa¤…A¼PéHùNiÊEH¯IXÓ”“YKdµ±ZÁPÍ%.\x­)Ç\ $gsGËx´Å€Åg4Òİpfs\ÆÂ“ìªwF¶Ág«UœÖØ¬ŠŒƒEºæv”­}IÚ•{JSš)õà„ŒüVZ“Ò6Ô=r[hš.æ0Bi‹œÕŸ6E&¦p75›Tç°í0â2nVJ©›ÓĞ½³ZOoÍŒPåÇ9ÎsKq•òk„`ÕÂ|†•ç|P´"–æTĞ‘f×«NgµdW_R8Æw¬([
+öÕ7 ‹¨:N(-ØL
+Q9£æ“u!C ¥Íó‚1	ùí§Î‚M?‘uúHƒ^î«¶iKÔØÖØ¥k	.«d'¹¨cÓÒôìÅ‚r¬zzU'a-4írKh¹º·¤¨¥ dÓæ‚qî4Éi+HûÉòª&ä‹ÛK‰i
+µ¤ánº É¨‹Ñ¥Ã¹šq¾¥I¡”›Ø$¬IlWqYV3Ó=*Nç[#B;#' ïéPè6à¨.ÜÜx2ÛgWŞ5çx†Ô"¢˜(S¥;)#øïW­¤D³tKUÅó-…¥Õ`RğïH‘÷tÕl’È 40	íGmò>´¡Ã×¡¢ŒÛÜ©6MU)‡²“Ò´Ã$y7ù B@B3šÔİPÖ5+éDì÷9^ÀÉR>)¾XXò¨gÒš¦òŒ”’+I²á}:¤”©V¡µŒ{‹×$m.:T71ØªjccâV.‹s½a*)w¢Sç1 ¸±“éYÜ/”lw&3q•c¤y+ô¢nVí¿aNÄGì«ò¥YUäLGJöišf';Ó†ßmCí
+Ó\ÆÑ±Qì+dçÖSƒÒ€ñWØøsKSdó%¯f¢²5º³Ø ?61ï¸-¤9"†İnQíÑûë„õQô¨¬!¹ÉioÏ·FHÉeµêXô
+WMGĞTNëvv|jÂÚ|­ ²?Tš@koaõÊé"t¥>ò²IéÙ#Òš¥Ä’5çNw#®=©š^NàäÖ”Î…)¶Ê].ö÷¸èòP€… £äŸZFÚËjq
+(¸ˆé#šâRTRæš: @ûÇ¶ÔVÏÅÖ{-[‡šx¨sÃĞÊ‚ÜV :òNääçô1Z÷l-Õ­îÖ­Æº#ÆÂÛD” zÒ£™vá%R¥)@òá# VfÏ•>ìã²nˆ¹FiÃÊu
+”%`l‚OÇZx¦Y‘‡†SèGzšud¶íÅ¥m áà‡­uÔ”jîÔÆ\RR¢½Ó¾q¸ñ©Rÿ ñD°ÈEÙ¤6ôŞ†*o=Õ:OîÑ°4ŞáÏSA¸êÊ”pO ­¹+LpÚ‘¤o‘ÔĞ¶ØØ(Å]ŠÅRä¾4[õ¥+Ä²B™Mª8+uÁæÇošM‡¶AvkúB€û½Ïj	â[wZ•:à°åÚXËLƒ’‘Û>•NÊ9v.RÕ.ª¸¾«wZğ‘ªSŸerI¡qr-©v]íæÔ·‘®éöùª¾Oº\Vã	T©®÷[ö¢ÖS²:ôú¤H')o9Ç¶+^=EõM0àœ—X¹¼/âh\]eM¶ê†•¶õn¥L”‚
+pFERü3a™+@é›o
+	|Tñ»‰m´¶Pé) gâ™Ãñ&œ¤«FÂdRšm¥:¸ªV: 74Á«Œeœ&Àõ#OJwY)Ãá@üæ³%q²–ßZsÜu­)¦fw"ş!¿Är8pµÂ(q2”¿ŞáA+åàçI;g¥T<s³ÛîÒa^¶8‰ÇU‡%…© d„’6;}{TçÇ(oxUıÛãù„%©
+•ıQVrÈ	ßQëØßjä.5ñ&ïÅ—·®™Kˆu6ÀPJ“í…c#æ›&¢²íñîbæö:~ñtTçËgCHİ)'ıÇßô¦!Â2RN‘Ğú×:[?ât'~—ŠxUÆûîFp ş
+¬oşj±¸[Å¾¾%)tKuäIO-cóØşÒ%&³!œ§², úÇRiT¾¡÷O¨ –ë¤I)èÒØ’	êÛCó³®¬ïÜ÷¨¥| \Zvd–ø1#:ó·UF}i-¡ØÃ˜äTŸ´µa²Rp•(æ‰Ü!³Ršğiú‡YXw”Ñ••Nm•¨ŒT
+4)Ò]l&ã
+Å6²¤‡­í—·Òu'N¤ƒ¾’>İjW%–¿pœù‰ ²IQüÉ$ú“îh©·9Yà’J*æcÚ}şLU–ˆœ‡µ"øz#æ+ÃJÛØÓùÑ´¼›e™2^sC‹ÊÉ=öØã¿°ïš‰.æ¹W!kó,ì:”Ù¥d»ÈVCêå‚~ÖJÁš4á@¤ãîĞÏ¬o)9 ƒ”‹Ò9 )Œıÿ Q@Ù,jBË˜ûCıiÛ.)jåŸÇ4!§ÀÂŠ°Bv$S>$¾9h³?&;K‘)~Hí¥9*YèRNÛPJJ)É„¢äô OˆüuÓ4Gl¥÷"ı–¶ï¿°ıjœ*UâS÷»ìğÛdåÇœ8 z&„ñ
+Úªâ±+Uòû!E_HÂµ £İjî?!ZY<>ão‘cŞ¤òêÀD6†e=ÉøÊ”çYŞNÑÿ _ézt¡EurÉ†\¸âö«?ÛÊ`°q.èêp‘ìŸS]]Á[l‘ÙrbÌ™X[‡rk_ø6ËÀ<3ËfŒ–[e8[€ §İD÷ÍŸ"CóT‚Cy	Ğ½şkD(SNö:ÓxL3ôQšW1
+€qŠH„dşä~U•wu
+´µ¸üd•`¥C$ÑÔI%	8^ã½?P#{„Ô[íÏÏpÄvËz$UwâfÜËnÖÀ·6øÔ2wR4çÑ?Iì÷7oŸUj¹D`4¦¥6àR\I!$c9Oñª«Ä¯	•
+¤ËáínfDeù’œs‚r:cÊGQEÜ¯Ç×ÃĞ_+˜÷ôñõ Ş?H›táç-W¸q–‚G!kRŠPöN’…ã¹Øïšå«½Š]¬}@Œÿ ÓçË)¼8È9ØHü3‘WMş7‰\=2Bä"KÑ”ë„ÄŞ´“¤jHôÔ øª¾åpg”íÎ<~"‰u‘Ÿ+’€hzâwp{cp¯*˜½şıñÉ5µ‚ïö™ĞCS%6 Ì[ƒ\ÔçÕãœPk…³…¥>â‹kçpo9Ÿ€¬ä|“øVÏÈša™WŞfdeéxÎ?¾Ğ-ıô(ÓÛ¸~ãı{Lgõ&ù'á.#RÊ‚)térİÔ½×ßØú•¹ªÒŠ¿·ß@‹hâË™A.M‘‘"3«ÔêA$zgËìjMÃ¾-ñ,U¤Eâgÿ VğÚV“ğú 9şğÜÔbÚ‹÷	§ëSZ„â²‡ÙZVÁW¨>vWúûŠZåu°]«…¥kZ¿ê¢¶[pU'R>åJöH¢v“»WóB´´­ò\v£¶[o‰¬rmÊ^4HiÎk+Çt,~YõbY|Háëƒ(u›÷)³¶]PÓñ¬œgñÍr”K<´«…ïmÊB†W
+àÊ4¨{¨
+j%&ß,„¶9Gúø™_¾‚zu@{UiƒôûŸ’´Aö•¾ûºn_^”IúµK
+N®f°>7ÅeÅ
+´§y»×#X®·†QÏ¶Mn`NåØ)‡@õRS÷%U3°ø§Äqô°íÕ© œrnQ‚sìh~¨ ç5Ú@¾ı–_Ï–•¶”¤÷8ÿ ßÒµ ¬àm„…A`x„TœÁ
+vÏøp¡ñ¦¥–¾#²ORPKÅ\—òÒô)P­kÓ—x¹R«à²Û^[Ë„ê9%iØUÅÊâ..’¸g—mµ·–œ¹:œ)ÁÃ(ïŸí½3S;Üö¢G
+sœØƒÔ'¿ò è”ua³”­ôü½ı«ŸÇñyP§“oÃáÎxğ§Ù¸y“ßnú¹²ò²·QõQÜš½ü:á¨¼3n.=Ëväşï-8!²°¡\/Á’P–îKhóÈÊâHR3ß¡¢·™Ç‡-ë›smÔ4‚ 	NKŠ')É¤QŒâõM6Øê“SZbğ¾ŞÌq3¬‰ZBRöÀî	q“Û¯SC
+Òà˜ËyØªŒ¤‘¨(•
+DçmğJFÇrv¨tg§Kµã_ZZ^qYHF¥j(YJA!INRÚFG˜““•îó¥½6Ø…4¥¸ìbA*İ³Œ '}Êò7ÅnSó3ºdêÓ=Ùì¾¤%
+1Ï/_İS£ec9Ù'Ó½=7)À‘ô²?È“ÿ ê«È\dZh¶ÓªmH%:&R
+ŠÂ–‘Ÿ(VÛ\G¡HJ‚¡`Œï,$şE9­Éƒ “ğT{zL‚—…©	'BÔAV:ú|*'zc‡İúvgÎB
+–y`»§R¨mÖ˜¥J[ø+ê0	ïéòhìtÃd¥A ©=F1ONıÆW‚²ânZ˜}èvî_Õ)×5)Â¥€r…|œã¦øªâïá•æÄ„Ï‚Ëjud•7“¨c ìOÈ5Ñ×™˜ê}Ô­m£®š„_eÇ
+­i¼Îq€1Ö²q4nïhV¶Ê¼OàBí®™ü#y•
+Zz¨§òß#óü*°â+_ÙÜR8«†ã\›OY(gJşJ‘¥güG×÷YOJibŞQõ
+JANB“ìh^bİbãQ-µŒé5™q•ivúß>æ®T'¶>7ı£i·¶¹vÚÛ)c¤/ZUì¯³şzgûq‰*ÍÖÓBW£§wı¾Cø¤×KqŸ…'yC’¢©u½¿?_Ç5Mq„¨¸m¦{i€è¬|ô5Ğ¡Çpõ{X~Ó=JaÙÛËøD™bÏ!ä.Ğ°  C3’P‘øšN½_¡Bm­ÂtyÖöm_ãNF}ÏåQ9VÄW”Ìˆ6âN)¬Àfù
+JU Keå#’NT}6ë[%J3Íî%U’ÃAÈ§…®N‡zE‚`Ü)+*lcÔ¥NaÚø¹6ÏªwÄ[,{xNò	A{N;:‰ÿ /Áş_¯–õÎâ«l$ §-Œrä¬ö%HØ~ š'ÂKLW[Z¬÷IVJ^˜J~t¤(Æ¹•¸ªWÓ«o$ı›6S£-íÿ  /	ùEÖx9SaÂuE3/¯“õ2Õİ,§8=»zÌbğÄXÉ@u§RV%Ç”¥©`cR×œ­_;À
+•4bZ­‰Ë	ç6%¶ˆ!	 ÆÁ4œ	‘®`¢.Kù	-}ì€z×>§:¨Â1Y#p§Üà\Û{
+°·l·µ¸·¢pv’FÀœ×TxKáËvXìŞoéC·UM²¬Eôù_¿nŞ´ËÂ.bÂÚ/·0—n'-$Œ†ô÷÷«UÁ¸ºKÅX=0+u
+	uä²a¯]Ë«‚²b+`¨¶J!_xúz-Ä¼µÜy
+ëÔ	r3ßmÅG¤]ÜqÔ©,óÕ”è8PÛß­*e™/°e*Xò¨i?Èû
+İ¨ÉaÓ\1jvÔûqâ±O¤²”%I ’•%;`äŒ³xso²ªD‹sªÖòR„)CV–Óœ
+Y'r¬œ`¾;“¶û”bJæ8C½Ø€ ÷ıw¢ÍJGõ.¥YNÃb=½êœiËtœã³ w®ÖäØ1å'`•© í¨(õÆ ;â££„- `ÇšHêL÷÷ÿ u\-È*@L¦Ú8êAÈÏ°4š‘ ¨’ĞÉ?Ú4·Ã¥Ù†*íîÌèODştá)kOçH%`Ÿ*Ml^XÛ SŒ‚¯y›(!8=v¨uêÎ‘ ¸Ş·‰ÂØâ¤²q
+¤j>”Œe¢Bs„…wĞÉ\(»Èü5!.ÊC‰; zPëÇ
++ŸûB!¶‘°X«l‚z×’Êzc?5TÜz¬Ñ]Æáøó˜?ºNz-P‹×Ü#<Ù€„"9>|'tÕ—6ÚãO}T@‡ÚHèkISôFÕôÚÔF“Ú—ÑaàH—‰Y³^ˆD¸¬}PûÉHŞ´{Ã8Öé(\fã„¹å
+U%Ú–$ÁW-Ä«%)ı(“T‚]q§±Øô©Ñ£kÒ%{‘¦x}.
+Ó×je²ı%8çy‘Õd·o*8-²†\ïµŸÃ!2K²ß^q¸ÎÔ®…ÜJ—‰KJá×\¹P˜SHÇØ	É5-ğ›€™‹3öåÅ„‡rËd}Ÿzœ¶Å½?»¥E4é–Ñ°¨İ8Rı’5'Spâ$ãcL®Ñİ¥MÉSE= é@§»9KÖÃ˜ÀéL…òé
+T†
+Àô¢UŠt‚.Ã¹ÇV¢Ò^5'cEa³"LT-ä$i>T*‡Y¸ÖA*-¯¡
+Ú‹³9¥€°¯LSÀpœÌvÂRpvÓÔKEˆ…DF™+¤c˜"QìkdÈ(ØQ)ƒ¤vËR“„¹$¸1Œ‘½d¥ _ßæƒ^®Æ+hXwI ¶5n]FNıE^¤D™5³Op†‡šXÜn)âƒ5Y²©7wÈQ1WOJ°­²Y—/4 AP©«q3²¶)$ãZ"ßÈêZ·ê(Š”z
+òAPÁéL5¥müÕ’‚:Wƒ%µå9Ç¥;CjXØoRÄ¸ÉnrÓ½
+›¼¢ë;â‹¿Ò¿8:kVb¸Û™JIMM$¸ÂÑn†IZ[ÃÔQvã!u)¯}ÂƒŒ¤¤´ºc<|Î,]êô’ãg¤?ä§'â‡]œ2#’S…xÂJy9ï½G/·«xËl¸3Ó­.u#viÊNÈ
+ÜfØRŠ	;Óió„\jjp—ƒ§)P4Âğ´%8q ±\ÉOVN„c§ñî,¾œ¡_Ô¸uá@Ôuç¢¶Ş–…Ÿ^ÔÚ=ÌC.,œôÁÍ-1EÁˆ²Hl$ûS˜
+·ÀBÿ Ö…Â˜—ÚÖ…f¶yk_Ù]jX’–æ°­Ôö¡Ò£1d­”ù²iÜkªVàA4øÕ¸—NÁ	l·!8u zgûÿ 
+^àÓ²bi½*# Ğql¸r;ÑÚå\ÿÙ
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> Server connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan finished sending the response to the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+KˆB“b:k
+¿Q€˜U™™m¶RÃSÊJî„–G.©uª„ÙM.Ÿ:’ó€:RZ–VÔy¨„¤$|1—K­cÚ^íŞE×<sòDæW@œÙ~¡XzŒË³&¡×Àt8¯G	¡Å#ktùbËÒ§•Ø6‘ ô·—˜Àgu*„šxjtvC‘ĞoC÷%*ÜÜJ¹ÜsßH—kİpFÊ±Ü'ÿ Ï×ÃO8tMuœu¿ÊÌæó„!Ú¬ê¤ÈĞbµ+©R”P]*Kzí¸XÆ››yyaaTc=Ä‚e¹˜(mD`&arN ½‡Ké'Àa¤ŸÖl¶µEàEg®×u¥’EÀ¶×NÃÆø‡Iz·QEN°Á×õQàµªêL"l£s¹*?Q$TÖš~fwÌúhzfO¤„¢¼[k¥VP÷€®Ñ;t™˜òŠ2½.©o<Ú›©g”Ğ)=$wBÅî­î6Îù’™Pu˜Õ0Ó
+±z"\O.„«ë×ßÛ8vX†Ô†ã—‹kÆ“t‘pysñ8tP67[U;Vùh9Q·UuÂR	ñ±íù­3KHº¢¥\‰'è0"ı]·
+ŠÂV<zãâj
+AÖN¶IÜgZ#zkl6†.ìCÈh
+&âö°ğ¿ËÉXÔû+
+qIïŸ<G/,T8ÿ w¸çqv(P<L{‡!HB×®À“­>¢¼KÉ—Jj¡
+^
+ôn…c©r‹F¶’Â:¬9b¶†§§¼Ûj)}*M¼,«ÿ WUóQ"Âür8Î·˜'Éà+àrUäê¢dT‚Ü¶Rl4¸«'Ÿ•ü¼ñÓÿ ¡å&B\¬Ö°i7±â¥+Zı#‚õ%…¨=Â[È}²ó2Z^ë˜ í¨uì/Ğª±	˜Ô!Ë©1èµ’§Ö”$ óğïbp²AOVÅ§¯Í#í…,ø]®æ“±–…üÒÿ ­é*|†³
+)nxqĞOß	lõœœÓ)a$
+’†´ñT6+¨°ç·<fÔÎØÀ%P4ŠĞ•)J->ÚÓ~‰¿Øâ©èÏ–t4{Ç¡ñÀ>ZÍï~±[KaÀ”( ¨8’$ó=0~‰q]B\eC—_†3Ã©lƒ
+`raÊÿ vwü
+ûÓÿ æ¯îq˜ÌyOÕ?Ÿ•£O‚ cySÿ 3@òvãŞ üñ˜Ìyİ'Æg¨û§;öT¥
+ÅiP™Öw?!òÃ1<±˜Ì{of,>_êÕ™ıä!œ’“Tm% …8@}Ü{cö#üXÌf=]À°IŞ*5c“CÏ³úUm\§±!ÁqîN3†Œ¡nRnZR–; 
+“ÈËñŸIZntÜíÓŒÃ“ê^âRé“Ğc\U¬•]Jİ>>xÌf"”µ­QjB”’¥Øm{«|Q6“°Æc1C
+9d®şS’ŞÑ1:/¾›¤ŞŞ{~Œ,0òs2e·$´BV@Ù^8Ìf3j~ZaÈM<Ã2^B“ BI m„}“!4IKKî…ÜI!fäj{±˜Ìqx"Ôd*ZrR‡–” ”ˆ©X XiçïóÃN“2Y¥D&Sä–ÿ şQŒÆaÃ¼RBÿÙ
+---- End Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan finished getting the response from the site
+---- End Thread  7204[1ac8] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> Browser connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan is sending the following response to the browser
+---- End Thread  7204[1ac8] ----
+
+---- Begin Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+HTTP/1.1 200 OK
+Content-Length: 7900
+Content-Type: image/jpeg
+Last-Modified: Fri, 10 Feb 2006 19:54:06 GMT
+Accept-Ranges: bytes
+ETag: "043c7bf7b2ec61:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:45 GMT
+
+ÿØÿà JFIF  H H  ÿí ìPhotoshop 3.0 8BIM     ›    56346271( MRP 28423.000000n Getty Images/Rubberballs 
+Rubberballx ?Portrait of a couple hugging in front of house with 'Sold' sign 8BIM
+       8BIM     http://www.gettyimages.comÿÛ C 	!"$"$ÿÛ CÿÀ  r ª" ÿÄ              ÿÄ G     !1A"Qa2Bq‘¡±#R3’ÁÑáSbrs‚4Cc¢ğ$6tƒ”ÂÒÿÄ              ÿÄ 2        1!A2Qaq"3¡±ÁÑ4B‘’²áÿÚ   ? ¨e9P'¼ÜŠtºt»êmÇB‘}ú\ĞóŞ|ËÌ¶˜µ“UŒJ›˜ß‡å©D(|ğök1G	á>™1Òy¥iÔŸ—/¦!?EÉ•U-K¦RÔãƒ¼¶“ÁZ½útßâ1niê´òæZí’“)EŒÉM›Ly6Öãkã3c×»¸†5
+³A¬Æ2hõS±i`”ûÇ1ñÀ
+G²ªíÚú„"=T¬¥Ô.IU¾'Õ.Çë1f76‰>ŞoÔt:¶]Oïmÿ V§>CítV¯ğ‚~ØôYõXYóQ	XuîÖ²˜CU[õØş/3¬ıæÉ;à“Û&\qÄÆ¬Ä›G—}+BÓÅmÍiä=àb÷xª¤Ô¥KêÖ€$â®¬·QP]™Ö›Jß—Äœ¯S‰Uÿ ÄÀ•S
+I²Øx9öÄZ³ªéh¸ %
+¨¶¨âK\—©£ıôÛëË¸,¸5¤$ŸÌƒüF>	,rZ‹gÁi#úc=…hHó Ûê1V‰g
+Ôú</ıqšİ»:¼ĞÆpŞO¨ù>Nÿ \|â>Ÿ]€¿6Õü)EåjŒçqÀ‘~‹M¾øÒ)Í6­qz"¹İ‡
+Ë‘ùcz¤0{®‹ôq6ş˜ÀËDjhéómVË*/)~°È(T†f´¡eÛÒ»y)61ˆ‘aÓ¢>ãíÀn3®€Xhw‡™šRú}W¡à±üF>qVŸÚ0¡æ“¨<E¦B,Õ2Q¼er;`!ìÍEŠòcË¯ÓÙxòoŠ¯‘$à¾XbM*ªÒ-©Ê{é;Xîƒ2 Ò¢4ADvÂ—Ìè¸ØbjÂé‘òœy--uÆ\(p¥JU¬| Ä¼ÇÚ¾PRTW'ÌRo»L)Ul ¡@H¤¸•l;º€¸ù1>+-©
+*B®v½ü¼şXƒ«Wy†¸š®h•Yi‰D–d!zIçn§V>Å¬Ë¨í–´4€„Üï`,:â,Xï8¦ĞËi[î«JI	q]6µ°{²úÛŒ6âßÒ”¥ ¸¢RHäMñjÒ¶Ú.t‚UUP=‰GÏcõÅô>ÕÔ«&¯–"=â¸®–ÏÈÜ`5È
+Î4*ğ8çï)ôj“ÚNQpéÕj:ÏG+@ø¢ÿ lRsC3,i™–‘P¿$-À…Ÿ±Ç9.ğÆ…Ã¹İLX’ì]^ŠÄöl¹·?Ìawÿ ¿>H©Ğj&Õ8í8¢,}2(Y·…È?|rı6¯^¥(mj£e¹
+	ù^Ø%Ú†pdÊrI¤¨ÃQÿ RlpÁ)BXœªÈÙ*c©‘Oitù)V¤?Lœ¶\IòÜÛå‚j\9PCTŞœ”ßñ&§•¿Uƒ¿îá3Eí&Aô3PÊ…·mÄ‰'ÿ ª‡ñÃ.ß¤¹¥>8P¸Cà>§Ù/KQrP;«mWéªß{cKÛJ®Z-¨õOtı1P—+1Û$;M¹'A?+`ˆ¨~’$Ê@D9¶H·–ä5JmÔú¨ù,jş¸ÍO§Öi+óJ­ô8ØZá ­RÈÙW{Ùš‡$p¦Ö«
+¶Û¸Ñ—V‹cªé{Sí€xMºÓ·Ï– H¨PYt¡ê¥9‡v$zR­ş7Ç.vŸóÏh9Âu;(ÀŸ2ƒE¤GpÓ¶6Rİ#eA°'•¬9àR-´_Hêø ·b•v÷Úø‘É
+Û Û-…)qå‡Pw°~#ä„úì%~hU¾‡ùã”h}¥f®ÏíN|7ÂZ®Zt©` wğaá–»Q¥UòK™Œ–Ê˜<7â¡D9®×#{ƒ¾şGÃ×,*s4¤ÖhÔô¯õÔö©ÌºÒÛ* ‹‚,m~g~˜æ™ØÉò Så.u=§”ÛYÄƒ`«ƒ½ıØ™šêÕÓYLÚˆHkşdİ,§À.<üqá(e¶5)ÂP6¶ä}n1vª©y,- •©²è'nğ
+ß‰qÂÃ‰ÒVëKîé±%'Á"ß[ãät6¨Ä¸;oouß,7{4É‘©0Îd¯ğÙ
+£ŒÚ %„ÚúÕıï·¿)t³$eúvJË²s^iyÒÃeŞøı‚-ÊÛİg•‡¸`y½6úñ£Ò›eÁ­´=5!Ä¤î‡E[Ÿ»\Író´ÿ FdHDŒ³ÀkMÃÇûE×Àt£–bI·ÿ —…:^V|”Ìz†"OÂØ³¦å:$Ê{’‰ÉZÔ…-—EõmÜ#À£ËŠ«L_ü*ïlW*KígÊİ¶T¦#T4°–‘rÒxëH6ß}GsÌƒ¾1j‰ÃÅv½z‰œÉŠ'ì£U»#r!lî¶]_
+Èš®¿ËvÔ«+b–£Ù]j+Ü.,"²58¥4¢<l´Œ<$ÈˆËñ'ÊÚİjc'RTR^E¬Tã\’¤Üï× 7Á“OeçPâÕ>JY!À¢¦–ƒ¸±äM°Áš¢nâŞ‡0	âïËûôª\ß'³¼ÈÙÒı#ÿ Nóo}£ŠyùR± kHŸµ=hOÌ‹c§(1$Ä¥"4ˆWë&ÒëoG¹SKM1p6æ0/˜!“±MK„¶.”n;®¤¶ ‚ ±•nÑFwìwwŸTÊÔ•¦Z“cÈí‡C4¸î 4¬
+ÒéO0àPeµ{‰(†¥6 \wSæ¯¶4F)r\m]Æ›cCª	òq$}ñEs¸¤:Šlwy¬okò{bŞ4†
+’•8Iµ”-÷À*5É²s-U·åÓ˜[«LxéZ–êøÎ'I²ta{û®0l’la¢~Á;IK‹Ñ\»Z~},&>¥QugbË%À<nIJî*¸ğÀvq{2Ğ²Na›)¿D}Ø¥‘¬¤’	±øœe¼ıJK“Á¦Ë¦1hu…4€m{))#â0ó~ZÎ°åPé•!én´”,¤_R‚omZºøch`Ü
+•Ñk7pB#ì‡’iÔÈÓ©æaŠÜ‰M6úàqiJ]ï{óÁeF£N• Å‹T€·Ç6}!ÿ v÷ú`N”rÄ\ÆºÌJì©J†Ó¢;ó–¦JHÓ¥J)Ø¨l °Å,Ì`9%2ÛÌOG_ºâIJŠ‰;•$‚NXaq"«>jmå'ÿ Hî$œÛ&PTÛ‘Â7(#QX$å°HırXÍy†|ÒdA yn%#uq*åq¨ßÈáÅÚ&NU“]^Ó¢Òé’W!iL‡Óz¯²‰Õ·¿Ó*4ü…4¨blÔĞ„…­
+NÓhéO¬u©Ãro{ãd3†ÇKğ—n’Ñ›œä8ZD¹ÊRz*Xÿ J 8·ƒIÉ°­èq·ÔGÑçÕÌ.©¤;R˜Ä(SaFyõ†Ğ†b$“ojçrşdu…¹"µ1jNú¥	?Û„—€±m¬¢!•é•¤,Á&8iM4BcÒ” ƒ²•ndaÚõR»Z”iQ`IbŠÊ»Ê[*´¥h‘ìƒã‚X9’ ĞF_vúÌfõ¸¶ÔV	¸ço¾,!fÊL?!q\IÒ¤>Ù>¦¸8UÒ 6‘Ì@-pGùN_èq»€´‘ÿ Çş˜%¬»WNÉ¦Ë¿å)'é¾5œ—‰¿êÔïàµ<WcàQvƒªå
+öJG¹wûàNƒE¥Ş3K’`ÇyÉtŠ{Ú@Uô%Mß†ªfdnÚÂà%µ?'- $/‘Ñ/½Ôo¦ø	ˆhºµ#'š=Qiäw#”ÜR>ÄcJòõ1Ât¡Ï¾oŞ]NB£º`‡¸iUÚ
+	D+Ö7#{bµª]N(š.¶ğ !Z¯áq±ÆwêZ(öf½ü&±òIõ_+Í¹Kt3N”ç¤’”ĞY7Äjõ4ì©.¤‚Û·e%Iï§×)î£ËUş›¹Rf¼üô«ñ-­KN’.›Ü¬1#6T)òò¥NÓÄ½èn¤ ‹”'W»ÙÂâ{ç@ŸüLÍ¦ƒœ¡FØyµ¶{ôUÔb[JÚ™ud\}0Ì„â%Áaå%*â4…î/Ì…–r}LT¤Ca%?Œ²«'`vøc¤Y´Zç—©
+’Ë-)Ò’ [_éÌàr“™ãĞ(2––dÆmÅ)#GpµS£õjçs¾ø‰>¥–JdJq‡OªXqwÿ P	 |p6§-@LLô8An¶êCjq7 ‘nâú~ c4ì.÷›M¨Øê~
+afÅFƒ”Üj®Ê)oÔ
+m’Ê”E)&ÜÀ½°Ÿ*™2™”ÕPfmTÚ[k(Xº’º|­s|^W2×¦RıDÀnÇ¢ÌÕ!-_~ê¶Æû\ºaÚ.c£Ó*”ü®ÒÕ=M¼5×].¬Ü÷Š”yí°HØ|±Ï-sÍUşË¸^ØÛºÓ‚¹GV¤4¹3Xrœìt9*« “u¦Ô;§»±ïÏ¤¬NËì·!éQŒÂÒ!Çeµ£¯¬²µ :b«<ç<Í–¥¶İ¶¦¸.¤ÃQVöt©'çˆ4'³yhÔ%ÁDzT4©éU@µ”$]J$î«x$ƒ®Èİ+ÅN™­ïpœ×=›ñZ•ÒÛ[
+%ù‹m×àÓ¨›sÛ–şãïlôæçÓ¨iÇQ:E…Î’M½øæÌÑ›å×§Ç‡	×›¢Áw[=ÕÈXÛŠ±Èû îos†õ<œÏ—)´ÚÛ(2œ‚Ø—õ!Ô{7;  ‹c­‘Ó³K—4¡ï÷p‚`Rß¦æêsÍzÍIJĞJob7é|ƒ2¥™{8¤Ö§ÎR&NŒw‚ÚR€­D¶Â¡ªSoV`ºÚŠÑÅI+P?6;FË)ÿ bk÷_p
+¢BD‡…AO]Y·k‚#ºüF+IHp7¨·.\ñÎèí¯˜*ë)¦Gm].¥„¨'–®¾ûc¬ˆ“¬Ø´CÉ?¬qFIc]Svİ(û/(¦¢a²˜´ìÅ5ÂÔ™
+Ì•¦ß[bõ5ùšE¤KÜ¸¼¾¸\Ç FqÄ)À‚l•‘Ó"NœäF\PV¥!*=Ş¤a-]¯€Lè‚{WËˆH%shÓã k©?ˆø;ÀhÄ±ÚfsìfTc+ıq…¾¸|âÛ^Ÿt08‡Xóû"XMMŠñPLÒ”–Ãvq$hJ­eúÚR/nw8!m÷ÜKk
+y±u•]’o¿w§†(ª-LQ{‚Ó‹ZÛHeav
+‘Ì(jÇn\ü¬1:‘"aŠ˜î‰
+¾Ù	Ö®úT€›·3÷Â™î¼§¼n5óæ¬Q.HŠ’İ‘qtò€¦4T‹³)’ØqİQAî›ß‡Ğß®¬nKóu¦ÈVö¸ÒvÛ–àxsóé‰ÜT„ğİ¸R“Ş6Ó{‹aãŞâÒœ6‹ ¢åÉ­µ’`T\7CtöÜW?–µYïÌ¨;(IÑ-j.ù¼E°_"¨İ7±H:§.¤&0
+´§¢—ÉJwQ²yaUY«U‰éŠËâœÒ¤»6chsÈ”#PI=W[[M´z,²Šyhƒ‹*KJQÛ}õ¿<æ¤æau\iñ@OªSŸ1pF/h53:;r$E^ÜV–
+Ù÷ËÀò8#a.( ©÷åW ÛÂã9KÂçÒhù—-BD¨õiÅµİ™qyZ¤ ¨(…iIY©>CØ
+[•ö×!WSÊGÂøí¼ÕH‰.*3,ÌuM¼òÁkR¬'ócŸ, +Ùg&Á¤ÊªÖ ª$Èî„-œ(¹¿ª7 +e@ ñ”æ<šğ‹yªúa3X§Ê«ÆT–ø%Å”¥(BÛAc¤•[}ZmƒÒã6!Ùìş“%-Bˆ„½TKvÔ,ZhÛ¢@Ô@Ø]>Rv?-™”ŒË)–Tš3ÎMZŸYV­!J
+¤~u-HIW!©<ºÏ…ÙöyÏ•g*ÕR)´éÎ*LÉÒˆâIRÔTB¾­&üÍ†E§nš&°f¹G$ÆG—!*g
+´¦D‚«: i#r=”€7*<öñ¶:!vP«ÒDÜéPCmÄƒŸm‡Ğ?3ÊZ”’=„‹¤d¹c*döx´è—XQ(v|÷ˆşÍ<¶OÄ›`åuâ_SE=ñÍ!bÿ ,f~¥—VµGˆñK7hÌövàAÈ¹¦¾\u´zcòÒû-¤ó€$ì ?¸7øcvT’Œ”Ğ´h4­%* Ép‹ƒËb1"SîJŒ¶ÛrKJRz8aşYP)¿‘Ÿ•×!T¥¦UAsİCŠIuÖ8.{–ŠV÷báx.¤:ˆé»—˜M‚¹ˆüÊPùã‹{<€¥·U`ƒÜ/'äæ;b´ÉÅxå~Î©ÉœÆÊ“²%ÌAÛÁÃ‹œX	ä­©ËLG Qİb/ÓÑÒRÃi.¤=_,2#ÁY!
+ ‘ìªØ\½-º´9t¨[5vı¾Í‡J“+u‹áf&ı!Ğ’¢†–ÒÂÍ€$ì€á|ç\³4Cn-KS¬6­a•YM•r
+)7‹í}Î5–”¸ˆk)oEÍ}–Å—aö£1`$¤7,¼¿['|]´¹nL±"›ÚìHÚ@ü?Ivëe¯dv3•\å
+2=Ñ›aˆOö%—´©M²’ 
+’”.c‘¤
+vá>N?ºÓº3ıGè›Êô¼@ªfr£ºâTËr[X÷[Q¶."»4¶*Ğ_p{IZlwğ¶¨]‘dŠDr˜·#©Ô¤ºD…D}âmğÄ·;2Ë*äÔ”'?¦:-Ó<
+çüå ˜_ T5tjÊ°cwÕèõY„$ì³kÛÇ”òİL—!-JlşÓ~;æóøb÷´
+,ZZƒJ§¿Rm¹»¼{)Ò¢”ˆ²‘º-üqK•éğ¡)JŒ$k;¯‰Svi¿S¤¨¤{ğ2Lcxe'G¤lÀÈIP¦I¬JØ“!¶£j›QiÆ‰Ô¦\°°ß—¾ã¨5Pª†<ÓK
+K‰QmCW¨Gßß†I˜ÓmT ü~XÍyAuMY‚
+B$EGR¥(¡´$«QP½¬;røb1ä»İW¨ÓÎÎGÕ/—š"Bâ½=Öå­Õ8òì•–ZBG´µhY	÷+3we5LÆ$´gÂı*<‚¥ ¡zĞ<¯Ôs°8ın˜‡¡º†ÄS¥JÜk.¨6 ’6Ò‡UüHØ_W»IâÃa1µq¥€\$÷HİW=vÖ	—D+Ì½“r®T§E§Çe5JŠ›F¹–wÔ”ZÉºPænyàÊÒTJ[^¦ĞÔMÁõ‰ùãŸéı¤kâT$ëuR¢Õ¥(O@
+‰6X²{8¡¶Œš›%GuºlR•º±{§ˆ« Ù·Uoàïˆâ÷›*QG¦fŒÁ—éòİË¡#]}×ÜP€ s%E`1Ïl&2ßi¹ş„ëÈ©E˜·¢&"çá¤ƒo31ç<Ç]ôˆÁƒL¦<+Kk*vÚ’«ëØ• \ßp¡@S„6Öµs+7$üNºhÍ—7’µ²i@ğy'¶
+½_T,×O¦¸GâÒåºÛì¨…§ÆÛò'm´m…ìš²jh©F\øÕUÅáR`zR:JÑÉ.²­¶ßÇ´Òˆ1x‚ÉQ6HêN_¢%eÉuªôE\´ôd¾ÑòB’®«âÙëjl’¹Ì¢Ÿq6šÿ ¿ÿ ‘âó¶jgIÚ§4[Ş¥tMwşúa1–Ùáö›šÒêoç¨(à¤HgUµ
+6Qe´¾]Q|-ª#	ò“³ªö|Î‰C ´¹_Óób1òc¯wáã„šª´ã­Ó$)‡Û=Õ'˜Ây9·1 ë‰gŞ»áÅR ¼Ÿÿ  :¤XÙ$!ú–ibÔ7cˆĞŸ™ ¼£ZUC7T ¦\z´…¤©Ä²
+P¤„
+­¶­N¸–*yœ©nSëíÍm°{şŠ‘ßKˆB“b:k
+¿Q€˜U™™m¶RÃSÊJî„–G.©uª„ÙM.Ÿ:’ó€:RZ–VÔy¨„¤$|1—K­cÚ^íŞE×<sòDæW@œÙ~¡XzŒË³&¡×Àt8¯G	¡Å#ktùbËÒ§•Ø6‘ ô·—˜Àgu*„šxjtvC‘ĞoC÷%*ÜÜJ¹ÜsßH—kİpFÊ±Ü'ÿ Ï×ÃO8tMuœu¿ÊÌæó„!Ú¬ê¤ÈĞbµ+©R”P]*Kzí¸XÆ››yyaaTc=Ä‚e¹˜(mD`&arN ½‡Ké'Àa¤ŸÖl¶µEàEg®×u¥’EÀ¶×NÃÆø‡Iz·QEN°Á×õQàµªêL"l£s¹*?Q$TÖš~fwÌúhzfO¤„¢¼[k¥VP÷€®Ñ;t™˜òŠ2½.©o<Ú›©g”Ğ)=$wBÅî­î6Îù’™Pu˜Õ0Ó
+±z"\O.„«ë×ßÛ8vX†Ô†ã—‹kÆ“t‘pysñ8tP67[U;Vùh9Q·UuÂR	ñ±íù­3KHº¢¥\‰'è0"ı]·
+ŠÂV<zãâj
+AÖN¶IÜgZ#zkl6†.ìCÈh
+&âö°ğ¿ËÉXÔû+
+qIïŸ<G/,T8ÿ w¸çqv(P<L{‡!HB×®À“­>¢¼KÉ—Jj¡
+^
+ôn…c©r‹F¶’Â:¬9b¶†§§¼Ûj)}*M¼,«ÿ WUóQ"Âür8Î·˜'Éà+àrUäê¢dT‚Ü¶Rl4¸«'Ÿ•ü¼ñÓÿ ¡å&B\¬Ö°i7±â¥+Zı#‚õ%…¨=Â[È}²ó2Z^ë˜ í¨uì/Ğª±	˜Ô!Ë©1èµ’§Ö”$ óğïbp²AOVÅ§¯Í#í…,ø]®æ“±–…üÒÿ ­é*|†³
+)nxqĞOß	lõœœÓ)a$
+’†´ñT6+¨°ç·<fÔÎØÀ%P4ŠĞ•)J->ÚÓ~‰¿Øâ©èÏ–t4{Ç¡ñÀ>ZÍï~±[KaÀ”( ¨8’$ó=0~‰q]B\eC—_†3Ã©lƒ
+`raÊÿ vwü
+ûÓÿ æ¯îq˜ÌyOÕ?Ÿ•£O‚ cySÿ 3@òvãŞ üñ˜Ìyİ'Æg¨û§;öT¥
+ÅiP™Öw?!òÃ1<±˜Ì{of,>_êÕ™ıä!œ’“Tm% …8@}Ü{cö#üXÌf=]À°IŞ*5c“CÏ³úUm\§±!ÁqîN3†Œ¡nRnZR–; 
+“ÈËñŸIZntÜíÓŒÃ“ê^âRé“Ğc\U¬•]Jİ>>xÌf"”µ­QjB”’¥Øm{«|Q6“°Æc1C
+9d®şS’ŞÑ1:/¾›¤ŞŞ{~Œ,0òs2e·$´BV@Ù^8Ìf3j~ZaÈM<Ã2^B“ BI m„}“!4IKKî…ÜI!fäj{±˜Ìqx"Ôd*ZrR‡–” ”ˆ©X XiçïóÃN“2Y¥D&Sä–ÿ şQŒÆaÃ¼RBÿÙ
+---- End Thread  7204[1ac8] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> Server connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan finished sending the response to the browser
+---- End Thread  7204[1ac8] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[1ac8] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> Browser closed connection when reading a request
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> Browser connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1ac8] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> Browser closed connection when reading a request
+---- End Thread  7204[1ac8] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+GET http://demo.testfire.net/images/gradient.jpg HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Fri, 08 Dec 2006 20:21:24 GMT
+If-None-Match: "0fa706e61bc71:c4b"
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MS-RTC LM 8)
+Host: demo.testfire.net
+Proxy-Connection: Keep-Alive
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+
+
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan finished getting the request from the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan proxy is working in by-pass mode.
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+GET http://demo.testfire.net/images/home3.jpg HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Fri, 10 Feb 2006 19:51:54 GMT
+If-None-Match: "0a919717b2ec61:c4b"
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MS-RTC LM 8)
+Host: demo.testfire.net
+Proxy-Connection: Keep-Alive
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+
+
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan finished getting the request from the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:934> ----
+====> AppScan proxy is working in by-pass mode.
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:996> ----
+====> AppScan connected to host demo.testfire.net:80
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:996> ----
+====> AppScan is sending the following request to the site
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+GET /images/gradient.jpg HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Host: demo.testfire.net
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)
+
+
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:996> ----
+====> AppScan finished sending the request to the site
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:49:996> ----
+====> AppScan got the following response from the site
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:996> ----
+====> AppScan connected to host demo.testfire.net:80
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:996> ----
+====> AppScan is sending the following request to the site
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+GET /images/home3.jpg HTTP/1.1
+Accept: */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Host: demo.testfire.net
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)
+
+
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:996> ----
+====> AppScan finished sending the request to the site
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:49:996> ----
+====> AppScan got the following response from the site
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+HTTP/1.1 200 OK
+Content-Length: 894
+Content-Type: image/jpeg
+Last-Modified: Fri, 08 Dec 2006 20:21:24 GMT
+Accept-Ranges: bytes
+ETag: "0fa706e61bc71:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:46 GMT
+
+ÿØÿà JFIF °°  ÿÛ C 			
+
+
+
+
+
+	
+
+
+ÿÛ C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ÿÂ    ÿÄ              ÿÄ              ÿÚ    ÷Ë1œÁqÌæÄfBFflBg™æÌg0Cdg0™±fÌÉ”Ä¦rD™±DÌ3œ‘$3›å,ç$LBg$I›$3œ™ÌÄ’Îs9É)š   tà            ÿÄ              PÿÚ  ffq™™×\gYÆqíÇ—}ÿÄ              PÿÚ ?œqåÇ‡fq™œq™Æg™ÆgYÇ;ÿÄ               0APÿÚ ?÷Kí¶äÇÖÿÄ                `ÿÚ  ?IÿÄ           1 0PÿÚ  ?!ò§=	\îOg:¼¹933¾fv|NLòäòÎÌïÅüOÿÚ      œUi!p¥ò‹(£‰(‚qŒ)cU                ÿÄ           1  PÿÚ ?Ê(·M×t®¾rŠ,2Šƒ¬ Ê,2Â£¤QÓèŸÿÄ            1  APÿÚ ?êf`Õïu³Z˜Ü£¨êF`b3„(Ä`ùßÿÄ            1AqÁ0PÿÚ  ?ö$4MÍ¢Ái¸Ô§‘hj8lôHh8ĞH&x$ÁÆâÓqÂÏG	
+~{6z<7£†ÏD†ãÇ~/?‰ÿÙ
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:50:059> ----
+====> AppScan finished getting the response from the site
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:50:059> ----
+====> AppScan is sending the following response to the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:50:059> ----
+====> Server connection closed
+---- End Thread  7204[1be8] ----
+
+---- Begin Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+HTTP/1.1 200 OK
+Content-Length: 894
+Content-Type: image/jpeg
+Last-Modified: Fri, 08 Dec 2006 20:21:24 GMT
+Accept-Ranges: bytes
+ETag: "0fa706e61bc71:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:46 GMT
+
+ÿØÿà JFIF °°  ÿÛ C 			
+
+
+
+
+
+	
+
+
+ÿÛ C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ÿÂ    ÿÄ              ÿÄ              ÿÚ    ÷Ë1œÁqÌæÄfBFflBg™æÌg0Cdg0™±fÌÉ”Ä¦rD™±DÌ3œ‘$3›å,ç$LBg$I›$3œ™ÌÄ’Îs9É)š   tà            ÿÄ              PÿÚ  ffq™™×\gYÆqíÇ—}ÿÄ              PÿÚ ?œqåÇ‡fq™œq™Æg™ÆgYÇ;ÿÄ               0APÿÚ ?÷Kí¶äÇÖÿÄ                `ÿÚ  ?IÿÄ           1 0PÿÚ  ?!ò§=	\îOg:¼¹933¾fv|NLòäòÎÌïÅüOÿÚ      œUi!p¥ò‹(£‰(‚qŒ)cU                ÿÄ           1  PÿÚ ?Ê(·M×t®¾rŠ,2Šƒ¬ Ê,2Â£¤QÓèŸÿÄ            1  APÿÚ ?êf`Õïu³Z˜Ü£¨êF`b3„(Ä`ùßÿÄ            1AqÁ0PÿÚ  ?ö$4MÍ¢Ái¸Ô§‘hj8lôHh8ĞH&x$ÁÆâÓqÂÏG	
+~{6z<7£†ÏD†ãÇ~/?‰ÿÙ
+---- End Thread  7204[18c0] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:50:059> ----
+====> AppScan finished sending the response to the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:50:059> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[18c0] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:50:059> ----
+====> Browser connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[18c0] <Thu, 06 Jan 11, 13:53:50:059> ----
+====> Browser closed connection when reading a request
+---- End Thread  7204[18c0] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+HTTP/1.1 200 OK
+Content-Length: 10441
+Content-Type: image/jpeg
+Last-Modified: Fri, 10 Feb 2006 19:51:54 GMT
+Accept-Ranges: bytes
+ETag: "0a919717b2ec61:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:46 GMT
+
+ÿØÿà JFIF  H H  ÿíPhotoshop 3.0 8BIM     µ    	dv1992011( Model and Property Released P Digital Visionn Getty Images/Digital Visions Digital Visionx 4Large Group of People Pledging an Oath of Allegiance 8BIM
+       8BIM     http://www.gettyimages.comÿÛ C 	!"$"$ÿÛ CÿÀ  q ª" ÿÄ              ÿÄ F 	   !1A"Qaq#2BR‘±346rst¡²Á$5buÂğ7cÑ‚³ñÿÄ            ÿÄ 1       !1AQ"23aq±ğ‘Á#B¡Ñ4ÿÚ   ? ;×\ë©šd:LeÒœÔ±% ¤)h²B}@lÏŸ8WƒšrÜœ“
+%N²ô:œ/8“++u*AR€à]@_ÛÀ½Üº÷GÊ5Ü”õQÆœT„•&+ôå¶á%ÎØmÁs~…I¨´>Û=ÆÊÔµ ©J Eü›XóçDk™í0XTrÃ—yÖÛ¢1”›§×aG¯6¤§â_˜ÚJHGJR.È¹*>üa7(Ğae ÔéUØ­UTW×£¦ì¥)*Ö•(X·àcR‘š×J—Køê¥6˜úJû•mÄ¤¥$6D€x	O6¶gÜå^R*²Ü«D©N4ç™iq
+]CM­§Rêi ë$~bã¥Xç m“úMG
+`)ØãõÈûIÖ^®Ñ¨±ª²dÈÌıÂÛœM˜ˆR)‰@’Ï#!ç§ùíúI®æ*Ìª­b¢Ò•?pc$,£[vôë6>‚¶äœxæL±•XU5*L‰½¶Ö^=ç²Í)I*6 (#òÀ§3ª²üªtJm¦­-´]Z]K•i$seêÆşqë\.RWÜ~İ§ŞCR@<‡ß¼¹e©´zKTô¢™İ
+ £ISjW­$¨¥wÖ¥r¢o«Æ%±s#õ<Ôµ³HŠ–*i´*é!C{Zàğ~£˜ @ÊpëpªTÄT^Ji¢ñSq’VR•
+:’Ù½ÆàpA±âYKÎU¿²¦DL´"ò´8õŠĞ;“Å7ØZšì#hÕÍR6{‰Y¬N¦­TŠC%‰™z<uv@ÖTÂô¸ç¨i%µ`nO<buH«Ôªrh4Z\O„ÌôxÒ¢I”§•¥a¥'u^ÚV¢…
+…¯ŠUšLŞœQT¨ÕiÙ‰¶±“
+yiu(Ò) hNé$_å¾&õn¡Ô)óÒòünfAO~s±Ê_:I)d6äóÓCÃ1mê62‘Óºnc£æ¸µ
+ef]Oº*QŸ}¿¼IQ É'qŠmN½QËô©sç">–Z=>1º–â–@VÂÄ›_çˆ.ZÏYBc0ÁŠf©@¢QyZÒ«) Ø›Ø’/oOƒlzgN²UjÚ‡”å>)u·ÜHt:µ‘p8	}€?–(Ñ¤jÓú·#xú…±ı#Ó¶e—*×Ø”ù¥Ö¤ÉiÔ*B¾­l…\…….T£ey±öÇİZ³!ê=
+±.%¶
+İ*]IF /¤p°Är¿W—3ÒşĞe5xsâë‚”,„©k6JŠ–lA:F­bo†<ÇA™€ëÓ³UFS!Ô£L‡Úa½÷=Í’ ^›içÀ8ŸêTüÌpÖœ„ò•šÑ
+Z†k©ğ¤Çt4Ü\(ûŸKÏ™¡Ù™•FcÍÄ[-],Äß·¨XÛc¹ùı°Í›çÂ¦ˆo&D`T‚Ò€Ô@‚ÚJE“ä‹«‘íˆmz²¹uÉh[šÒ§TRGãÛ÷a]ÙŸ÷hmUZƒ×ğÊ>W¯Ó…r™2¥:OÃ6²á*²•{ÒÚ¬8Æ„©ÔHÕI‘éud²”6ó­èÒ 5Ÿ}ˆñçU¶©Q)ÔÄä¹5ÍAØàÜ¤nI¿0ˆÒÜ‘VJ~$¶Ô†^şR¢/û±Lélbz±‹
+Ï~³¬2…9¿’'/Ãˆİ.QT–ÒëãâßAté	 m¨‚|
+ÁÄ^³œŒ—Z§Ã}Qšeç
+nl}Ó§m¬J÷¿ìŒ?dìüûT˜Txté‹‘ØK0;}Ë>¤¤„éº‚vôì¸÷±Ä’™– ×*sÛR‘Lf,µènî©JÜ ‚,“õ½½°½9âå3zğğŒçiÊtüŠ¬·Gb§— NB¡´©SVî§T¥4
+Ô’Š€[c‰ê3*õ5K¦¡³ºRB®†ì«Bf$(tfœ™"lH
+jD€¤¸tjHUÅí©Gaa¶Àapå,­s¦òG€]‡øà«Q9.sşg­zcç:•YŒÎO™—&¹!úóÍ2ãjMƒAÍÛºÁ$‹›oˆSç4"©ö|FS©!Huµ%N%²D‚‚H6½ü‹m¾(«ÍÙ}9%ªv-FµY‚—Pš¤€”¨‚£¤,›¥7"öO¶Ø’gQ™ËòdÍQ\‰„4²Û€, +fÇ‘½ÔOÌcÀŞMY ŞSğßÖyAÀØ“ò¯O¼ÑÉ*i™\“]X~b;Jœõ™HPÛQ½ïmÅùã²Ä©óJéÔ‡¤eJ}A¦Ğ­a¢xô‹Ø‚6;z×&Q&Ñrõ<Yë’ÉQ X	¹$\œ4~3é®f	TÉ”ê\¢˜KZ; pm¤PN¡køÀ¨µ‘€f1â~ä)˜woÇæı¦ü¨sKTj-(
+5B4BÉuÇ»8n/ÜU€„
+•ô½ùŸçJ3°™j<*’Ké*mÂã‡C„[Ô•{ïçvÅw©JŒÆ¤Ñ¡Å}ÉÑ‚•RC	‰GW‚¢l>GÛî¥U[„
+ûo-Õ[p8RUòØÄ‡x5á	ÌnéıB—MÊ5
+{ÁË(ƒ1 âÄ]±ú¡à{ß›œM)õj¥	Rà7rî ’êNË¤&ö'{¦²æW;,ÔëÓóze9ä™ßOrB›P$ß`¹¿år´œÁ-ACîÂcRuø÷Ûo®Hõ¶&¡²‹‘‰gé|ÉhËˆ*œÜéçrQ*x“¨ZÈ éBmmì/¨Øó„ş°In~jqÆ)í4ÔhÌ„":´¥Ô†Å–	üV¾ÖßŸÑï1&5.e5ú’ãIjBq´)¢Ù¶•]i&×JÆßµï„Î U©£*æªBa•hÌ…¸Nº”«°KR’…ò›”ñìEñ„µ–ş_(K0ùÀôİU­dúnFqØtÈB¤[E&ëÔ¤…o§¸´ïÏØÕê\FòµuQLÆ¦–£¥Jm––ØZ¬€ I!d‘ài÷Ç¥-Ï˜#eÊz¾	¦À.HX+RHºÔ«”€¼
+°å×›«*­¼Ö¹ÍÔ TíJaÍ#I
+éIqàûàg
+á„À\Ñƒh¹Ó2ÇÉó(èš¦©ÓS«°ãaKJˆ¶¤ó l>fÃŒÏ9õœÇ•#ÓS"XrD„®KAµ ·ÛFÚ”M–5E­ø7@iô¾#­h¢U¸ñ·¹ç®—ÄËñòTiRèÔµ%ºä„ªrIubÄ6”€m§ÒH*äßÛ½”6Ó—l¢±%µéÌJ¢¹2°©Ò*‘´|Ì¸ºõ IY·‚¿Ëä¼èş_UyˆM©
+q@¨÷Gâ"ÃMÀßN­Vñ±ÆQk«fñØˆJç!}†Ñ¡(N£¨X“`O“‹¶UÌ
+f„Ì	qÔà‹#Op­E ’ur›
+ï¹W¾ºÿ ##}9¼~]ç<!àˆpÊÔVâ”B”y$¤ôşpèt#¯31¶Ò›Ó˜èu;º~!.Y7âÊm7>Ç~p8P^¥fwa-¶ÓMí°´¶B×t¤}'l0IçSİµ7H&ázoâÇÏ‚,LFy©V©Ô°ßt}%"sÔú‹”Êœ–¨ä¹ÆŠKÒ¦Ê®dì¯ğÆ'İH¨Ó¿Ú×Gz:CñûN8»-[+mVİJHVÛûQ:i›eSòg"&#d©o+ñ¡d¤½[“È±Ä®5êT<É]¦¡,ÉÔ”æ”¨jFŸQN®@
+QF¨p¶&¤zC°t\õ˜¤UÒŠ\·Û)zÈíÛHV
+VÖğ68v+Ìîâ¥SUê%M"æşûbq•²ÕSá‘Q~3ìH’•-–ô”¤›‚± |[atk;|Üó–£¹ÛN¶•õÍ·I#cn.1«8ó‘m'òô¥–rnXßçÈn9õ’‰ëŒ†*íVhOFÉqæ
+VŒİ /bRHQâÛ·ÂTˆ–³µ6²Ãq^–Ó.<¡`”•YJù6çÎ2£^©Ö£Ô¦ÕŸ:˜Ê¶”„ÆÂßSûñ³ìÕ*uİ<C-‹-Ï¤ŸbFØiƒ
+Ê‘$Óp[8Ğ÷ßë±”¿µO¥H§.Q¡"cnFr3m©7)JHX
+>ş’~‡´'Ê‡^É•&!e¥Â[W¡a:H$éQÜw¶z—ÑQƒ³ª†a1¨²…¨¾ {zÊ†› 8¸µÏ8Q¢Á‡U˜)µªƒtªt§T‡¥¾ ’„n¢@ı­ˆ°½°
+2©BZ?ªÕZ1Ròÿ ¸ÛõŒçY•©ªªIÒ†Ö†YH'¶ÈQ±*VåD’¢O“ofC¨
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+”ùS°¤H²”âJn•8/{_éqŠnt_O%¶ºVE¥½&kå°Ó½Õ†ÙBmê+QÀ{Îçg§‘*¾’ÍY¾Ã)l¾ä—\Rm» ‘ªàZşç|4œ-YmºÉÖ®3êúMºÒ©ĞiïÑ¨ÔÚD¦œB@ajI("ü7$ù8S¡dªí)ÌuJ
+wìÕ µKz“
+$ï£~HŒVz”)j¡)÷jR*Ú’JyA?ÑQIĞÂ”oÁğNø}v¹MªQåG“U«Î§Haô%­MÈCìØJRÀXß| ¶½H­Ï2…”×k°cüH6W®Œ±››ª¿r#ÊOeÔ4o«{¶ @Ø¥V@àípD´÷Äö!Õ9!·†¯¼%J ƒµÅíÅı81”kÔÜ³TjTš\Š‹ôÕ¢ÄqE)Cˆ#·Ü¾÷×;€@6Ç\©+:õ"#rX"}EOHŠ…jKi¹q`‰ô…~ü?Ä‹‘ÒImĞ.±Çôqjzó¼Úôh²¥¶ÊŞ\Gİ-k7Ki$n¡cs}´|ı%ªòÿ Ù¦cE¦FM=ÇÔ‰H¦ÈZt"ÈØ½‰ùŒT"Sbf„NÂ[n³xì¸56†@'ğÛ`6—ËŠ™L¦ Ì«ËnOÂ²\€oÉº?[rmªşöüàÌ_Ju:&Äû¹Ÿçï8º‹—+•š“ñiÑ_”ÔwTÒÖÚ}) ›jYÙ?¿Š4ŒÃJ ±Nuçïd¾Ó§·$
+)Ók+Ò«_Şÿ \dz¤J{fT¥ˆ¸¥¶Ğ;¤­d‘o{¨c}†aÔšÄêìŠ{-¸Ë®ÃFí¸¶‰Òµ mkîOÈaÆà³ß°€£³èÜÄzV\­Òj•Êj9ur´h—cMÔTV¢P~btõ.T3Bé³'Çû:#I’¨û”º\]•kxH¶ß‹cïõ™s*éÑ~áÔ‡\*lhU÷ê.1ñÑÇò«9‘YzªŠ‚ÛuŸBR#´%eN.áCõ¸ÇÆ0úw´q(–kñšëÑ.‰—}òIßç¿>ĞGZcdÇfJå¢jduºÙY:‹wäN×±ß™v
+:¡¹SdK»×,ÇB´'MÈ«’M¯al7uÙ¼¬©F„š´j…’ÄÕÈŠ¤³,‹m(ª÷EÂMÒ¶ØO¢G
+ËÃD­E« '«’öŞØõ+z«ëÔê*Ô:…æ£õ8ûÊ—J~.kìåº[Æt©Kg¶AJHÔ77MÔ«ƒ¸½øÂ&~Ëz¡˜êsŠı:h–éqØîêÀ³ê(UÁŞäléÅb}9R+&2˜å¡N…Iô®ßT•8W:y9šeC2ÕêQú_\“OhwT¤—.B”
+±½…ñœ…Ş`‚à)ä"=·ZˆëK“}^[š’Óª‚µ!Ë»i±qÍ¹Å19$.@­GyBî4·4©µyIØƒµ±¡DÏ²d>†Ğ—–­M€ĞAO¤¨
+kmu¬±ª³5EÄÈpÜê'ñ±véÖxˆdJü 8z¼¹ÎmöšôÚ	ıÿ ÿ 0j’ó³©ÑŸb"ßKM£Övm&ÀX“É¿Œ}æì¿
+ª[îPş%Æİ(Ô—”
+È$zHÜm†~:!AyJ#¶”¡ö l>wüğQh°–YÈj€V”Éù’dªŒ#¼‰H§¤¾óqÔ¥&úBo¿«HØñ$E:ºã
+UMI-¡ĞRÒ¤y'‘ç›ZøªP¨p¥dEMšøŠW%Gg :Aõ}.l7½·Ûq‰şf”ßÛBŸDx¨¾„„,T£kî9~¸
+<5±Pcz;Y£÷èó%„ç£2RYî2cwî¤/JÍ­qêôí¿8±×\…ÿ ¨4U>Ë2Ş“¨»á´¶W«J¤’5a&ç~m„ŠOFkt¦©ª”Û’ô„j@	Ø§}Šw÷87ÒfÌë=Sb-‰É)m‚ ( ‹‹•*àùÓÆØ]ØµÜKÜFÒ‚ºVâéûÎŠ.R¤P¾Ë¨S¢Ï`€¥G[ií$‚ M­±‘…H]0¡" k+(òÊ»ˆBR¥¡*°²@:@· `Åc8ShóD·?
+.Rƒ{*ÿ »ƒïã	µô3…ê-:l¤´à´Â–iÜ`A#np[ìFmşQM=N§+éæÏQº’óš–äE«) †çDWãÒ,ëdiPk*ŞqÌİ#Êµ\»×ZÅ6­$åèÏ™Î6n‘pGë¥WO›(m±ÇWe‰õÕA–kËyqH-¡õYe7õqn…¾˜²½^UqìÃTHÔ¹”ğÔô)\uàB[)·üºA*¾È s­f4’;@0­ÖrhAy’hËÊD¨mı.5ñ
+„6Ş”ØÜ,›z¶6¿¶Ä[ªğæPòÛÔ¤¼mk×¬¯Ô¦Öé;ÿ Ì.¿¶¢Õ$Àƒ@!„(–[‹¸êRAõw)®ø×ŸZ§S¥Õy5k«	T„$!l)J°J“¿§p5n7ñ„ ,r9mÔ]S€ë!«§İq¶)«yöÈKI·í†Öóüpj.f~B–Ä‡\~å’Êm*¾ú‚¾`pFü`-Z§¦® Ğ
+0¢­%6¹Ûcó62m%O;&]]İ4öÓˆ[wp(é#qmøØıqQkWs´Zêr£?Nqf¯eO7Áˆşˆ­Êp6Ü…‹5Üq~¥(µ¢E¯¾Àâ™B¢åŞ˜× "­_‹™ëOıÜ}9ÚX}7qkZl­¶äNØKLÊ‹•tÄ§Şj&É
+ÄiIûå­J²A;I#À±<â›“úZ£çŠVlÌYÂ-BLg“1q].­ÂºİVÊÒBG°Øá$áàÎŞ ã6“ö‹c¦fìÁªPİz™$'{ß|ènÄî¥*ö¾Ö¿¾%Õ8Yƒ(ÃOÃ+X*­·µ%Hàƒã
+øéœ»M§ÖfÕææNLn¤ã.5%Õ$#J ¸Ğ4Ü“ş£®¿¢“¸üx.0Ù©
+Çme@'JÀ¸àË
+½Á ØâĞÊ<Æ9&M¡M«Èq)ÖRoê$Û{ü°á@ŸZ®U§CUF½S
+ÓäJS>µ¸”ıß¤ò½°‚¾â™UÈ
+·áNøvıê‰¤Å…DŒËÊZ}×lK-kû›Zä_cÀÁ«­JdÁ;°8U:{–³2¨õüÖ…ÑhÏ²´¶íBSj}¥© PUp|XÅ°î¬ÉòØvŸ!n6¢…©·Ğ¤’6$Èùáú~b~VX¡dú¿ÀOŸMa×'Êmä”2÷uÆ›@Üö’²FÖÔŸ9Óì†\Qê@\Ø&fÃéqŒ+ÕQ*fÊİvÉnc*™1êC¡%Qô¸îƒªÛm¿”ú¹wçS.æ,Ó
+UJ›
+Õ4ÊûJq¶Uír.¢<[mùÜÌµ8•üí9ÙÎ6ØR ¶Ò,NÚõ)"ê $àXÛİ ÌQH­ÓÚ™Pšë¥¦Kiµ”®ê€l¤ûq„ÅZñpóÄdR–Ø=äª{“;îS¥¥iLW–‚—R«ì)<ü¾ÒeÙÎ—$ì”ÚÍ…öJÒ®>€à¦~˜™J¨;
+„H|6÷Ğ›À$››Ûß¢R©Ôİ*LfäÔŠ¤/ÕcoÔ¿<â…×®dëÙhr9àÎ¬c0->1OFu* ÚJ€Óu•ñˆŞoë5VM¦é4ñ
+˜.öJœp÷–’’’6·ocó ûa÷¤”¿ö‹#PäFSCáe·{|9l[W¹
+Óùb=Ÿ%Sj¹Ş½LfŒª„ƒ©>‚€\VéPâÛ›q¾º2x²qˆõÚõeP£9”N†Ñäõ5©5Ê³²¦Æ‘Ú’á»Ä(Üø«~Xèúlx¸mS Ff3€”6Ú@ç·œA?GLÁNÊtÑ”êQª”ç§>·`?:!i2Á<"ö¹rö¶,’ª(aµ.JÔÊ¸t“£±'UZôÅuao\ğÎõ$ÁeÛm¸ò—f‚“®Şş›ú¶ñ€rëÓj
+½U_Äè=©ËwUÂö±
+ÓµøÂ¾mÎñ¯Ã‰O“Üp<JÒ,¿Ü~<ŞÍ‘)*)i9³#N…éoï;n)>ÿ ²n|mlôvn6?†¥¤ĞÜ|ÿ 1)©€i-Ã/”Í©:»G,¨€ØP÷+<ír=†úó_~‰ÒéĞ»}ùoÅp+b­·¿#÷aC+fZc8Ñê•),‡·#¡–	í°—  äİ)¹>ß–3¬3ƒ•šlvµÔgÔ5°Ìs©$ O°óõöÀPğçlb![3â¥§4Çœ‡mÉ}µ©½ı"Á«ì=şx?’•+0Ê},É“ös‡UªİÕZÖ@78ÕL‹?*Õ‚*¨TW&!O6Ão7¦û„”í·x¸÷Á®†(÷çRÛ)AuÀQ«„ßP8¡¦	k.Pº“e(JìgJ¬G¢õ‡Q”ãm1 €VàºQ¨”$Ëo
+½3Xei§*ÏvÁıZ4ßUŠy¾Öÿ â¦¹R2Ôº«¯VÕÜĞâû-\‹%&æÇİV÷¡³X‰*}’ßl<] úl›©Z¯¦àŸ{íl/¨R¸1ıŠA­×ÚªsÓQn$I«÷P€[î6‘tŸÚµ‚½À·8W(ñ*Uäæ&]UAÕ+Rêh…p<{RLµRu¥Ê†¤¤¶Ó¥)Z<¡Cöo¾ÄZ×ÖüÔõb’å.,F¢Deai|¹Ó{¥ l
+È$›ã/KVÙ‚ı&ªñ]IÄcb~}>|ç:Ö;Q|Åqk,µÅìEíÉÀØUWà>ãğæ>ÃëF•8…”’’xÛé|3RéÊÌuØô8Œ¥ç@Fæ”¤Xµ›mk<ÆP d,İ*>n¥H‡éëÒÛİÆıE7ZIÒI )6¸ ¨`õ\ª8O9Ïø™SPşW´Á52½;7Ñò¢úƒ“]
+íM¯¸öÎiQ
+U’ v)P¿×l™R“&cÒ!h.¸¥” Ù"æöÀÅO7Ñ*iéf]ƒ”+¡Š-M·¤.!kû––­Á]¬á'c…ÒìÊ±¬TaY[)Q–ØÙ¶µ9~qDKzyEŠ]%/µ-
+iÄÙN °
+‰)Ü§‘±±Æ×Lhu¤WŒÊ|7$#²£)»Õ®>
+À·ÏlkÖ«³jÒÙ«OZ;Šl4iI#ğ¤ø·çƒ;©Õ*
+1ú=2,>ä—‹Ë’âIX6	·Ü‹ì7Û|!c³q^VU¨ÀÍÑ_­¿oÌI}–ÖT¸úSµÍ€p‰ãyN‘TÌÙ¹š		›*I)h­a´7?‰V`~¶°¾ªÕçäW>"¦ó®¥ıMÈuG{
+şBàmõÁYœS*‘$Á[¤E}§›KJõ]
+i#9¾*h[c¬“¯ ]“§ºMM©t÷*Ui¹‰èñ\‘/ZšnJW`¤I6ŞÃƒ}±3~n]Ì^¤åšl& Òb%éNü3^§]J
+†­Á_¨N÷8°tædZÿ O‘š¥-¹Ui*a‚ûåß¸¤—n@À)D[õH¹ÛÒ¬•¬¬ÉO€¤TXSr\”â»j½Ê6‘Õ+œ–;’Ö‚µdô
+‡S×¼úFIL¬€š£U9>›6+ĞT¶Ş‡5$*Äî.tá/9uBfI4Ó9µ´—>Ğd´–Ùî)(·nÇÕk*ÄÅ‡8}ëN“™òë‘—PS³˜ûøº­:”6µ­a²øR™“DK*”Ç™İÒ–=µ‚Ê‚=Ïç€hY‚Ìëëşà6Œ´:²şÑ/	iT˜ËeiÒ¾‹-*¿AMÁùüğÍFšåS&Õ?Ş–¿†˜&>»”¶R°w·%[[‹Ÿâ_@ËU·%È"|hIqÒRJÕ§‹p­aÏŒXrÎlË™',F¤BntÊ„Â]• 4§	'È²BFà
+ícŠCSeU£9ıäµÓ×m€¹Æ${2fJ•-ù—äÇ(g¾Ê×t¨„¸›({ÜËy™º›Wı!åL•Ü‘²äHd¡
+)	õ”lN²Ìßå>ê¥Y¬Û™¶Vğåµ_!aG‚m†S’Ìûô›…ê:Aù¾'ÜK.9wÃ¼.ÛÛÍ¯Ú?ì¡~ˆ3˜0Bæ¨<óo¥âàE´•%;‘½‡Ç=bBóS‹B.ÓQu×ui
+,‹ø7*WîÃsİ%®¿M…W®f±Üg¼àëŒ$Ø„ØÛ{\öùï›",'j’b–ß[î¥„8P•%½GYO)ückƒ{cZ'ßÄt¾—³#
+@úı#½>@”TÓ‹J”…­J…‰äm¸8]¥Q3j­˜hwÅ8Úœ*
+QVFé*½ŠFÄv8bb%=™R~SÏ©Õ%zSèU€°äğ=öÇ¼¾£Ñ2kk¥A£¼e¾°ëî£ğ¸£¤VI$„”ín¸°]†L›¥Ìx¦fH’¨Œ¸ì‡¬6åÒ,6Ø›¨
+î@ÒÀœMº£<7.:…v	Úà›?1õ¶ú™'LaÆC,÷$·«¶¥ £¨
+÷±ç’/‰®qv`ø)ÁÔFm³ºTA÷ Ÿm±‡Õú¹Æ4šµÓ^^£Ğõôt73¤öf°§œ‘%‚P)!`¨lEöµÇ‘~p×úBÊ¦4Š[M ¦rå¸»w
+‡l£ÔR•nôóòÛºkF¥»Y`ÃiôG-•>[ kí¿>ÿ ˜Á>´e4GfE‡Cµ­µ-^‘uZßÀó‰vau °ËryIŞÎs¢®‹GÍ\Ë"-e-1øL­)&úŠÍ’AĞmÁŒ*»˜3"ÜRÕZ–J‰$Üõ©0ÜM0©ä»
+;ÜkcA.(¤„ñóÅ5à>á¼H³.Àí<”ôÖØ”–î¤°FÄÛ‘ù`ÔH
+Æu´X	&Ş~wÀù
+cƒ
+ Æ{ï’[  ‹ÜÛÚşpvDˆî9ô:›ß[j†±@;F)bG«œVŒÛ‘R‚¯b,?v>éQÒÛ-§À! Ÿ`-•^›¡Ö•! éñ½ˆ<móÆı,÷©ñŞ@¶´…‹üğæ„{¢$sÃ‰Òÿ £b“;+¼ÃO"¡MÖô•­O(”ş©%kÛÊxDğœ[SÒPÊˆQ± ‘¶Û«ãĞjÓ´ª”¨
+EqåÔÖÚBÂ€-”Üßú¶Qùí‹%úœº›hSM2¡©K%jÉğ8ìxÎgAáe“ï.D7a)¸ix0M’S¥#ÉæÀîãİ×¦œfRêèYXeÄE	Û¨‹üæßé€Ÿ@¡-%EN»§QÚåÄ‚~\œD³ı5L›š)K+ƒ,ºÚ”‹p‘k{‚•ZøY€ìašµz]~¿êIa¤æŠâÓ:ICMyâÂçÿ ¬Ë:XŒùl)E§FµÉÒtßi. 5 ¹ã
+õu•7Şp#Q![rxÃµ8C’39›„d‡)uk®Zè`„oÆé¾Q\]2cS)Ë,LmÀâÙõjcş ây0“PV•ü+•j)Şß/¨Ã
+ƒÛJ–JÔSº”nN¸o™ÚêËRh—_¬u¯ç\Ã™PêëÕGä¥k.of‘ìFÛ|ï…Fa«R¤Éû1ÆœïÈ¶âu
+\n;ãnR,ÉpßÃÉmÂ.S5µÛÿ É'OIÚQ×iÑ¨5ğŒ`Ë8µ9‘{¯Íq´”hJw~g‘…YÓåO“%Ö©­KZ›‰¨¥_yéIMlÏU5RrmAöë¨ì ƒe$¹è|Á7ü±2K,„&á!#î‘·ƒnvçœWÅÖ~uU«YÉX_}UŠ
+‹y­m-aBÄ–Ô«s şü fé@»S–‚¦ÛI(EÇá)ü·¿şéEJd¥H¥”$!¡à› ’Ú‚¶ú¡'êO¾ë2b}­RTeÇd¹è”5½½öÆ,Øbf¼qœCj©³`´Ú×!÷e¶LvÕr¥
+…‡Òã|Ó$æš‡>3n¡.‡;z•x±÷µïˆ1
+¤Í¢ÅˆÔ†®[
+§äE”w$ïòÅššäªRn²µ—&?<G¥*R/°üüâ6¿ÒÊøÖõ âq“ÒEkî!Y±cíë¸µĞokîw¶’è	q¹/­×X/§K‹R­"Ş¤óÏluA.)7;1FÇ¾ÿ O#ÿ s÷âyIşFoögŒÀ*øbÿ Œf‰şM?LWiûyAşÍ_æ8Ìf§â¿Çn†KSıUâı@şvÿ õğÆc0-G¼ıeÿ ÿ ÅùÜMŠ‡üw÷SştbSÔèsş˜à¬f3şèİ
+ÿ ;È^õÂ³Ÿ„ıN3‚ôœós0Ş[şi7ş˜q½DşnßĞc1˜YıÓ«şäa	„ıÓ dpïö¨ÿ Lf3Ä»ªøgèeª¿Ñ'?½³ş|MøSı\f3O9ùhåúiÿ {ûv?îÇçV?“ıá¯û±˜Ìaı“Õ÷Ay?ñDşô?Ìœt&VşˆEşæòf3¼OÚ°¶rœí+ùüêÈÿ öaiÿ åÜş±ş8Ìf(¯´M7)ÿÙ
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:50:153> ----
+====> AppScan finished getting the response from the site
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:50:153> ----
+====> AppScan is sending the following response to the browser
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+HTTP/1.1 200 OK
+Content-Length: 10441
+Content-Type: image/jpeg
+Last-Modified: Fri, 10 Feb 2006 19:51:54 GMT
+Accept-Ranges: bytes
+ETag: "0a919717b2ec61:c7f"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Thu, 06 Jan 2011 20:13:46 GMT
+
+ÿØÿà JFIF  H H  ÿíPhotoshop 3.0 8BIM     µ    	dv1992011( Model and Property Released P Digital Visionn Getty Images/Digital Visions Digital Visionx 4Large Group of People Pledging an Oath of Allegiance 8BIM
+       8BIM     http://www.gettyimages.comÿÛ C 	!"$"$ÿÛ CÿÀ  q ª" ÿÄ              ÿÄ F 	   !1A"Qaq#2BR‘±346rst¡²Á$5buÂğ7cÑ‚³ñÿÄ            ÿÄ 1       !1AQ"23aq±ğ‘Á#B¡Ñ4ÿÚ   ? ;×\ë©šd:LeÒœÔ±% ¤)h²B}@lÏŸ8WƒšrÜœ“
+%N²ô:œ/8“++u*AR€à]@_ÛÀ½Üº÷GÊ5Ü”õQÆœT„•&+ôå¶á%ÎØmÁs~…I¨´>Û=ÆÊÔµ ©J Eü›XóçDk™í0XTrÃ—yÖÛ¢1”›§×aG¯6¤§â_˜ÚJHGJR.È¹*>üa7(Ğae ÔéUØ­UTW×£¦ì¥)*Ö•(X·àcR‘š×J—Køê¥6˜úJû•mÄ¤¥$6D€x	O6¶gÜå^R*²Ü«D©N4ç™iq
+]CM­§Rêi ë$~bã¥Xç m“úMG
+`)ØãõÈûIÖ^®Ñ¨±ª²dÈÌıÂÛœM˜ˆR)‰@’Ï#!ç§ùíúI®æ*Ìª­b¢Ò•?pc$,£[vôë6>‚¶äœxæL±•XU5*L‰½¶Ö^=ç²Í)I*6 (#òÀ§3ª²üªtJm¦­-´]Z]K•i$seêÆşqë\.RWÜ~İ§ŞCR@<‡ß¼¹e©´zKTô¢™İ
+ £ISjW­$¨¥wÖ¥r¢o«Æ%±s#õ<Ôµ³HŠ–*i´*é!C{Zàğ~£˜ @ÊpëpªTÄT^Ji¢ñSq’VR•
+:’Ù½ÆàpA±âYKÎU¿²¦DL´"ò´8õŠĞ;“Å7ØZšì#hÕÍR6{‰Y¬N¦­TŠC%‰™z<uv@ÖTÂô¸ç¨i%µ`nO<buH«Ôªrh4Z\O„ÌôxÒ¢I”§•¥a¥'u^ÚV¢…
+…¯ŠUšLŞœQT¨ÕiÙ‰¶±“
+yiu(Ò) hNé$_å¾&õn¡Ô)óÒòünfAO~s±Ê_:I)d6äóÓCÃ1mê62‘Óºnc£æ¸µ
+ef]Oº*QŸ}¿¼IQ É'qŠmN½QËô©sç">–Z=>1º–â–@VÂÄ›_çˆ.ZÏYBc0ÁŠf©@¢QyZÒ«) Ø›Ø’/oOƒlzgN²UjÚ‡”å>)u·ÜHt:µ‘p8	}€?–(Ñ¤jÓú·#xú…±ı#Ó¶e—*×Ø”ù¥Ö¤ÉiÔ*B¾­l…\…….T£ey±öÇİZ³!ê=
+±.%¶
+İ*]IF /¤p°Är¿W—3ÒşĞe5xsâë‚”,„©k6JŠ–lA:F­bo†<ÇA™€ëÓ³UFS!Ô£L‡Úa½÷=Í’ ^›içÀ8ŸêTüÌpÖœ„ò•šÑ
+Z†k©ğ¤Çt4Ü\(ûŸKÏ™¡Ù™•FcÍÄ[-],Äß·¨XÛc¹ùı°Í›çÂ¦ˆo&D`T‚Ò€Ô@‚ÚJE“ä‹«‘íˆmz²¹uÉh[šÒ§TRGãÛ÷a]ÙŸ÷hmUZƒ×ğÊ>W¯Ó…r™2¥:OÃ6²á*²•{ÒÚ¬8Æ„©ÔHÕI‘éud²”6ó­èÒ 5Ÿ}ˆñçU¶©Q)ÔÄä¹5ÍAØàÜ¤nI¿0ˆÒÜ‘VJ~$¶Ô†^şR¢/û±Lélbz±‹
+Ï~³¬2…9¿’'/Ãˆİ.QT–ÒëãâßAté	 m¨‚|
+ÁÄ^³œŒ—Z§Ã}Qšeç
+nl}Ó§m¬J÷¿ìŒ?dìüûT˜Txté‹‘ØK0;}Ë>¤¤„éº‚vôì¸÷±Ä’™– ×*sÛR‘Lf,µènî©JÜ ‚,“õ½½°½9âå3zğğŒçiÊtüŠ¬·Gb§— NB¡´©SVî§T¥4
+Ô’Š€[c‰ê3*õ5K¦¡³ºRB®†ì«Bf$(tfœ™"lH
+jD€¤¸tjHUÅí©Gaa¶Àapå,­s¦òG€]‡øà«Q9.sşg­zcç:•YŒÎO™—&¹!úóÍ2ãjMƒAÍÛºÁ$‹›oˆSç4"©ö|FS©!Huµ%N%²D‚‚H6½ü‹m¾(«ÍÙ}9%ªv-FµY‚—Pš¤€”¨‚£¤,›¥7"öO¶Ø’gQ™ËòdÍQ\‰„4²Û€, +fÇ‘½ÔOÌcÀŞMY ŞSğßÖyAÀØ“ò¯O¼ÑÉ*i™\“]X~b;Jœõ™HPÛQ½ïmÅùã²Ä©óJéÔ‡¤eJ}A¦Ğ­a¢xô‹Ø‚6;z×&Q&Ñrõ<Yë’ÉQ X	¹$\œ4~3é®f	TÉ”ê\¢˜KZ; pm¤PN¡køÀ¨µ‘€f1â~ä)˜woÇæı¦ü¨sKTj-(
+5B4BÉuÇ»8n/ÜU€„
+•ô½ùŸçJ3°™j<*’Ké*mÂã‡C„[Ô•{ïçvÅw©JŒÆ¤Ñ¡Å}ÉÑ‚•RC	‰GW‚¢l>GÛî¥U[„
+ûo-Õ[p8RUòØÄ‡x5á	ÌnéıB—MÊ5
+{ÁË(ƒ1 âÄ]±ú¡à{ß›œM)õj¥	Rà7rî ’êNË¤&ö'{¦²æW;,ÔëÓóze9ä™ßOrB›P$ß`¹¿år´œÁ-ACîÂcRuø÷Ûo®Hõ¶&¡²‹‘‰gé|ÉhËˆ*œÜéçrQ*x“¨ZÈ éBmmì/¨Øó„ş°In~jqÆ)í4ÔhÌ„":´¥Ô†Å–	üV¾ÖßŸÑï1&5.e5ú’ãIjBq´)¢Ù¶•]i&×JÆßµï„Î U©£*æªBa•hÌ…¸Nº”«°KR’…ò›”ñìEñ„µ–ş_(K0ùÀôİU­dúnFqØtÈB¤[E&ëÔ¤…o§¸´ïÏØÕê\FòµuQLÆ¦–£¥Jm––ØZ¬€ I!d‘ài÷Ç¥-Ï˜#eÊz¾	¦À.HX+RHºÔ«”€¼
+°å×›«*­¼Ö¹ÍÔ TíJaÍ#I
+éIqàûàg
+á„À\Ñƒh¹Ó2ÇÉó(èš¦©ÓS«°ãaKJˆ¶¤ó l>fÃŒÏ9õœÇ•#ÓS"XrD„®KAµ ·ÛFÚ”M–5E­ø7@iô¾#­h¢U¸ñ·¹ç®—ÄËñòTiRèÔµ%ºä„ªrIubÄ6”€m§ÒH*äßÛ½”6Ó—l¢±%µéÌJ¢¹2°©Ò*‘´|Ì¸ºõ IY·‚¿Ëä¼èş_UyˆM©
+q@¨÷Gâ"ÃMÀßN­Vñ±ÆQk«fñØˆJç!}†Ñ¡(N£¨X“`O“‹¶UÌ
+f„Ì	qÔà‹#Op­E ’ur›
+ï¹W¾ºÿ ##}9¼~]ç<!àˆpÊÔVâ”B”y$¤ôşpèt#¯31¶Ò›Ó˜èu;º~!.Y7âÊm7>Ç~p8P^¥fwa-¶ÓMí°´¶B×t¤}'l0IçSİµ7H&ázoâÇÏ‚,LFy©V©Ô°ßt}%"sÔú‹”Êœ–¨ä¹ÆŠKÒ¦Ê®dì¯ğÆ'İH¨Ó¿Ú×Gz:CñûN8»-[+mVİJHVÛûQ:i›eSòg"&#d©o+ñ¡d¤½[“È±Ä®5êT<É]¦¡,ÉÔ”æ”¨jFŸQN®@
+QF¨p¶&¤zC°t\õ˜¤UÒŠ\·Û)zÈíÛHV
+VÖğ68v+Ìîâ¥SUê%M"æşûbq•²ÕSá‘Q~3ìH’•-–ô”¤›‚± |[atk;|Üó–£¹ÛN¶•õÍ·I#cn.1«8ó‘m'òô¥–rnXßçÈn9õ’‰ëŒ†*íVhOFÉqæ
+VŒİ /bRHQâÛ·ÂTˆ–³µ6²Ãq^–Ó.<¡`”•YJù6çÎ2£^©Ö£Ô¦ÕŸ:˜Ê¶”„ÆÂßSûñ³ìÕ*uİ<C-‹-Ï¤ŸbFØiƒ
+Ê‘$Óp[8Ğ÷ßë±”¿µO¥H§.Q¡"cnFr3m©7)JHX
+>ş’~‡´'Ê‡^É•&!e¥Â[W¡a:H$éQÜw¶z—ÑQƒ³ª†a1¨²…¨¾ {zÊ†› 8¸µÏ8Q¢Á‡U˜)µªƒtªt§T‡¥¾ ’„n¢@ı­ˆ°½°
+2©BZ?ªÕZ1Ròÿ ¸ÛõŒçY•©ªªIÒ†Ö†YH'¶ÈQ±*VåD’¢O“ofC¨”ùS°¤H²”âJn•8/{_éqŠnt_O%¶ºVE¥½&kå°Ó½Õ†ÙBmê+QÀ{Îçg§‘*¾’ÍY¾Ã)l¾ä—\Rm» ‘ªàZşç|4œ-YmºÉÖ®3êúMºÒ©ĞiïÑ¨ÔÚD¦œB@ajI("ü7$ù8S¡dªí)ÌuJ
+wìÕ µKz“
+$ï£~HŒVz”)j¡)÷jR*Ú’JyA?ÑQIĞÂ”oÁğNø}v¹MªQåG“U«Î§Haô%­MÈCìØJRÀXß| ¶½H­Ï2…”×k°cüH6W®Œ±››ª¿r#ÊOeÔ4o«{¶ @Ø¥V@àípD´÷Äö!Õ9!·†¯¼%J ƒµÅíÅı81”kÔÜ³TjTš\Š‹ôÕ¢ÄqE)Cˆ#·Ü¾÷×;€@6Ç\©+:õ"#rX"}EOHŠ…jKi¹q`‰ô…~ü?Ä‹‘ÒImĞ.±Çôqjzó¼Úôh²¥¶ÊŞ\Gİ-k7Ki$n¡cs}´|ı%ªòÿ Ù¦cE¦FM=ÇÔ‰H¦ÈZt"ÈØ½‰ùŒT"Sbf„NÂ[n³xì¸56†@'ğÛ`6—ËŠ™L¦ Ì«ËnOÂ²\€oÉº?[rmªşöüàÌ_Ju:&Äû¹Ÿçï8º‹—+•š“ñiÑ_”ÔwTÒÖÚ}) ›jYÙ?¿Š4ŒÃJ ±Nuçïd¾Ó§·$
+)Ók+Ò«_Şÿ \dz¤J{fT¥ˆ¸¥¶Ğ;¤­d‘o{¨c}†aÔšÄêìŠ{-¸Ë®ÃFí¸¶‰Òµ mkîOÈaÆà³ß°€£³èÜÄzV\­Òj•Êj9ur´h—cMÔTV¢P~btõ.T3Bé³'Çû:#I’¨û”º\]•kxH¶ß‹cïõ™s*éÑ~áÔ‡\*lhU÷ê.1ñÑÇò«9‘YzªŠ‚ÛuŸBR#´%eN.áCõ¸ÇÆ0úw´q(–kñšëÑ.‰—}òIßç¿>ĞGZcdÇfJå¢jduºÙY:‹wäN×±ß™v
+:¡¹SdK»×,ÇB´'MÈ«’M¯al7uÙ¼¬©F„š´j…’ÄÕÈŠ¤³,‹m(ª÷EÂMÒ¶ØO¢G
+ËÃD­E« '«’öŞØõ+z«ëÔê*Ô:…æ£õ8ûÊ—J~.kìåº[Æt©Kg¶AJHÔ77MÔ«ƒ¸½øÂ&~Ëz¡˜êsŠı:h–éqØîêÀ³ê(UÁŞäléÅb}9R+&2˜å¡N…Iô®ßT•8W:y9šeC2ÕêQú_\“OhwT¤—.B”
+±½…ñœ…Ş`‚à)ä"=·ZˆëK“}^[š’Óª‚µ!Ë»i±qÍ¹Å19$.@­GyBî4·4©µyIØƒµ±¡DÏ²d>†Ğ—–­M€ĞAO¤¨
+kmu¬±ª³5EÄÈpÜê'ñ±véÖxˆdJü 8z¼¹ÎmöšôÚ	ıÿ ÿ 0j’ó³©ÑŸb"ßKM£Övm&ÀX“É¿Œ}æì¿
+ª[îPş%Æİ(Ô—”
+È$zHÜm†~:!AyJ#¶”¡ö l>wüğQh°–YÈj€V”Éù’dªŒ#¼‰H§¤¾óqÔ¥&úBo¿«HØñ$E:ºã
+UMI-¡ĞRÒ¤y'‘ç›ZøªP¨p¥dEMšøŠW%Gg :Aõ}.l7½·Ûq‰şf”ßÛBŸDx¨¾„„,T£kî9~¸
+<5±Pcz;Y£÷èó%„ç£2RYî2cwî¤/JÍ­qêôí¿8±×\…ÿ ¨4U>Ë2Ş“¨»á´¶W«J¤’5a&ç~m„ŠOFkt¦©ª”Û’ô„j@	Ø§}Šw÷87ÒfÌë=Sb-‰É)m‚ ( ‹‹•*àùÓÆØ]ØµÜKÜFÒ‚ºVâéûÎŠ.R¤P¾Ë¨S¢Ï`€¥G[ií$‚ M­±‘…H]0¡" k+(òÊ»ˆBR¥¡*°²@:@· `Åc8ShóD·?
+.Rƒ{*ÿ »ƒïã	µô3…ê-:l¤´à´Â–iÜ`A#np[ìFmşQM=N§+éæÏQº’óš–äE«) †çDWãÒ,ëdiPk*ŞqÌİ#Êµ\»×ZÅ6­$åèÏ™Î6n‘pGë¥WO›(m±ÇWe‰õÕA–kËyqH-¡õYe7õqn…¾˜²½^UqìÃTHÔ¹”ğÔô)\uàB[)·üºA*¾È s­f4’;@0­ÖrhAy’hËÊD¨mı.5ñ
+„6Ş”ØÜ,›z¶6¿¶Ä[ªğæPòÛÔ¤¼mk×¬¯Ô¦Öé;ÿ Ì.¿¶¢Õ$Àƒ@!„(–[‹¸êRAõw)®ø×ŸZ§S¥Õy5k«	T„$!l)J°J“¿§p5n7ñ„ ,r9mÔ]S€ë!«§İq¶)«yöÈKI·í†Öóüpj.f~B–Ä‡\~å’Êm*¾ú‚¾`pFü`-Z§¦® Ğ
+0¢­%6¹Ûcó62m%O;&]]İ4öÓˆ[wp(é#qmøØıqQkWs´Zêr£?Nqf¯eO7Áˆşˆ­Êp6Ü…‹5Üq~¥(µ¢E¯¾Àâ™B¢åŞ˜× "­_‹™ëOıÜ}9ÚX}7qkZl­¶äNØKLÊ‹•tÄ§Şj&É
+ÄiIûå­J²A;I#À±<â›“úZ£çŠVlÌYÂ-BLg“1q].­ÂºİVÊÒBG°Øá$áàÎŞ ã6“ö‹c¦fìÁªPİz™$'{ß|ènÄî¥*ö¾Ö¿¾%Õ8Yƒ(ÃOÃ+X*­·µ%Hàƒã
+øéœ»M§ÖfÕææNLn¤ã.5%Õ$#J ¸Ğ4Ü“ş£®¿¢“¸üx.0Ù©
+Çme@'JÀ¸àË
+½Á ØâĞÊ<Æ9&M¡M«Èq)ÖRoê$Û{ü°á@ŸZ®U§CUF½S
+ÓäJS>µ¸”ıß¤ò½°‚¾â™UÈ
+·áNøvıê‰¤Å…DŒËÊZ}×lK-kû›Zä_cÀÁ«­JdÁ;°8U:{–³2¨õüÖ…ÑhÏ²´¶íBSj}¥© PUp|XÅ°î¬ÉòØvŸ!n6¢…©·Ğ¤’6$Èùáú~b~VX¡dú¿ÀOŸMa×'Êmä”2÷uÆ›@Üö’²FÖÔŸ9Óì†\Qê@\Ø&fÃéqŒ+ÕQ*fÊİvÉnc*™1êC¡%Qô¸îƒªÛm¿”ú¹wçS.æ,Ó
+UJ›
+Õ4ÊûJq¶Uír.¢<[mùÜÌµ8•üí9ÙÎ6ØR ¶Ò,NÚõ)"ê $àXÛİ ÌQH­ÓÚ™Pšë¥¦Kiµ”®ê€l¤ûq„ÅZñpóÄdR–Ø=äª{“;îS¥¥iLW–‚—R«ì)<ü¾ÒeÙÎ—$ì”ÚÍ…öJÒ®>€à¦~˜™J¨;
+„H|6÷Ğ›À$››Ûß¢R©Ôİ*LfäÔŠ¤/ÕcoÔ¿<â…×®dëÙhr9àÎ¬c0->1OFu* ÚJ€Óu•ñˆŞoë5VM¦é4ñ
+˜.öJœp÷–’’’6·ocó ûa÷¤”¿ö‹#PäFSCáe·{|9l[W¹
+Óùb=Ÿ%Sj¹Ş½LfŒª„ƒ©>‚€\VéPâÛ›q¾º2x²qˆõÚõeP£9”N†Ñäõ5©5Ê³²¦Æ‘Ú’á»Ä(Üø«~Xèúlx¸mS Ff3€”6Ú@ç·œA?GLÁNÊtÑ”êQª”ç§>·`?:!i2Á<"ö¹rö¶,’ª(aµ.JÔÊ¸t“£±'UZôÅuao\ğÎõ$ÁeÛm¸ò—f‚“®Şş›ú¶ñ€rëÓj
+½U_Äè=©ËwUÂö±
+ÓµøÂ¾mÎñ¯Ã‰O“Üp<JÒ,¿Ü~<ŞÍ‘)*)i9³#N…éoï;n)>ÿ ²n|mlôvn6?†¥¤ĞÜ|ÿ 1)©€i-Ã/”Í©:»G,¨€ØP÷+<ír=†úó_~‰ÒéĞ»}ùoÅp+b­·¿#÷aC+fZc8Ñê•),‡·#¡–	í°—  äİ)¹>ß–3¬3ƒ•šlvµÔgÔ5°Ìs©$ O°óõöÀPğçlb![3â¥§4Çœ‡mÉ}µ©½ı"Á«ì=şx?’•+0Ê},É“ös‡UªİÕZÖ@78ÕL‹?*Õ‚*¨TW&!O6Ão7¦û„”í·x¸÷Á®†(÷çRÛ)AuÀQ«„ßP8¡¦	k.Pº“e(JìgJ¬G¢õ‡Q”ãm1 €VàºQ¨”$Ëo
+½3Xei§*ÏvÁıZ4ßUŠy¾Öÿ â¦¹R2Ôº«¯VÕÜĞâû-\‹%&æÇİV÷¡³X‰*}’ßl<] úl›©Z¯¦àŸ{íl/¨R¸1ıŠA­×ÚªsÓQn$I«÷P€[î6‘tŸÚµ‚½À·8W(ñ*Uäæ&]UAÕ+Rêh…p<{RLµRu¥Ê†¤¤¶Ó¥)Z<¡Cöo¾ÄZ×ÖüÔõb’å.,F¢Deai|¹Ó{¥ l
+È$›ã/KVÙ‚ı&ªñ]IÄcb~}>|ç:Ö;Q|Åqk,µÅìEíÉÀØUWà>ãğæ>ÃëF•8…”’’xÛé|3RéÊÌuØô8Œ¥ç@Fæ”¤Xµ›mk<ÆP d,İ*>n¥H‡éëÒÛİÆıE7ZIÒI )6¸ ¨`õ\ª8O9Ïø™SPşW´Á52½;7Ñò¢úƒ“]
+íM¯¸öÎiQ
+U’ v)P¿×l™R“&cÒ!h.¸¥” Ù"æöÀÅO7Ñ*iéf]ƒ”+¡Š-M·¤.!kû––­Á]¬á'c…ÒìÊ±¬TaY[)Q–ØÙ¶µ9~qDKzyEŠ]%/µ-
+iÄÙN °
+‰)Ü§‘±±Æ×Lhu¤WŒÊ|7$#²£)»Õ®>
+À·ÏlkÖ«³jÒÙ«OZ;Šl4iI#ğ¤ø·çƒ;©Õ*
+1ú=2,>ä—‹Ë’âIX6	·Ü‹ì7Û|!c³q^VU¨ÀÍÑ_­¿oÌI}–ÖT¸úSµÍ€p‰ãyN‘TÌÙ¹š		›*I)h­a´7?‰V`~¶°¾ªÕçäW>"¦ó®¥ıMÈuG{
+şBàmõÁYœS*‘$Á[¤E}§›KJõ]
+i#9¾*h[c¬“¯ ]“§ºMM©t÷*Ui¹‰èñ\‘/ZšnJW`¤I6ŞÃƒ}±3~n]Ì^¤åšl& Òb%éNü3^§]J
+†­Á_¨N÷8°tædZÿ O‘š¥-¹Ui*a‚ûåß¸¤—n@À)D[õH¹ÛÒ¬•¬¬ÉO€¤TXSr\”â»j½Ê6‘Õ+œ–;’Ö‚µdô
+‡S×¼úFIL¬€š£U9>›6+ĞT¶Ş‡5$*Äî.tá/9uBfI4Ó9µ´—>Ğd´–Ùî)(·nÇÕk*ÄÅ‡8}ëN“™òë‘—PS³˜ûøº­:”6µ­a²øR™“DK*”Ç™İÒ–=µ‚Ê‚=Ïç€hY‚Ìëëşà6Œ´:²şÑ/	iT˜ËeiÒ¾‹-*¿AMÁùüğÍFšåS&Õ?Ş–¿†˜&>»”¶R°w·%[[‹Ÿâ_@ËU·%È"|hIqÒRJÕ§‹p­aÏŒXrÎlË™',F¤BntÊ„Â]• 4§	'È²BFà
+ícŠCSeU£9ıäµÓ×m€¹Æ${2fJ•-ù—äÇ(g¾Ê×t¨„¸›({ÜËy™º›Wı!åL•Ü‘²äHd¡
+)	õ”lN²Ìßå>ê¥Y¬Û™¶Vğåµ_!aG‚m†S’Ìûô›…ê:Aù¾'ÜK.9wÃ¼.ÛÛÍ¯Ú?ì¡~ˆ3˜0Bæ¨<óo¥âàE´•%;‘½‡Ç=bBóS‹B.ÓQu×ui
+,‹ø7*WîÃsİ%®¿M…W®f±Üg¼àëŒ$Ø„ØÛ{\öùï›",'j’b–ß[î¥„8P•%½GYO)ückƒ{cZ'ßÄt¾—³#
+@úı#½>@”TÓ‹J”…­J…‰äm¸8]¥Q3j­˜hwÅ8Úœ*
+QVFé*½ŠFÄv8bb%=™R~SÏ©Õ%zSèU€°äğ=öÇ¼¾£Ñ2kk¥A£¼e¾°ëî£ğ¸£¤VI$„”ín¸°]†L›¥Ìx¦fH’¨Œ¸ì‡¬6åÒ,6Ø›¨
+î@ÒÀœMº£<7.:…v	Úà›?1õ¶ú™'LaÆC,÷$·«¶¥ £¨
+÷±ç’/‰®qv`ø)ÁÔFm³ºTA÷ Ÿm±‡Õú¹Æ4šµÓ^^£Ğõôt73¤öf°§œ‘%‚P)!`¨lEöµÇ‘~p×úBÊ¦4Š[M ¦rå¸»w
+‡l£ÔR•nôóòÛºkF¥»Y`ÃiôG-•>[ kí¿>ÿ ˜Á>´e4GfE‡Cµ­µ-^‘uZßÀó‰vau °ËryIŞÎs¢®‹GÍ\Ë"-e-1øL­)&úŠÍ’AĞmÁŒ*»˜3"ÜRÕZ–J‰$Üõ©0ÜM0©ä»
+;ÜkcA.(¤„ñóÅ5à>á¼H³.Àí<”ôÖØ”–î¤°FÄÛ‘ù`ÔH
+Æu´X	&Ş~wÀù
+cƒ
+ Æ{ï’[  ‹ÜÛÚşpvDˆî9ô:›ß[j†±@;F)bG«œVŒÛ‘R‚¯b,?v>éQÒÛ-§À! Ÿ`-•^›¡Ö•! éñ½ˆ<móÆı,÷©ñŞ@¶´…‹üğæ„{¢$sÃ‰Òÿ £b“;+¼ÃO"¡MÖô•­O(”ş©%kÛÊxDğœ[SÒPÊˆQ± ‘¶Û«ãĞjÓ´ª”¨
+EqåÔÖÚBÂ€-”Üßú¶Qùí‹%úœº›hSM2¡©K%jÉğ8ìxÎgAáe“ï.D7a)¸ix0M’S¥#ÉæÀîãİ×¦œfRêèYXeÄE	Û¨‹üæßé€Ÿ@¡-%EN»§QÚåÄ‚~\œD³ı5L›š)K+ƒ,ºÚ”‹p‘k{‚•ZøY€ìašµz]~¿êIa¤æŠâÓ:ICMyâÂçÿ ¬Ë:XŒùl)E§FµÉÒtßi. 5 ¹ã
+õu•7Şp#Q![rxÃµ8C’39›„d‡)uk®Zè`„oÆé¾Q\]2cS)Ë,LmÀâÙõjcş ây0“PV•ü+•j)Şß/¨Ã
+ƒÛJ–JÔSº”nN¸o™ÚêËRh—_¬u¯ç\Ã™PêëÕGä¥k.of‘ìFÛ|ï…Fa«R¤Éû1ÆœïÈ¶âu
+\n;ãnR,ÉpßÃÉmÂ.S5µÛÿ É'OIÚQ×iÑ¨5ğŒ`Ë8µ9‘{¯Íq´”hJw~g‘…YÓåO“%Ö©­KZ›‰¨¥_yéIMlÏU5RrmAöë¨ì ƒe$¹è|Á7ü±2K,„&á!#î‘·ƒnvçœWÅÖ~uU«YÉX_}UŠ
+‹y­m-aBÄ–Ô«s şü fé@»S–‚¦ÛI(EÇá)ü·¿şéEJd¥H¥”$!¡à› ’Ú‚¶ú¡'êO¾ë2b}­RTeÇd¹è”5½½öÆ,Øbf¼qœCj©³`´Ú×!÷e¶LvÕr¥
+…‡Òã|Ó$æš‡>3n¡.‡;z•x±÷µïˆ1
+¤Í¢ÅˆÔ†®[
+§äE”w$ïòÅššäªRn²µ—&?<G¥*R/°üüâ6¿ÒÊøÖõ âq“ÒEkî!Y±cíë¸µĞokîw¶’è	q¹/­×X/§K‹R­"Ş¤óÏluA.)7;1FÇ¾ÿ O#ÿ s÷âyIşFoögŒÀ*øbÿ Œf‰şM?LWiûyAşÍ_æ8Ìf§â¿Çn†KSıUâı@şvÿ õğÆc0-G¼ıeÿ ÿ ÅùÜMŠ‡üw÷SştbSÔèsş˜à¬f3şèİ
+ÿ ;È^õÂ³Ÿ„ıN3‚ôœós0Ş[şi7ş˜q½DşnßĞc1˜YıÓ«şäa	„ıÓ dpïö¨ÿ Lf3Ä»ªøgèeª¿Ñ'?½³ş|MøSı\f3O9ùhåúiÿ {ûv?îÇçV?“ıá¯û±˜Ìaı“Õ÷Ay?ñDşô?Ìœt&VşˆEşæòf3¼OÚ°¶rœí+ùüêÈÿ öaiÿ åÜş±ş8Ìf(¯´M7)ÿÙ
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:50:153> ----
+====> Server connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:50:153> ----
+====> AppScan finished sending the response to the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:50:153> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:50:153> ----
+====> Browser connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:50:168> ----
+====> Browser closed connection when reading a request
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:51:246> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+GET http://demo.testfire.net/bank/login.aspx HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/msword, application/xaml+xml, application/vnd.ms-xpsdocument, application/x-ms-xbap, application/x-ms-application, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MS-RTC LM 8)
+Host: demo.testfire.net
+Proxy-Connection: Keep-Alive
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+
+
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:51:246> ----
+====> AppScan finished getting the request from the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:51:246> ----
+====> AppScan proxy is working in by-pass mode.
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:51:293> ----
+====> AppScan connected to host demo.testfire.net:80
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:51:309> ----
+====> AppScan is sending the following request to the site
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+GET /bank/login.aspx HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/msword, application/xaml+xml, application/vnd.ms-xpsdocument, application/x-ms-xbap, application/x-ms-application, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*
+Referer: http://demo.testfire.net/
+Accept-Language: en-us
+Host: demo.testfire.net
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)
+
+
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:51:309> ----
+====> AppScan finished sending the request to the site
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:51:309> ----
+====> AppScan got the following response from the site
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+HTTP/1.1 200 OK
+Date: Thu, 06 Jan 2011 20:13:48 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/html; charset=utf-8
+Content-Length: 8729
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head id="_ctl0__ctl0_head"><title>
+	Altoro Mutual: Online Banking Login
+</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><link href="../style.css" rel="stylesheet" type="text/css" /><meta name="keywords" content="Altoro Mutual Login, login, authenticate"></head>
+<body style="margin-top:5px;">
+
+<div id="header" style="margin-bottom:5px; width: 99%;">
+  <form id="frmSearch" method="get" action="/search.aspx">
+	  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+		  <tr>
+		      <td rowspan="2"><a id="_ctl0__ctl0_HyperLink1" href="../default.aspx" style="height:80px;width:183px;"><img src="../images/logo.gif" border="0" /></a></td>
+			  <td align="right" valign="top">
+  			  <a id="_ctl0__ctl0_LoginLink" title="It does not appear that you have properly authenticated yourself.  Please click here to sign in." href="login.aspx" style="color:Red;font-weight:bold;">Sign In</a> | <a id="_ctl0__ctl0_HyperLink3" href="../default.aspx?content=inside_contact.htm">Contact Us</a> | <a id="_ctl0__ctl0_HyperLink4" href="../feedback.aspx">Feedback</a> | <label for="txtSearch">Search</label>
+          <input type="text" name="txtSearch" id="txtSearch" accesskey="S" />
+          <input type="submit" value="Go" />
+			  </td>
+		  </tr>
+		  <tr>
+			  <td align="right" style="background-image:url(/images/gradient.jpg);padding:0px;margin:0px;"><img id="_ctl0__ctl0_Image1" src="../images/header_pic.jpg" border="0" style="height:60px;width:354px;" /></td>
+		  </tr>
+	  </table>
+	</form>
+</div>
+
+<div id="wrapper" style="width: 99%;">
+    
+
+<table cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" class="bt br bb"><div id="Header1"><img id="_ctl0__ctl0_Content_Image1" src="../images/pf_lock.gif" alt="Secure Login" align="absbottom" border="0" style="height:14px;width:12px;" /> &nbsp; <a id="_ctl0__ctl0_Content_AccountLink" title="You do not appear to have authenticated yourself with the application.  Click here to enter your valid username and password." class="focus" href="login.aspx">ONLINE BANKING LOGIN</a></div></td>
+    <td width="25%" class="cc bt br bb"><div id="Header2"><a id="_ctl0__ctl0_Content_LinkHeader2" class="focus" href="../default.aspx?content=personal.htm">PERSONAL</a></div></td>
+    <td width="25%" class="cc bt br bb"><div id="Header3"><a id="_ctl0__ctl0_Content_LinkHeader3" class="focus" href="../default.aspx?content=business.htm">SMALL BUSINESS</a></div></td>
+    <td width="25%" class="cc bt bb"><div id="Header4"><a id="_ctl0__ctl0_Content_LinkHeader4" class="focus" href="../default.aspx?content=inside.htm">INSIDE ALTORO MUTUAL</a></div></td>
+  </tr>
+  <tr>
+    <td valign="top" class="cc br bb">
+        <br style="line-height: 10px;"/>
+        <a id="_ctl0__ctl0_Content_CatLink1" class="subheader" href="../default.aspx?content=personal.htm">PERSONAL</a>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink1" href="../default.aspx?content=personal_deposit.htm">Deposit Product</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink2" href="../default.aspx?content=personal_checking.htm">Checking</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink3" href="../default.aspx?content=personal_loans.htm">Loan Products</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink4" href="../default.aspx?content=personal_cards.htm">Cards</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink5" href="../default.aspx?content=personal_investments.htm">Investments &amp; Insurance</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink6" hr
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+ef="../default.aspx?content=personal_other.htm">Other Services</a></li>
+        </ul>
+
+        <a id="_ctl0__ctl0_Content_CatLink2" class="subheader" href="../default.aspx?content=business.htm">SMALL BUSINESS</a>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink7" href="../default.aspx?content=business_deposit.htm">Deposit Products</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink8" href="../default.aspx?content=business_lending.htm">Lending Services</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink9" href="../default.aspx?content=business_cards.htm">Cards</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink10" href="../default.aspx?content=business_insurance.htm">Insurance</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink11" href="../default.aspx?content=business_retirement.htm">Retirement</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink12" href="../default.aspx?content=business_other.htm">Other Services</a></li>
+        </ul>
+
+        <a id="_ctl0__ctl0_Content_CatLink3" class="subheader" href="../default.aspx?content=inside.htm">INSIDE ALTORO MUTUAL</a>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink13" href="../default.aspx?content=inside_about.htm">About Us</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink14" href="../default.aspx?content=inside_contact.htm">Contact Us</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink15" href="../cgi.exe">Locations</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink16" href="../default.aspx?content=inside_investor.htm">Investor Relations</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink17" href="../default.aspx?content=inside_press.htm">Press Room</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink18" href="../default.aspx?content=inside_careers.htm">Careers</a></li>
+        </ul>
+    </td>
+    <td valign="top" colspan="3" class="bb">
+
+
+<div class="fl" style="width: 99%;">
+
+<h1>Online Banking Login</h1>
+
+<!-- To get the latest admin login, please contact SiteOps at 415-555-6159 -->
+<p><span id="_ctl0__ctl0_Content_Main_message" style="color:#FF0066;font-size:12pt;font-weight:bold;"></span></p>
+
+<form action="login.aspx" method="post" name="login" id="login" onsubmit="return (confirminput(login));">
+  <table>
+    <tr>
+      <td>
+        Username:
+      </td>
+      <td>
+        <input type="text" id="uid" name="uid" value="" style="width: 150px;">
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Password:
+      </td>
+      <td>
+        <input type="password" id="passw" name="passw" style="width: 150px;">
+        </td>
+ 
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+   </tr>
+    <tr>
+        <td></td>
+        <td>
+          <input type="submit" name="btnSubmit" value="Login">
+        </td>
+      </tr>
+  </table>
+</form>
+
+</div>
+
+<script>
+function setfocus() {
+    if (document.login.uid.value=="") {
+      document.login.uid.focus();
+    } else {
+      document.login.passw.focus();
+    }
+}
+
+function confirminput(myform) {
+    if (myform.uid.value.length && myform.passw.value.length) {
+      return (true);
+    } else if (!(myform.uid.value.length)) {
+      myform.reset();
+      myform.uid.focus();
+      alert ("You must enter a valid username");
+      return (false);
+    } else {
+      myform.passw.focus();
+      alert ("You must enter a valid password");
+      return (false);
+    }
+}
+window.onload = setfocus;
+</script>
+
+
+    </td>
+  </tr>
+</table>
+
+
+</div>
+
+<div id="footer" style="width: 99%;">
+    <a id="_ctl0__ctl0_HyperLink5" href="../default.aspx?content=privacy.htm">Privacy Policy</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a id="_ctl0__ctl0_HyperLink6" href="../default.aspx?content=security.htm">Security Statement</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    &copy; 2011 Altoro Mutual, Inc.
+
+    <div class="disclaimer">
+        The Altoro Mutual website is published by Watchfire, Inc. for the sole purpose of
+        demonstrating the effectiveness of Watchfire products in detecting web application
+        vulnerabilities and website defects. This site is not a real banking site. Similarities,
+        if any, to third party products and/or websites are purely coincidental. This site is
+        provided "as is" without warranty of any kind, either express or implied. Watchfire does
+        not assume any risk in relation to your use of this website. For additional Terms of Use,
+        please go to <a id="_ctl0__ctl0_HyperLink7" href="http://www.watchfire.com/statements/terms.aspx">http://www.watchfire.com/statements/terms.aspx</a>.<br /><br />
+
+        Copyright &copy; 2011, Watchfire Corporation, All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:51:481> ----
+====> AppScan finished getting the response from the site
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:51:481> ----
+====> Server connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:51:481> ----
+====> AppScan is sending the following response to the browser
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+HTTP/1.1 200 OK
+Date: Thu, 06 Jan 2011 20:13:48 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/html; charset=utf-8
+Content-Length: 8729
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head id="_ctl0__ctl0_head"><title>
+	Altoro Mutual: Online Banking Login
+</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><link href="../style.css" rel="stylesheet" type="text/css" /><meta name="keywords" content="Altoro Mutual Login, login, authenticate"></head>
+<body style="margin-top:5px;">
+
+<div id="header" style="margin-bottom:5px; width: 99%;">
+  <form id="frmSearch" method="get" action="/search.aspx">
+	  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+		  <tr>
+		      <td rowspan="2"><a id="_ctl0__ctl0_HyperLink1" href="../default.aspx" style="height:80px;width:183px;"><img src="../images/logo.gif" border="0" /></a></td>
+			  <td align="right" valign="top">
+  			  <a id="_ctl0__ctl0_LoginLink" title="It does not appear that you have properly authenticated yourself.  Please click here to sign in." href="login.aspx" style="color:Red;font-weight:bold;">Sign In</a> | <a id="_ctl0__ctl0_HyperLink3" href="../default.aspx?content=inside_contact.htm">Contact Us</a> | <a id="_ctl0__ctl0_HyperLink4" href="../feedback.aspx">Feedback</a> | <label for="txtSearch">Search</label>
+          <input type="text" name="txtSearch" id="txtSearch" accesskey="S" />
+          <input type="submit" value="Go" />
+			  </td>
+		  </tr>
+		  <tr>
+			  <td align="right" style="background-image:url(/images/gradient.jpg);padding:0px;margin:0px;"><img id="_ctl0__ctl0_Image1" src="../images/header_pic.jpg" border="0" style="height:60px;width:354px;" /></td>
+		  </tr>
+	  </table>
+	</form>
+</div>
+
+<div id="wrapper" style="width: 99%;">
+    
+
+<table cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" class="bt br bb"><div id="Header1"><img id="_ctl0__ctl0_Content_Image1" src="../images/pf_lock.gif" alt="Secure Login" align="absbottom" border="0" style="height:14px;width:12px;" /> &nbsp; <a id="_ctl0__ctl0_Content_AccountLink" title="You do not appear to have authenticated yourself with the application.  Click here to enter your valid username and password." class="focus" href="login.aspx">ONLINE BANKING LOGIN</a></div></td>
+    <td width="25%" class="cc bt br bb"><div id="Header2"><a id="_ctl0__ctl0_Content_LinkHeader2" class="focus" href="../default.aspx?content=personal.htm">PERSONAL</a></div></td>
+    <td width="25%" class="cc bt br bb"><div id="Header3"><a id="_ctl0__ctl0_Content_LinkHeader3" class="focus" href="../default.aspx?content=business.htm">SMALL BUSINESS</a></div></td>
+    <td width="25%" class="cc bt bb"><div id="Header4"><a id="_ctl0__ctl0_Content_LinkHeader4" class="focus" href="../default.aspx?content=inside.htm">INSIDE ALTORO MUTUAL</a></div></td>
+  </tr>
+  <tr>
+    <td valign="top" class="cc br bb">
+        <br style="line-height: 10px;"/>
+        <a id="_ctl0__ctl0_Content_CatLink1" class="subheader" href="../default.aspx?content=personal.htm">PERSONAL</a>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink1" href="../default.aspx?content=personal_deposit.htm">Deposit Product</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink2" href="../default.aspx?content=personal_checking.htm">Checking</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink3" href="../default.aspx?content=personal_loans.htm">Loan Products</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink4" href="../default.aspx?content=personal_cards.htm">Cards</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink5" href="../default.aspx?content=personal_investments.htm">Investments &amp; Insurance</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink6" href="../default.aspx?content=personal_other.htm">Other Services</a></li>
+        </ul>
+
+        <a id="_ctl0__ctl0_Content_CatLink2" class="subheader" href="../default.aspx?content=business.htm">SMALL BUSINESS</a>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink7" href="../default.aspx?content=business_deposit.htm">Deposit Products</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink8" href="../default.aspx?content=business_lending.htm">Lending Services</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink9" href="../default.aspx?content=business_cards.htm">Cards</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink10" href="../default.aspx?content=business_insurance.htm">Insurance</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink11" href="../default.aspx?content=business_retirement.htm">Retirement</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink12" href="../default.aspx?content=business_other.htm">Other Services</a></li>
+        </ul>
+
+        <a id="_ctl0__ctl0_Content_CatLink3" class="subheader" href="../default.aspx?content=inside.htm">INSIDE ALTORO MUTUAL</a>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink13" href="../default.aspx?content=inside_about.htm">About Us</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink14" href="../default.aspx?content=inside_contact.htm">Contact Us</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink15" href="../cgi.exe">Locations</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink16" href="../default.aspx?content=inside_investor.htm">Investor Relations</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink17" href="../default.aspx?content=inside_press.htm">Press Room</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink18" href="../default.aspx?content=inside_careers.htm">Careers</a></li>
+        </ul>
+    </td>
+    <td valign="top" colspan="3" class="bb">
+
+
+<div class="fl" style="width: 99%;">
+
+<h1>Online Banking Login</h1>
+
+<!-- To get the latest admin login, please contact SiteOps at 415-555-6159 -->
+<p><span id="_ctl0__ctl0_Content_Main_message" style="color:#FF0066;font-size:12pt;font-weight:bold;"></span></p>
+
+<form action="login.aspx" method="post" name="login" id="login" onsubmit="return (confirminput(login));">
+  <table>
+    <tr>
+      <td>
+        Username:
+      </td>
+      <td>
+        <input type="text" id="uid" name="uid" value="" style="width: 150px;">
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Password:
+      </td>
+      <td>
+        <input type="password" id="passw" name="passw" style="width: 150px;">
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+          <input type="submit" name="btnSubmit" value="Login">
+        </td>
+      </tr>
+  </table>
+</form>
+
+</div>
+
+<script>
+function setfocus() {
+    if (document.login.uid.value=="") {
+      document.login.uid.focus();
+    } else {
+      document.login.passw.focus();
+    }
+}
+
+function confirminput(myform) {
+    if (myform.uid.value.length && myform.passw.value.length) {
+      return (true);
+    } else if (!(myform.uid.value.length)) {
+      myform.reset();
+      myform.uid.focus();
+      alert ("You must enter a valid username");
+      return (false);
+    } else {
+      myform.passw.focus();
+      alert ("You must enter a valid password");
+      return (false);
+    }
+}
+window.onload = setfocus;
+</script>
+
+
+    </td>
+  </tr>
+</table>
+
+
+</div>
+
+<div id="footer" style="width: 99%;">
+    <a id="_ctl0__ctl0_HyperLink5" href="../default.aspx?content=privacy.htm">Privacy Policy</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a id="_ctl0__ctl0_HyperLink6" href="../default.aspx?content=security.htm">Security Statement</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    &copy; 2011 Altoro Mutual, Inc.
+
+    <div class="disclaimer">
+        The Altoro Mutual website is published by Watchfire, Inc. for the sole purpose of
+        demonstrating the effectiveness of Watchfire products in detecting web application
+        vulnerabilities and website defects. This site is not a real banking site. Similarities,
+        if any, to third party products and/or websites are purely coincidental. This site is
+        provided "as is" without warranty of any kind, either express or implied. Watchfire does
+        not assume any risk in relation to your use of this website. For additional Terms of Use,
+        please go to <a id="_ctl0__ctl0_HyperLink7" href="http://www.watchfire.com/statements/terms.aspx">http://www.watchfire.com/statements/terms.aspx</a>.<br /><br />
+
+        Copyright &copy; 2011, Watchfire Corporation, All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:51:481> ----
+====> AppScan finished sending the response to the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:51:481> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+POST http://demo.testfire.net/bank/login.aspx HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/msword, application/xaml+xml, application/vnd.ms-xpsdocument, application/x-ms-xbap, application/x-ms-application, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*
+Referer: http://demo.testfire.net/bank/login.aspx
+Accept-Language: en-us
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MS-RTC LM 8)
+Host: demo.testfire.net
+Content-Length: 41
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+
+uid=jsmith&passw=Demo1234&btnSubmit=Login
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:56:809> ----
+====> AppScan finished getting the request from the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:56:809> ----
+====> AppScan proxy is working in by-pass mode.
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:56:871> ----
+====> AppScan connected to host demo.testfire.net:80
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:56:871> ----
+====> AppScan is sending the following request to the site
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+POST /bank/login.aspx HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/msword, application/xaml+xml, application/vnd.ms-xpsdocument, application/x-ms-xbap, application/x-ms-application, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*
+Referer: http://demo.testfire.net/bank/login.aspx
+Accept-Language: en-us
+Content-Type: application/x-www-form-urlencoded
+Host: demo.testfire.net
+Content-Length: 41
+Pragma: no-cache
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)
+
+uid=jsmith&passw=Demo1234&btnSubmit=Login
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:56:871> ----
+====> AppScan finished sending the request to the site
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:56:871> ----
+====> AppScan got the following response from the site
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+HTTP/1.1 302 Found
+Date: Thu, 06 Jan 2011 20:13:53 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Location: /bank/main.aspx
+Set-Cookie: amUserInfo=UserName=anNtaXRo&Password=RGVtbzEyMzQ=; expires=Thu, 06-Jan-2011 23:13:53 GMT; path=/
+Set-Cookie: amUserId=100116014; path=/
+Set-Cookie: amCreditOffer=CardType=Gold&Limit=10000&Interest=7.9; path=/
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/html; charset=utf-8
+Content-Length: 136
+
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="%2fbank%2fmain.aspx">here</a>.</h2>
+</body></html>
+
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:56:950> ----
+====> AppScan finished getting the response from the site
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:56:950> ----
+====> Server connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:56:950> ----
+====> AppScan is sending the following response to the browser
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+HTTP/1.1 302 Found
+Date: Thu, 06 Jan 2011 20:13:53 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Location: /bank/main.aspx
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/html; charset=utf-8
+Content-Length: 136
+Set-Cookie: amUserInfo=UserName=anNtaXRo&Password=RGVtbzEyMzQ=; path=/; expires=Thu, 06-Jan-2011 23:13:53 GMT
+Set-Cookie: amUserId=100116014; path=/
+Set-Cookie: amCreditOffer=CardType=Gold&Limit=10000&Interest=7.9; path=/
+
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="%2fbank%2fmain.aspx">here</a>.</h2>
+</body></html>
+
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:56:950> ----
+====> AppScan finished sending the response to the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:56:950> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+GET http://demo.testfire.net/bank/main.aspx HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/msword, application/xaml+xml, application/vnd.ms-xpsdocument, application/x-ms-xbap, application/x-ms-application, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*
+Referer: http://demo.testfire.net/bank/login.aspx
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MS-RTC LM 8)
+Host: demo.testfire.net
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887; amUserInfo=UserName=anNtaXRo&Password=RGVtbzEyMzQ=; amUserId=100116014; amCreditOffer=CardType=Gold&Limit=10000&Interest=7.9
+
+
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:56:965> ----
+====> AppScan finished getting the request from the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:56:965> ----
+====> AppScan proxy is working in by-pass mode.
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:57:028> ----
+====> AppScan connected to host demo.testfire.net:80
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:57:028> ----
+====> AppScan is sending the following request to the site
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+GET /bank/main.aspx HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/msword, application/xaml+xml, application/vnd.ms-xpsdocument, application/x-ms-xbap, application/x-ms-application, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*
+Referer: http://demo.testfire.net/bank/login.aspx
+Accept-Language: en-us
+Host: demo.testfire.net
+Pragma: no-cache
+Cookie: ASP.NET_SessionId=x124q0npzt3axsullmazgw45; amSessionId=141345182887; amUserInfo=UserName=anNtaXRo&Password=RGVtbzEyMzQ=; amUserId=100116014; amCreditOffer=CardType=Gold&Limit=10000&Interest=7.9
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)
+
+
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:57:028> ----
+====> AppScan finished sending the request to the site
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:57:028> ----
+====> AppScan got the following response from the site
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+HTTP/1.1 200 OK
+Date: Thu, 06 Jan 2011 20:13:53 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/html; charset=utf-8
+Content-Length: 5699
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head id="_ctl0__ctl0_head"><title>
+	Altoro Mutual: Online Banking Home
+</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><link href="../style.css" rel="stylesheet" type="text/css" /></head>
+<body style="margin-top:5px;">
+
+<div id="header" style="margin-bottom:5px; width: 99%;">
+  <form id="frmSearch" method="get" action="/search.aspx">
+	  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+		  <tr>
+		      <td rowspan="2"><a id="_ctl0__ctl0_HyperLink1" href="../default.aspx" style="height:80px;width:183px;"><img src="../images/logo.gif" border="0" /></a></td>
+			  <td align="right" valign="top">
+  			  <a id="_ctl0__ctl0_LoginLink" title="Please click here to sign out of the Online Banking application.  You may also want to close your browser window." href="logout.aspx" style="color:Red;font-weight:bold;">Sign Off</a> | <a id="_ctl0__ctl0_HyperLink3" href="../default.aspx?content=inside_contact.htm">Contact Us</a> | <a id="_ctl0__ctl0_HyperLink4" href="../feedback.aspx">Feedback</a> | <label for="txtSearch">Search</label>
+          <input type="text" name="txtSearch" id="txtSearch" accesskey="S" />
+          <input type="submit" value="Go" />
+			  </td>
+		  </tr>
+		  <tr>
+			  <td align="right" style="background-image:url(/images/gradient.jpg);padding:0px;margin:0px;"><img id="_ctl0__ctl0_Image1" src="../images/header_pic.jpg" border="0" style="height:60px;width:354px;" /></td>
+		  </tr>
+	  </table>
+	</form>
+</div>
+
+<div id="wrapper" style="width: 99%;">
+    
+
+<table cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" class="bt br bb"><div id="Header1"><img id="_ctl0__ctl0_Content_Image1" src="../images/pf_lock.gif" alt="Secure Login" align="absbottom" border="0" style="height:14px;width:12px;" /> &nbsp; <a id="_ctl0__ctl0_Content_AccountLink" class="focus" href="main.aspx">MY ACCOUNT</a></div></td>
+    <td width="25%" class="cc bt br bb"><div id="Header2"><a id="_ctl0__ctl0_Content_LinkHeader2" class="focus" href="../default.aspx?content=personal.htm">PERSONAL</a></div></td>
+    <td width="25%" class="cc bt br bb"><div id="Header3"><a id="_ctl0__ctl0_Content_LinkHeader3" class="focus" href="../default.aspx?content=business.htm">SMALL BUSINESS</a></div></td>
+    <td width="25%" class="cc bt bb"><div id="Header4"><a id="_ctl0__ctl0_Content_LinkHeader4" class="focus" href="../default.aspx?content=inside.htm">INSIDE ALTORO MUTUAL</a></div></td>
+  </tr>
+  <tr>
+    <td valign="top" class="cc br bb">
+        <br style="line-height: 10px;"/>
+        <b>I WANT TO ...</b>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink1" href="main.aspx">View Account Summary</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink2" href="transaction.aspx">View Recent Transactions</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink3" href="transfer.aspx">Transfer Funds</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink4" href="queryxpath.aspx">Search News Articles</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink5" href="customize.aspx">Customize Site Language</a></li>
+        </ul>
+        <span id="_ctl0__ctl0_Content_Administration"></span>
+    </td>
+    <td valign="top" colspan="3" class="bb">
+
+
+<div class="fl" style="width: 99%;">
+
+<h1>Hello
+    John
+    Smith
+  </h1>
+
+<p>
+  Welcome to Altoro Mutual Online.
+</p>
+
+<form name="details" method="post" action="account.aspx">
+<table border="0">
+  <TR valign="top">
+    <td>View Account Details:</td>
+    <td align="left">
+      <select id="listAccounts" name="listA
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+ccounts" ><option value="1001160140">1001160140 Checking</option><option value="1001160141">1001160141 Savings</option></select>
+      <input type="submit" id="btnGetAccount" value="   GO   ">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><span id="_ctl0__ctl0_Content_Main_promo"><table width=590 border=0><tr><td><h2>Congratulations! </h2></td></tr><tr><td>You have been pre-approved for an Altoro Gold Visa with a credit limit of $10000!</td></tr><tr><td>Click <a href='apply.aspx'>Here</a> to apply.</td></tr></table></span></td>
+  </tr>
+</table>
+</form>
+
+</div>
+
+
+    </td>
+  </tr>
+</table>
+
+
+</div>
+
+<div id="footer" style="width: 99%;">
+    <a id="_ctl0__ctl0_HyperLink5" href="../default.aspx?content=privacy.htm">Privacy Policy</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a id="_ctl0__ctl0_HyperLink6" href="../default.aspx?content=security.htm">Security Statement</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    &copy; 2011 Altoro Mutual, Inc.
+
+    <div class="disclaimer">
+        The Altoro Mutual website is published by Watchfire, Inc. for the sole purpose of
+        demonstrating the effectiveness of Watchfire products in detecting web application
+        vulnerabilities and website defects. This site is not a real banking site. Similarities,
+        if any, to third party products and/or websites are purely coincidental. This site is
+        provided "as is" without warranty of any kind, either express or implied. Watchfire does
+        not assume any risk in relation to your use of this website. For additional Terms of Use,
+        please go to <a id="_ctl0__ctl0_HyperLink7" href="http://www.watchfire.com/statements/terms.aspx">http://www.watchfire.com/statements/terms.aspx</a>.<br /><br />
+
+        Copyright &copy; 2011, Watchfire Corporation, All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to site) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:57:137> ----
+====> AppScan finished getting the response from the site
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:57:137> ----
+====> Server connection closed
+---- End Thread  7204[1be8] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:57:153> ----
+====> AppScan is sending the following response to the browser
+---- End Thread  7204[1c58] ----
+
+---- Begin Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+HTTP/1.1 200 OK
+Date: Thu, 06 Jan 2011 20:13:53 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Content-Type: text/html; charset=utf-8
+Content-Length: 5699
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head id="_ctl0__ctl0_head"><title>
+	Altoro Mutual: Online Banking Home
+</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><link href="../style.css" rel="stylesheet" type="text/css" /></head>
+<body style="margin-top:5px;">
+
+<div id="header" style="margin-bottom:5px; width: 99%;">
+  <form id="frmSearch" method="get" action="/search.aspx">
+	  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+		  <tr>
+		      <td rowspan="2"><a id="_ctl0__ctl0_HyperLink1" href="../default.aspx" style="height:80px;width:183px;"><img src="../images/logo.gif" border="0" /></a></td>
+			  <td align="right" valign="top">
+  			  <a id="_ctl0__ctl0_LoginLink" title="Please click here to sign out of the Online Banking application.  You may also want to close your browser window." href="logout.aspx" style="color:Red;font-weight:bold;">Sign Off</a> | <a id="_ctl0__ctl0_HyperLink3" href="../default.aspx?content=inside_contact.htm">Contact Us</a> | <a id="_ctl0__ctl0_HyperLink4" href="../feedback.aspx">Feedback</a> | <label for="txtSearch">Search</label>
+          <input type="text" name="txtSearch" id="txtSearch" accesskey="S" />
+          <input type="submit" value="Go" />
+			  </td>
+		  </tr>
+		  <tr>
+			  <td align="right" style="background-image:url(/images/gradient.jpg);padding:0px;margin:0px;"><img id="_ctl0__ctl0_Image1" src="../images/header_pic.jpg" border="0" style="height:60px;width:354px;" /></td>
+		  </tr>
+	  </table>
+	</form>
+</div>
+
+<div id="wrapper" style="width: 99%;">
+    
+
+<table cellspacing="0" width="100%">
+  <tr>
+    <td width="25%" class="bt br bb"><div id="Header1"><img id="_ctl0__ctl0_Content_Image1" src="../images/pf_lock.gif" alt="Secure Login" align="absbottom" border="0" style="height:14px;width:12px;" /> &nbsp; <a id="_ctl0__ctl0_Content_AccountLink" class="focus" href="main.aspx">MY ACCOUNT</a></div></td>
+    <td width="25%" class="cc bt br bb"><div id="Header2"><a id="_ctl0__ctl0_Content_LinkHeader2" class="focus" href="../default.aspx?content=personal.htm">PERSONAL</a></div></td>
+    <td width="25%" class="cc bt br bb"><div id="Header3"><a id="_ctl0__ctl0_Content_LinkHeader3" class="focus" href="../default.aspx?content=business.htm">SMALL BUSINESS</a></div></td>
+    <td width="25%" class="cc bt bb"><div id="Header4"><a id="_ctl0__ctl0_Content_LinkHeader4" class="focus" href="../default.aspx?content=inside.htm">INSIDE ALTORO MUTUAL</a></div></td>
+  </tr>
+  <tr>
+    <td valign="top" class="cc br bb">
+        <br style="line-height: 10px;"/>
+        <b>I WANT TO ...</b>
+        <ul class="sidebar">
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink1" href="main.aspx">View Account Summary</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink2" href="transaction.aspx">View Recent Transactions</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink3" href="transfer.aspx">Transfer Funds</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink4" href="queryxpath.aspx">Search News Articles</a></li>
+            <li><a id="_ctl0__ctl0_Content_MenuHyperLink5" href="customize.aspx">Customize Site Language</a></li>
+        </ul>
+        <span id="_ctl0__ctl0_Content_Administration"></span>
+    </td>
+    <td valign="top" colspan="3" class="bb">
+
+
+<div class="fl" style="width: 99%;">
+
+<h1>Hello
+    John
+    Smith
+  </h1>
+
+<p>
+  Welcome to Altoro Mutual Online.
+</p>
+
+<form name="details" method="post" action="account.aspx">
+<table border="0">
+  <TR valign="top">
+    <td>View Account Details:</td>
+    <td align="left">
+      <select id="listAccounts" name="listAccounts" ><option value="1001160140">1001160140 Checking</option><option value="1001160141">1001160141 Savings</option></select>
+      <input type="submit" id="btnGetAccount" value="   GO   ">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><span id="_ctl0__ctl0_Content_Main_promo"><table width=590 border=0><tr><td><h2>Congratulations! </h2></td></tr><tr><td>You have been pre-approved for an Altoro Gold Visa with a credit limit of $10000!</td></tr><tr><td>Click <a href='apply.aspx'>Here</a> to apply.</td></tr></table></span></td>
+  </tr>
+</table>
+</form>
+
+</div>
+
+
+    </td>
+  </tr>
+</table>
+
+
+</div>
+
+<div id="footer" style="width: 99%;">
+    <a id="_ctl0__ctl0_HyperLink5" href="../default.aspx?content=privacy.htm">Privacy Policy</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a id="_ctl0__ctl0_HyperLink6" href="../default.aspx?content=security.htm">Security Statement</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    &copy; 2011 Altoro Mutual, Inc.
+
+    <div class="disclaimer">
+        The Altoro Mutual website is published by Watchfire, Inc. for the sole purpose of
+        demonstrating the effectiveness of Watchfire products in detecting web application
+        vulnerabilities and website defects. This site is not a real banking site. Similarities,
+        if any, to third party products and/or websites are purely coincidental. This site is
+        provided "as is" without warranty of any kind, either express or implied. Watchfire does
+        not assume any risk in relation to your use of this website. For additional Terms of Use,
+        please go to <a id="_ctl0__ctl0_HyperLink7" href="http://www.watchfire.com/statements/terms.aspx">http://www.watchfire.com/statements/terms.aspx</a>.<br /><br />
+
+        Copyright &copy; 2011, Watchfire Corporation, All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
+---- End Thread  7204[1c58] Proxy Mode: Full Bypass, no transients (Connection to AppScan) ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:57:153> ----
+====> AppScan finished sending the response to the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1c58] <Thu, 06 Jan 11, 13:53:57:153> ----
+====> AppScan got the following request from the browser
+---- End Thread  7204[1c58] ----
+---- Begin Thread  7204[1be8] <Thu, 06 Jan 11, 13:53:58:746> ----
+====> Browser connection closed
+---- End Thread  7204[1be8] ----

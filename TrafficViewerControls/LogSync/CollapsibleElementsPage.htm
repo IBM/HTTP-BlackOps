@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Log Sync Page</title>
+	<style type="text/css">
+			a.link1:link {color:Black; text-decoration: none; font-size:11px; font-family: Courier New; cursor: pointer;}
+			a.link1:visited {color:Black; text-decoration: none; font-size:11px; font-family: Courier New; cursor: pointer;}
+			a.link1:hover {color:red; text-decoration: none; font-size:11px; font-family: Courier New; cursor: pointer;}
+			a.link1:active {color:Black; text-decoration: none; font-size:11px; font-family: Courier New; cursor: pointer;} 
+			
+			div.section {font-family:Courier New; font-size: 11px; color: Black;}
+			div.message {font-family:Arial; font-size: 14px;}
+		</style>
+
+	<script type="text/javascript">
+			
+			
+			function Toggle(id)
+			{
+				var id0 = id + '0';
+				var id1 = id + '1';
+				
+				var el0 = document.getElementById(id0);
+				var el1 = document.getElementById(id1);
+				
+				if(el0.style.display == 'none')
+				{
+					el0.style.display = '';
+					el1.style.display = 'none';
+				}
+				else
+				{
+					el0.style.display = 'none';
+					el1.style.display = '';
+				}
+			}
+			
+			function AddSection(id, shortText, longText)
+			{
+				var sectionsDiv = document.getElementById('sectionsDiv');
+			
+				var newCollapsed = document.createElement('div');
+				newCollapsed.setAttribute('id', id+'0');
+				var newExpanded = document.createElement('div');
+				newExpanded.setAttribute('id', id+'1');
+				
+				var expandLink = document.createElement('a');
+				var collapseLink = document.createElement('a');
+								
+				//add the newly created elements now so we can set their attributes
+				newCollapsed.appendChild(expandLink);
+				newExpanded.appendChild(collapseLink);
+			
+				sectionsDiv.appendChild(newCollapsed);
+				sectionsDiv.appendChild(newExpanded);
+								
+				newCollapsed.className = 'section';
+				newExpanded.className = 'section';
+				//the expanded section is hidden				
+				newExpanded.style.display = 'none';
+				expandLink.className = 'link1';
+				collapseLink.className = 'link1';
+				
+				expandLink.setAttribute('href',"javascript:Toggle('"+id+"');");
+				expandLink.innerHTML = '+ '+shortText;
+			
+				collapseLink.setAttribute('href',"javascript:Toggle('"+id+"');");
+				collapseLink.innerHTML = '- '+longText;
+			}
+			
+			
+	</script>
+
+</head>
+<body>
+	<div id="message" class="message">
+		{0}</div>
+	<div id="sectionsDiv">
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+HTTP/1.1 200 OK
+Content-Type: text/html;charset=UTF8
+Content-Language: en-US
+
+<html>
+	<head>
+		<title>{4}</title>
+	</head>
+	<body onLoad="if('{0}' === 'none') submitForm();">
+		<div style="display:{0}">
+			<input style="width:100%" id="targetUrl" name="targetUrl" value="{1}"/><br>
+			<button onClick="submitForm()">Submit</button>
+		</div>
+		<script>
+
+			function submitForm(){{
+
+				var postData = {6};
+				var httpRequest = new XMLHttpRequest();
+				httpRequest.onreadystatechange = function() {{ 
+				}};  
+				
+				httpRequest.open('{2}',document.getElementById('targetUrl').value, true);
+				httpRequest.withCredentials=true;
+				httpRequest.setRequestHeader('Content-Type','{3}');
+				httpRequest.send(postData);
+			}}
+
+		</script>
+		{5}
+		
+	</body>
+</html>			

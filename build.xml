@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="dist" name="HttpBlackOps Packaging Script">
+	<property name="distDir" value="./dist"/>
+	<property name="relDir" value="./HttpBlackOps/bin/Release"/>
+	<property name="dbgDir" value="./HttpBlackOps/bin/Debug"/>
+	<tstamp>
+		<format property="FILE_DATESTAMP" pattern="yyyyMMdd.HHmm" locale="en,US" />
+	</tstamp>
+	<macrodef name="zipout">
+		<attribute name="outFile"/>
+		<attribute name="buildFiles"/>
+		<sequential>
+			<zip destfile="@{outFile}">
+				<fileset dir="@{buildFiles}">
+					<include name="ASMRest.dll"/>
+					<include name="BouncyCastle.Crypto.dll"/>
+					<include name="CommonControls.dll"/>
+					<include name="CustomTestsUI.dll"/>
+					<include name="HttpBlackOps.exe"/>
+					<include name="Ionic.Zip.Reduced.dll"/>
+					<include name="RequestSender.dll"/>
+					<include name="Testing.dll"/>
+					<include name="TrafficServer.dll"/>
+					<include name="TrafficViewerControls.dll"/>
+					<include name="TrafficViewerInstance.dll"/>
+					<include name="TrafficViewerSDK.dll"/>
+					<include name="TVDiff.dll"/>
+					<include name="TVHtmlParser.dll"/>
+				</fileset>
+			</zip>
+		</sequential>
+	</macrodef>
+
+	<target name="dist" depends="clean">
+		<mkdir dir="${distDir}"/>
+		<zipout outFile="${distDir}/HttpBlackOps-${FILE_DATESTAMP}.zip" buildFiles="${relDir}"/>
+	</target>
+
+	<target name="dist-debug" depends="clean">
+		<mkdir dir="${distDir}"/>
+		<zipout outFile="${distDir}/HttpBlackOps-DBG-${FILE_DATESTAMP}.zip" buildFiles="${dbgDir}"/>
+	</target>
+
+	<target name="clean" description="Clean up packaged files.">
+		<delete dir="${distDir}"/>
+	</target>
+</project>

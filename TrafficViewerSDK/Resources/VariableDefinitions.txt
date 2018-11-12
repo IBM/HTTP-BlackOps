@@ -1,0 +1,40 @@
+ <VariablesDefinitions>
+        <VariableDefinition IsRegularExpression="False" Name="treesel">
+          <VariableType>Custom</VariableType>
+          <Hosts />
+          <Path />
+          <Comments />
+          <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+          <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+          <ExcludeFromTest>False</ExcludeFromTest>
+          <SessionIDEnabled>True</SessionIDEnabled>
+          <CaptureName />
+          <CaptureIndex>-1</CaptureIndex>
+          <VariableOrigin>UserDefined</VariableOrigin>
+          <AlwaysSend>False</AlwaysSend>
+          <IsGroup>False</IsGroup>
+          <SessionID TrackingMethod="Always">
+            <Value />
+            <ResponsePattern ResponsePatternEncoding="None" ResponsePatternUrlFilter="" ResponsePatternMatchBodyOnly="False">W([\w]+)_treeSel</ResponsePattern>
+          </SessionID>
+        </VariableDefinition>
+        <VariableDefinition IsRegularExpression="False" Name="webtreeid">
+          <VariableType>Custom</VariableType>
+          <Hosts />
+          <Path />
+          <Comments />
+          <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+          <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+          <ExcludeFromTest>False</ExcludeFromTest>
+          <SessionIDEnabled>True</SessionIDEnabled>
+          <CaptureName />
+          <CaptureIndex>-1</CaptureIndex>
+          <VariableOrigin>UserDefined</VariableOrigin>
+          <AlwaysSend>False</AlwaysSend>
+          <IsGroup>False</IsGroup>
+          <SessionID TrackingMethod="Always">
+            <Value />
+            <ResponsePattern ResponsePatternEncoding="None" ResponsePatternUrlFilter="" ResponsePatternMatchBodyOnly="False">webTreeId_(\w+)</ResponsePattern>
+          </SessionID>
+        </VariableDefinition>
+      </VariablesDefinitions>

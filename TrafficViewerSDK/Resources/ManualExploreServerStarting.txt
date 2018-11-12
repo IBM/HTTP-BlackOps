@@ -1,0 +1,6 @@
+Starting Manual Explore Server. 
+Address:  {0}:{1} 
+Files directory: {2}
+Maxiumum recording sessions:  {3}
+Ignore certificate errors: {4}
+Default exclusions: {5}

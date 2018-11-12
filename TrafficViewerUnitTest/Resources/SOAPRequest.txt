@@ -1,0 +1,15 @@
+POST /fp/services2/FPServices HTTP/1.1
+Host: 9.124.108.45:6510
+Accept-Encoding: gzip,deflate
+Content-Type: text/xml;charset=UTF-8
+SOAPAction: "urn:authenticate"
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservices2.focalpoint.telelogic.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:authenticate>
+         <web:username>jsmith</web:username>
+         <web:password>Demo1234</web:password>
+      </web:authenticate>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{491BF9A0-F1A1-4BA7-9890-343F6CC7ED5C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrafficViewerSDK</RootNamespace>
+    <AssemblyName>TrafficViewerSDK</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\TrafficViewerEXE\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+    <DocumentationFile>..\TrafficViewerEXE\bin\Debug\TrafficViewerSDK.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\TrafficViewerEXE\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Package|AnyCPU'">
+    <OutputPath>bin\Package\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Package|x86'">
+    <OutputPath>bin\x86\Package\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\3rdParty\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rdParty\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Http\CertificateAuthority.cs" />
+    <Compile Include="Http\HttpProxyFactory.cs" />
+    <Compile Include="Http\HttpTrapDef.cs" />
+    <Compile Include="Http\IHttpProxyFactory.cs" />
+    <Compile Include="ModifiedExtendedAsciiEncoding.cs" />
+    <Compile Include="Encryptor.cs" />
+    <Compile Include="AnalysisModules\AnalysisModuleEvents.cs" />
+    <Compile Include="AnalysisModules\AnalysisModulesFactory.cs" />
+    <Compile Include="AnalysisModules\IAnalysisModule.cs" />
+    <Compile Include="AnalysisModules\IAnalysisResults.cs" />
+    <Compile Include="BaseExtensionFactory.cs" />
+    <Compile Include="BaseTrafficDataAccessor.cs" />
+    <Compile Include="ByteArrayBuilder.cs" />
+    <Compile Include="CacheManager.cs" />
+    <Compile Include="DefaultLogWriter.cs" />
+    <Compile Include="CustomErrorPageHelper.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Exploiters\ExploiterEvents.cs" />
+    <Compile Include="Exploiters\ExploiterFactory.cs" />
+    <Compile Include="Exploiters\IExploiter.cs" />
+    <Compile Include="Exporters\ASEExdExporter.cs" />
+    <Compile Include="Exporters\SequenceExporter.cs" />
+    <Compile Include="Exporters\ExporterFactory.cs" />
+    <Compile Include="Exporters\ITrafficExporter.cs" />
+    <Compile Include="Exporters\LoginExporter.cs" />
+    <Compile Include="Exporters\ManualExploreExporter.cs" />
+    <Compile Include="Http\AppScanProxyCert.cs" />
+    <Compile Include="Http\BaseProxy.cs" />
+    <Compile Include="Http\BaseProxyConnection.cs" />
+    <Compile Include="Http\BaseHttpClient.cs" />
+    <Compile Include="Http\CertificateValidator.cs" />
+    <Compile Include="Http\CommandProxy.cs" />
+    <Compile Include="Http\CommandProxyConnection.cs" />
+    <Compile Include="Http\HttpProxyException.cs" />
+    <Compile Include="Http\CommandProxyHttpClient.cs" />
+    <Compile Include="Http\PatternTracker.cs" />
+    <Compile Include="ILogWriter.cs" />
+    <Compile Include="Options\TrackingPattern.cs" />
+    <Compile Include="ServiceCode.cs" />
+    <Compile Include="Http\DefaultNetworkSettings.cs" />
+    <Compile Include="Http\HttpAuthenticationInfo.cs" />
+    <Compile Include="Http\HttpAuthenticationManager.cs" />
+    <Compile Include="Http\HttpClientConnection.cs" />
+    <Compile Include="Http\HttpClientRequest.cs" />
+    <Compile Include="Http\HttpClientResult.cs" />
+    <Compile Include="Http\HttpClientExtensionFactory.cs" />
+    <Compile Include="Http\HttpClientsFactory.cs" />
+    <Compile Include="Http\HttpErrorResponse.cs" />
+    <Compile Include="Http\HttpHeaders.cs" />
+    <Compile Include="Http\HttpUtil.cs" />
+    <Compile Include="Http\INetworkSettings.cs" />
+    <Compile Include="Http\ManualExploreProxy.cs" />
+    <Compile Include="Http\HttpProxyClientStreamWrapper.cs" />
+    <Compile Include="Http\ManualExploreProxyConnection.cs" />
+    <Compile Include="Http\HttpRequestInfo.cs" />
+    <Compile Include="Http\HttpResponseBody.cs" />
+    <Compile Include="Http\HttpResponseInfo.cs" />
+    <Compile Include="Http\HttpServerConsole.cs" />
+    <Compile Include="Http\HttpVariableDefinition.cs" />
+    <Compile Include="Http\HttpVariableInfo.cs" />
+    <Compile Include="Http\HttpVariables.cs" />
+    <Compile Include="Http\ICredentialsProvider.cs" />
+    <Compile Include="Http\IHttpClient.cs" />
+    <Compile Include="Http\IHttpProxy.cs" />
+    <Compile Include="Http\IProxyConnection.cs" />
+    <Compile Include="Http\ITrafficServerConsoleOutput.cs" />
+    <Compile Include="Http\ITrafficViewerHttpClientFactory.cs" />
+    <Compile Include="Http\TcpClientInfo.cs" />
+    <Compile Include="Http\TrafficViewerHttpClient.cs" />
+    <Compile Include="Http\WebRequestClient.cs" />
+    <Compile Include="Http\WebRequestCommonSettingsInitializer.cs" />
+    <Compile Include="IExceptionMessageHandler.cs" />
+    <Compile Include="Importers\ConfigurationParser.cs" />
+    <Compile Include="Importers\DefaultTrafficParser.cs" />
+    <Compile Include="Importers\ExploreType.cs" />
+    <Compile Include="Importers\ParserUtils.cs" />
+    <Compile Include="Importers\ThreadInfo.cs" />
+    <Compile Include="Importers\TrafficParserFactory.cs" />
+    <Compile Include="Importers\UriParser.cs" />
+    <Compile Include="ImportInfo.cs" />
+    <Compile Include="ITrafficDataAccessor.cs" />
+    <Compile Include="Importers\ITrafficParser.cs" />
+    <Compile Include="ITrafficViewerExtension.cs" />
+    <Compile Include="LineTypeSelector.cs" />
+    <Compile Include="Options\OptionsManager.cs" />
+    <Compile Include="Options\ParsingOptions.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Http\HttpTrap.cs" />
+    <Compile Include="RequestResponseBytes.cs" />
+    <Compile Include="SdkSettings.cs" />
+    <Compile Include="Search\TimeStampsPositionsCache.cs" />
+    <Compile Include="Search\TimeStampsFinder.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Senders\ISender.cs" />
+    <Compile Include="Senders\SendersFactory.cs" />
+    <Compile Include="TrafficViewerEncoding.cs" />
+    <Compile Include="TVRequestInfo.cs" />
+    <Compile Include="Search\ISearcher.cs" />
+    <Compile Include="Search\LineSearcher.cs" />
+    <Compile Include="Search\RequestSearcher.cs" />
+    <Compile Include="Search\SearchCriteria.cs" />
+    <Compile Include="Search\SearchSubset.cs" />
+    <Compile Include="Search\SearchUtils.cs" />
+    <Compile Include="Search\BaseSearcher.cs" />
+    <Compile Include="TempFile.cs" />
+    <Compile Include="Events.cs" />
+    <Compile Include="TrafficViewerFile.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackopscert.pfx" />
+    <None Include="Resources\ConnectRequest.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultRequest.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManualExploreServerStarting.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UriParserGetRequest.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UriParserPostRequest.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VariableDefinitions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ParametersDefinitions.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

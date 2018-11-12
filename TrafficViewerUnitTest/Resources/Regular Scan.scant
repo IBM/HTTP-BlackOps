@@ -1,0 +1,2839 @@
+﻿<ScanConfiguration Version="8.5">
+  <Application>
+    <StartingUrl />
+    <DefaultEncoding>AutoDetect</DefaultEncoding>
+    <AdditionalServers />
+    <ServerDetection>
+      <Enabled>True</Enabled>
+      <OperatingSystem>Any</OperatingSystem>
+      <ApplicationServer>Any</ApplicationServer>
+      <WebServer>Any</WebServer>
+    </ServerDetection>
+    <CustomErrorPages>
+      <CustomErrorPage Value="(?i)404.{1,15}Error">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)Error.{1,15}404">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)404.{1,15}Found">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)Page.{1,15}not.{1,15}(found|exist)">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)File.{1,15}not.{1,15}(found|exist)">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)Resource.{1,15}not.{1,15}(found|exist)">RegularExpression</CustomErrorPage>      
+      <CustomErrorPage Value="(?i)error.{1,15}request">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)request.{1,15}error">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)Unable to open">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)Unable to find">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="(?i)No such file">RegularExpression</CustomErrorPage>
+	    <CustomErrorPage Value="(?i)problems?\s*(?:were|was)\s*encountered">RegularExpression</CustomErrorPage>
+	    <CustomErrorPage Value="(?i)Invalid Action">RegularExpression</CustomErrorPage>
+      <CustomErrorPage Value="Generic Application Error">String</CustomErrorPage>
+      <CustomErrorPage Value="Generic Error">String</CustomErrorPage>
+    </CustomErrorPages>
+  </Application>
+  <FlashConfiguration>
+    <EnableFlashExec>False</EnableFlashExec>
+    <MaxExploreDepth>20</MaxExploreDepth>
+    <MaxExploreStates>200</MaxExploreStates>
+    <MaxExploreSteps>500</MaxExploreSteps>
+  </FlashConfiguration>
+  <ExploreFilters>
+    <PathLimit Enabled="True">5</PathLimit>
+    <DepthLimit Enabled="True">20</DepthLimit>
+    <LinkLimit Enabled="False">500</LinkLimit>
+    <TimeLimit Enabled="False">300</TimeLimit>
+    <MultiPhaseLimit Enabled="True">4</MultiPhaseLimit>
+    <SendTestsOnLoginAndLogoutPages>True</SendTestsOnLoginAndLogoutPages>
+    <ScanPolicy>BFS</ScanPolicy>
+    <CaseSensitivePath>True</CaseSensitivePath>
+    <SaveNonVulnerables>False</SaveNonVulnerables>
+    <ExecuteGlobalValidations>True</ExecuteGlobalValidations>
+    <showAllGlobalValidationVariant>False</showAllGlobalValidationVariant>
+    <ClearSessionIdentifiers>DEL_TRANSIENTS</ClearSessionIdentifiers>
+    <PathFilters>
+      <PathFilter FilterType="Exclude" IsRegularExpression="True" Description="AppScan_SharePoint_Site_Removal_URL">.*/deleteweb.aspx</PathFilter>
+    </PathFilters>
+    <JavaScriptLinksExtraction>True</JavaScriptLinksExtraction>
+    <JavaScriptLinksExecution>True</JavaScriptLinksExecution>
+    <FlashLinksExtraction>False</FlashLinksExtraction>
+    <UseAdaptiveTesting>True</UseAdaptiveTesting>
+    <TestCookiesInFormsOnly>True</TestCookiesInFormsOnly>
+    <ExcludedFileTypes>
+      <ExcludedFileType Enabled="True" Type="Compressed Files">
+        <Extension>7z</Extension>
+        <Extension>deb</Extension>
+        <Extension>gz</Extension>
+        <Extension>cab</Extension>
+        <Extension>cbr</Extension>
+        <Extension>pkg</Extension>
+        <Extension>rar</Extension>
+        <Extension>sit</Extension>
+        <Extension>tar</Extension>
+        <Extension>tgz</Extension>
+        <Extension>Z</Extension>
+        <Extension>zip</Extension>
+        <Extension>zipx</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="Documents">
+        <Extension>csv</Extension>
+        <Extension>dbf</Extension>
+        <Extension>dif</Extension>
+        <Extension>doc</Extension>
+        <Extension>dot</Extension>
+        <Extension>mdb</Extension>
+        <Extension>mpd</Extension>
+        <Extension>mpp</Extension>
+        <Extension>mpt</Extension>
+        <Extension>pdf</Extension>
+        <Extension>ppa</Extension>
+        <Extension>pps</Extension>
+        <Extension>ppt</Extension>
+        <Extension>ps</Extension>
+        <Extension>prn</Extension>
+        <Extension>rtf</Extension>
+        <Extension>slk</Extension>
+        <Extension>wmf</Extension>
+        <Extension>xla</Extension>
+        <Extension>xls</Extension>
+        <Extension>xlw</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="Animations">
+        <Extension>264</Extension>
+        <Extension>asf</Extension>
+        <Extension>asx</Extension>
+        <Extension>avi</Extension>
+        <Extension>flv</Extension>
+        <Extension>m1v</Extension>
+        <Extension>m2ts</Extension>
+        <Extension>moov</Extension>
+        <Extension>mov</Extension>
+        <Extension>movie</Extension>
+        <Extension>mkv</Extension>
+        <Extension>mov</Extension>
+        <Extension>mp4</Extension>
+        <Extension>mpa</Extension>
+        <Extension>mpe</Extension>
+        <Extension>mpeg</Extension>
+        <Extension>mpg</Extension>
+        <Extension>qt</Extension>
+        <Extension>rm</Extension>        
+        <Extension>vob</Extension>
+        <Extension>wmv</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="Sounds">
+        <Extension>aiff</Extension>
+        <Extension>au</Extension>
+        <Extension>m3u</Extension>
+        <Extension>mid</Extension>
+        <Extension>midi</Extension>
+        <Extension>mp3</Extension>
+        <Extension>mpa</Extension>
+        <Extension>mpga</Extension>
+        <Extension>ogg</Extension>
+        <Extension>ra</Extension>
+        <Extension>rmi</Extension>
+        <Extension>wav</Extension>
+        <Extension>wma</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="Images">
+        <Extension>3dm</Extension>
+        <Extension>bmp</Extension>
+        <Extension>gif</Extension>
+        <Extension>ico</Extension>
+        <Extension>jpf</Extension>
+        <Extension>jpg</Extension>
+        <Extension>jpeg</Extension>
+        <Extension>pct</Extension>
+        <Extension>pcx</Extension>
+        <Extension>png</Extension>
+        <Extension>ps</Extension>
+        <Extension>psd</Extension>
+        <Extension>psp</Extension>
+        <Extension>thm</Extension>
+        <Extension>tif</Extension>
+        <Extension>tiff</Extension>
+        <Extension>wmf</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="Office 2007 files">
+        <Extension>accdb</Extension>
+        <Extension>accde</Extension>
+        <Extension>accdr</Extension>
+        <Extension>accdt</Extension>
+        <Extension>docm</Extension>
+        <Extension>docx</Extension>
+        <Extension>dotm</Extension>
+        <Extension>dotx</Extension>
+        <Extension>potx</Extension>
+        <Extension>pptm</Extension>
+        <Extension>pptx</Extension>
+        <Extension>xlsm</Extension>
+        <Extension>xlsb</Extension>
+        <Extension>xlsx</Extension>
+        <Extension>odf</Extension>
+        <Extension>odg</Extension>
+        <Extension>odp</Extension>
+        <Extension>ods</Extension>
+        <Extension>odt</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="P2P/Downloads">
+        <Extension>nzb</Extension>
+        <Extension>torrent</Extension>
+      </ExcludedFileType>
+      <ExcludedFileType Enabled="True" Type="Other">
+        <Extension>exe</Extension>
+        <Extension>msi</Extension>
+        <Extension>msp</Extension>
+        <Extension>css</Extension>
+      </ExcludedFileType>
+    </ExcludedFileTypes>
+  </ExploreFilters>
+  <Communication>
+    <CommunicationTimeOut>15</CommunicationTimeOut>
+    <NumberOfThreads>10</NumberOfThreads>
+    <ProxyServerConfiguration>
+      <Enabled>False</Enabled>
+      <IPAddress></IPAddress>
+      <Password Encrypted="false" />
+      <Port>8080</Port>
+      <UserName />
+      <Domain />
+      <UseIESettings>True</UseIESettings>
+    </ProxyServerConfiguration>
+  </Communication>
+  <UserInput>
+    <FormFiller Version="2.0" Enabled="True" DefaultValue="1234" UseDefaultValue="True" Locale="en-US">
+      <Group LogicalName="InternalAppScanUserName" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>user</MatchName>
+          <MatchName>name</MatchName>
+          <MatchName>id</MatchName>
+          <MatchName>login</MatchName>
+          <MatchName>logon</MatchName>
+          <MatchName>signin</MatchName>
+          <MatchName>signon</MatchName>
+          <MatchName>usr</MatchName>
+          <MatchName>member</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="InternalAppScanPassword" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>pass</MatchName>
+          <MatchName>word</MatchName>
+          <MatchName>pswd</MatchName>
+          <MatchName>pwd</MatchName>
+          <MatchName>auth</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Address" MatchType="Partial" Action="">
+        <Name>Address</Name>
+        <Value>753 Main Street</Value>
+        <MatchNames>
+          <MatchName>addr</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Age" MatchType="Partial" Action="">
+        <Name>Age</Name>
+        <Value>25</Value>
+        <MatchNames>
+          <MatchName>age</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Areacode" MatchType="Partial" Action="">
+        <Name>Area code</Name>
+        <Value>555</Value>
+        <MatchNames>
+          <MatchName>area</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="City" MatchType="Partial" Action="">
+        <Name>City</Name>
+        <Value>Mystery</Value>
+        <MatchNames>
+          <MatchName>city</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Company" MatchType="Partial" Action="">
+        <Name>Company</Name>
+        <Value>Acme-Hackme Corp.</Value>
+        <MatchNames>
+          <MatchName>company</MatchName>
+          <MatchName>firm</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Country" MatchType="Partial" Action="">
+        <Name>Country</Name>
+        <Value>USA</Value>
+        <MatchNames>
+          <MatchName>country</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Email" MatchType="Partial" Action="">
+        <Name>Email</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>mail</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="MailTo" MatchType="Complete" Action="">
+        <Name>MailTo</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>To</MatchName>
+          <MatchName>to</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailFrom" MatchType="Complete" Action="">
+        <Name>MailFrom</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>From</MatchName>
+          <MatchName>from</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailBcc" MatchType="Complete" Action="">
+        <Name>MailBcc</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>Bcc</MatchName>
+          <MatchName>bcc</MatchName>          
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Day" MatchType="Partial" Action="">
+        <Name>Day</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>day</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Month" MatchType="Partial" Action="">
+        <Name>Month</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>month</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Number" MatchType="Partial" Action="">
+        <Name>Number</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>num</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Passport" MatchType="Complete" Action="">
+        <Name>Passport</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>passport</MatchName>
+          <MatchName>Passport</MatchName>
+          <MatchName>PASSPORT</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Phone" MatchType="Partial" Action="">
+        <Name>Phone</Name>
+        <Value>555-555-5555</Value>
+        <MatchNames>
+          <MatchName>phone</MatchName>
+          <MatchName>tel</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="SocialSecurity" MatchType="Partial" Action="">
+        <Name>Social Security</Name>
+        <Value>987 65 4321</Value>
+        <MatchNames>
+          <MatchName>ssn</MatchName>
+          <MatchName>social</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="State" MatchType="Partial" Action="">
+        <Name>State</Name>
+        <Value>AK</Value>
+        <MatchNames>
+          <MatchName>state</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Year" MatchType="Partial" Action="">
+        <Name>Year</Name>
+        <Value>09</Value>
+        <MatchNames>
+          <MatchName>year</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="ZipCode" MatchType="Partial" Action="">
+        <Name>Zip Code</Name>
+        <Value>99801</Value>
+        <MatchNames>
+          <MatchName>zip</MatchName>
+          <MatchName>postal</MatchName>
+        </MatchNames>
+      </Group>
+    </FormFiller>
+
+    <FormFiller Version="2.0" Enabled="True" DefaultValue="1234" UseDefaultValue="True" Locale="es-ES">
+      <Group LogicalName="InternalAppScanUserName" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>usuario</MatchName>
+          <MatchName>nombre</MatchName>
+          <MatchName>id</MatchName>
+          <MatchName>inicio de sesión</MatchName>
+          
+          <MatchName>miembro</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="InternalAppScanPassword" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>contraseña</MatchName>
+          <MatchName>autorización</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Address" MatchType="Partial" Action="">
+        <Name>Dirección</Name>
+        <Value>Calle Mayor 753</Value>
+        <MatchNames>
+          <MatchName>dirección</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Age" MatchType="Partial" Action="">
+        <Name>Edad</Name>
+        <Value>25</Value>
+        <MatchNames>
+          <MatchName>edad</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Areacode" MatchType="Partial" Action="">
+        <Name>Código postal</Name>
+        <Value>555</Value>
+        <MatchNames>
+          <MatchName>código</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="City" MatchType="Partial" Action="">
+        <Name>Ciudad</Name>
+        <Value>Guadalajara</Value>
+        <MatchNames>
+          <MatchName>ciudad</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Company" MatchType="Partial" Action="">
+        <Name>Compañía</Name>
+        <Value>Acme-Hackme Corp.</Value>
+        <MatchNames>
+          <MatchName>compañía</MatchName>
+          <MatchName>firma</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Country" MatchType="Partial" Action="">
+        <Name>País</Name>
+        <Value>EE.UU. </Value>
+        <MatchNames>
+          <MatchName>país</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Email" MatchType="Partial" Action="">
+        <Name>Correo electrónico</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>correo</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="MailTo" MatchType="Complete" Action="">
+        <Name>Correo A</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>Para</MatchName>
+          <MatchName>para</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailFrom" MatchType="Complete" Action="">
+        <Name>Correo De</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>De</MatchName>
+          <MatchName>de</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailBcc" MatchType="Complete" Action="">
+        <Name>Correo CCO</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>CCO</MatchName>
+          <MatchName>cco</MatchName>          
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Day" MatchType="Partial" Action="">
+        <Name>Día</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>día</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Month" MatchType="Partial" Action="">
+        <Name>Mes</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>mes</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Number" MatchType="Partial" Action="">
+        <Name>Número</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>núm</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Passport" MatchType="Complete" Action="">
+        <Name>Pasaporte</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>pasaporte</MatchName>
+          <MatchName>Pasaporte</MatchName>
+          <MatchName>PASAPORTE</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Phone" MatchType="Partial" Action="">
+        <Name>Teléfono</Name>
+        <Value>555-555-5555</Value>
+        <MatchNames>
+          <MatchName>teléfono</MatchName>
+          <MatchName>tel</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="SocialSecurity" MatchType="Partial" Action="">
+        <Name>Número S.S.</Name>
+        <Value>987 65 4321</Value>
+        <MatchNames>
+          <MatchName>núm ss</MatchName>
+          <MatchName>social</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="State" MatchType="Partial" Action="">
+        <Name>Estado</Name>
+        <Value>AK</Value>
+        <MatchNames>
+          <MatchName>estado</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Year" MatchType="Partial" Action="">
+        <Name>Año</Name>
+        <Value>09</Value>
+        <MatchNames>
+          <MatchName>año</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="ZipCode" MatchType="Partial" Action="">
+        <Name>Código postal</Name>
+        <Value>99801</Value>
+        <MatchNames>
+          <MatchName>código</MatchName>
+          <MatchName>postal</MatchName>
+        </MatchNames>
+      </Group>
+    </FormFiller>
+    <FormFiller Version="2.0" Enabled="True" DefaultValue="1234" UseDefaultValue="True" Locale="pt-BR">
+      <Group LogicalName="InternalAppScanUserName" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>usuário</MatchName>
+          <MatchName>nome</MatchName>
+          <MatchName>ID</MatchName>
+          <MatchName>login</MatchName>
+          <MatchName>logon</MatchName>
+          <MatchName>conectar</MatchName>
+          <MatchName>conexão</MatchName>
+          <MatchName>usr</MatchName>
+          <MatchName>membro</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="InternalAppScanPassword" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>pass</MatchName>
+          <MatchName>word</MatchName>
+          <MatchName>pswd</MatchName>
+          <MatchName>pwd</MatchName>
+          <MatchName>autor</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Address" MatchType="Partial" Action="">
+        <Name>Endereço</Name>
+        <Value>753 Main Street</Value>
+        <MatchNames>
+          <MatchName>addr</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Age" MatchType="Partial" Action="">
+        <Name>Idade</Name>
+        <Value>25</Value>
+        <MatchNames>
+          <MatchName>duração</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Areacode" MatchType="Partial" Action="">
+        <Name>Código de Área</Name>
+        <Value>555</Value>
+        <MatchNames>
+          <MatchName>área</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="City" MatchType="Partial" Action="">
+        <Name>Cidade</Name>
+        <Value>Mystery</Value>
+        <MatchNames>
+          <MatchName>cidade</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Company" MatchType="Partial" Action="">
+        <Name>Empresa</Name>
+        <Value>Acme-Hackme Corp.</Value>
+        <MatchNames>
+          <MatchName>Empresa.</MatchName>
+          <MatchName>firma</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Country" MatchType="Partial" Action="">
+        <Name>País.</Name>
+        <Value>EUA</Value>
+        <MatchNames>
+          <MatchName>country</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Email" MatchType="Partial" Action="">
+        <Name>Email</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>correio</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="MailTo" MatchType="Complete" Action="">
+        <Name>MailTo</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>A</MatchName>
+          <MatchName>para</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailFrom" MatchType="Complete" Action="">
+        <Name>MailFrom</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>Do</MatchName>
+          <MatchName>a partir de</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailBcc" MatchType="Complete" Action="">
+        <Name>MailBcc</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>Cco</MatchName>
+          <MatchName>cco</MatchName>          
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Day" MatchType="Partial" Action="">
+        <Name>Dia</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>day</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Month" MatchType="Partial" Action="">
+        <Name>Mês</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>month</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Number" MatchType="Partial" Action="">
+        <Name>Número</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>num</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Passport" MatchType="Complete" Action="">
+        <Name>Passaporte</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>passaporte</MatchName>
+          <MatchName>Passaporte</MatchName>
+          <MatchName>PASSPORT</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Phone" MatchType="Partial" Action="">
+        <Name>Telefone</Name>
+        <Value>555-555-5555</Value>
+        <MatchNames>
+          <MatchName>phone</MatchName>
+          <MatchName>tel</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="SocialSecurity" MatchType="Partial" Action="">
+        <Name>Seguridade Social</Name>
+        <Value>987 65 4321</Value>
+        <MatchNames>
+          <MatchName>ssn</MatchName>
+          <MatchName>social</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="State" MatchType="Partial" Action="">
+        <Name>Estado</Name>
+        <Value>AK</Value>
+        <MatchNames>
+          <MatchName>estado</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Year" MatchType="Partial" Action="">
+        <Name>Ano</Name>
+        <Value>09</Value>
+        <MatchNames>
+          <MatchName>year</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="ZipCode" MatchType="Partial" Action="">
+        <Name>Código de Endereçamento Postal</Name>
+        <Value>99801</Value>
+        <MatchNames>
+          <MatchName>CEP</MatchName>
+          <MatchName>postal</MatchName>
+        </MatchNames>
+      </Group>
+    </FormFiller>
+    <FormFiller Version="2.0" Enabled="True" DefaultValue="1234" UseDefaultValue="True" Locale="ja-JP">
+      <Group LogicalName="InternalAppScanUserName" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>ユーザー</MatchName>
+          <MatchName>名前</MatchName>
+          <MatchName>ID</MatchName>
+          <MatchName>ログイン</MatchName>
+          <MatchName>サインイン</MatchName>
+          <MatchName>メンバー</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="InternalAppScanPassword" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>パスワード</MatchName>
+          <MatchName>PWD</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Address" MatchType="Partial" Action="">
+        <Name>アドレス</Name>
+        <Value>753 Main Street</Value>
+        <MatchNames>
+          <MatchName>住所</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Age" MatchType="Partial" Action="">
+        <Name>年齢</Name>
+        <Value>25</Value>
+        <MatchNames>
+          <MatchName>年</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Areacode" MatchType="Partial" Action="">
+        <Name>市外局番</Name>
+        <Value>555</Value>
+        <MatchNames>
+          <MatchName>エリア</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="City" MatchType="Partial" Action="">
+        <Name>市区町村</Name>
+        <Value>Mystery</Value>
+        <MatchNames>
+          <MatchName>市区町村</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Company" MatchType="Partial" Action="">
+        <Name>会社</Name>
+        <Value>Acme-Hackme Corp.</Value>
+        <MatchNames>
+          <MatchName>会社</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Country" MatchType="Partial" Action="">
+        <Name>国</Name>
+        <Value>USA</Value>
+        <MatchNames>
+          <MatchName>国</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Email" MatchType="Partial" Action="">
+        <Name>E メール</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>メール</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="MailTo" MatchType="Complete" Action="">
+        <Name>メールの送信先</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>To</MatchName>
+          <MatchName>宛先</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailFrom" MatchType="Complete" Action="">
+        <Name>メールの送信元</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>From</MatchName>
+          <MatchName>送信者</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailBcc" MatchType="Complete" Action="">
+        <Name>メールの Bcc</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>Bcc</MatchName>
+          <MatchName>bcc</MatchName>          
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Day" MatchType="Partial" Action="">
+        <Name>日</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>日</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Month" MatchType="Partial" Action="">
+        <Name>月</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>月</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Number" MatchType="Partial" Action="">
+        <Name>番号</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>番号</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Passport" MatchType="Complete" Action="">
+        <Name>パスポート</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>パスポート</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Phone" MatchType="Partial" Action="">
+        <Name>電話</Name>
+        <Value>555-555-5555</Value>
+        <MatchNames>
+          <MatchName>電話</MatchName>
+          <MatchName>tel</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="SocialSecurity" MatchType="Partial" Action="">
+        <Name>社会保障番号</Name>
+        <Value>987 65 4321</Value>
+        <MatchNames>
+          <MatchName>社会保障番号</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="State" MatchType="Partial" Action="">
+        <Name>都道府県/州</Name>
+        <Value>AK</Value>
+        <MatchNames>
+          <MatchName>都道府県/州</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Year" MatchType="Partial" Action="">
+        <Name>年</Name>
+        <Value>09</Value>
+        <MatchNames>
+          <MatchName>年</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="ZipCode" MatchType="Partial" Action="">
+        <Name>郵便番号</Name>
+        <Value>99801</Value>
+        <MatchNames>
+          <MatchName>郵便番号</MatchName>
+        </MatchNames>
+      </Group>
+    </FormFiller>
+    <FormFiller Version="2.0" Enabled="True" DefaultValue="1234" UseDefaultValue="True" Locale="ko-KR">
+      <Group LogicalName="InternalAppScanUserName" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>사용자</MatchName>
+          <MatchName>이름</MatchName>
+          <MatchName>ID</MatchName>
+          <MatchName>로그인</MatchName>
+          <MatchName>로그온</MatchName>
+          <MatchName>사인인</MatchName>
+          <MatchName>사인온</MatchName>
+          <MatchName>사용자</MatchName>
+          <MatchName>구성원</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="InternalAppScanPassword" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>비밀</MatchName>
+          <MatchName>번호</MatchName>
+          <MatchName>비밀 번호</MatchName>
+          <MatchName>비밀 번호</MatchName>
+          <MatchName>권한</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Address" MatchType="Partial" Action="">
+        <Name>주소</Name>
+        <Value>753 Main Street</Value>
+        <MatchNames>
+          <MatchName>주소</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Age" MatchType="Partial" Action="">
+        <Name>나이</Name>
+        <Value>25</Value>
+        <MatchNames>
+          <MatchName>나이</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Areacode" MatchType="Partial" Action="">
+        <Name>지역 번호</Name>
+        <Value>555</Value>
+        <MatchNames>
+          <MatchName>지역</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="City" MatchType="Partial" Action="">
+        <Name>시</Name>
+        <Value>Mystery</Value>
+        <MatchNames>
+          <MatchName>시</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Company" MatchType="Partial" Action="">
+        <Name>회사</Name>
+        <Value>Acme-Hackme Corp.</Value>
+        <MatchNames>
+          <MatchName>회사(company)</MatchName>
+          <MatchName>회사(firm)</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Country" MatchType="Partial" Action="">
+        <Name>국가</Name>
+        <Value>USA</Value>
+        <MatchNames>
+          <MatchName>국가</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Email" MatchType="Partial" Action="">
+        <Name>이메일</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>메일</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="MailTo" MatchType="Complete" Action="">
+        <Name>받는 사람</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>받는 사람</MatchName>
+          <MatchName>to</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailFrom" MatchType="Complete" Action="">
+        <Name>보내는 사람</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>보내는 사람</MatchName>
+          <MatchName>from</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailBcc" MatchType="Complete" Action="">
+        <Name>숨은 참조</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>숨은 참조</MatchName>
+          <MatchName>bcc</MatchName>          
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Day" MatchType="Partial" Action="">
+        <Name>일</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>일</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Month" MatchType="Partial" Action="">
+        <Name>월</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>월</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Number" MatchType="Partial" Action="">
+        <Name>번호</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>번호</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Passport" MatchType="Complete" Action="">
+        <Name>여권</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>여권</MatchName>
+          <MatchName>Passport</MatchName>
+          <MatchName>PASSPORT</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Phone" MatchType="Partial" Action="">
+        <Name>전화</Name>
+        <Value>555-555-5555</Value>
+        <MatchNames>
+          <MatchName>전화(phone)</MatchName>
+          <MatchName>전화(tel)</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="SocialSecurity" MatchType="Partial" Action="">
+        <Name>사회보장 번호</Name>
+        <Value>987 65 4321</Value>
+        <MatchNames>
+          <MatchName>사회보장 번호(ssn)</MatchName>
+          <MatchName>사회보장 번호(social)</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="State" MatchType="Partial" Action="">
+        <Name>시/도</Name>
+        <Value>AK</Value>
+        <MatchNames>
+          <MatchName>시/도</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Year" MatchType="Partial" Action="">
+        <Name>년</Name>
+        <Value>09</Value>
+        <MatchNames>
+          <MatchName>년</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="ZipCode" MatchType="Partial" Action="">
+        <Name>우편 번호</Name>
+        <Value>99801</Value>
+        <MatchNames>
+          <MatchName>우편 번호(zip)</MatchName>
+          <MatchName>우편 번호(postal)</MatchName>
+        </MatchNames>
+      </Group>
+    </FormFiller>
+    <FormFiller Version="2.0" Enabled="True" DefaultValue="1234" UseDefaultValue="True" Locale="it-IT">
+      <Group LogicalName="InternalAppScanUserName" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>utente</MatchName>
+          <MatchName>nome</MatchName>
+          <MatchName>id</MatchName>
+          <MatchName>login</MatchName>
+          <MatchName>logon</MatchName>
+          <MatchName>signin</MatchName>
+          <MatchName>signon</MatchName>
+          <MatchName>utn</MatchName>
+          <MatchName>membro</MatchName>
+        </MatchNames>
+      </Group>
+	  <Group LogicalName="InternalAppScanPassword" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Address" MatchType="Partial" Action="">
+        <Name>Indirizzo</Name>
+        <Value>753 Main Street</Value>
+        <MatchNames>
+          <MatchName>ind</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Age" MatchType="Partial" Action="">
+        <Name>Età</Name>
+        <Value>25</Value>
+        <MatchNames>
+          <MatchName>età</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Areacode" MatchType="Partial" Action="">
+        <Name>Codice postale</Name>
+        <Value>555</Value>
+        <MatchNames>
+          <MatchName>codice</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="City" MatchType="Partial" Action="">
+        <Name>Città</Name>
+        <Value>Mystery</Value>
+        <MatchNames>
+          <MatchName>città</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Company" MatchType="Partial" Action="">
+        <Name>Azienda</Name>
+        <Value>Acme-Hackme Corp.</Value>
+        <MatchNames>
+          <MatchName>azienda</MatchName>
+          <MatchName>società</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Country" MatchType="Partial" Action="">
+        <Name>Paese</Name>
+        <Value>USA</Value>
+        <MatchNames>
+          <MatchName>paese</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Email" MatchType="Partial" Action="">
+        <Name>Email</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+	      </MatchNames>
+      </Group>
+      <Group LogicalName="MailTo" MatchType="Complete" Action="">
+	      <Name>Destinatario</Name>
+	      <Value>test@altoromutual.com</Value>
+	      <MatchNames>
+	        <MatchName>A</MatchName>
+	        <MatchName>a</MatchName>          
+	      </MatchNames>
+      </Group>
+      <Group LogicalName="MailFrom" MatchType="Complete" Action="">
+	      <Name>Mittente</Name>
+	      <Value>test@altoromutual.com</Value>
+	      <MatchNames>
+	        <MatchName>Da</MatchName>
+	        <MatchName>da</MatchName>          
+	      </MatchNames>
+      </Group>
+      <Group LogicalName="MailBcc" MatchType="Complete" Action="">
+	      <Name>Ccn</Name>
+	      <Value>test@altoromutual.com</Value>
+	      <MatchNames>
+	        <MatchName>Ccn</MatchName>
+	        <MatchName>ccn</MatchName>  
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Day" MatchType="Partial" Action="">
+        <Name>Giorno</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>giorno</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Month" MatchType="Partial" Action="">
+        <Name>Mese</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>mese</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Number" MatchType="Partial" Action="">
+        <Name>Numero</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Passport" MatchType="Complete" Action="">
+        <Name>Passaporto</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>passaporto</MatchName>
+          <MatchName>Passaporto</MatchName>
+          <MatchName>PASSAPORTO</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Phone" MatchType="Partial" Action="">
+        <Name>Telefono</Name>
+        <Value>555-555-5555</Value>
+        <MatchNames>
+          <MatchName>telefono</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="SocialSecurity" MatchType="Partial" Action="">
+        <Name>Previdenza sociale</Name>
+        <Value>987 65 4321</Value>
+        <MatchNames>
+          <MatchName>pre</MatchName>
+          <MatchName>sociale</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="State" MatchType="Partial" Action="">
+        <Name>Stato</Name>
+        <Value>AK</Value>
+        <MatchNames>
+          <MatchName>stato</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Year" MatchType="Partial" Action="">
+        <Name>Anno</Name>
+        <Value>09</Value>
+        <MatchNames>
+          <MatchName>anno</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="ZipCode" MatchType="Partial" Action="">
+        <Name>Codice postale</Name>
+        <Value>99801</Value>
+        <MatchNames>
+          <MatchName>codice</MatchName>
+          <MatchName>postale</MatchName>
+        </MatchNames>
+      </Group>
+    </FormFiller>
+    <FormFiller Version="2.0" Enabled="True" DefaultValue="1234" UseDefaultValue="True" Locale="de-DE">
+      <Group LogicalName="InternalAppScanUserName" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>Benutzer</MatchName>
+          <MatchName>Name</MatchName>
+          <MatchName>Kennung</MatchName>
+          <MatchName>Anmeldung</MatchName>
+         <MatchName>Benutzer</MatchName>
+          <MatchName>Mitglied</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="InternalAppScanPassword" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>Kenn</MatchName>
+          <MatchName>wort</MatchName>
+          <MatchName>Kennwort</MatchName>
+           <MatchName>Authentifizierung</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Address" MatchType="Partial" Action="">
+        <Name>Adresse</Name>
+        <Value>753 Main Street</Value>
+        <MatchNames>
+          <MatchName>Adresse</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Age" MatchType="Partial" Action="">
+        <Name>Alter</Name>
+        <Value>25</Value>
+        <MatchNames>
+          <MatchName>Alter</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Areacode" MatchType="Partial" Action="">
+        <Name>Vorwahl</Name>
+        <Value>555</Value>
+        <MatchNames>
+          <MatchName>Vorwahl</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="City" MatchType="Partial" Action="">
+        <Name>Ort</Name>
+        <Value>Mystery</Value>
+        <MatchNames>
+          <MatchName>Ort</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Company" MatchType="Partial" Action="">
+        <Name>Unternehmen</Name>
+        <Value>Acme-Hackme Corp.</Value>
+        <MatchNames>
+          <MatchName>Unternehmen</MatchName>
+          <MatchName>Firma</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Country" MatchType="Partial" Action="">
+        <Name>Land</Name>
+        <Value>USA</Value>
+        <MatchNames>
+          <MatchName>Land</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Email" MatchType="Partial" Action="">
+        <Name>E-Mail</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>E-Mail</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="MailTo" MatchType="Complete" Action="">
+        <Name>Empfänger</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>An</MatchName>
+          <MatchName>an</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailFrom" MatchType="Complete" Action="">
+        <Name>Absender</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>Von</MatchName>
+          <MatchName>von</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailBcc" MatchType="Complete" Action="">
+        <Name>Mail Blindkopie</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>Blindkopie</MatchName>
+  </MatchNames>
+      </Group>
+      <Group LogicalName="Day" MatchType="Partial" Action="">
+        <Name>Tag</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>Tag</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Month" MatchType="Partial" Action="">
+        <Name>Monat</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>Monat</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Number" MatchType="Partial" Action="">
+        <Name>Nummer</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>Nr</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Passport" MatchType="Complete" Action="">
+        <Name>Pass</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>Pass</MatchName>
+          <MatchName>PASS</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Phone" MatchType="Partial" Action="">
+        <Name>Telefon</Name>
+        <Value>555-555-5555</Value>
+        <MatchNames>
+          <MatchName>Telefon</MatchName>
+          <MatchName>Tel</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="SocialSecurity" MatchType="Partial" Action="">
+        <Name>Sozialversicherung</Name>
+        <Value>987 65 4321</Value>
+        <MatchNames>
+          <MatchName>Sozialversicherungsnummer</MatchName>
+          <MatchName>SV-Nr</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="State" MatchType="Partial" Action="">
+        <Name>Status</Name>
+        <Value>AK</Value>
+        <MatchNames>
+          <MatchName>Staat</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Year" MatchType="Partial" Action="">
+        <Name>Jahr</Name>
+        <Value>09</Value>
+        <MatchNames>
+          <MatchName>Jahr</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="ZipCode" MatchType="Partial" Action="">
+        <Name>Postleitzahl</Name>
+        <Value>99801</Value>
+        <MatchNames>
+          <MatchName>PLZ</MatchName>
+          <MatchName>Postleitzahl</MatchName>
+        </MatchNames>
+      </Group>
+    </FormFiller>
+
+    <FormFiller Version="2.0" Enabled="True" DefaultValue="1234" UseDefaultValue="True" Locale="fr-FR">
+      <Group LogicalName="InternalAppScanUserName" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>utilisateur</MatchName>
+          <MatchName>nom</MatchName>
+          <MatchName>id</MatchName>
+          <MatchName>connexion</MatchName>
+          <MatchName>logon</MatchName>
+          <MatchName>ouverture de session</MatchName>
+          <MatchName>signon</MatchName>
+          <MatchName>util</MatchName>
+          <MatchName>membre</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="InternalAppScanPassword" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>mot de passe</MatchName>
+          <MatchName>mot</MatchName>
+          <MatchName>passe</MatchName>
+          <MatchName>mdp</MatchName>
+          <MatchName>auth</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Address" MatchType="Partial" Action="">
+        <Name>Adresse</Name>
+        <Value>753 Main Street</Value>
+        <MatchNames>
+          <MatchName>adr</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Age" MatchType="Partial" Action="">
+        <Name>Age</Name>
+        <Value>25</Value>
+        <MatchNames>
+          <MatchName>age</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Areacode" MatchType="Partial" Action="">
+        <Name>Indicatif régional</Name>
+        <Value>555</Value>
+        <MatchNames>
+          <MatchName>région</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="City" MatchType="Partial" Action="">
+        <Name>Ville</Name>
+        <Value>Mystery</Value>
+        <MatchNames>
+          <MatchName>ville</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Company" MatchType="Partial" Action="">
+        <Name>Société</Name>
+        <Value>Acme-Hackme Corp.</Value>
+        <MatchNames>
+          <MatchName>société</MatchName>
+          <MatchName>entreprise</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Country" MatchType="Partial" Action="">
+        <Name>Pays</Name>
+        <Value>Etats-Unis</Value>
+        <MatchNames>
+          <MatchName>pays</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Email" MatchType="Partial" Action="">
+        <Name>E-mail</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>mail</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="MailTo" MatchType="Complete" Action="">
+        <Name>Destinataire</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>A</MatchName>
+          <MatchName>à</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailFrom" MatchType="Complete" Action="">
+        <Name>Expéditeur</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>De</MatchName>
+          <MatchName>de</MatchName>          
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailBcc" MatchType="Complete" Action="">
+        <Name>CopieConformeInvisible</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>CCI</MatchName>
+          <MatchName>cci</MatchName>          
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Day" MatchType="Partial" Action="">
+        <Name>Jour</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>jour</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Month" MatchType="Partial" Action="">
+        <Name>Mois</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>mois</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Number" MatchType="Partial" Action="">
+        <Name>Numéro</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>num</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Passport" MatchType="Complete" Action="">
+        <Name>Passeport</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>passeport</MatchName>
+          <MatchName>Passeport</MatchName>
+          <MatchName>PASSEPORT</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Phone" MatchType="Partial" Action="">
+        <Name>Numéro de téléphone</Name>
+        <Value>555-555-5555</Value>
+        <MatchNames>
+          <MatchName>téléphone</MatchName>
+          <MatchName>tél</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="SocialSecurity" MatchType="Partial" Action="">
+        <Name>Sécurité sociale</Name>
+        <Value>987 65 4321</Value>
+        <MatchNames>
+          <MatchName>ss</MatchName>
+          <MatchName>social</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="State" MatchType="Partial" Action="">
+        <Name>Etat</Name>
+        <Value>AK</Value>
+        <MatchNames>
+          <MatchName>état</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Year" MatchType="Partial" Action="">
+        <Name>Année</Name>
+        <Value>09</Value>
+        <MatchNames>
+          <MatchName>année</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="ZipCode" MatchType="Partial" Action="">
+        <Name>Code postal</Name>
+        <Value>99801</Value>
+        <MatchNames>
+          <MatchName>cp</MatchName>
+          <MatchName>code postal</MatchName>
+        </MatchNames>
+      </Group>
+    </FormFiller>
+    <FormFiller Version="2.0" Enabled="True" DefaultValue="1234" UseDefaultValue="True" Locale="zh-CHS">
+      <Group LogicalName="InternalAppScanUserName" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>用户</MatchName>
+          <MatchName>名称</MatchName>
+          <MatchName>标识</MatchName>
+          <MatchName>登录</MatchName>
+          <MatchName>用户</MatchName>
+          <MatchName>成员</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="InternalAppScanPassword" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>密码</MatchName>
+          <MatchName>权限</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Address" MatchType="Partial" Action="">
+        <Name>地址</Name>
+        <Value>753 Main Street</Value>
+        <MatchNames>
+          <MatchName>地址</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Age" MatchType="Partial" Action="">
+        <Name>年龄</Name>
+        <Value>25</Value>
+        <MatchNames>
+          <MatchName>年龄</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Areacode" MatchType="Partial" Action="">
+        <Name>区号</Name>
+        <Value>555</Value>
+        <MatchNames>
+          <MatchName>区域</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="City" MatchType="Partial" Action="">
+        <Name>市城</Name>
+        <Value>Mystery</Value>
+        <MatchNames>
+          <MatchName>城市</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Company" MatchType="Partial" Action="">
+        <Name>公司</Name>
+        <Value>Acme-Hackme Corp.</Value>
+        <MatchNames>
+          <MatchName>公司</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Country" MatchType="Partial" Action="">
+        <Name>国家或地区</Name>
+        <Value>USA</Value>
+        <MatchNames>
+          <MatchName>国家或地区</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Email" MatchType="Partial" Action="">
+        <Name>电子邮件</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>邮件</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="MailTo" MatchType="Complete" Action="">
+        <Name>收件人</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>收件人</MatchName>       
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailFrom" MatchType="Complete" Action="">
+        <Name>发件人</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>发件人</MatchName>         
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailBcc" MatchType="Complete" Action="">
+        <Name>邮件密送</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>密件抄送</MatchName>    
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Day" MatchType="Partial" Action="">
+        <Name>天</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>天</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Month" MatchType="Partial" Action="">
+        <Name>月</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>月</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Number" MatchType="Partial" Action="">
+        <Name>号码</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>号码</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Passport" MatchType="Complete" Action="">
+        <Name>护照</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>护照</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Phone" MatchType="Partial" Action="">
+        <Name>电话</Name>
+        <Value>555-555-5555</Value>
+        <MatchNames>
+          <MatchName>电话</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="SocialSecurity" MatchType="Partial" Action="">
+        <Name>社会保险</Name>
+        <Value>987 65 4321</Value>
+        <MatchNames>
+          <MatchName>社会保险号码</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="State" MatchType="Partial" Action="">
+        <Name>州</Name>
+        <Value>AK</Value>
+        <MatchNames>
+          <MatchName>州</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Year" MatchType="Partial" Action="">
+        <Name>年份</Name>
+        <Value>09</Value>
+        <MatchNames>
+          <MatchName>年份</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="ZipCode" MatchType="Partial" Action="">
+        <Name>邮编</Name>
+        <Value>99801</Value>
+        <MatchNames>
+          <MatchName>邮编</MatchName>
+        </MatchNames>
+      </Group>
+    </FormFiller>
+    <FormFiller Version="2.0" Enabled="True" DefaultValue="1234" UseDefaultValue="True" Locale="zh-CHT">
+      <Group LogicalName="InternalAppScanUserName" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>使用者</MatchName>
+          <MatchName>名稱</MatchName>
+          <MatchName>ID</MatchName>
+          <MatchName>登入</MatchName>
+          <MatchName>成員</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="InternalAppScanPassword" MatchType="Partial" Action="">
+        <Name></Name>
+        <Value></Value>
+        <MatchNames>
+          <MatchName>密碼</MatchName>
+          <MatchName>權限</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Address" MatchType="Partial" Action="">
+        <Name>地址</Name>
+        <Value>753 Main Street</Value>
+        <MatchNames>
+          <MatchName>地址</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Age" MatchType="Partial" Action="">
+        <Name>年齡</Name>
+        <Value>25</Value>
+        <MatchNames>
+          <MatchName>年齡</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Areacode" MatchType="Partial" Action="">
+        <Name>區域碼</Name>
+        <Value>555</Value>
+        <MatchNames>
+          <MatchName>區域</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="City" MatchType="Partial" Action="">
+        <Name>城市</Name>
+        <Value>Mystery</Value>
+        <MatchNames>
+          <MatchName>城市</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Company" MatchType="Partial" Action="">
+        <Name>公司</Name>
+        <Value>Acme-Hackme Corp.</Value>
+        <MatchNames>
+          <MatchName>公司</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Country" MatchType="Partial" Action="">
+        <Name>國家/地區</Name>
+        <Value>USA</Value>
+        <MatchNames>
+          <MatchName>國家/地區</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Email" MatchType="Partial" Action="">
+        <Name>電子郵件</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>郵件</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="MailTo" MatchType="Complete" Action="">
+        <Name>收件者</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>郵件收件人</MatchName>
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailFrom" MatchType="Complete" Action="">
+        <Name>寄件者</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>郵件寄件人</MatchName>    
+        </MatchNames>
+      </Group>
+	    <Group LogicalName="MailBcc" MatchType="Complete" Action="">
+        <Name>密件副本</Name>
+        <Value>test@altoromutual.com</Value>
+        <MatchNames>
+          <MatchName>BCC</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Day" MatchType="Partial" Action="">
+        <Name>日</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>日</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Month" MatchType="Partial" Action="">
+        <Name>月</Name>
+        <Value>01</Value>
+        <MatchNames>
+          <MatchName>月</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Number" MatchType="Partial" Action="">
+        <Name>號碼</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>號碼</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Passport" MatchType="Complete" Action="">
+        <Name>護照</Name>
+        <Value>9876543210</Value>
+        <MatchNames>
+          <MatchName>護照</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Phone" MatchType="Partial" Action="">
+        <Name>電話</Name>
+        <Value>555-555-5555</Value>
+        <MatchNames>
+          <MatchName>電話</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="SocialSecurity" MatchType="Partial" Action="">
+        <Name>社會安全</Name>
+        <Value>987 65 4321</Value>
+        <MatchNames>
+          <MatchName>社會安全號碼</MatchName>
+          <MatchName>社會</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="State" MatchType="Partial" Action="">
+        <Name>省縣</Name>
+        <Value>AK</Value>
+        <MatchNames>
+          <MatchName>省縣</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="Year" MatchType="Partial" Action="">
+        <Name>年</Name>
+        <Value>09</Value>
+        <MatchNames>
+          <MatchName>年</MatchName>
+        </MatchNames>
+      </Group>
+      <Group LogicalName="ZipCode" MatchType="Partial" Action="">
+        <Name>郵遞區號</Name>
+        <Value>99801</Value>
+        <MatchNames>
+          <MatchName>郵遞區號</MatchName>
+        </MatchNames>
+      </Group>
+    </FormFiller>
+
+    <PlatformAuthentication>
+      <Enabled>False</Enabled>
+      <Domain />
+      <Password Encrypted="false" />
+      <UserName />
+    </PlatformAuthentication>
+    <ClientSideCertificate>
+      <Enabled>False</Enabled>
+      <FilePath />
+      <KeyPath />
+      <Password />
+      <Password Encrypted="false" />
+    </ClientSideCertificate>
+  </UserInput>
+  <TestPolicy Version="6.9.99">
+    <Predefined />
+    <BaseTestPolicyFile>Default</BaseTestPolicyFile>
+    <DescriptionID>Default</DescriptionID>
+    <Update>
+      <Invasiveness>
+        <Invasive>False</Invasive>
+        <NonInvasive>True</NonInvasive>
+      </Invasiveness>
+      <App_Infra>
+        <Application>True</Application>
+        <Infrastructure>True</Infrastructure>
+      </App_Infra>
+      <Severity>
+        <Informational>True</Informational>
+        <Low>True</Low>
+        <Medium>True</Medium>
+        <High>True</High>
+      </Severity>
+    </Update>
+    <MultiPhaseLimit Enabled="True">4</MultiPhaseLimit>
+    <SendTestsOnLoginAndLogoutPages>True</SendTestsOnLoginAndLogoutPages>
+  </TestPolicy>
+  <SessionManagement Version="1.2">
+    <SessionManagementMode>Manual</SessionManagementMode>
+    <AllowConcurrentLogins>True</AllowConcurrentLogins>
+    <RecordedSessionRequests />
+    <SessionVerifier>
+      <Enable>True</Enable>
+      <Pattern></Pattern>
+      <PatternType>RegularExpression</PatternType>
+    </SessionVerifier>
+    <VariablesDefinitions>
+      <VariableDefinition IsRegularExpression="False" Name="">
+        <VariableType>DefaultDefinitions</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="^BV_">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="^CFID">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="^CFTOKEN">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__VIEWSTATE">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__EVENTVALIDATION">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__EVENTARGUMENT">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>None</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__EVENTTARGET">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>None</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name="__VIEWSTATEID">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments>An id of the viewstate that is stored in the server's db. </Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__LASTFOCUS">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__SCROLLPOSITIONX">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__SCROLLPOSITIONY">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__PREVIOUSPAGE">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__CALLBACKID">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>None</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__CALLBACKPARAM">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>None</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="__VIEWSTATEFIELDCOUNT">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="__VIEWSTATE\d+">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Path>/</Path>
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="wsdl">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="disco">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="javax.faces.viewstate">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="^BV_">
+        <VariableType>Cookie</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="JSESSIONID">
+        <VariableType>Custom</VariableType>
+        <Hosts />
+        <Comments />
+		<RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="IIS_COOKIELESS">
+        <VariableType>Custom</VariableType>
+        <Hosts />
+        <Comments />
+		<RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="SOAP">
+        <VariableType>Custom</VariableType>
+        <Hosts />
+        <Comments />
+		<RequestIgnoreStatus>None</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="True" Name="ses|token">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>Session cookie regular expression</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="True" Name="(?:server|user|u)_*id">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>Server or user id</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name="ObSSOCookie">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>Single sign-on cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name="CFTOKEN">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>ColdFusion cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name="CFID">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>ColdFusion cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name="CFGLOBALS">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>ColdFusion cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name=".ASPXAUTH">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>ASP.NET form authentication cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name="auth_tkt">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>apache mod_auth_tkt cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name="LtpaToken">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>IBM SSO session cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name="LtpaToken2">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>IBM SSO session cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name="ASP.NET_SessionId">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>.NET session cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name="JSESSIONID">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>Java session cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name="PHPSESSID">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>PHP session cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name="WebLogicSession">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>Web Logic session cookie</Comments>
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>	  	  
+	    <VariableDefinition IsRegularExpression="False" Name="JSESSIONID">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+	    <VariableDefinition IsRegularExpression="False" Name="PHPSESSID">
+        <VariableType>Parameter</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>True</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>	  
+	    <VariableDefinition IsRegularExpression="True" Name="__utm.|vgnvisitor|_csuid|_csoot|WEBTRENDS_ID|cookieenabledcheck|__qc[ab]|MintUnique|PD_STATEFUL|_sn|BCSI\\-">
+        <VariableType>Cookie</VariableType>
+        <Path />
+        <Hosts />
+        <Comments>Cookie that tracks visitor activity for a third-party application</Comments>
+        <RequestIgnoreStatus>Full</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Full</EntityIgnoreStatus>
+        <ExcludeFromTest>True</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="GUID">
+        <VariableType>Custom</VariableType>
+        <Hosts />
+        <Comments />		
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />		
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="NUMERIC">
+        <VariableType>Custom</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />	
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="HEXDECIMAL">
+        <VariableType>Custom</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />	
+      </VariableDefinition>
+      <VariableDefinition IsRegularExpression="False" Name="DATE">
+        <VariableType>Custom</VariableType>
+        <Hosts />
+        <Comments />
+        <RequestIgnoreStatus>Value</RequestIgnoreStatus>
+        <EntityIgnoreStatus>Value</EntityIgnoreStatus>
+        <ExcludeFromTest>False</ExcludeFromTest>
+        <SessionIDEnabled>False</SessionIDEnabled>
+        <VariableOrigin>TemplateDefined</VariableOrigin>
+        <SessionID TrackingMethod="ExploreAndLogin" />	
+      </VariableDefinition>
+    </VariablesDefinitions>
+    <CustomParameters>
+      <CustomParameter LogicalName="SOAP">
+        <Pattern>&lt;\s*(?=[^/\!])([^&gt; ]+)[^&gt;]*(?&lt;!/)&gt;\s*(?:\&lt;!\[CDATA\[)?((?&lt;=\&lt;!\[CDATA\[).*?(?=\]\]\&gt;)|[^&lt;]*)\s*(?:\]\]\&gt;)?\s*&lt;/</Pattern>
+        <NameGroupIndex>1</NameGroupIndex>
+        <ValueGroupIndex>2</ValueGroupIndex>
+        <TargetSegment>Body</TargetSegment>
+        <ResponsePattern />
+        <Condition>^\s*&lt;.+&gt;\s*$</Condition>
+      </CustomParameter>
+      <CustomParameter LogicalName="JSESSIONID">
+        <Pattern>;(?:JSESSIONID|jsessionid)=([^/]+)$</Pattern>
+        <NameGroupIndex>-1</NameGroupIndex>
+        <ValueGroupIndex>1</ValueGroupIndex>
+        <TargetSegment>Path</TargetSegment>
+        <ResponsePattern />
+        <Condition />
+      </CustomParameter>
+      <CustomParameter LogicalName="IIS_COOKIELESS">
+        <Pattern>(\((?:[ASF]\([a-zA-Z0-9]+\)){1,3}\))</Pattern>
+        <NameGroupIndex>-1</NameGroupIndex>
+        <ValueGroupIndex>1</ValueGroupIndex>
+        <TargetSegment>Path</TargetSegment>
+        <ResponsePattern />
+        <Condition />
+      </CustomParameter> 
+      <CustomParameter LogicalName="GUID">
+        <Pattern>((\{){0,1}[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}(\}){0,1})</Pattern>
+        <NameGroupIndex>-1</NameGroupIndex>
+        <ValueGroupIndex>1</ValueGroupIndex>
+        <TargetSegment>Path</TargetSegment>
+        <ResponsePattern />
+        <Condition />
+      </CustomParameter>
+      <CustomParameter LogicalName="HEXDECIMAL">
+        <Pattern>(([A-Fa-f0-9]{40})|([A-Fa-f0-9]{32}))</Pattern>
+        <NameGroupIndex>-1</NameGroupIndex>
+        <ValueGroupIndex>1</ValueGroupIndex>
+        <TargetSegment>Path</TargetSegment>
+        <ResponsePattern />
+        <Condition />
+      </CustomParameter>
+      <CustomParameter LogicalName="DATE">
+        <Pattern>\b((19|20)\d\d[-/.](0[1-9]|1[012])[-/.](0[1-9]|[12][0-9]|3[01]))\b</Pattern>	 
+        <NameGroupIndex>-1</NameGroupIndex>
+        <ValueGroupIndex>1</ValueGroupIndex>
+        <TargetSegment>Path</TargetSegment>
+        <ResponsePattern />
+        <Condition />
+      </CustomParameter>
+      <CustomParameter LogicalName="NUMERIC">
+        <Pattern>\b(\d{8,128})\b</Pattern>
+        <NameGroupIndex>-1</NameGroupIndex>
+        <ValueGroupIndex>1</ValueGroupIndex>
+        <TargetSegment>Path</TargetSegment>
+        <ResponsePattern />
+        <Condition />
+      </CustomParameter> 
+    </CustomParameters>
+  </SessionManagement>
+  
+  <LogoutFilter Enabled="True" Locale="en-US">(logout|signout|logoff|signoff|exit|quit|bye-bye|clearuser|invalidate)</LogoutFilter>
+  <LogoutFilter Enabled="True" Locale="es-ES">(finalizar sesión|salir|adiós|borrar usuario|invalidar)</LogoutFilter>
+  <LogoutFilter Enabled="True" Locale="pt-BR">(logout|signout|logoff|signoff|exit|quit|bye-bye|clearuser|invalidate)</LogoutFilter>
+  <LogoutFilter Enabled="True" Locale="it-IT">(scollega|scollegamento|disconnetti|disconnessione|esci|chiudi|ciao|cancellautente|invalida)</LogoutFilter>
+  <!---CHS: "(" and ")" were enconded in Chinese. Were changed to regular encoding "(" and ") -->
+  <LogoutFilter Enabled="True" Locale="zh-CHS">（注销|注销|注销|注销|退出|退出|再见|清除用户|无效）</LogoutFilter>
+  <LogoutFilter Enabled="True" Locale="zh-CHT">（登出|登出|登出|登出|離開|退出|再會|清除使用者|失效）</LogoutFilter>
+  <LogoutFilter Enabled="True" Locale="fr-FR">(déconnexion|déconnexion|déconnexion|déconnexion|exit|quitter|au_revoir|fin_utilisateur|invalider)</LogoutFilter>
+  <LogoutFilter Enabled="True" Locale="de-DE">(abmelden|abmelden|abmelden|abmelden|verlassen|beenden|beenden|Benutzer löschen|inaktivieren)</LogoutFilter>
+  <LogoutFilter Enabled="True" Locale="ko-KR">(로그아웃|사인아웃|로그오프|사인오프|종료|끝내기|나감|사용자 지우기|무효화)</LogoutFilter>
+  <LogoutFilter Enabled="True" Locale="ja-JP">(ログアウト|サインアウト|ログオフ|サインオフ|終了|終了|さようなら|ユーザーのクリア|無効化)</LogoutFilter>
+  <ScanExpert>
+    <Automatic>False</Automatic>
+    <SELinkLimit Enabled="True">100</SELinkLimit>
+    <SETimeLimit Enabled="True">120</SETimeLimit>
+    <Analyses>
+      <Analysis name="Additional_Servers">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>8</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="AJAX_Frameworks">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>5</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="AJAXIndications">(XmlHttpRequest|JSONParser|[Aa][Jj][Aa][Xx]|\.*gwt:*|DWRUtil)</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Case_Sensitive_Path">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>13</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="TestsCount">3</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Client_Side_Certificate">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>3</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Custom_Error_Page">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>12</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="NumberOfTests">3</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Depth_Limit">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>16</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="Threshold">20</ExtendedConfigurationElement> -->
+          <!-- <ExtendedConfigurationElement Name="MultiplyDepthLimit">2</ExtendedConfigurationElement> -->
+          <!-- <ExtendedConfigurationElement Name="DisableDepthLimit">False</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Flash_Parse">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>17</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="FlashIndications">\.swf</ExtendedConfigurationElement> -->
+          <!-- <ExtendedConfigurationElement Name="FlashType">^\s*Content-Type:.*application/x-shockwave-flash</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Login_Page">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>4</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="No_Logout_Link">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>15</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Number_of_Threads">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>10</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Proxy_Authentication">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>2</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Session_IDs">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>6</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Suspicious_URLs">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>14</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="SuspicionIndications">(delete|remove|debug|reset|destroy|changepass)</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Timeout">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>9</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="LowHighThresh">60</ExtendedConfigurationElement> -->
+          <!-- <ExtendedConfigurationElement Name="LowTOLinkThresh">1</ExtendedConfigurationElement> -->
+          <!-- <ExtendedConfigurationElement Name="HighTOLinkThresh">3</ExtendedConfigurationElement> -->
+          <!-- <ExtendedConfigurationElement Name="MaximalExcludeLinks">3</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Unfilled_Forms">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>7</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Server_Authentication">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>1</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="Web_Services">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>19</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="WSFileTypes">(\.asmx|wsdl|uddi)</ExtendedConfigurationElement> -->
+          <!-- <ExtendedConfigurationElement Name="WSContentIndication">(media-type:.*application/soap\+xml)</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Environmental_Settings">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>20</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="ScanExpert_Evaluation">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>700</Order>
+        <ExtendedConfiguration />
+      </Analysis>
+      <Analysis name="WebGoat">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>9999</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="Indicator">((Thank you for using WebGoat![\S\s]*demonstration[\S\s]*exercise[\S\s]Project WebGoat)|(OWASP Foundation.*\| Project WebGoat))</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="Hacme">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>9999</Order>
+        <ExtendedConfiguration>
+          <!-- <ExtendedConfigurationElement Name="Indicator">(Hacme Bank.*security training.*Foundstone)</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+      <Analysis name="WSPortalIndications">
+        <Enabled>True</Enabled>
+        <SuppressAutoApply>False</SuppressAutoApply>
+        <Order>21</Order>
+        <ExtendedConfiguration>
+          <!-- <ConfigurationElementDefinition name="WSPortalIndications">(WPS/MyPortal|WPS/Portal)</ExtendedConfigurationElement> -->
+        </ExtendedConfiguration>
+      </Analysis>
+    </Analyses>
+  </ScanExpert>
+  <ContentBasedView Locale="en-US">
+    <Enabled>True</Enabled>
+    <BreadCrumbsDetections>
+      <BreadCrumbsDetection>
+        <Name>Title</Name>
+        <Description>Determine the logical path according to the pages' titles</Description>
+        <Enabled>True</Enabled>
+        <Type>RegularExpression</Type>
+        <CaseSensitive>False</CaseSensitive>
+        <ConditionRegexp />
+        <PathRegexp>&lt;title&gt;(.*?)&lt;/title&gt;</PathRegexp>
+        <SeparatorRegexp>[:\-&gt;|]</SeparatorRegexp>
+        <DisplayNameRegexp>^\s*(.*?)\s*$</DisplayNameRegexp>
+        <DefaultPath />
+      </BreadCrumbsDetection>
+    </BreadCrumbsDetections>
+  </ContentBasedView>
+  <ContentBasedView Locale="es-ES">
+    <Enabled>True</Enabled>
+    <BreadCrumbsDetections>
+      <BreadCrumbsDetection>
+        <Name>Título</Name>
+        <Description>Determine la vía de acceso lógica de acuerdo a los títulos de las páginas</Description>
+        <Enabled>True</Enabled>
+        <Type>RegularExpression</Type>
+        <CaseSensitive>False</CaseSensitive>
+        <ConditionRegexp />
+        <PathRegexp>&lt;title&gt;(.*?)&lt;/title&gt;</PathRegexp>
+        <SeparatorRegexp>[:\-&gt;|]</SeparatorRegexp>
+        <DisplayNameRegexp>^\s*(.*?)\s*$</DisplayNameRegexp>
+        <DefaultPath />
+      </BreadCrumbsDetection>
+    </BreadCrumbsDetections>
+  </ContentBasedView>
+  <ContentBasedView Locale="pt-BR">
+    <Enabled>True</Enabled>
+    <BreadCrumbsDetections>
+      <BreadCrumbsDetection>
+        <Name>Título</Name>
+        <Description>Determinar o caminho lógico de acordo com os títulos das páginas</Description>
+        <Enabled>True</Enabled>
+        <Type>RegularExpression</Type>
+        <CaseSensitive>False</CaseSensitive>
+        <ConditionRegexp />
+        <PathRegexp>&lt;title&gt;(.*?)&lt;/title&gt;</PathRegexp>
+        <SeparatorRegexp>[:\-&gt;|]</SeparatorRegexp>
+        <DisplayNameRegexp>^\s*(.*?)\s*$</DisplayNameRegexp>
+        <DefaultPath />
+      </BreadCrumbsDetection>
+    </BreadCrumbsDetections>
+  </ContentBasedView>
+  <ContentBasedView Locale="zh-CHS">
+    <Enabled>True</Enabled>
+    <BreadCrumbsDetections>
+      <BreadCrumbsDetection>
+        <Name>标题</Name>
+        <Description>根据页面标题确定逻辑路径</Description>        
+        <Enabled>True</Enabled>
+        <Type>RegularExpression</Type>
+        <CaseSensitive>False</CaseSensitive>
+        <ConditionRegexp />
+        <PathRegexp>&lt;title&gt;(.*?)&lt;/title&gt;</PathRegexp>
+        <SeparatorRegexp>[:\-&gt;|]</SeparatorRegexp>
+        <DisplayNameRegexp>^\s*(.*?)\s*$</DisplayNameRegexp>
+        <DefaultPath />
+      </BreadCrumbsDetection>
+    </BreadCrumbsDetections>
+  </ContentBasedView>
+  <ContentBasedView Locale="zh-CHT">
+    <Enabled>True</Enabled>
+    <BreadCrumbsDetections>
+      <BreadCrumbsDetection>
+        <Name>標題</Name>
+        <Description>根據頁面的標題來決定邏輯路徑</Description>
+        <Enabled>True</Enabled>
+        <Type>RegularExpression</Type>
+        <CaseSensitive>False</CaseSensitive>
+        <ConditionRegexp />
+        <PathRegexp>&lt;title&gt;(.*?)&lt;/title&gt;</PathRegexp>
+        <SeparatorRegexp>[:\-&gt;|]</SeparatorRegexp>
+        <DisplayNameRegexp>^\s*(.*?)\s*$</DisplayNameRegexp>
+        <DefaultPath />
+      </BreadCrumbsDetection>
+    </BreadCrumbsDetections>
+  </ContentBasedView>
+  <ContentBasedView Locale="de-DE">
+    <Enabled>True</Enabled>
+    <BreadCrumbsDetections>
+      <BreadCrumbsDetection>
+        <Name>Titel</Name>
+        <Description>Legen Sie den logischen Pfad nach den Seitentiteln fest.</Description>
+        <Enabled>True</Enabled>
+        <Type>RegularExpression</Type>
+        <CaseSensitive>False</CaseSensitive>
+        <ConditionRegexp />
+        <PathRegexp>&lt;title&gt;(.*?)&lt;/title&gt;</PathRegexp>
+        <SeparatorRegexp>[:\-&gt;|]</SeparatorRegexp>
+        <DisplayNameRegexp>^\s*(.*?)\s*$</DisplayNameRegexp>
+        <DefaultPath />
+      </BreadCrumbsDetection>
+    </BreadCrumbsDetections>
+  </ContentBasedView>
+  <ContentBasedView Locale="fr-FR">
+    <Enabled>True</Enabled>
+    <BreadCrumbsDetections>
+      <BreadCrumbsDetection>
+        <Name>Titre</Name>
+        <Description>Déterminer le chemin logique en fonction des titre des pages</Description>
+        <Enabled>True</Enabled>
+        <Type>RegularExpression</Type>
+        <CaseSensitive>False</CaseSensitive>
+        <ConditionRegexp />
+        <PathRegexp>&lt;title&gt;(.*?)&lt;/title&gt;</PathRegexp>
+        <SeparatorRegexp>[:\-&gt;|]</SeparatorRegexp>
+        <DisplayNameRegexp>^\s*(.*?)\s*$</DisplayNameRegexp>
+        <DefaultPath />
+      </BreadCrumbsDetection>
+    </BreadCrumbsDetections>
+  </ContentBasedView>
+  <ContentBasedView Locale="it-IT">
+    <Enabled>True</Enabled>
+    <BreadCrumbsDetections>
+      <BreadCrumbsDetection>
+        <Name>Titolo</Name>
+        <Description>Determinare il percorso logico in base ai titoli delle pagine</Description>
+        <Enabled>True</Enabled>
+        <Type>RegularExpression</Type>
+        <CaseSensitive>False</CaseSensitive>
+        <ConditionRegexp />
+        <PathRegexp>&lt;title&gt;(.*?)&lt;/title&gt;</PathRegexp>
+        <SeparatorRegexp>[:\-&gt;|]</SeparatorRegexp>
+        <DisplayNameRegexp>^\s*(.*?)\s*$</DisplayNameRegexp>
+        <DefaultPath />
+      </BreadCrumbsDetection>
+    </BreadCrumbsDetections>
+  </ContentBasedView>
+  <ContentBasedView Locale="ja-JP">
+    <Enabled>True</Enabled>
+    <BreadCrumbsDetections>
+      <BreadCrumbsDetection>
+        <Name>タイトル</Name>
+        <Description>ページのタイトルに基づく論理パスを判別します</Description>  
+        <Enabled>True</Enabled>
+        <Type>RegularExpression</Type>
+        <CaseSensitive>False</CaseSensitive>
+        <ConditionRegexp />
+        <PathRegexp>&lt;title&gt;(.*?)&lt;/title&gt;</PathRegexp>
+        <SeparatorRegexp>[:\-&gt;|]</SeparatorRegexp>
+        <DisplayNameRegexp>^\s*(.*?)\s*$</DisplayNameRegexp>
+        <DefaultPath />
+      </BreadCrumbsDetection>
+    </BreadCrumbsDetections>
+  </ContentBasedView>
+  <ContentBasedView Locale="ko-KR">
+    <Enabled>True</Enabled>
+    <BreadCrumbsDetections>
+      <BreadCrumbsDetection>
+        <Name>제목</Name>
+        <Description>페이지 제목에 따라 로컬 경로를 판별합니다.</Description>
+        <Enabled>True</Enabled>
+        <Type>RegularExpression</Type>
+        <CaseSensitive>False</CaseSensitive>
+        <ConditionRegexp />
+        <PathRegexp>&lt;title&gt;(.*?)&lt;/title&gt;</PathRegexp>
+        <SeparatorRegexp>[:\-&gt;|]</SeparatorRegexp>
+        <DisplayNameRegexp>^\s*(.*?)\s*$</DisplayNameRegexp>
+        <DefaultPath />
+      </BreadCrumbsDetection>
+    </BreadCrumbsDetections>
+  </ContentBasedView>
+  <ExtendedConfigurations>
+    <ExtendedConfiguration ID="LinkCategorizationConfig">
+      <LinkCategorizationConfig>
+        <Enabled>false</Enabled>
+        <ReportUnwantedLinks>true</ReportUnwantedLinks>
+        <ReportUnclassifiedLinks>true</ReportUnclassifiedLinks>
+        <ReportHarmlessLinks>false</ReportHarmlessLinks>
+        <ProxySettings>
+          <ProxySettings>0</ProxySettings>
+          <Address>
+          </Address>
+          <Port>8080</Port>
+          <UserName>
+          </UserName>
+          <Password>
+          </Password>
+        </ProxySettings>
+      </LinkCategorizationConfig>
+    </ExtendedConfiguration>
+  </ExtendedConfigurations>
+  <PreDefinedTemplateName Value="Default" Version="1.0" />
+</ScanConfiguration>

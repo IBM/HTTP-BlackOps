@@ -1,0 +1,30 @@
+POST /rafservices/EFS/put HTTP/1.1
+Content-Type: multipart/related; type="application/xop+xml"; boundary="uuid:9cd759e9-e0e1-43e1-abc4-c9f3db8601ad"; start="<1>"; start-info="text/xml"
+Accept: multipart/related
+User-Agent: Apache CXF 2.3.3
+Cache-Control: no-cache
+Pragma: no-cache
+Connection: keep-alive
+Content-Length: 1095
+
+
+--uuid:9cd759e9-e0e1-43e1-abc4-c9f3db8601ad
+Content-Type: application/xop+xml; charset=UTF-8; type="text/xml";
+Content-Transfer-Encoding: binary
+Content-ID: <1>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><FileScope><authToken>06c728540c561000c821fd4e19fc19fc</authToken><content><xop:Include xmlns:xop="http://www.w3.org/2004/08/xop/include" href="cid:f3f23ea5-178f-4995-96fb-96b103686533-1@cxf.apache.org"/></content><options>0</options><path>/user/environments/AppScanTest111/cells/standAlone/nodes/standAlone/register_base_node_with_admin_agent.properties</path><userid>rafwuser</userid></FileScope>
+--uuid:9cd759e9-e0e1-43e1-abc4-c9f3db8601ad
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: binary
+Content-ID: <f3f23ea5-178f-4995-96fb-96b103686533-1@cxf.apache.org>
+
+## This file is written using UTF-8 encoding.
+## The encoding must be preserved for proper operation of the framework.
+
+ADMIN_AGENT_ADMIN_USER=
+ADMIN_AGENT_ADMIN_PASSWORD=
+ADMIN_AGENT_PROFILE=
+ADMIN_AGENT_HOST=
+ADMIN_AGENT_SOAP_PORT=
+--uuid:9cd759e9-e0e1-43e1-abc4-c9f3db8

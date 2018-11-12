@@ -1,0 +1,5 @@
+GET {0} HTTP/1.1
+Accept-Language: en-us
+Accept: */*
+Host: {1}:{2}
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)

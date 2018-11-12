@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33BFB209-4D4A-4498-9BB2-2413B5479D85}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TrafficViewerUnitTest</RootNamespace>
+    <AssemblyName>TrafficViewerUnitTest</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Package|AnyCPU'">
+    <OutputPath>bin\Package\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CertificateUnit.cs" />
+    <Compile Include="EncodingUnit.cs" />
+    <Compile Include="CustomTestUnit.cs" />
+    <Compile Include="PenTestReport.cs" />
+    <Compile Include="Generic.cs" />
+    <Compile Include="HtmlParserUnitTest.cs" />
+    <Compile Include="HttpUnitTest.cs" />
+    <Compile Include="ImportersUnitTest.cs" />
+    <Compile Include="LoginExporterTest.cs" />
+    <Compile Include="LogSync.cs" />
+    <Compile Include="MockCredentialsProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReverseProxyTest.cs" />
+    <Compile Include="TrafficLogHttpClientUnitTest.cs" />
+    <Compile Include="UtilsUnitTest.cs" />
+    <Compile Include="SearchAndReplaceUnitTest.cs" />
+    <Compile Include="TrafficViewerFileUnitTest.cs" />
+    <Compile Include="Diff.cs" />
+    <Compile Include="UnitTestUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASMRest\ASMRest.csproj">
+      <Project>{d6f1cc1e-af1b-40a4-a7f3-567c12bb01d5}</Project>
+      <Name>ASMRest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HtmlParser\TVHtmlParser.csproj">
+      <Project>{74F4B7AB-BB3A-41B1-A65C-A37563C95C82}</Project>
+      <Name>TVHtmlParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManualExplorerUnitTest\HttpUnitTest.csproj">
+      <Project>{664e4e04-6c95-4cfb-89c7-d5a5f386e227}</Project>
+      <Name>HttpUnitTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Testing\Testing.csproj">
+      <Project>{ad911156-bb4e-4218-84e9-99af1f297975}</Project>
+      <Name>Testing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrafficServer\TrafficServer.csproj">
+      <Project>{DD9D3557-5BD1-41B6-9BB9-BAA352FB8319}</Project>
+      <Name>TrafficServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrafficViewerControls\TrafficViewerControls.csproj">
+      <Project>{3F5B071A-F166-4B66-A289-A3D50B6A94C6}</Project>
+      <Name>TrafficViewerControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrafficViewerInstance\TrafficViewerInstance.csproj">
+      <Project>{EA3BB4C6-6153-4380-89C3-A1FF4666B470}</Project>
+      <Name>TrafficViewerInstance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrafficViewerSDK\TrafficViewerSDK.csproj">
+      <Project>{491bf9a0-f1a1-4ba7-9890-343f6cc7ed5c}</Project>
+      <Name>TrafficViewerSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TVTextDiff\TVDiff.csproj">
+      <Project>{2FD71EA6-7BC6-45A2-8D06-0220640F57E2}</Project>
+      <Name>TVDiff</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\altoro.tvf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AltoroLoginPageRequest.txt" />
+    <None Include="Resources\demoExploreFromScanImportVisitedUrls.tvf" />
+    <None Include="Resources\demoExploreFromTrafficImport.tvf" />
+    <None Include="Resources\Regular Scan.scant" />
+    <None Include="Resources\MultipartRequest.txt" />
+    <None Include="Resources\AltoroLogin.tvf" />
+    <None Include="Resources\SOAPPost.txt" />
+    <None Include="Resources\SOAPRequest.txt" />
+    <None Include="Resources\JSONPostRequest.txt" />
+    <None Include="Resources\POSTRequest.txt" />
+    <None Include="Resources\RequestWithEmptyQUery.txt" />
+    <None Include="Resources\RequestWithQuery.txt" />
+    <None Include="Resources\AppScanTraffic.log.txt" />
+    <None Include="Resources\ChunkedResponse.txt" />
+    <None Include="Resources\IncorrectChunkedResponse.txt" />
+    <None Include="Resources\DecodedChunkedBody.txt" />
+    <None Include="Resources\basicauthresponse.txt" />
+    <None Include="Resources\ExpectedTrafficLogHttpClient404.txt" />
+    <None Include="Resources\IdeasPmc.txt" />
+    <None Include="Resources\encJSONPostRequest.txt" />
+    <Content Include="Resources\ItemLog.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+</Project>

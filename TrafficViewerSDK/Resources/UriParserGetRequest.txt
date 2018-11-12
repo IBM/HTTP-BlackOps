@@ -1,0 +1,4 @@
+GET {0}?{1} HTTP/1.1
+Accept: */*
+Host: {2}:{3}
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)

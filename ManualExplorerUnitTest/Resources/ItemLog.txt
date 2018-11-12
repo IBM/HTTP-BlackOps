@@ -1,0 +1,9 @@
+MachineName="WEBVWN11P" ProductVersion="ASE 5.60.0.491" CreateDateTime="12/09/2010 13:53:48.587"
+MessageType  DateTime                   ApplicationName      ProcessID  ThreadID   ItemID     ComponentName                    MessageCode  MessageText    MessageLocation    Instance           
+verbose      "12/08/2010 17:55:59.581"  AgentHost.exe        3292       3720       748        "Scan Engine"                    0x0          "Queue is going to be limited to 100" "ScanDirector"     ""                 
+verbose      "12/09/2010 13:53:48.587"  AgentHost.exe        3292       3720       748        "Scan Engine"                    0x0          "Queue is going to be limited to 500" "ScanDirector"     ""                 
+information  "12/09/2010 13:53:48.759"  AgentHost.exe        3292       3720       748        "Scan Engine"                    0x0          "Setting Activity state to eASStarting" "ScanDirector"     ""                 
+information  "12/09/2010 13:53:55.775"  AgentHost.exe        3292       3720       748        "WEO"                            0x0          "ID=748, State=Starting, Action=None" "Activity.UpdateState" ""                 
+information  "12/09/2010 13:53:55.790"  AgentHost.exe        3292       3720       748        "Scan Engine"                    0x0          "Activity state has successfully changed to eASStarting" "ScanDirector"     ""                 
+verbose      "12/09/2010 13:53:58.134"  AgentHost.exe        3292       3720       748        "Scan Engine"                    0x0          "Queue is going to be limited to 100" "ScanDirector"     ""                 
+verbose      "12/09/2010 13:53:58.134"  AgentHost.exe        3292       3720       748        "Scan Engine"                    0x0          "Queue is going to be limited to 1000" "ScanDirector"     ""                 

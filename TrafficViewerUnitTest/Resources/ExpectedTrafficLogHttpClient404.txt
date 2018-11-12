@@ -1,0 +1,9 @@
+HTTP/1.1 404 Request Not Found
+Connection: close
+Proxy-Connection: close
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Type: text/html; charset=utf-8
+Content-Length: 107
+
+<html><head><title>Error code: 404</title><body><h1>Request was not found or variables didn't match.</h1></body></html>

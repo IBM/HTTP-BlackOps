@@ -1,0 +1,22 @@
+﻿[
+    uuid(47F05070-FD66-45cc-AD99-74260F94A16B)
+]
+library MsHtmHstInterop
+{
+    import "MsHtmHst.idl";
+    
+    enum tagDOCHOSTUIDBLCLK;
+    enum tagDOCHOSTUIFLAG;
+    enum tagDOCHOSTUITYPE;
+    
+    interface ICustomDoc;
+    interface IDocHostShowUI;
+    interface IDocHostUIHandler;
+    interface IDocHostUIHandler2;
+    interface IHostDialogHelper;
+};
+/*
+Commands to generate the interop library
+midl MsHtmHstInterop.idl /tlb MsHtmHstInterop.tlb
+tlbimp MsHtmHstInterop.tlb /out:MsHtmHstInterop.dll
+*/

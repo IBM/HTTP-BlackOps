@@ -1,0 +1,7 @@
+GET /bank/login.aspx?x=1&y=2&true HTTP/1.1
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/msword, application/xaml+xml, application/vnd.ms-xpsdocument, application/x-ms-xbap, application/x-ms-application, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, */*
+Referer: http://www.altoromutual.com/
+Accept-Language: en-us
+Host: www.altoromutual.com
+Connection: Keep-Alive
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)

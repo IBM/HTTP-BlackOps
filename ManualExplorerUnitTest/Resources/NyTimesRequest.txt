@@ -1,0 +1,8 @@
+GET http://www.nytimes.com/glogin?URI=http://www.nytimes.com/2013/01/15/world/asia/china-allows-media-to-report-alarming-air-pollution-crisis.html&OQ=_rQ3D0&OP=4b396406Q2Fk5vpkJspkYYYk4pjAkQ255V!r55pLkLQ26Q24wkQ26Q24kQ24Q7DkY5rAQ25kQ5B!)Q5BkV4)JQ5B,Q5BAA5Y!,jQ5DQ25)Q5B,p5,rQ5Dv5rp,Q5BAQ5Brj)Jt,Q5B)r,v5AAmp)5J,Vr)!)!B4pjA HTTP/1.1
+Host: www.nytimes.com
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: 23 Jan 2014 15:14:27 GMT
+Connection: keep-alive

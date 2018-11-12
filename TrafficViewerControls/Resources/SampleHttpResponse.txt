@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+Content-Type: text/html;charset=UTF8
+Content-Language: en-US
+Server: IIS/7.0
+
+<html>
+	<head>
+		<title>Traffic Viewer Test Response</title>
+	</head>
+	<body>
+		<h1>Traffic Viewer Test Response</h1>
+		
+		<a href="mylink">Sample Link</a> <br>
+		Sample Form
+		<hr>
+		<form>
+			User: <input type="text" id="user" name="user" value="user"><br>
+			Pass: <input type="password" id="pass" name="user" value="user"><br>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>
