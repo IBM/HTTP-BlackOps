@@ -1,3 +1,7 @@
+/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -306,19 +310,7 @@ namespace CommonControls
 			foreach (string entry in value)
 			{
                 string[] row = entry.Split('\t');
-                switch(row[1].ToLower())
-                {
-                    case "1":
-                    case "enabled":
-                    case "true":
-                        row[1] = "True";
-                        break;
-                    default:
-                        row[1] = "False";
-                        break;
-                }
-                
-				_dataGridView.Rows.Add(row);
+                _dataGridView.Rows.Add(row);
 			}
 		}
 
