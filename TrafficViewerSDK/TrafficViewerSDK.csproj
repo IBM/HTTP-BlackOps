@@ -25,7 +25,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -87,9 +87,8 @@
     <Reference Include="BouncyCastle.Crypto">
       <HintPath>..\3rdParty\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
-    <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\3rdParty\Ionic.Zip.Reduced.dll</HintPath>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\3rdParty\Ionic.Zip.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

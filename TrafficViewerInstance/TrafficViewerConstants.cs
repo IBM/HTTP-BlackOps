@@ -1,4 +1,8 @@
-﻿using System;
+﻿/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,14 +14,9 @@ namespace TrafficViewerInstance
     /// </summary>B
     public static class TrafficViewerConstants
     {
-        //public const string BUILD = "292";
-        public static string BUILD {
-            get
-            {
-                return System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            }
-        }
-        public const string DLL_VERSION = "2.1.*";
+        public const string BUILD = "300";
+        
+        public const string DLL_VERSION = "2.2.0."+BUILD;
 
 #if DEBUG
 		public const string VERSION = "(Debug)";
