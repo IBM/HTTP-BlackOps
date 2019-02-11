@@ -1,3 +1,7 @@
+/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
 using System;
 using System.Text;
 using System.Collections.Generic;
@@ -151,11 +155,21 @@ namespace TrafficViewerUnitTest
         [TestMethod]
         public void Base64DecodeDot()
         {
-            string control = "The quick brown foxjumps over the lazy rabbit";
+            string control = "The quick brown fox jumps over the lazy rabbit";
             Assert.AreEqual(control, Utils.Base64Decode("VGhlIHF1aWNrIGJyb3duIGZveA.anVtcHMgb3ZlciB0aGUgbGF6eSByYWJiaXQ"));
         }
 
-		[TestMethod]
+        [TestMethod]
+        public void EncryptorTest()
+        {
+            string control = "The quick brown fox jumps over the lazy rabbit";
+            string enc = Encryptor.EncryptToString(control);
+            string dec = Encryptor.DecryptToString(enc);
+            Assert.AreEqual(control, dec);
+        }
+
+
+        [TestMethod]
 		public void TestExtractPathAndQuery()
 		{
 			string originalPathAndQuery = "/index.jsp?q=1&x=2";
