@@ -1,8 +1,13 @@
-﻿using Org.BouncyCastle.Asn1;
+﻿/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
+using Org.BouncyCastle.Asn1;
 using Org.BouncyCastle.Asn1.Pkcs;
 using Org.BouncyCastle.Asn1.X509;
 using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Crypto.Generators;
+using Org.BouncyCastle.Crypto.Operators;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Crypto.Prng;
 using Org.BouncyCastle.Math;
@@ -12,6 +17,7 @@ using Org.BouncyCastle.Security;
 using Org.BouncyCastle.Utilities;
 using Org.BouncyCastle.X509;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.AccessControl;
@@ -55,7 +61,7 @@ namespace TrafficViewerSDK.Http
                 }
                 if (_caPrivKey == null)
                 {
-                    if (SdkSettings.Instance.CAPrivateKey == null)
+                    if (String.IsNullOrEmpty(SdkSettings.Instance.CAPrivateKey))
                     {
                         throw new Exception("Black Ops CA is not configured");
                     }
@@ -101,9 +107,6 @@ namespace TrafficViewerSDK.Http
             var serialNumber = BigIntegers.CreateRandomInRange(BigInteger.One, BigInteger.ValueOf(Int64.MaxValue), random);
             certificateGenerator.SetSerialNumber(serialNumber);
 
-            // Signature Algorithm
-            const string signatureAlgorithm = "SHA256WithRSA";
-            certificateGenerator.SetSignatureAlgorithm(signatureAlgorithm);
 
             // Issuer and Subject Name
             var subjectDN = new X509Name(subjectName);
@@ -117,7 +120,7 @@ namespace TrafficViewerSDK.Http
 
             certificateGenerator.SetNotBefore(notBefore);
             certificateGenerator.SetNotAfter(notAfter);
-            certificateGenerator.AddExtension(X509Extensions.BasicConstraints, true, new BasicConstraints(true));
+            certificateGenerator.AddExtension(X509Extensions.BasicConstraints, true, new BasicConstraints(0));
 
             // Subject Public Key
             AsymmetricCipherKeyPair subjectKeyPair;
@@ -131,9 +134,9 @@ namespace TrafficViewerSDK.Http
 
             // Generating the Certificate
             var issuerKeyPair = subjectKeyPair;
-
-            // selfsign certificate
-            var certificate = certificateGenerator.Generate(issuerKeyPair.Private, random);
+            ISignatureFactory signatureFactory = new Asn1SignatureFactory("SHA256WithRSA", issuerKeyPair.Private, random);
+            var certificate = certificateGenerator.Generate(signatureFactory);
+        
 
             base64EncodedCer = String.Format("-----BEGIN CERTIFICATE-----\r\n{0}\r\n-----END CERTIFICATE-----", 
                 Convert.ToBase64String(certificate.GetEncoded()));
@@ -188,29 +191,26 @@ namespace TrafficViewerSDK.Http
         public static X509Certificate2 GenerateCertificate(string subjectName, string issuerName, AsymmetricKeyParameter issuerPrivKey, int keyStrength = 1024)
         {
             // Generating Random Numbers
-            var randomGenerator = new CryptoApiRandomGenerator();
-            var random = new SecureRandom(randomGenerator);
-
+            CryptoApiRandomGenerator randomGenerator = new CryptoApiRandomGenerator();
+            SecureRandom random = new SecureRandom(randomGenerator);
+            ISignatureFactory signatureFactory = new Asn1SignatureFactory("SHA256WITHRSA", issuerPrivKey, random);
             // The Certificate Generator
-            var certificateGenerator = new X509V3CertificateGenerator();
-
+            X509V3CertificateGenerator certificateGenerator = new X509V3CertificateGenerator();
+           
             // Serial Number
-            var serialNumber = BigIntegers.CreateRandomInRange(BigInteger.One, BigInteger.ValueOf(Int64.MaxValue), random);
+            BigInteger serialNumber = BigIntegers.CreateRandomInRange(BigInteger.One, BigInteger.ValueOf(Int64.MaxValue), random);
             certificateGenerator.SetSerialNumber(serialNumber);
 
-            // Signature Algorithm
-            const string signatureAlgorithm = "SHA256WithRSA";
-            certificateGenerator.SetSignatureAlgorithm(signatureAlgorithm);
-
+           
             // Issuer and Subject Name
-            var subjectDN = new X509Name(subjectName);
-            var issuerDN = new X509Name(issuerName);
+            X509Name subjectDN = new X509Name(subjectName);
+            X509Name issuerDN = new X509Name(issuerName);
             certificateGenerator.SetIssuerDN(issuerDN);
             certificateGenerator.SetSubjectDN(subjectDN);
 
             // Valid For
-            var notBefore = DateTime.UtcNow.Date;
-            var notAfter = notBefore.AddYears(2);
+            DateTime notBefore = DateTime.UtcNow.Date;
+            DateTime notAfter = notBefore.AddYears(2);
 
             certificateGenerator.SetNotBefore(notBefore);
             certificateGenerator.SetNotAfter(notAfter);
@@ -224,45 +224,31 @@ namespace TrafficViewerSDK.Http
 
             certificateGenerator.SetPublicKey(subjectKeyPair.Public);
             // Generating the Certificate
-            var issuerKeyPair = subjectKeyPair;
+            AsymmetricCipherKeyPair issuerKeyPair = subjectKeyPair;
 
             // selfsign certificate
-            var certificate = certificateGenerator.Generate(issuerPrivKey, random);
-            
+            Org.BouncyCastle.X509.X509Certificate certificate = certificateGenerator.Generate(signatureFactory);
+
             // correcponding private key
             PrivateKeyInfo info = PrivateKeyInfoFactory.CreatePrivateKeyInfo(subjectKeyPair.Private);
 
 
             // merge into X509Certificate2
-            //var x509 = new System.Security.Cryptography.X509Certificates.X509Certificate2(certificate.GetEncoded());
+            X509Certificate2 x509 = new X509Certificate2(certificate.GetEncoded());
 
-            System.Security.Cryptography.X509Certificates.X509Certificate dotNetCert = DotNetUtilities.ToX509Certificate(certificate);
-            X509Certificate2 dotNetCert2 = new X509Certificate2(dotNetCert);
-
-            var seq = (Asn1Sequence)Asn1Object.FromByteArray(info.PrivateKey.GetDerEncoded());
+            Asn1Sequence seq = (Asn1Sequence)Asn1Object.FromByteArray(info.ParsePrivateKey().GetDerEncoded());
             if (seq.Count != 9)
+            {
                 throw new PemException("malformed sequence in RSA private key");
+            }
 
-            var rsa = new RsaPrivateKeyStructure(seq);
+            RsaPrivateKeyStructure rsa = RsaPrivateKeyStructure.GetInstance(seq);
             RsaPrivateCrtKeyParameters rsaparams = new RsaPrivateCrtKeyParameters(
                 rsa.Modulus, rsa.PublicExponent, rsa.PrivateExponent, rsa.Prime1, rsa.Prime2, rsa.Exponent1, rsa.Exponent2, rsa.Coefficient);
 
-
-            // Apparently, using DotNetUtilities to convert the private key is a little iffy. Have to do some init up front.
-            RSACryptoServiceProvider tempRcsp = (RSACryptoServiceProvider)DotNetUtilities.ToRSA(rsaparams);
-            RSACryptoServiceProvider rcsp = new RSACryptoServiceProvider(new CspParameters(1, "Microsoft Strong Cryptographic Provider", 
-            new Guid().ToString(), 
-            new CryptoKeySecurity(), null));
-
-            rcsp.ImportCspBlob(tempRcsp.ExportCspBlob(true));
-            dotNetCert2.PrivateKey = rcsp;
-
-            
-           
-            return dotNetCert2;
-
+            x509.PrivateKey = DotNetUtilities.ToRSA(rsaparams);
+            return x509;
         }
-
 
     }
 }
