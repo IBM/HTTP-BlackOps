@@ -51,6 +51,16 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.7.5265.17684, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HttpBlackOps\Resources\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.CopyData">
+      <HintPath>..\HttpBlackOps\Resources\Ionic.CopyData.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.IO.JunctionPoint">
+      <HintPath>..\HttpBlackOps\Resources\Ionic.IO.JunctionPoint.dll</HintPath>
+    </Reference>
     <Reference Include="MsHtmHstInterop">
       <HintPath>Browsing\MsHtmHstInterop.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>

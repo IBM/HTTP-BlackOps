@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ErrorTestPatternMissing" xml:space="preserve">
-    <value>You must specify attack target.You don't want to send tests to NSA do ya! Start wih something like Host: hostname</value>
+    <value>You must specify attack target.You don't want to send tests to NSA do ya! Start with something like Host: hostname</value>
   </data>
   <data name="NoTargetsDefined" xml:space="preserve">
     <value>NO ATTACK TARGETS DEFINED</value>
