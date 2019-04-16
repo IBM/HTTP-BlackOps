@@ -543,11 +543,23 @@ namespace TrafficViewerSDK.Http
 				if(lineBytes != null && lineBytes.Length > 0)
 				{
                     line = Constants.DefaultEncoding.GetString(lineBytes);
-					string [] nameAndValue = line.Split(new char[] { ':' }, 2);
-					if (nameAndValue.Length > 1)
-					{
-						_headers.Add(nameAndValue[0], nameAndValue[1].Trim());
-					}
+					string [] nameAndValue = line.Split(new char[] { ':' }, 3);
+                    if (nameAndValue.Length == 2)
+                    {
+                        _headers.Add(nameAndValue[0], nameAndValue[1].Trim());
+                    }
+                    else if (nameAndValue.Length == 3)
+                    {
+                        if (String.IsNullOrWhiteSpace(nameAndValue[0]))
+                        {
+                            _headers.Add(String.Join(":",nameAndValue[0], nameAndValue[1]), nameAndValue[2].Trim());
+                        }
+                        else
+                        {
+                            _headers.Add(nameAndValue[0], String.Join(":", nameAndValue[1], nameAndValue[2]).Trim());
+
+                        }
+                    }
 				}
 			}
 			while (lineBytes != null && lineBytes.Length > 0);
@@ -585,7 +597,15 @@ namespace TrafficViewerSDK.Http
 				_isFullRequest = false; //we didn't finish reading the headers
 			}
 
-			PopulateHostAndPort(_headers["Host"]);
+            if (_headers["Host"] != null)
+            {
+                PopulateHostAndPort(_headers["Host"]);
+            }
+            else if (_headers[":authority"] != null)
+            {
+                PopulateHostAndPort(_headers[":authority"]);
+            }
+
 
 			int indexOfPath = _method.Length + 1;
 			string temp = requestLine.Substring(indexOfPath);

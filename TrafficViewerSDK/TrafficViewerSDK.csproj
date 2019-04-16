@@ -103,6 +103,7 @@
     <Compile Include="Http\HttpProxyFactory.cs" />
     <Compile Include="Http\HttpTrapDef.cs" />
     <Compile Include="Http\IHttpProxyFactory.cs" />
+    <Compile Include="Importers\HarParser.cs" />
     <Compile Include="ModifiedExtendedAsciiEncoding.cs" />
     <Compile Include="Encryptor.cs" />
     <Compile Include="AnalysisModules\AnalysisModuleEvents.cs" />
@@ -240,6 +241,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ParametersDefinitions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HarSharp\HarSharp.csproj">
+      <Project>{682cd129-204f-47f9-8ea4-472bb517daec}</Project>
+      <Name>HarSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -1,3 +1,7 @@
+/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -19,7 +23,6 @@ namespace TrafficViewerSDK.Importers
 		private ParsingOptions _options = new ParsingOptions();
 		private TrafficParserStatus _status = TrafficParserStatus.Stopped;
 		private const string URI_REGEX = "https?://[^\\s\\r\\n\"']+";
-		private HTTPHeader ADDITIONAL_HEADER = new HTTPHeader("Cookie", "JSESSIONID=38C9DE9EE94347C85D537954685EACE4; SEC=0b78ba9a-15dd-44e2-a229-b4f25e0a18e4;");
 		private Dictionary<string, string> _importTypes = new Dictionary<string, string>();
 
 		/// <summary>
@@ -120,7 +123,6 @@ namespace TrafficViewerSDK.Importers
 		{
 			string request = String.Format(format, uri.AbsolutePath, fullQuery, uri.Host, uri.Port);
 			HttpRequestInfo requestInfo = new HttpRequestInfo(request);
-			requestInfo.Headers.Add(ADDITIONAL_HEADER);
 			TVRequestInfo tvReqInfo = new TVRequestInfo();
 
 			tvReqInfo.Description = Resources.UriParserDescription;
