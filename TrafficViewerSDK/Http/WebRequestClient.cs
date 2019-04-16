@@ -1,3 +1,7 @@
+/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -63,8 +67,11 @@ namespace TrafficViewerSDK.Http
 			webRequest.Method = requestInfo.Method;
 
 			string version = requestInfo.HttpVersion.Replace("HTTP/","");
-			webRequest.ProtocolVersion = Version.Parse(version);
-
+            if (!version.Equals("1.0") && !version.Equals("1.1"))
+            {
+                version = "1.1";
+            }
+            webRequest.ProtocolVersion = Version.Parse(version);
 			webRequest.AllowAutoRedirect = false;
 
 			//add POST data, if any
@@ -240,7 +247,9 @@ namespace TrafficViewerSDK.Http
 				{
 					try
 					{
-						webRequest.Headers.Set(header.Name, header.Value);
+                        //webRequest doesn't support PseudoHeaders
+                        if(!header.Name.StartsWith(":"))
+						    webRequest.Headers.Set(header.Name, header.Value);
 					}
 					catch
 					{

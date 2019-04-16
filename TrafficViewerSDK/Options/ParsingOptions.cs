@@ -1,3 +1,7 @@
+/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -543,19 +547,19 @@ namespace TrafficViewerSDK.Options
 			profile.FileVersion = TrafficViewerFile.FileVersion;
 
 			List<string> exclusions = new List<string>();
-			exclusions.Add("\\.(zip|gz|Z|tar|tgz|sit|cab)[\\s\\?]");
-			exclusions.Add("\\.(css|pdf|ps|doc|ppt|xls|rtf|dot|mpp|mpt|mpd|mdb|csv|pps|ppa|wmf|xlw|xla|dbf|slk|prn|dif)[\\s\\?]");
-			exclusions.Add("\\.(avi|mpg|mpeg|mov|qt|movie|moov|rm|asf|asx|mpe|m1v|mpa|wmv)[\\s\\?]");
-			exclusions.Add("\\.(wav|mp3|ra|au|aiff|mpga|wma|mid|midi|rmi|m3u)[\\s\\?]");
-			exclusions.Add("\\.(gif|jpg|jpeg|bmp|png|tif|tiff|ico|pcx|wmf)[\\s\\?]");
-			exclusions.Add("\\.(js)[\\s\\?]");
+			exclusions.Add("\\.(zip|gz|Z|tar|tgz|sit|cab)\\b");
+			exclusions.Add("\\.(css|pdf|ps|doc|ppt|xls|rtf|dot|mpp|mpt|mpd|mdb|csv|pps|ppa|wmf|xlw|xla|dbf|slk|prn|dif)\\b");
+			exclusions.Add("\\.(avi|mpg|mpeg|mov|qt|movie|moov|rm|asf|asx|mpe|m1v|mpa|wmv)\\b");
+			exclusions.Add("\\.(wav|mp3|ra|au|aiff|mpga|wma|mid|midi|rmi|m3u)\\b");
+			exclusions.Add("\\.(gif|jpg|jpeg|bmp|png|tif|tiff|ico|pcx|wmf)\\b");
+			exclusions.Add("\\.(js)\\b");
 			exclusions.Add("/demo/[^/]+/(data|components|viewer)");
 			profile.SetExclusions(exclusions);
 
             var replacements = profile.GetRequestReplacements();
-            replacements.Add(@"(Accept-Encoding:[^\r\n]+\r\n)", "");
-            replacements.Add(@"(If-Modified-Since:[^\r\n]+\r\n)", "");
-            replacements.Add(@"(If-None-Match:[^\r\n]+\r\n)", "");
+            replacements.Add(@"(Accept-Encoding:[^\r\n]+\n)", "");
+            replacements.Add(@"(If-Modified-Since:[^\r\n]+\n)", "");
+            replacements.Add(@"(If-None-Match:[^\r\n]+\n)", "");
             profile.SetRequestReplacements(replacements);
 
             profile.ProfileVersion = new Version("1.0.3");//update the default profile version
@@ -579,12 +583,12 @@ namespace TrafficViewerSDK.Options
 			profile.FileVersion = TrafficViewerFile.FileVersion;
 
 			List<string> exclusions = new List<string>();
-			exclusions.Add("\\.(js|zip|gz|Z|tar|tgz|sit|cab)[\\s\\?]");
-			exclusions.Add("\\.(css|pdf|ps|doc|ppt|xls|rtf|dot|mpp|mpt|mpd|mdb|csv|pps|ppa|wmf|xlw|xla|dbf|slk|prn|dif)[\\s\\?]");
-			exclusions.Add("\\.(avi|mpg|mpeg|mov|qt|movie|moov|rm|asf|asx|mpe|m1v|mpa|wmv)[\\s\\?]");
-			exclusions.Add("\\.(wav|mp3|ra|au|aiff|mpga|wma|mid|midi|rmi|m3u)[\\s\\?]");
-			exclusions.Add("\\.(gif|jpg|jpeg|bmp|png|tif|tiff|ico|pcx|wmf)[\\s\\?]");
-			exclusions.Add("\\.(js)[\\s\\?]");
+			exclusions.Add("\\.(js|zip|gz|Z|tar|tgz|sit|cab)\\b");
+			exclusions.Add("\\.(css|pdf|ps|doc|ppt|xls|rtf|dot|mpp|mpt|mpd|mdb|csv|pps|ppa|wmf|xlw|xla|dbf|slk|prn|dif)\\b");
+			exclusions.Add("\\.(avi|mpg|mpeg|mov|qt|movie|moov|rm|asf|asx|mpe|m1v|mpa|wmv)\\b");
+			exclusions.Add("\\.(wav|mp3|ra|au|aiff|mpga|wma|mid|midi|rmi|m3u)\\b");
+			exclusions.Add("\\.(gif|jpg|jpeg|bmp|png|tif|tiff|ico|pcx|wmf)\\b");
+			exclusions.Add("\\.(js)\\b");
 			exclusions.Add("/demo/[^/]+/(data|components|viewer)");
 			profile.SetExclusions(exclusions);
 
@@ -602,12 +606,12 @@ namespace TrafficViewerSDK.Options
 			ParsingOptions profile = new ParsingOptions();
 
 			List<string> exclusions = new List<string>();
-			exclusions.Add("\\.(zip|gz|Z|tar|tgz|sit|cab)[\\s\\?]");
-			exclusions.Add("\\.(css|pdf|ps|doc|ppt|xls|rtf|dot|mpp|mpt|mpd|mdb|csv|pps|ppa|wmf|xlw|xla|dbf|slk|prn|dif)[\\s\\?]");
-			exclusions.Add("\\.(avi|mpg|mpeg|mov|qt|movie|moov|rm|asf|asx|mpe|m1v|mpa|wmv)[\\s\\?]");
-			exclusions.Add("\\.(wav|mp3|ra|au|aiff|mpga|wma|mid|midi|rmi|m3u)[\\s\\?]");
-			exclusions.Add("\\.(gif|jpg|jpeg|bmp|png|tif|tiff|ico|pcx|wmf)[\\s\\?]");
-			exclusions.Add("\\.(js)[\\s\\?]");
+			exclusions.Add("\\.(zip|gz|Z|tar|tgz|sit|cab)\\b");
+			exclusions.Add("\\.(css|pdf|ps|doc|ppt|xls|rtf|dot|mpp|mpt|mpd|mdb|csv|pps|ppa|wmf|xlw|xla|dbf|slk|prn|dif)\\b");
+			exclusions.Add("\\.(avi|mpg|mpeg|mov|qt|movie|moov|rm|asf|asx|mpe|m1v|mpa|wmv)\\b");
+			exclusions.Add("\\.(wav|mp3|ra|au|aiff|mpga|wma|mid|midi|rmi|m3u)\\b");
+			exclusions.Add("\\.(gif|jpg|jpeg|bmp|png|tif|tiff|ico|pcx|wmf)\\b");
+			exclusions.Add("\\.(js)\\b");
 			exclusions.Add("/demo/[^/]+/(data|components|viewer)");
 			profile.SetExclusions(exclusions);
 

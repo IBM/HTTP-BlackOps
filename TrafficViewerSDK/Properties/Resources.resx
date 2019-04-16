@@ -226,4 +226,10 @@
   <data name="blackopscert" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blackopscert.pfx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="HarParserDescription" xml:space="preserve">
+    <value>HAR Import</value>
+  </data>
+  <data name="HarParserName" xml:space="preserve">
+    <value>Har Parser</value>
+  </data>
 </root>

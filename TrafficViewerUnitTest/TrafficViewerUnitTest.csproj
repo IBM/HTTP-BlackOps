@@ -127,6 +127,7 @@
     <Content Include="Resources\AltoroLoginPageRequest.txt" />
     <None Include="Resources\demoExploreFromScanImportVisitedUrls.tvf" />
     <None Include="Resources\demoExploreFromTrafficImport.tvf" />
+    <None Include="Resources\demohar.har" />
     <None Include="Resources\Regular Scan.scant" />
     <None Include="Resources\MultipartRequest.txt" />
     <None Include="Resources\AltoroLogin.tvf" />

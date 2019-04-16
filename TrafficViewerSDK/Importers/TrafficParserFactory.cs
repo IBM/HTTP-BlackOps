@@ -1,3 +1,7 @@
+/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -55,7 +59,8 @@ namespace TrafficViewerSDK.Importers
 			IList<ITrafficParser> trafficParsers = base.GetExtensions();
 			//add the default parsers
 			trafficParsers.Add(new DefaultTrafficParser());
-			trafficParsers.Add(new ConfigurationParser());
+            trafficParsers.Add(new HarParser());
+            trafficParsers.Add(new ConfigurationParser());
 			trafficParsers.Add(new UriParser());
 
 			return trafficParsers;

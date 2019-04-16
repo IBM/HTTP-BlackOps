@@ -1,4 +1,8 @@
-﻿using System;
+﻿/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
+using System;
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
@@ -88,9 +92,20 @@ namespace TrafficViewerUnitTest
 		}
 
 
-	
+        [TestMethod]
+        public void TestHarImport()
+        {
+            TempFile temp = new TempFile(".har");
+            temp.Write(Resources.demohar);
+            TrafficViewerFile tvf = new TrafficViewerFile();
+            var parser = new HarParser();
+            parser.Parse(temp.Path, tvf, ParsingOptions.GetDefaultProfile());
+            Assert.AreEqual(3, tvf.RequestCount);
+            tvf.Close(false);
+        }
 
-		private static string GetPathToImport(string text)
+
+        private static string GetPathToImport(string text)
 		{
 			TempFile importTemp = new TempFile();
 			importTemp.Write(text);

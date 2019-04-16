@@ -1,3 +1,7 @@
+/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
 using System;
 using System.Text;
 using System.Collections.Generic;
@@ -250,7 +254,19 @@ namespace ManualExplorerUnitTest
 
 		}
 
-		[TestMethod]
+        [TestMethod]
+        public void Test_HttpRequestInfo_PseudoHeaders()
+        {
+            HttpRequestInfo reqInfo1 = new HttpRequestInfo("POST /1 HTTP/2.0");
+            reqInfo1.Headers.Add(":authority", "google.com");
+            Assert.AreEqual("google.com", reqInfo1.Headers[":authority"]);
+            HttpRequestInfo reqInfo2 = new HttpRequestInfo(reqInfo1.ToString());
+            Assert.AreEqual("google.com", reqInfo2.Headers[":authority"]);
+            Assert.AreEqual("google.com", reqInfo2.Host);
+
+        }
+
+        [TestMethod]
 		public void Test_HttpRequestInfo_SearchRegex()
 		{
 			HttpRequestInfo reqInfo = new HttpRequestInfo(Resources.MultipartRequest);
