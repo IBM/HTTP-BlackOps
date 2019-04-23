@@ -1,4 +1,8 @@
-﻿using System;
+﻿/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
@@ -20,16 +24,14 @@ namespace Testing
             _parentProxy = parentProxy;
         }
 
-        protected override HttpRequestInfo OnBeforeRequestToSite(HttpRequestInfo requestInfo)
+
+        protected override HttpResponseInfo OnBeforeResponseToClient(HttpResponseInfo responseInfo)
         {
             if (!_isNonEssential)
             {
-                requestInfo = _parentProxy.HandleRequest(requestInfo);
+                _parentProxy.HandleRequest(_requestInfo, responseInfo);
             }
-            
-            requestInfo = base.OnBeforeRequestToSite(requestInfo);
-            
-            return requestInfo;
+            return base.OnBeforeResponseToClient(responseInfo);
         }
 
         
