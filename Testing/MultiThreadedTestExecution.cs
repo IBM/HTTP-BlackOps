@@ -1,4 +1,8 @@
-﻿using System;
+﻿/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,18 +36,22 @@ namespace Testing
             set { _testsQueue = value; }
         }
         private string _rawRequest;
+        private string _rawResponse;
         private Uri _reqUri;
 
         /// <summary>
-        /// Contructor
+        /// 
         /// </summary>
         /// <param name="tester"></param>
-        /// <param name="reqInfo"></param>
+        /// <param name="rawRequest"></param>
+        /// <param name="rawResponse"></param>
+        /// <param name="reqUri"></param>
         /// <param name="numThreads"></param>
-        public MultiThreadedTestExecution(Tester tester, string rawRequest, Uri reqUri, int numThreads)
+        public MultiThreadedTestExecution(Tester tester, string rawRequest, string rawResponse, Uri reqUri, int numThreads)
         {
             _tester = tester;
             _rawRequest = rawRequest;
+            _rawResponse = rawResponse;
             _reqUri = reqUri;
             _numThreads = numThreads;
             _testsQueue = new Queue<TestJob>();
@@ -86,7 +94,7 @@ namespace Testing
 
                 if (testJob != null)
                 {
-                    _tester.ExecuteTests(_rawRequest, "", _reqUri, testJob.ParameterName, testJob.ParameterValue, testJob.RequestLocation, testJob.TestDef);
+                    _tester.ExecuteTests(_rawRequest, _rawResponse, _reqUri, testJob.ParameterName, testJob.ParameterValue, testJob.RequestLocation, testJob.TestDef);
                 }
             }
         }

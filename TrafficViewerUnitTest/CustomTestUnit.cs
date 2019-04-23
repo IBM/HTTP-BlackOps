@@ -1,3 +1,7 @@
+/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
 using System;
 using System.Text;
 using System.Collections.Generic;
@@ -94,6 +98,22 @@ namespace TrafficViewerUnitTest
     [TestClass]
     public class CustomTestUnit
     {
+        
+        private static void InitMockSite(out MockProxy mockSite, out string first, out string second, out string third)
+        {
+            mockSite = new MockProxy();
+            first = "GET / HTTP/1.1\r\n";
+            second = "GET /r1?p1=1234 HTTP/1.1\r\n";
+            third = "GET /r2?p2=1234 HTTP/1.1\r\n";
+            string secondAttack = "GET /r2?p2=1234../../../../../../../../etc/passwd HTTP/1.1\r\n";
+            string thirdAttack = "GET /r2?p2=1234../../../../../../../../etc/passwd HTTP/1.1\r\n";
+            mockSite.MockSite.AddRequestResponse(first, "HTTP/1.1 200 OK\r\n\r\nbla");
+            mockSite.MockSite.AddRequestResponse(second, "HTTP/1.1 200 OK\r\n\r\nbla");
+            mockSite.MockSite.AddRequestResponse(third, "HTTP/1.1 200 OK\r\n\r\nbla");
+            mockSite.MockSite.AddRequestResponse(secondAttack, "HTTP/1.1 200 OK\r\n\r\nroot:0:0");
+            mockSite.MockSite.AddRequestResponse(thirdAttack, "HTTP/1.1 200 OK\r\n\r\nroot:0:0");
+            mockSite.Start();
+        }
        
         
         [TestMethod]
@@ -156,6 +176,36 @@ namespace TrafficViewerUnitTest
                 paramName, entityId, def, mutatedRequest, "HTTP/1.1 200 OK\r\n\r\nroot::"));
             Assert.IsFalse(tester.ValidateSingleTest(testRequest, "HTTP/1.1 200 OK\r\nbla", new Uri("http://demo.testfire.net/search.aspx"),
                 paramName, entityId, def, mutatedRequest, "HTTP/1.1 200 OK\r\nroot::\r\n\r\nbody"));
+        }
+
+        [TestMethod]
+        public void CustomTester_OriginalContainsValidation()
+        {
+            TrafficViewerFile mockSite = new TrafficViewerFile();
+            MockTestController mockTestController = new MockTestController(mockSite);
+
+
+            string testRequest = "GET /search.aspx?txtSearch=a&a1=a HTTP/1.1\r\nHost: 127.0.0.1\r\n\r\n";
+            string paramName = "txtSearch";
+
+            CustomTestsFile file = GetCustomTestFile();
+            Tester tester = new Tester(mockTestController, file);
+            CustomTestDef def = file.GetCustomTests()["Path Traversal"];
+
+
+
+            def.Validation = "$body=" + "root::";
+
+            HttpRequestInfo original = new HttpRequestInfo(testRequest, true);
+            Uri uri = new Uri(original.FullUrl);
+
+            string entityId = tester.GetEntityId(uri, paramName);
+            string entityString = tester.GetEntityString(testRequest, uri, paramName, original.QueryVariables[paramName]);
+            TestJob testJob = new TestJob(paramName, original.QueryVariables[paramName], RequestLocation.Query, def);
+            string mutatedRequest = tester.GenerateMutatedRequestList(testRequest, testJob, entityString, entityId)[0];
+            Assert.IsFalse(tester.ValidateSingleTest(testRequest, "HTTP/1.1 200 OK\r\n\r\nblaroot::", new Uri("http://demo.testfire.net/search.aspx"),
+                paramName, entityId, def, mutatedRequest, "HTTP/1.1 200 OK\r\n\r\nroot::"));
+            
         }
 
         [TestMethod]
@@ -531,15 +581,9 @@ namespace TrafficViewerUnitTest
         [TestMethod]
         public void CustomTestProxy_TestPatternToTest()
         {
-            MockProxy mockSite = new MockProxy();
-            string first = "GET / HTTP/1.1\r\n";
-            string second = "POST /r1 HTTP/1.1\r\n\r\np1=1234\r\n";
-            string third = "POST /r2 HTTP/1.1\r\n\r\np2=1234\r\n\r\n";
-            mockSite.MockSite.AddRequestResponse(first, "HTTP/1.1 200 OK\r\n\r\nbla");
-            mockSite.MockSite.AddRequestResponse(second, "HTTP/1.1 200 OK\r\n\r\nroot:0:0");
-            mockSite.MockSite.AddRequestResponse(third, "HTTP/1.1 200 OK\r\n\r\nroot:0:0");
-
-            mockSite.Start();
+            MockProxy mockSite;
+            string first, second, third;
+            InitMockSite(out mockSite, out first, out second, out third);
 
             CustomTestsFile testFile = GetCustomTestFile();
 
@@ -573,15 +617,9 @@ namespace TrafficViewerUnitTest
         [TestMethod]
         public void CustomTestProxy_TestPatternRequestExclusion()
         {
-            MockProxy mockSite = new MockProxy();
-            string first = "GET / HTTP/1.1\r\n";
-            string second = "POST /r1 HTTP/1.1\r\n\r\np1=1234\r\n";
-            string third = "POST /r2 HTTP/1.1\r\n\r\np2=1234\r\n\r\n";
-            mockSite.MockSite.AddRequestResponse(first, "HTTP/1.1 200 OK\r\n\r\nbla");
-            mockSite.MockSite.AddRequestResponse(second, "HTTP/1.1 200 OK\r\n\r\nroot:0:0");
-            mockSite.MockSite.AddRequestResponse(third, "HTTP/1.1 200 OK\r\n\r\nroot:0:0");
-
-            mockSite.Start();
+            MockProxy mockSite;
+            string first, second, third;
+            InitMockSite(out mockSite, out first, out second, out third);
 
             CustomTestsFile testFile = GetCustomTestFile();
 
@@ -609,15 +647,9 @@ namespace TrafficViewerUnitTest
         [TestMethod]
         public void CustomTestProxy_TestPatternEntityExclusion()
         {
-            MockProxy mockSite = new MockProxy();
-            string first = "GET / HTTP/1.1\r\n";
-            string second = "POST /r1 HTTP/1.1\r\n\r\np1=1234\r\n";
-            string third = "POST /r2 HTTP/1.1\r\n\r\np2=1234\r\n\r\n";
-            mockSite.MockSite.AddRequestResponse(first, "HTTP/1.1 200 OK\r\n\r\nbla");
-            mockSite.MockSite.AddRequestResponse(second, "HTTP/1.1 200 OK\r\n\r\nroot:0:0");
-            mockSite.MockSite.AddRequestResponse(third, "HTTP/1.1 200 OK\r\n\r\nroot:0:0");
-
-            mockSite.Start();
+            MockProxy mockSite;
+            string first, second, third;
+            InitMockSite(out mockSite, out first, out second, out third);
 
             CustomTestsFile testFile = GetCustomTestFile();
 

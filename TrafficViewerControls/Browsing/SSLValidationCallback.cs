@@ -1,4 +1,8 @@
-﻿using System;
+﻿/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,19 +27,24 @@ namespace TrafficViewerControls.Browsing
 			X509Chain chain,
 			SslPolicyErrors policyErrors)
 		{
+            if (TrafficViewerOptions.Instance.IgnoreInvalidSslCert)
+            {
+                return true;
+            }
 
+            if (certificate == null)
+            {
+                return false;
+            }
 
-			X509Certificate2 cert = new X509Certificate2(certificate);
+            X509Certificate2 cert = new X509Certificate2(certificate);
 
 			if (cert.Verify())
 			{
 				return true;
 			}
 
-            if (TrafficViewerOptions.Instance.IgnoreInvalidSslCert)
-            {
-                return true;
-            }
+           
 
 			HttpWebRequest webRequest = sender as HttpWebRequest;
 			string hostAndPort = null;

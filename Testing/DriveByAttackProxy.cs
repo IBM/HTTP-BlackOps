@@ -1,4 +1,8 @@
-﻿using System;
+﻿/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +23,7 @@ namespace Testing
         private int _numThreads = 10;
         
         private Dictionary<int, HttpRequestInfo> _requestIndex;
+        private Dictionary<int, HttpResponseInfo> _responseIndex;
         private Queue<int> _requestsToTest;
         private int MAX_REQ_THREADS = 1;
         private List<int> _testedRequestHashes = new List<int>();
@@ -28,7 +33,7 @@ namespace Testing
         {
             _requestsToTest = new Queue<int>();
             _requestIndex = new Dictionary<int, HttpRequestInfo>();
-
+            _responseIndex = new Dictionary<int, HttpResponseInfo>();
         }
 
         public DriveByAttackProxy(ITestController testController, ITrafficDataAccessor dataStore, string host = "127.0.0.1", int port = 9998)
@@ -42,6 +47,7 @@ namespace Testing
             
             base.Start();
             _requestIndex.Clear();
+            _responseIndex.Clear();
             _requestsToTest.Clear();
             _workList.Clear();
             _testedRequestHashes.Clear();
@@ -57,7 +63,8 @@ namespace Testing
         {
             while (IsListening)
             {
-                HttpRequestInfo reqInfo;
+                HttpRequestInfo reqInfo = null;
+                HttpResponseInfo respInfo = null;
                 int thisThreadRequestIndex = -1;
                 lock (_lock)
                 {
@@ -67,6 +74,7 @@ namespace Testing
                         thisThreadRequestIndex = _requestsToTest.Dequeue();
                         _currentTestReqIdx = thisThreadRequestIndex;
                         reqInfo = _requestIndex[thisThreadRequestIndex];
+                        respInfo = _responseIndex[thisThreadRequestIndex];
 
                     }
                 }
@@ -75,6 +83,8 @@ namespace Testing
                 {
                     bool isSecure = reqInfo.IsSecure;
                     string rawRequest = reqInfo.ToString();
+                    
+                    string rawResponse = respInfo != null ? respInfo.ToString() : String.Empty;
                     
                     if (ShouldBeTested(rawRequest))
                     {
@@ -96,7 +106,7 @@ namespace Testing
                             }
                         }
                         Uri reqUri = new Uri(reqInfo.FullUrl);
-                        MultiThreadedTestExecution testExecution = new MultiThreadedTestExecution(_tester, rawRequest, reqUri, _numThreads);
+                        MultiThreadedTestExecution testExecution = new MultiThreadedTestExecution(_tester, rawRequest, rawResponse, reqUri, _numThreads);
                       
                         lock (_lock)
                         {
@@ -150,14 +160,17 @@ namespace Testing
         /// Handles a request
         /// </summary>
         /// <param name="requestInfo"></param>
+        /// <param name="responseInfo"></param>
         /// <returns></returns>
-        public HttpRequestInfo HandleRequest(HttpRequestInfo requestInfo)
+        public HttpRequestInfo HandleRequest(HttpRequestInfo requestInfo, HttpResponseInfo responseInfo)
         {
             lock (_lock)
             {
                 _currentReqIdx++;
                 _requestIndex.Add(_currentReqIdx, requestInfo);
+                _responseIndex.Add(_currentReqIdx, responseInfo);
                 _requestsToTest.Enqueue(_currentReqIdx);
+                
             }
             return requestInfo;
         }

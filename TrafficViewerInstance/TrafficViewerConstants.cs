@@ -14,7 +14,7 @@ namespace TrafficViewerInstance
     /// </summary>B
     public static class TrafficViewerConstants
     {
-        public const string BUILD = "301";
+        public const string BUILD = "302";
         
         public const string DLL_VERSION = "2.2.0."+BUILD;
 

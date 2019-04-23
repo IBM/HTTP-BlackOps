@@ -1,4 +1,8 @@
-﻿using System;
+﻿/**
+Copyright 2019 Trend Micro, Incorporated, All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+ */
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -496,7 +500,7 @@ namespace Testing
                     foreach (string match in matchList)
                     {
 
-                        if (!String.IsNullOrWhiteSpace(match) && testResponse.Contains(match))
+                        if (!String.IsNullOrWhiteSpace(match) && testResponse.Contains(match) && !rawResponse.Contains(match))
                         {
                             found = true;
                             validation = Regex.Escape(match);
@@ -507,22 +511,35 @@ namespace Testing
                 else
                 {
                     validation = testDef.Validation.Replace("$entity_id", entityId);
-                    string responsePartToValidate = testResponse;
-                    //process the body directive
-                    if (validation.StartsWith("$body="))
-                    {
-                        HttpResponseInfo respInfo = new HttpResponseInfo(testResponse);
-                        responsePartToValidate = respInfo.ResponseBody.ToString();
-                        validation = validation.Substring("$body=".Length);
-                    }
-                    else if (validation.StartsWith("$header="))
-                    {
-                        HttpResponseInfo respInfo = new HttpResponseInfo(testResponse);
-                        responsePartToValidate = respInfo.ResponseHeadString;
-                        validation = validation.Substring("$header=".Length);
-                    }
+                    string testResponsePartToValidate = testResponse;
+                    string origResponsePartToValidate = rawResponse;
 
-                    found = Utils.IsMatch(responsePartToValidate, validation);
+                    if (validation.StartsWith("$body=") || validation.StartsWith("$header="))
+                    {
+                        //parse responses
+                        HttpResponseInfo testRespInfo = new HttpResponseInfo(testResponse);
+                        HttpResponseInfo origRespInfo = new HttpResponseInfo(rawResponse);
+                        //process the body directive
+                        if (validation.StartsWith("$body="))
+                        {
+                            testResponsePartToValidate = testRespInfo.ResponseBody.ToString();
+                            origResponsePartToValidate = origRespInfo.ResponseBody.ToString();
+                            validation = validation.Substring("$body=".Length);
+                        }
+                        else if (validation.StartsWith("$header="))
+                        {
+                            testResponsePartToValidate = testRespInfo.ResponseHeadString;
+                            origResponsePartToValidate = origRespInfo.ResponseBody.ToString();
+                            validation = validation.Substring("$header=".Length);
+                        }
+                    }
+                    found = Utils.IsMatch(testResponsePartToValidate, validation);
+                    
+                    if (found)
+                    {
+                        //make sure raw response does not contain the validation
+                        found &= !Utils.IsMatch(origResponsePartToValidate, validation);
+                    }
 
                 }
             }

