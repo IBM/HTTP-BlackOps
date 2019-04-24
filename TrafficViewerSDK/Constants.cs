@@ -43,7 +43,7 @@ namespace TrafficViewerSDK
 		/// <summary>
 		/// Time format used to save timestamp data
 		/// </summary>
-        public const string COMMON_TIME_FORMAT = "MM/dd/yyyy HH:mm:ss.fff";
+        public const string COMMON_TIME_FORMAT = "MM-dd-yyyy HH:mm:ss.fff";
 		/// <summary>
 		/// String used to mark dynamic elements during request normalization
 		/// </summary>
