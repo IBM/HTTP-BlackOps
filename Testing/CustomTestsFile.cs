@@ -172,6 +172,24 @@ namespace Testing
         }
 
 
+        /// <summary>
+        /// Whether the testing is verbose (less performance)
+        /// </summary>
+        public bool Verbose
+        {
+            get
+            {
+                object value = GetOption("Verbose");
+                if (value == null) return false;
+                return Convert.ToBoolean(value);
+            }
+            set
+            {
+                SetSingleValueOption("Verbose",value);
+            }
+        }
+
+
 
         /// <summary>
         /// If should login before tests

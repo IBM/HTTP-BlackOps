@@ -296,7 +296,7 @@ namespace TrafficViewerInstance
 			get
 			{
 				object value = GetOption("ColorDiffText");
-				if (value == null) return "Red";
+				if (value == null) return "DarkMagenta";
 				return (string)value;
 			}
 			set
@@ -313,7 +313,7 @@ namespace TrafficViewerInstance
 			get
 			{
 				object value = GetOption("ColorHighlight");
-				if (value == null) return "Red";
+				if (value == null) return "DarkMagenta";
 				return (string)value;
 			}
 			set

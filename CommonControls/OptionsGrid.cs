@@ -295,8 +295,12 @@ namespace CommonControls
 				r = this._dataGridView.Rows[i];
 				for (j = 0; j < r.Cells.Count; j++)
 				{
-					s += (string)r.Cells[j].Value.ToString();
-					if (j < r.Cells.Count - 1) s += "\t";
+                    var cellValue = r.Cells[j].Value;
+                    if (cellValue != null)
+                    {
+                        s += (string)cellValue;
+                        if (j < r.Cells.Count - 1) s += "\t";
+                    }
 				}
 				values.Add(s);
 			}

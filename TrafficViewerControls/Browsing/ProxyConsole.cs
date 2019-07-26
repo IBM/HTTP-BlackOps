@@ -22,7 +22,7 @@ namespace TrafficViewerControls.Browsing
     /// </summary>
     public partial class ProxyConsole : UserControl, ITrafficServerConsoleOutput
     {
-        private const int MAX_ITEMS = 10000;
+        private const int MAX_ITEMS = 1000;
 
         private const int DISPLAY_DELAY = 1;
 
@@ -34,8 +34,10 @@ namespace TrafficViewerControls.Browsing
 
         private Queue<RequestTrapEventEventArgs> _trapQueue = new Queue<RequestTrapEventEventArgs>();
 
-        private object _lock = new object();
-        
+        private object _trapLock = new object();
+        private object _messageLock = new object();
+
+
 
         public ProxyConsole()
         {
@@ -67,7 +69,15 @@ namespace TrafficViewerControls.Browsing
         {
             if (message != null)
             {
-                _messageQueue.Enqueue(new KeyValuePair<LogMessageType, string>(type, message));
+                lock (_messageLock) //the message queue is shared by multiple threads
+                {
+                    while (_messageQueue.Count >= MAX_ITEMS - 1)
+                    {
+                        //dequeue the top items we reached the UI capacity for messages
+                        _messageQueue.Dequeue();
+                    }
+                    _messageQueue.Enqueue(new KeyValuePair<LogMessageType, string>(type, message));
+                }
                 
             }
         }
@@ -158,66 +168,80 @@ namespace TrafficViewerControls.Browsing
             {
                 _buttonRelease.Text = String.Format(Resources.TrapRelease, _trapQueue.Count);
             }
-            while (_messageQueue.Count > 0)
+            lock (_messageLock) //stop adding messages to the queue while we're emptying it
             {
-                if (_boxConsole.Rows.Count == MAX_ITEMS - 1)
+                if (_messageQueue.Count > 0) //there's stuff to be added
                 {
-                    _boxConsole.Rows.RemoveAt(0);
-                }
-
-                KeyValuePair<LogMessageType, string> m = _messageQueue.Dequeue();
-                if (String.IsNullOrWhiteSpace(m.Value)) continue; //skip empty rows
-                if(m.Key == LogMessageType.Notification)
-                {
-                    if (_splitContainer.Panel2Collapsed)
+                    
+                    //check if the messages in the queue fit, clear the entire list if all the messages must be replaced
+                    if (_messageQueue.Count >= MAX_ITEMS)
                     {
-                        _splitContainer.Panel2Collapsed = false;
+                        _boxConsole.Rows.Clear(); //clear all the rows
                     }
-                    _notificationLabel.Text = m.Value;
-                    continue;
-                }
 
-                string value = m.Value.Length > 255 ? m.Value.Substring(0,255) + "..." : m.Value;
-                int index = _boxConsole.Rows.Add(value);
-                switch (m.Key)
-                {
-                    case LogMessageType.Error: _boxConsole.Rows[index].DefaultCellStyle.ForeColor = Color.Red; break;
-                    case LogMessageType.Warning: _boxConsole.Rows[index].DefaultCellStyle.ForeColor = Color.Orange; break;
-                    case LogMessageType.Information: _boxConsole.Rows[index].DefaultCellStyle.ForeColor = Color.Lime; break;
-                   
-                }
-
-
-                if (_boxConsole.SelectedRows.Count < 2)
-                {
-                    bool scroll = false;
-                    //check if the last row was selected previously
-                    if (_boxConsole.Rows.Count > 1)
+                    //make room for the remaining messages
+                    while (_boxConsole.Rows.Count + _messageQueue.Count >= MAX_ITEMS)
                     {
-                        int selectedRow;
-                        selectedRow = _boxConsole.Rows.GetLastRow(DataGridViewElementStates.Selected);
-                        if (selectedRow == _boxConsole.Rows.Count - 2)
+                        _boxConsole.Rows.RemoveAt(0); //clear the top rows until we can fit the messages from the Queue
+                    }
+
+                    //determine if scroll is needed
+                    bool scroll = false;
+                    if (_boxConsole.SelectedRows.Count < 2)
+                    {
+                        //check if the last row was selected previously
+                        if (_boxConsole.Rows.Count >= 1)
                         {
-                            //deselect this row
-                            _boxConsole.Rows[selectedRow].Selected = false;
+                            int selectedRow;
+                            selectedRow = _boxConsole.Rows.GetLastRow(DataGridViewElementStates.Selected);
+                            if (selectedRow == _boxConsole.Rows.Count - 1)
+                            {
+                                //deselect this row
+                                _boxConsole.Rows[selectedRow].Selected = false;
+                                scroll = true;
+                            }
+                        }
+                        else
+                        {
                             scroll = true;
                         }
+
                     }
 
-                    //if the list was empty before automatically select
-                    if (_boxConsole.Rows.Count == 1)
+                    while (_messageQueue.Count > 0)
                     {
-                        scroll = true;
+                        KeyValuePair<LogMessageType, string> m = _messageQueue.Dequeue();
+                        if (String.IsNullOrWhiteSpace(m.Value)) continue; //skip empty rows
+                        if (m.Key == LogMessageType.Notification)
+                        {
+                            if (_splitContainer.Panel2Collapsed)
+                            {
+                                _splitContainer.Panel2Collapsed = false;
+                            }
+                            _notificationLabel.Text = m.Value;
+                            continue;
+                        }
+
+                        string value = m.Value.Length > 255 ? m.Value.Substring(0, 255) + "..." : m.Value;
+                        int index = _boxConsole.Rows.Add(value);
+                        switch (m.Key)
+                        {
+                            case LogMessageType.Error: _boxConsole.Rows[index].DefaultCellStyle.ForeColor = Color.Red; break;
+                            case LogMessageType.Warning: _boxConsole.Rows[index].DefaultCellStyle.ForeColor = Color.Orange; break;
+                            case LogMessageType.Information: _boxConsole.Rows[index].DefaultCellStyle.ForeColor = Color.Lime; break;
+
+                        }
+
                     }
 
                     if (scroll)
                     {
                         //select the last visible element in the list
                         int l = _boxConsole.Rows.GetLastRow(DataGridViewElementStates.Visible);
-                        _boxConsole.Rows[l].Selected = true;
                         //scroll to it
                         if (l > -1)
                         {
+                            _boxConsole.Rows[l].Selected = true;
                             _boxConsole.FirstDisplayedScrollingRowIndex = l;
                         }
                     }
@@ -277,7 +301,7 @@ namespace TrafficViewerControls.Browsing
 
         private void QueueTrapEvent(RequestTrapEventEventArgs e)
         {
-            lock (_lock)
+            lock (_trapLock)
             {
                 _trapQueue.Enqueue(e);
             }
@@ -442,7 +466,7 @@ namespace TrafficViewerControls.Browsing
 
         private void ReleaseClick(object sender, EventArgs e)
         {
-            lock (_lock)
+            lock (_trapLock)
             {
                 if (_trapQueue.Count > 0)
                 {
@@ -455,7 +479,7 @@ namespace TrafficViewerControls.Browsing
 
         private void ReleaseAllClick(object sender, EventArgs e)
         {
-            lock (_lock)
+            lock (_trapLock)
             {
                 while (_trapQueue.Count > 0)
                 {

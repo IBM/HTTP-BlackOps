@@ -286,7 +286,7 @@ namespace TrafficViewerControls.TextBoxes
 	/// </summary>
 	public class RtfHighlight
 	{
-		private Color DEFAULT_DIFF_COL = Color.Red;
+		private Color DEFAULT_DIFF_COL = Color.DarkMagenta;
 
 		private int _start = -1;
 		/// <summary>
