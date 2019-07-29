@@ -473,7 +473,7 @@ namespace TrafficViewerSDK.Options
                 result.Add("description=[^=]*automatic\\s?explore.*\\s", "Crimson");
                 result.Add("description=[^=]*cached.*\\s", "DarkGreen");
                 result.Add("description=[^=]*to\\s?proxy.*\\s", "DarkPurple");
-                result.Add("description=[^=]*vulnerability.*\\s", "Red");
+                result.Add("description=[^=]*vulnerability.*\\s", "DarkMagenta");
                 result.Add("scheme=\\bhttp\\s", "DarkSlateGray"); 
 
 			}

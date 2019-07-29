@@ -42,6 +42,7 @@
             this._textPatternRequestExclusion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this._checkGenerateAllEncodings = new System.Windows.Forms.CheckBox();
+            this._checkVerbose = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // _checkLoginBeforeEachTest
@@ -57,7 +58,7 @@
             // _checkTestOnlyParameters
             // 
             this._checkTestOnlyParameters.AutoSize = true;
-            this._checkTestOnlyParameters.Location = new System.Drawing.Point(26, 112);
+            this._checkTestOnlyParameters.Location = new System.Drawing.Point(26, 86);
             this._checkTestOnlyParameters.Name = "_checkTestOnlyParameters";
             this._checkTestOnlyParameters.Size = new System.Drawing.Size(173, 17);
             this._checkTestOnlyParameters.TabIndex = 1;
@@ -155,18 +156,30 @@
             // _checkGenerateAllEncodings
             // 
             this._checkGenerateAllEncodings.AutoSize = true;
-            this._checkGenerateAllEncodings.Location = new System.Drawing.Point(26, 71);
+            this._checkGenerateAllEncodings.Location = new System.Drawing.Point(26, 57);
             this._checkGenerateAllEncodings.Name = "_checkGenerateAllEncodings";
             this._checkGenerateAllEncodings.Size = new System.Drawing.Size(137, 17);
             this._checkGenerateAllEncodings.TabIndex = 16;
             this._checkGenerateAllEncodings.Text = "Generate All Encodings";
             this._checkGenerateAllEncodings.UseVisualStyleBackColor = true;
+            this._checkGenerateAllEncodings.CheckedChanged += new System.EventHandler(this._checkGenerateAllEncodings_CheckedChanged);
+            // 
+            // _checkVerbose
+            // 
+            this._checkVerbose.AutoSize = true;
+            this._checkVerbose.Location = new System.Drawing.Point(26, 117);
+            this._checkVerbose.Name = "_checkVerbose";
+            this._checkVerbose.Size = new System.Drawing.Size(65, 17);
+            this._checkVerbose.TabIndex = 17;
+            this._checkVerbose.Text = "Verbose";
+            this._checkVerbose.UseVisualStyleBackColor = true;
             // 
             // TestOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(321, 415);
+            this.Controls.Add(this._checkVerbose);
             this.Controls.Add(this._checkGenerateAllEncodings);
             this.Controls.Add(this._textPatternRequestExclusion);
             this.Controls.Add(this.label3);
@@ -207,5 +220,6 @@
         private System.Windows.Forms.TextBox _textPatternRequestExclusion;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox _checkGenerateAllEncodings;
+        private System.Windows.Forms.CheckBox _checkVerbose;
     }
 }

@@ -114,7 +114,7 @@ namespace TrafficViewerSDK.Http
 		public void SecureStream(string host)
 		{
 			SslStream secureStream = new SslStream(_stream, false, new RemoteCertificateValidationCallback(ValidateServerCertificate), null);
-			secureStream.AuthenticateAsClient(host, null, System.Security.Authentication.SslProtocols.Default, false);
+			secureStream.AuthenticateAsClient(host, null, System.Security.Authentication.SslProtocols.Tls12, false);
 			_stream = secureStream;
 		}
 

@@ -156,7 +156,7 @@ namespace TrafficViewerUnitTest
         public void Base64DecodeDot()
         {
             string control = "The quick brown fox jumps over the lazy rabbit";
-            Assert.AreEqual(control, Utils.Base64Decode("VGhlIHF1aWNrIGJyb3duIGZveA.anVtcHMgb3ZlciB0aGUgbGF6eSByYWJiaXQ"));
+            Assert.AreEqual(control, Utils.Base64Decode("VGhlIHF1aWNrIGJyb3duIGZveCA.anVtcHMgb3ZlciB0aGUgbGF6eSByYWJiaXQ"));
         }
 
         [TestMethod]

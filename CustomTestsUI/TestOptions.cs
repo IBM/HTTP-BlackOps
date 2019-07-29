@@ -26,6 +26,7 @@ namespace CustomTestsUI
         {
             _checkLoginBeforeEachTest.Checked = _testFile.LoginBeforeTests;
             _checkTestOnlyParameters.Checked = _testFile.TestOnlyParameters;
+            _checkVerbose.Checked = _testFile.Verbose;
             _textNumThreads.Text = _testFile.NumberOfThreads.ToString();
             _checkGenerateAllEncodings.Checked = _testFile.GenerateAllEncodings;
             _textPatternOfFirstTestRequest.Text = _testFile.PatternOfFirstRequestToTest;
@@ -43,6 +44,7 @@ namespace CustomTestsUI
         {
             _testFile.LoginBeforeTests = _checkLoginBeforeEachTest.Checked;
             _testFile.TestOnlyParameters = _checkTestOnlyParameters.Checked;
+            _testFile.Verbose = _checkVerbose.Checked;
             int numThreads;
             if (int.TryParse(_textNumThreads.Text, out numThreads)) 
             {
@@ -56,7 +58,9 @@ namespace CustomTestsUI
             this.Hide();
         }
 
+        private void _checkGenerateAllEncodings_CheckedChanged(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }
