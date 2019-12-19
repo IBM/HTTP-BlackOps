@@ -298,7 +298,7 @@ namespace CommonControls
                     var cellValue = r.Cells[j].Value;
                     if (cellValue != null)
                     {
-                        s += (string)cellValue;
+                        s += cellValue.ToString();
                         if (j < r.Cells.Count - 1) s += "\t";
                     }
 				}
