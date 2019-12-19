@@ -276,7 +276,7 @@ namespace TrafficViewerUnitTest
 			Assert.IsTrue(firstBody.Contains("interrupt"));
 			Assert.IsFalse(firstBody.Contains("--function"));
 
-			Assert.IsTrue(secondBody.Contains("inter\nrupt"));
+			Assert.IsTrue(secondBody.Contains("inter\r\nrupt"));
 		}
 
 		private static TempFile MakeDummyASETrafficLog()

@@ -237,10 +237,10 @@ namespace TrafficViewerSDK.Importers
 			//extract a new thread id
 			string currentThreadId = Utils.RegexFirstGroupValue(line, _threadIdRegex);
 			string temp = Utils.RegexFirstGroupValue(line, _timeRegex);
-			if (temp != String.Empty)
-			{
-				_currentTime = temp;
-			}
+            if (temp != String.Empty)
+            {
+                _currentTime = temp;
+            }
 			if (currentThreadId != String.Empty && currentThreadId != _currentThreadInfo.ThreadId)
 			{
 
@@ -325,11 +325,18 @@ namespace TrafficViewerSDK.Importers
 			_currentHeader.Description = _currentThreadInfo.Description;
 			_currentHeader.ThreadId = _currentThreadInfo.ThreadId;
 			_currentHeader.RequestLine = line;
-			try
-			{
-				_currentHeader.RequestTime = DateTime.ParseExact(_currentTime, _timeFormat, _dateTimeFormatInfo);
-			}
-			catch { }
+            if (_currentTime != null)
+            {
+                try
+                {
+                    _currentHeader.RequestTime = DateTime.ParseExact(_currentTime, _timeFormat, _dateTimeFormatInfo);
+                }
+                catch { }
+            }
+            else
+            {
+                _currentHeader.RequestTime = DateTime.Now;
+            }
 			//save newly created request header to the list of headers
 			_currentIndex = _trafficViewerFile.AddRequestInfo(_currentHeader);
 			if (lineBytes != null) //if lineBytes is null we are using the _currentRequestData
@@ -395,12 +402,19 @@ namespace TrafficViewerSDK.Importers
 			_isNewThreadChunk = false;
 			_currentHeader.ResponseStatus =
 				Utils.RegexFirstGroupValue(line, _responseStatusRegex);
-			try
-			{
-				_currentHeader.ResponseTime =
-					DateTime.ParseExact(_currentTime, _timeFormat, _dateTimeFormatInfo);
-			}
-			catch { }
+            if (_currentTime != null)
+            {
+                try
+                {
+                    _currentHeader.ResponseTime =
+                        DateTime.ParseExact(_currentTime, _timeFormat, _dateTimeFormatInfo);
+                }
+                catch { }
+            }
+            else
+            {
+                _currentHeader.ResponseTime = DateTime.Now;
+            }
 			_currentThreadInfo.Location = LocationInThread.InsideResponse;
 		}
 
@@ -576,16 +590,14 @@ namespace TrafficViewerSDK.Importers
 			LineType lineType;
 
 			_thisSessionRequestCount = 0;
+            StreamReader sr = new StreamReader(_rawLog);
 
-			do
+
+            do
 			{
 				try
 				{
-					//read a line and handle end of file or stop requested
-					bytes = Utils.ReadLine(_rawLog, ESTIMATED_LINE_SIZE);
-
-					line = Utils.ByteToString(bytes);
-
+                    line = sr.ReadLine();
 					lineType = _lineTypeSelector.GetLineType(line);
 
 					//if the end of file was reached or the user stopped the parse
@@ -595,8 +607,10 @@ namespace TrafficViewerSDK.Importers
 						return;
 					}
 
-					//according to the line type perform the coresponding action
-					switch (lineType)
+                    bytes = Encoding.UTF8.GetBytes(line);
+
+                    //according to the line type perform the coresponding action
+                    switch (lineType)
 					{
 						case LineType.BeginThread:
 							HandleBeginThread(line);
