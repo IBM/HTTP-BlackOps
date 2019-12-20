@@ -18,7 +18,7 @@ namespace Traffic2Exd
             if (args.Length < 2)
             {
                 Console.WriteLine("Usage: Traffic2Exd <traffic file path> <EXD file path>");
-                Console.WriteLine("Supported import formats: .har, .txt");
+                Console.WriteLine("Supported import formats: .har, .txt, .htd");
                 Console.WriteLine("If the EXD file already exists the tool will append to it.");
 
                 Console.WriteLine("Exit codes: 1 - No args, 2 - Incorrect file path, 3 - Parsing error, 4 - Export error, 5 - Unsupported Exception.");
@@ -59,8 +59,20 @@ namespace Traffic2Exd
                         {
                             parser = new DefaultTrafficParser();
                         }
+                        else if (trafficFilePath.ToLower().EndsWith(".htd"))
+                        {
+                            TrafficViewerFile tvf2 = new TrafficViewerFile();
+                            tvf2.Open(trafficFilePath);
+                            int id = -1;
+                            TVRequestInfo info = null;
+
+                            while ((info = tvf2.GetNext(ref id)) != null)
+                            {
+                                tvf.AddRequestResponse(tvf2.LoadRequestData(info.Id), tvf2.LoadResponseData(info.Id));
+                            }
+                        }
                         else {
-                            Console.WriteLine("File extension is unsupported. Supported extensions/formats: .har,.txt");
+                            Console.WriteLine("File extension is unsupported. Supported extensions/formats: .har, .txt, .htd");
                             Environment.ExitCode = 5;
                         }
 
