@@ -44,6 +44,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarSharp", "HarSharp\HarSha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traffic2Exd", "Traffic2Exd\Traffic2Exd.csproj", "{16C4D34D-21E6-470A-A442-C11E87FCEAB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficCollector", "TrafficCollector\TrafficCollector.csproj", "{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -369,6 +371,24 @@ Global
 		{16C4D34D-21E6-470A-A442-C11E87FCEAB7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{16C4D34D-21E6-470A-A442-C11E87FCEAB7}.Release|x86.ActiveCfg = Release|Any CPU
 		{16C4D34D-21E6-470A-A442-C11E87FCEAB7}.Release|x86.Build.0 = Release|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Debug|x86.Build.0 = Debug|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Package|Any CPU.ActiveCfg = Release|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Package|Any CPU.Build.0 = Release|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Package|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Package|Mixed Platforms.Build.0 = Release|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Package|x86.ActiveCfg = Release|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Package|x86.Build.0 = Release|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Release|x86.ActiveCfg = Release|Any CPU
+		{0C99B6DB-4954-4DB2-8945-4738BF48EFAA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

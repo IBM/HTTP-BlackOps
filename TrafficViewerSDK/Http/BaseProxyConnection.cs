@@ -40,10 +40,12 @@ namespace TrafficViewerSDK.Http
 		/// Used to build the request as it comes from the client stream
 		/// </summary>
 		protected ByteArrayBuilder _requestBuilder;
-		/// <summary>
-		/// Used to build the data to be saved to the disk
-		/// </summary>
-		private RequestResponseBytes _currentRequestResponseBytes = null;
+        private string _targetHost;
+
+        /// <summary>
+        /// Used to build the data to be saved to the disk
+        /// </summary>
+        private RequestResponseBytes _currentRequestResponseBytes = null;
 		/// <summary>
 		/// Whether the connection should be closed
 		/// </summary>
@@ -172,10 +174,16 @@ namespace TrafficViewerSDK.Http
 			_trafficDataStore = dataStore;
 			_requestDescription = requestDescription;
 			_requestBuilder = new ByteArrayBuilder();
-			if (dataStore != null)
+            
+            if (dataStore != null)
 			{
 				_exclusions = dataStore.Profile.GetExclusions();
-			}
+                _targetHost = dataStore.Profile.GetOption("targetHost") as string;
+                if (_targetHost != null)
+                {
+                    _targetHost = _targetHost.ToLower();
+                }
+            }
 			HttpServerConsole.Instance.WriteLine(LogMessageType.Information,
 							"Inbound connection from {0}", ((IPEndPoint)client.Client.RemoteEndPoint).Address);
 			
@@ -230,6 +238,11 @@ namespace TrafficViewerSDK.Http
 			{
 				result = Utils.IsMatchInList(requestHead, _exclusions);
 			}
+
+            if (!result && _targetHost != null)
+            {
+                result = !_targetHost.Equals(_requestInfo.Host.ToLower());
+            }
 
 			return result;
 		}

@@ -1,0 +1,32 @@
+
+	Traffic Collector API - Usage
+	
+	The traffic collector API allows you to capture traffic for testing purposes. 
+	This is done via HTTP proxy listeners.
+	
+	
+	The following API request starts a proxy listener.
+	Parameters:
+		
+		- port: choose a valid HTTP port or set to 0 to get a dynamically generated port
+		- targetHost: this is needed to make sure that other browser requests to 3rd party servers are not being scanned
+		- secret: optional session secret can prevent others from ending the browser session
+		- test: true|false optional parameter whether to execute inline security tests
+		
+		
+	Example:
+	{0}start?port=1111&targetHost=dev.site.local&secret=MY_Session_Password&test=true
+	
+	
+	Once the proxy starts configure your automation or browser to send requests to the proxy.
+	When the explore stage is done stop the proxy with the request below.
+	Parameters:
+		
+		- port: must match the port of the previous request
+		- secret: optional session secret can prevent others from ending the browser session
+		- fileName: a file name for the recording
+
+		
+	Example:
+	{0}stop?port=1111&secret=MY_Session_Password&fileName=recording_name
+	
