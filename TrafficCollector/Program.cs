@@ -20,13 +20,14 @@ namespace TrafficCollector
 
         static void Main(string[] args)
         {
-            if (args.Length != 4)
+            if (args.Length != 5)
             {
-                Console.WriteLine("Usage: TrafficCollector <IP> <PORT> <DUMP_DIR>");
+                Console.WriteLine("Usage: TrafficCollector <IP> <PORT> <DUMP_DIR> <TESTS_FILE> <ALLOWED_HOSTS>");
                 Console.WriteLine("<IP> - The IP of the network interface that the collector API is running on.");
                 Console.WriteLine("<PORT> - The PORT of the collector API server");
                 Console.WriteLine("<DUMP_DIR> - The directory where the collector will dump files.");
                 Console.WriteLine("<TESTS_FILE> - The location of a file containing security tests.");
+                Console.WriteLine("<ALLOWED_HOSTS> - A regular expression for hosts allowed to be tested.");
                 Console.WriteLine("Example: TrafficCollector 10.10.9.9 8080 C:\\Share\\TrafficDump");
 
 
@@ -64,6 +65,7 @@ namespace TrafficCollector
             TrafficCollectorSettings.Instance.Ip = ip;
             TrafficCollectorSettings.Instance.DumpDir = args[2];
             TrafficCollectorSettings.Instance.TestFile = args[3];
+            TrafficCollectorSettings.Instance.AllowedHostsPattern = args[4];
 
             Console.WriteLine("Starting collector API at http://{0}:{1}", ip, port);
             try

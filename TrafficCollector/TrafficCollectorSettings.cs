@@ -19,7 +19,8 @@ namespace TrafficCollector
         private string _dumpDir = "c:\\Temp";
         private string _ip = null;
         private string _testFile = null;
-
+        private string _allowedHostsPattern = "";
+          
         private TrafficCollectorSettings()
         {
         }
@@ -52,5 +53,9 @@ namespace TrafficCollector
         /// The test file to be used for security tests
         /// </summary>
         public string TestFile { get => _testFile; set => _testFile = value; }
+        /// <summary>
+        /// The target host should match this pattern
+        /// </summary>
+        public string AllowedHostsPattern { get => _allowedHostsPattern; set => _allowedHostsPattern = value; }
     }
 }

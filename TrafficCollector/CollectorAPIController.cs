@@ -65,7 +65,7 @@ namespace TrafficCollector
                     return GetResponse(400, "Bad Request", "'targetHost' parameter is not specified.");
                 }
 
-                if (!Utils.IsMatch(targetHost, "^[\\w._-]+$"))
+                if (!Utils.IsMatch(targetHost, "^[\\w._-]+$") || !Utils.IsMatch(targetHost,TrafficCollectorSettings.Instance.AllowedHostsPattern))
                 {
                     return GetResponse(400, "Bad Request", "Invalid target host!");
                 }
