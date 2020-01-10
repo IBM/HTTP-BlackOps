@@ -251,7 +251,7 @@ namespace CustomTestsUI
             resources.ApplyResources(this._grid, "_grid");
             this._grid.BackColor = System.Drawing.Color.Transparent;
             this._grid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this._grid.Columns = "Name\r\nType\r\nMutation\r\nValidation";
+            this._grid.Columns = "Name\r\nType\r\nMutation\r\nValidation\r\nExclusion";
             this._grid.LabelText = "Enter definitions below:";
             this._grid.Name = "_grid";
             // 

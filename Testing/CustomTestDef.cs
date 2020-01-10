@@ -11,7 +11,9 @@ namespace Testing
 	public class CustomTestDef
 	{
 		private string _name;
-
+        /// <summary>
+        /// The test name
+        /// </summary>
 		public string Name
 		{
 			get { return _name; }
@@ -25,19 +27,33 @@ namespace Testing
 			set { _type = value; }
 		}
 		private string _mutation;
-
+        /// <summary>
+        /// Required expression that indicates 
+        /// </summary>
 		public string Mutation
 		{
 			get { return _mutation; }
 			set { _mutation = value; }
 		}
 		private string _validation;
-
+        /// <summary>
+        /// Required expression which if matches indicates a vulnerability
+        /// </summary>
 		public string Validation
 		{
 			get { return _validation; }
 			set { _validation = value; }
 		}
+
+        private string _exclusion;
+        /// <summary>
+        /// Regular expression which if set indicates the issue is not vulnerable in spite of the validation matching
+        /// </summary>
+        public string Exclusion
+        {
+            get { return _exclusion; }
+            set { _exclusion = value; }
+        }
 
 		/// <summary>
 		/// Constructor
@@ -46,13 +62,15 @@ namespace Testing
 		/// <param name="type"></param>
 		/// <param name="mutation"></param>
 		/// <param name="validation"></param>
-		public CustomTestDef(string name, string type, string mutation, string validation)
+        /// <param name="exclusion"></param>
+		public CustomTestDef(string name, string type, string mutation, string validation, string exclusion)
 		{
 			// TODO: Complete member initialization
 			this._name = name;
 			this._type = type;
 			this._mutation = mutation;
 			this._validation = validation;
+            this._exclusion = exclusion;
 		}
 
 		/// <summary>
@@ -61,7 +79,7 @@ namespace Testing
 		/// <returns></returns>
 		public override string ToString()
 		{
-			return String.Format("{0}\t{1}\t{2}\t{3}",_name,_type,_mutation,_validation);
+			return String.Format("{0}\t{1}\t{2}\t{3}\t{4}",_name,_type,_mutation,_validation,_exclusion);
 		}
 
 	}

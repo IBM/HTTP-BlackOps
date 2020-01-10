@@ -52,10 +52,9 @@ namespace CustomTestsUI
         {
             bool loaded = true;
             _testFile = new CustomTestsFile();
-            CustomTestsFile file = new CustomTestsFile();
             if (File.Exists(path))
             {
-                loaded = file.Load(path);
+                loaded = _testFile.Load(path);
             }
 
 
@@ -64,8 +63,6 @@ namespace CustomTestsUI
                 ErrorBox.ShowDialog("Could not load file");
                 return;
             }
-            _testFile = file;
-            _testFile.SetCustomTests(file.GetCustomTests());
             _grid.SetValues((List<string>)_testFile.GetOption(CUSTOM_TESTS));
             runAutomaticallyToolStripMenuItem.Checked = _testFile.AutoRunTests;
             _testRunner.SetTestFile(_testFile);

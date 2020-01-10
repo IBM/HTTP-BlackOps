@@ -169,25 +169,25 @@
     <value>From Server</value>
   </data>
   <data name="loadToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="loadToolStripMenuItem.Text" xml:space="preserve">
     <value>Load</value>
   </data>
   <data name="saveAsDefaultToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="saveAsDefaultToolStripMenuItem.Text" xml:space="preserve">
     <value>Save</value>
   </data>
   <data name="saveAsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="saveAsToolStripMenuItem.Text" xml:space="preserve">
     <value>Save As</value>
   </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
@@ -253,7 +253,7 @@
     <value>Sequential Test Proxy</value>
   </data>
   <data name="runToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 20</value>
+    <value>40, 20</value>
   </data>
   <data name="runToolStripMenuItem.Text" xml:space="preserve">
     <value>Test</value>

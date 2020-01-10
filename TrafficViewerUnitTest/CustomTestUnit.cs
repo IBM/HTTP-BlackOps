@@ -147,6 +147,7 @@ namespace TrafficViewerUnitTest
             
         }
 
+       
         [TestMethod]
         public void CustomTester_MatchBodyValidation()
         {
@@ -176,6 +177,40 @@ namespace TrafficViewerUnitTest
                 paramName, entityId, def, mutatedRequest, "HTTP/1.1 200 OK\r\n\r\nroot::"));
             Assert.IsFalse(tester.ValidateSingleTest(testRequest, "HTTP/1.1 200 OK\r\nbla", new Uri("http://demo.testfire.net/search.aspx"),
                 paramName, entityId, def, mutatedRequest, "HTTP/1.1 200 OK\r\nroot::\r\n\r\nbody"));
+        }
+
+        [TestMethod]
+        public void CustomTester_Exclusion()
+        {
+            TrafficViewerFile mockSite = new TrafficViewerFile();
+            MockTestController mockTestController = new MockTestController(mockSite);
+
+
+            string testRequest = "GET /search.aspx?txtSearch=a&a1=a HTTP/1.1\r\nHost: 127.0.0.1\r\n\r\n";
+            string paramName = "txtSearch";
+
+            CustomTestsFile file = GetCustomTestFile();
+            Tester tester = new Tester(mockTestController, file);
+            CustomTestDef def = file.GetCustomTests()["Path Traversal"];
+            def.Exclusion = "exclude_me";
+
+
+            def.Validation = "$body=" + "root::";
+
+            HttpRequestInfo original = new HttpRequestInfo(testRequest, true);
+            Uri uri = new Uri(original.FullUrl);
+
+            string entityId = tester.GetEntityId(uri, paramName);
+            string entityString = tester.GetEntityString(testRequest, uri, paramName, original.QueryVariables[paramName]);
+            TestJob testJob = new TestJob(paramName, original.QueryVariables[paramName], RequestLocation.Query, def);
+            string mutatedRequest = tester.GenerateMutatedRequestList(testRequest, testJob, entityString, entityId)[0];
+            Assert.IsTrue(tester.ValidateSingleTest(testRequest, "HTTP/1.1 200 OK\r\nbla", new Uri("http://demo.testfire.net/search.aspx"),
+                paramName, entityId, def, mutatedRequest, "HTTP/1.1 200 OK\r\n\r\nroot::"));
+            Assert.IsFalse(tester.ValidateSingleTest(testRequest, "HTTP/1.1 200 OK\r\nbla", new Uri("http://demo.testfire.net/search.aspx"),
+                paramName, entityId, def, mutatedRequest, "HTTP/1.1 200 OK\r\nroot::\r\n\r\nbody"));
+            //this should not match due to the exclusion condition
+            Assert.IsFalse(tester.ValidateSingleTest(testRequest, "HTTP/1.1 200 OK\r\nbla", new Uri("http://demo.testfire.net/search.aspx"),
+                paramName, entityId, def, mutatedRequest, "HTTP/1.1 200 OK\r\n\r\nexclude_me"));
         }
 
         [TestMethod]
@@ -261,7 +296,7 @@ namespace TrafficViewerUnitTest
         {
             TrafficViewerFile mockSite = new TrafficViewerFile();
             CustomTestDef def = new CustomTestDef("ManyAs", "Buffer Overflow", 
-                "$js_code=function Callback(){var ret = ''; for(var i=0;i<100;i++){ret+='A';} return ret;}", "");
+                "$js_code=function Callback(){var ret = ''; for(var i=0;i<100;i++){ret+='A';} return ret;}", "","");
             TestJob job = new TestJob("x", "y", RequestLocation.Query, def);
             CustomTestsFile file = GetCustomTestFile();
             Tester tester = new Tester(new MockTestController(mockSite), file);
@@ -281,7 +316,7 @@ namespace TrafficViewerUnitTest
         {
             TrafficViewerFile mockSite = new TrafficViewerFile();
             CustomTestDef def = new CustomTestDef("BlindSQL", "BlindSQL",
-                "$js_code=function Callback(rawRequest, entityName, entityValue, requestLocation){if(requestLocation.indexOf('Query') > -1) return encodeURIComponent(\"' or '1'='1\");}", "");
+                "$js_code=function Callback(rawRequest, entityName, entityValue, requestLocation){if(requestLocation.indexOf('Query') > -1) return encodeURIComponent(\"' or '1'='1\");}", "","");
             TestJob job = new TestJob("x", "y", RequestLocation.Query, def);
             CustomTestsFile file = GetCustomTestFile();
             Tester tester = new Tester(new MockTestController(mockSite), file);
@@ -302,7 +337,7 @@ namespace TrafficViewerUnitTest
         {
             TrafficViewerFile mockSite = new TrafficViewerFile();
             CustomTestDef def = new CustomTestDef("BlindSQLABC", "Blind SQL",
-                @"a\,,b,c", "");
+                @"a\,,b,c", "", "");
             TestJob job = new TestJob("x", "y", RequestLocation.Query, def);
             CustomTestsFile file = GetCustomTestFile();
             Tester tester = new Tester(new MockTestController(mockSite), file);
@@ -324,7 +359,7 @@ namespace TrafficViewerUnitTest
             TrafficViewerFile mockSite = new TrafficViewerFile();
             string payload = "<'\0a";
             CustomTestDef def = new CustomTestDef("LT", "LT",
-                payload, "");
+                payload, "", "");
             TestJob job = new TestJob("x", "y", RequestLocation.Query, def);
             CustomTestsFile file = GetCustomTestFile();
             file.GenerateAllEncodings = true;
@@ -351,7 +386,7 @@ namespace TrafficViewerUnitTest
         {
             TrafficViewerFile mockSite = new TrafficViewerFile();
             CustomTestDef def = new CustomTestDef("BlindSQLABC", "Blind SQL",
-                @"__dynamic_value__ticks__,__dynamic_value__ticks__,__dynamic_value__ticks__", "");
+                @"__dynamic_value__ticks__,__dynamic_value__ticks__,__dynamic_value__ticks__", "", "");
             TestJob job = new TestJob("x", "y", RequestLocation.Query, def);
             CustomTestsFile file = GetCustomTestFile();
             Tester tester = new Tester(new MockTestController(mockSite), file);
@@ -547,7 +582,7 @@ namespace TrafficViewerUnitTest
             tests.Add("PathTraversal",
                 new CustomTestDef("PathTraversal", "Path Traversal",
                     "$original/" + MockTestController.PATH_TRAVERSAL,
-                    "$js_code=function Callback(response){var found = false; if(response.indexOf('root')>-1) found=true; return found;}"));
+                    "$js_code=function Callback(response){var found = false; if(response.indexOf('root')>-1) found=true; return found;}",""));
 
             testFile.SetCustomTests(tests);
             testFile.Save();
@@ -841,7 +876,7 @@ namespace TrafficViewerUnitTest
             CustomTestsFile testFile = new CustomTestsFile();
             var customTests = testFile.GetCustomTests();
             customTests.Clear();
-            customTests.Add("Path Traversal", new CustomTestDef("Path Traversal", "Path Traversal", "$original" + MockTestController.PATH_TRAVERSAL, "root\\:"));
+            customTests.Add("Path Traversal", new CustomTestDef("Path Traversal", "Path Traversal", "$original" + MockTestController.PATH_TRAVERSAL, "root\\:", ""));
 
             testFile.SetCustomTests(customTests);
 

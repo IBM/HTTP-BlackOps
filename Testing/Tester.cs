@@ -462,6 +462,12 @@ namespace Testing
         {
             bool found = false;
 
+            if (!String.IsNullOrWhiteSpace(testResponse) && !String.IsNullOrWhiteSpace(testDef.Exclusion) && Utils.IsMatch(testResponse,testDef.Exclusion))
+            {
+                return false; //this type of response was excluded from testing
+            }
+
+
             if (String.IsNullOrWhiteSpace(testResponse) && testDef.Validation.Contains(TIMEOUT_FUNC))
             {
                 found = true;

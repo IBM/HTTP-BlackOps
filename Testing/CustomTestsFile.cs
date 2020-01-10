@@ -216,19 +216,22 @@ namespace Testing
         {
             List<string> values = (List<string>)GetOption("CustomTests");
             Dictionary<string, CustomTestDef> result = new Dictionary<string, CustomTestDef>();
-            string[] pair;
+            string[] cols;
             if (values != null)
             {
                 foreach (string v in values)
                 {
-                    pair = v.Split(Constants.VALUES_SEPARATOR.ToCharArray());
-                    if (pair.Length == 4)
+                    cols = v.Split(Constants.VALUES_SEPARATOR.ToCharArray());
+                    if (cols.Length >= 4)
                     {
-                        if (result.ContainsKey(pair[0]))
+                        if (result.ContainsKey(cols[0]))
                         {
-                            pair[0] += DateTime.Now.Ticks.ToString();
+                            cols[0] += DateTime.Now.Ticks.ToString();
                         }
-                        result.Add(pair[0], new CustomTestDef(pair[0], pair[1], pair[2], pair[3]));
+                        if(cols.Length == 5)
+                            result.Add(cols[0], new CustomTestDef(cols[0], cols[1], cols[2], cols[3], cols[4]));
+                        else //legacy definition file
+                            result.Add(cols[0], new CustomTestDef(cols[0], cols[1], cols[2], cols[3], ""));
                     }
                 }
             }
