@@ -124,6 +124,12 @@ namespace TrafficCollector
             string fileName = null;
             requestInfo.QueryVariables.TryGetValue("fileName", out fileName);
 
+            if (fileName == null)
+            {
+                //assign a random file name
+                fileName = DateTime.Now.Ticks.ToString();
+            }
+
             if (!Utils.IsMatch(fileName, "^[\\w._-]+$"))
             {
                 return GetResponse(400, "Bad Request", "Invalid file name.");
@@ -169,7 +175,7 @@ namespace TrafficCollector
                         {
                             int id = -1;
                             TVRequestInfo info = null;
-                            report = "\r\nVulnerability List\r\n";
+                            report = "\r\n\r\nVulnerability List\r\n";
                             report += "============================\r\n";
                             int count = 0;
                             while ((info = trafficFile.GetNext(ref id)) != null)
@@ -180,14 +186,22 @@ namespace TrafficCollector
                                     report += String.Format("Request {0} - {1} ({2})\r\n",info.RequestLine,info.Description, info.Validation);
                                 }
                             }
-                            report += String.Format("Total: {0}", count);
+                            report += String.Format("Total: {0}\r\n", count);
                         }
 
                     }
                     
                     proxy.Stop();
                     CollectorProxyList.Instance.ProxyList.Remove(port);
-                    trafficFile.Save(filePath);
+                    if (trafficFile.RequestCount > 0)
+                    {
+                        trafficFile.Save(filePath);
+                        report += String.Format("Traffic file saved at '{0}'\r\n", filePath);
+                    }
+                    else
+                    {
+                        report += "Nothing recorded.";
+                    }
 
                 }
                
