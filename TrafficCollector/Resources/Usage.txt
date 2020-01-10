@@ -15,7 +15,7 @@
 		
 		
 	Example:
-	{0}start?port=1111&targetHost=dev.site.local&secret=MY_Session_Password&test=true
+	{0}start?port=1111&targetHost=dev.site.local&secret=MY_Session_Password&test=true&skipSimilar=true
 	
 	
 	Once the proxy starts configure your automation or browser to send requests to the proxy.
@@ -24,9 +24,10 @@
 		
 		- port: must match the port of the previous request
 		- secret: optional session secret can prevent others from ending the browser session
+		- skipSimilar: optional flag telling the collector not to record a request if it matches existing ones
 		- fileName: a file name for the recording
 
 		
 	Example:
-	{0}stop?port=1111&secret=MY_Session_Password&fileName=recording_name
+	{0}stop?port=1111&secret=MY_Session_Password&fileName=recording_name&skipSimilar=true
 	

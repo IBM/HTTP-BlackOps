@@ -120,6 +120,9 @@ namespace TrafficCollector
             //optional secret to protect the recording session
             string secret = null;
             requestInfo.QueryVariables.TryGetValue("secret", out secret);
+            //optional flag indicating if similar requests should be skiped
+            string skipSimilar = null;
+            requestInfo.QueryVariables.TryGetValue("skipSimilar", out skipSimilar);
             //the file to save to
             string fileName = null;
             requestInfo.QueryVariables.TryGetValue("fileName", out fileName);
@@ -195,7 +198,13 @@ namespace TrafficCollector
                     CollectorProxyList.Instance.ProxyList.Remove(port);
                     if (trafficFile.RequestCount > 0)
                     {
+                        if (skipSimilar != null && skipSimilar.Equals("true", StringComparison.OrdinalIgnoreCase))
+                        {
+                            trafficFile = removeSimilar(trafficFile);
+                        }
+
                         trafficFile.Save(filePath);
+    
                         report += String.Format("Traffic file saved at '{0}'\r\n", filePath);
                     }
                     else
@@ -212,6 +221,31 @@ namespace TrafficCollector
             }
 
             return GetResponse(200, "OK", "Proxy stopped. {0}", report);
+        }
+
+        private TrafficViewerFile removeSimilar(TrafficViewerFile source)
+        {
+            TrafficViewerFile dest = new TrafficViewerFile();
+            TVRequestInfo info;
+            int id = -1;
+            List<int> _reqHashes = new List<int>();
+
+            while ((info = source.GetNext(ref id)) != null)
+            {
+                byte[] request = source.LoadRequestData(info.Id);
+                HttpRequestInfo reqInfo = new HttpRequestInfo(request, true);
+                int hash = reqInfo.GetHashCode(TrafficServerMode.BrowserFriendly);
+
+                if (!_reqHashes.Contains(hash))
+                {
+                    byte[] response = source.LoadResponseData(info.Id);
+                    dest.AddRequestResponse(request, response);
+                    _reqHashes.Add(hash);
+                }
+            }
+
+            return dest;
+
         }
 
         /// <summary>
