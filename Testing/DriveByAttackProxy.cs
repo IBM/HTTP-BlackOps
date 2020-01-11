@@ -25,6 +25,7 @@ namespace Testing
         private Dictionary<int, HttpRequestInfo> _requestIndex;
         private Dictionary<int, HttpResponseInfo> _responseIndex;
         private Queue<int> _requestsToTest;
+        private List<int> _requestsInProgress;
         private int MAX_REQ_THREADS = 1;
         private List<int> _testedRequestHashes = new List<int>();
 
@@ -32,6 +33,7 @@ namespace Testing
             : base(testController, testFile, dataStore, host, port)
         {
             _requestsToTest = new Queue<int>();
+            _requestsInProgress = new List<int>();
             _requestIndex = new Dictionary<int, HttpRequestInfo>();
             _responseIndex = new Dictionary<int, HttpResponseInfo>();
         }
@@ -72,6 +74,7 @@ namespace Testing
                     if (_requestsToTest.Count > 0)
                     {
                         thisThreadRequestIndex = _requestsToTest.Dequeue();
+                        _requestsInProgress.Add(thisThreadRequestIndex);
                         _currentTestReqIdx = thisThreadRequestIndex;
                         reqInfo = _requestIndex[thisThreadRequestIndex];
                         respInfo = _responseIndex[thisThreadRequestIndex];
@@ -131,9 +134,19 @@ namespace Testing
 
                         HttpServerConsole.Instance.WriteLine(LogMessageType.Notification,
                                      "Test execution completed.");
+
+
                     }
                 }
-                
+
+
+                lock (_lock)
+                {
+                    if (_requestsInProgress.Count > 0)
+                    {
+                        _requestsInProgress.Remove(thisThreadRequestIndex);
+                    }
+                }
 
                 Thread.Sleep(10);
 
@@ -141,6 +154,22 @@ namespace Testing
             }
             HttpServerConsole.Instance.WriteLine(LogMessageType.Notification,
                                     "Drive by Attack Proxy stopped.");                       
+        }
+
+        /// <summary>
+        /// How many requests are left to be testeds including the ones currently in progress
+        /// </summary>
+        public int RequestsLeft
+        {
+            get
+            {
+                int sum = 0;
+                lock (_lock)
+                {
+                    sum = _requestsToTest.Count + _requestsInProgress.Count;
+                }
+                return sum;
+            }
         }
 
 

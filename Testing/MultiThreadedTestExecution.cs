@@ -22,10 +22,14 @@ namespace Testing
         /// </summary>
         public bool IsRunning
         {
-            get { return _runnable; }
+            get
+            {
+                return (_inProgressList.Count + _testsQueue.Count) > 0;
+            }
            
         }
         private object _lock = new object();
+
         private Queue<TestJob> _testsQueue;
         /// <summary>
         /// Gets/sets the test queue
@@ -35,6 +39,10 @@ namespace Testing
             get { return _testsQueue; }
             set { _testsQueue = value; }
         }
+
+        private List<int> _inProgressList;
+     
+
         private string _rawRequest;
         private string _rawResponse;
         private Uri _reqUri;
@@ -55,6 +63,7 @@ namespace Testing
             _reqUri = reqUri;
             _numThreads = numThreads;
             _testsQueue = new Queue<TestJob>();
+            _inProgressList = new List<int>();
         }
 
         
@@ -76,25 +85,28 @@ namespace Testing
         /// </summary>
         private void TestThread()
         {
-            while(_runnable)
+            while(IsRunning)
             {
                 TestJob testJob = null;
+                int testJobHash = -1;
                 lock (_lock)
                 {
                     if (_testsQueue.Count > 0)
                     {
                         testJob = _testsQueue.Dequeue();
+                        testJobHash = testJob.GetHashCode();
+                        _inProgressList.Add(testJobHash);
                     }
-                    else
-                    {
-                        _runnable = false;
-                    }
-
                 }
 
                 if (testJob != null)
                 {
                     _tester.ExecuteTests(_rawRequest, _rawResponse, _reqUri, testJob.ParameterName, testJob.ParameterValue, testJob.RequestLocation, testJob.TestDef);
+                }
+
+                lock (_lock)
+                {
+                    _inProgressList.Remove(testJobHash);
                 }
             }
         }
@@ -104,7 +116,10 @@ namespace Testing
         /// </summary>
         public void CancelTests()
         {
-            _runnable = false;
+            lock (_lock)
+            {
+                _testsQueue.Clear();
+            }
         }
     }
 }

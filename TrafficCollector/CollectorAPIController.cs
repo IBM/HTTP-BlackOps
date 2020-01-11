@@ -169,10 +169,10 @@ namespace TrafficCollector
                     if (proxy is DriveByAttackProxy)
                     {
                         DriveByAttackProxy dProx = proxy as DriveByAttackProxy;
-                        int testCount = dProx.TestCount;
-                        if (testCount > 0)
+                        int requestsLeft = dProx.RequestsLeft;
+                        if (requestsLeft > 0)
                         {
-                            return GetResponse(206, "Partial Content", "{0} test entities currently in queue.", testCount);
+                            return GetResponse(206, "Partial Content", "Please wait... {0} request(s) left, {1} test job(s) in queue", requestsLeft, dProx.TestCount);
                         }
                         else
                         {
