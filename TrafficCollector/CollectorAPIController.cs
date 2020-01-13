@@ -159,12 +159,6 @@ namespace TrafficCollector
 
                     string filePath = Path.Combine(TrafficCollectorSettings.Instance.DumpDir, fileName + ".htd");
 
-                    if (File.Exists(filePath))
-                    {
-                        return GetResponse(400, "Bad Request", "File alredy exists.");
-                    }
-
-
                     
                     if (proxy is DriveByAttackProxy)
                     {
@@ -193,7 +187,21 @@ namespace TrafficCollector
                         }
 
                     }
-                    
+
+                    if (File.Exists(filePath)) //load the existing file and check the secret
+                    {
+                        TrafficViewerFile existingFile = new TrafficViewerFile();
+                        existingFile.Open(filePath);
+                        configuredSecret = existingFile.Profile.GetOption("secret") as String;
+                        existingFile.Close(false);
+
+                        if (String.IsNullOrWhiteSpace(configuredSecret) || String.IsNullOrWhiteSpace(secret) || !configuredSecret.Equals(secret))
+                        {
+                            return GetResponse(401, "Unauthorized", "Cannot override existing file.");
+                        }
+                    }
+
+
                     proxy.Stop();
                     CollectorProxyList.Instance.ProxyList.Remove(port);
                     if (trafficFile.RequestCount > 0)
