@@ -12,6 +12,9 @@ using TrafficServer;
 using TrafficCollector.Properties;
 using Testing;
 using System.Collections.Generic;
+using System.Net.Security;
+using System.Net;
+using System.Security.Cryptography.X509Certificates;
 
 namespace TrafficCollector
 {
@@ -21,6 +24,19 @@ namespace TrafficCollector
     /// </summary>
     class CollectorAPIController : IHttpClient
     {
+        /// <summary>
+        /// Stub validation method to allow testing websites with invalid certificates
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="certificate"></param>
+        /// <param name="chain"></param>
+        /// <param name="policyErrors"></param>
+        /// <returns></returns>
+        private static bool ValidateServerCertificate(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors policyErrors)
+        {
+            return true;
+        }
+
         public HttpResponseInfo SendRequest(HttpRequestInfo requestInfo)
         {
             requestInfo.ParseVariables();
@@ -78,7 +94,7 @@ namespace TrafficCollector
                     if(!String.IsNullOrWhiteSpace(secret)) trafficFile.Profile.SetSingleValueOption("secret", secret);
                     trafficFile.Profile.SetSingleValueOption("targetHost", targetHost);
 
-                    
+
                     if (test != null && test.Equals("true"))
                     {
                         CustomTestsFile testsFile = new CustomTestsFile();
@@ -93,6 +109,8 @@ namespace TrafficCollector
                     {
                         proxy = new AdvancedExploreProxy(TrafficCollectorSettings.Instance.Ip, port, trafficFile);
                     }
+                    proxy.NetworkSettings.CertificateValidationCallback = new RemoteCertificateValidationCallback(CollectorAPIController.ValidateServerCertificate);
+                    proxy.NetworkSettings.WebProxy = HttpWebRequest.GetSystemWebProxy();
                     proxy.Start();
                     CollectorProxyList.Instance.ProxyList.Add(proxy.Port, proxy);
                 }
