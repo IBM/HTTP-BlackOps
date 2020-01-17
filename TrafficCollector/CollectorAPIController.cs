@@ -144,6 +144,9 @@ namespace TrafficCollector
             //the file to save to
             string fileName = null;
             requestInfo.QueryVariables.TryGetValue("fileName", out fileName);
+            //optional parameter to cancel the scan
+            string cancel = null;
+            requestInfo.QueryVariables.TryGetValue("cancel", out cancel);
 
             if (fileName == null)
             {
@@ -182,7 +185,7 @@ namespace TrafficCollector
                     {
                         DriveByAttackProxy dProx = proxy as DriveByAttackProxy;
                         int requestsLeft = dProx.RequestsLeft;
-                        if (requestsLeft > 0)
+                        if (requestsLeft > 0 && (cancel==null || !cancel.Equals("true")))
                         {
                             return GetResponse(206, "Partial Content", "Please wait... {0} request(s) left, {1} test job(s) in queue", requestsLeft, dProx.TestCount);
                         }
@@ -270,6 +273,8 @@ namespace TrafficCollector
                 }
             }
 
+            //copy profile over
+            dest.Profile = source.Profile;
             return dest;
 
         }

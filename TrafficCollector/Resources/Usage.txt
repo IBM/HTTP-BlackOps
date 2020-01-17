@@ -11,7 +11,7 @@
 		- port: choose a valid HTTP port or set to 0 to get a dynamically generated port
 		- targetHost: this is needed to make sure that other browser requests to 3rd party servers are not being scanned
 		- secret: optional session secret can prevent others from ending the browser session
-		- test: true|false optional parameter whether to execute inline security tests
+		- test: true|false - optional parameter whether to execute inline security tests
 		
 		
 	Example:
@@ -26,6 +26,7 @@
 		- secret: optional session secret can prevent others from ending the browser session
 		- skipSimilar: optional flag telling the collector not to record a request if it matches existing ones
 		- fileName: a file name for the recording
+		- cancel: true|false - if the scan is still running and taking too long you can use this flag to cancel
 
 		
 	Example:
