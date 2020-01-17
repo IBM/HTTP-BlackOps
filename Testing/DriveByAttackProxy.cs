@@ -101,6 +101,15 @@ namespace Testing
                             {
                                 HttpServerConsole.Instance.WriteLine(LogMessageType.Warning,
                                     "Request already tested: '{0}'", reqInfo.FullUrl);
+
+                                lock (_lock)
+                                {
+                                    if (_requestsInProgress.Count > 0)
+                                    {
+                                        _requestsInProgress.Remove(thisThreadRequestIndex);
+                                    }
+                                }
+
                                 continue; //we tested this request before
                             }
                             else
